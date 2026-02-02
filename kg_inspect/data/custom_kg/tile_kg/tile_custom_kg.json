@@ -1,0 +1,705 @@
+{
+  "entities": [
+    {
+      "entity_name": "tile",
+      "entity_type": "product",
+      "description": "A tile is a manufactured piece typically made from non-metallic materials such as clay or porcelain and fired at high temperatures. Tiles are used for covering floors, walls, and surfaces in architectural and decorative applications.",
+      "source_id": "Source_tile1"
+    },
+    {
+      "entity_name": "crack tile",
+      "entity_type": "defect",
+      "description": "The defect is characterized by prominent cracks that run through the speckled tile, displaying a distinct linear separation of the surface. These cracks often adopt various branching patterns, such as Y-shapes or T-shapes, indicating fragmentation or potential stress points within the material. The cracks are usually sharp and jagged, contrasting sharply with the mottled pattern of dark spots against a lighter background, which highlights the structural anomaly. Their visibility disrupts the otherwise uniform aesthetics of the tile, posing a concern for both its structural integrity and visual appeal. Common locations for these cracks include the center and edges of the tiles, with orientations that vary from horizontal to diagonal.",
+      "source_id": "Source_tile2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "glue_strip tile",
+      "entity_type": "defect",
+      "description": "The defect manifests as an irregularly shaped, translucent strip that disrupts the uniform speckled pattern of the tile. It is characterized by a distinct outline, often with jagged or slightly torn edges, suggesting a foreign material adhered to the tile's surface. The color of the defect is typically lighter than the surrounding material, which causes it to stand out prominently against the speckled gray background. This anomaly appears glossy or smoother compared to the textured finish of the tile, indicating a potential manufacturing or handling issue. Its position is commonly towards the center or one of the sides of the tile, affecting the overall aesthetic and possibly the product's integrity if left unaddressed.",
+      "source_id": "Source_tile3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "gray_stroke tile",
+      "entity_type": "defect",
+      "description": "The Gray Stroke Defect is characterized by an irregularly shaped gray area, often appearing darker than the surrounding speckled pattern of the tile. This defect is typically positioned at various areas across the tile, frequently towards the center or edges, and disrupts the uniformity of the speckling. The edges of the gray stroke are uneven or irregular, contrasting significantly with the consistent distribution of darker gray speckles. This defect suggests potential issues in the tile's glazing process or the presence of foreign materials during manufacturing, making it readily identifiable against the overall tile design due to its concentrated color and texture differences.",
+      "source_id": "Source_tile4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "oil tile",
+      "entity_type": "defect",
+      "description": "The defect is characterized by an irregularly shaped discoloration on the surface of the speckled tile. This stain exhibits a color deviation, often appearing in shades of yellowish-brown or brownish, which contrasts sharply with the surrounding speckled pattern of gray and dark spots. The texture of the area may appear somewhat glossy or murky, resembling an oily stain. The edges of the stain are typically not crisply defined, often blending into the surrounding area while still standing out due to its distinct coloration. The presence of this anomaly disrupts the uniformity of the tile\u2019s design, indicating potential contamination or a manufacturing error. The defects are consistently located in varying central regions of the tiles, affecting their aesthetic quality and overall appearance.",
+      "source_id": "Source_tile5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "rough tile",
+      "entity_type": "defect",
+      "description": "The defect manifests as a rough, uneven area on the tile, contrasting with the otherwise smooth and uniform speckled surface. Visually, it appears with irregular or undefined edges, typically situated in various locations such as the center or corners of the tile. This textured anomaly may exhibit a slightly different color or sheen compared to the surrounding area, potentially affecting the aesthetic appeal and functional quality of the tile. The roughened areas can vary in size and shape, often described as elongated and displaying dark speckles, shiny spots, or clusters of raised texture that deviate from the regular pattern of dark speckles distributed throughout the tile.",
+      "source_id": "Source_tile6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "good tile",
+      "entity_type": "quality_class",
+      "description": "The objects in the images are close-up views of ceramic tiles featuring a speckled pattern. The tiles have a granular texture, characterized by a gray or light background adorned with small, dark speckles that vary in size and distribution. The patterns are generally consistent and homogenous, devoid of any visible defects such as cracks, chips, discoloration, or irregularities. Any variations in the speckle density and size are recognized as normal noise features, inherent to the manufacturing process and aesthetic design of the tiles. The overall appearance aligns with expected standards for this type of tile, indicating that no defects are present in these images.",
+      "source_id": "Source_tile1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "tile",
+      "tgt_id": "good tile",
+      "description": "Indicates that the tile achieves acceptable quality standards, meeting manufacturing and aesthetic criteria.",
+      "keywords": "quality, pass, acceptable, inspection, standard",
+      "weight": 0.8,
+      "source_id": "Source_tile1"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "crack tile",
+      "description": "Represents a structural defect relationship where the tile suffers physical damage due to stress, impact, or thermal shock.",
+      "keywords": "fracture, fissure, break, structural_defect, impact",
+      "weight": 0.9,
+      "source_id": "Source_tile2"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "glue_strip tile",
+      "description": "Represents a surface contamination defect caused by adhesive residue from packaging or handling processes.",
+      "keywords": "adhesive, residue, contamination, sticky, tape_mark",
+      "weight": 0.8,
+      "source_id": "Source_tile3"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "gray_stroke tile",
+      "description": "Represents a surface defect caused by abrasion, roller friction, or localized overheating during manufacturing.",
+      "keywords": "scuff, abrasion, roller_mark, burn, streak, friction",
+      "weight": 0.85,
+      "source_id": "Source_tile4"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "oil tile",
+      "description": "Represents a surface contamination defect where oil or grease residues affect tile appearance or adhesion quality.",
+      "keywords": "oil_stain, contamination, residue, lubricant, smudge",
+      "weight": 0.8,
+      "source_id": "Source_tile5"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "rough tile",
+      "description": "Represents a surface finish defect resulting from mechanical abrasion or improper glazing, leading to uneven texture.",
+      "keywords": "scratch, abrasion, texture_defect, surface_roughness, glaze_issue",
+      "weight": 0.85,
+      "source_id": "Source_tile6"
+    }
+  ],
+
+  "chunks": [
+    {
+      "content": "1 Jun 2019 1 Muthiah Muthukannan 2 Aruna Sankar Chithambar Ganesh View... Ceramic tile production has several processes according to each different finished product (Framinan et al. 2014). However, this study adopted the schematic process as pictured in the flowchart shown in figure 6 below. ...Exploration of Textures on Tree Barks as a Medium for Decorating Ceramic Tile MuralsArticle Full-text available 1 Oct 2022 1 Kofi Asante-Kyei 2 Caleb Nii Darku Dodoo 3 Andrews Amoako Temeng This paper presents comprehensive methods of exploring textures on tree barks to decorate ceramic tile murals and their results. The bark of different tree spices has been explored extensively in conjunction with modern technologies to design tiles. Materials used for the tile production were Abonko clay and grog. A plasticity and shrinkage test were conducted on of the Abonko clay. Therefore, a composition of 90% Abonko clay and 10% grog fired at 1050 o c was suitable for ceramic tile murals. The study concluded that textures on tree barks could be exploited to obtain designs to serve as a medium for decorating ceramic tile murals. It is therefore recommended among other things, that care should be taken when felling trees from our environments since textures of tree barks could be of interest to ceramic artists or designers in design processes.View... Tiles are craft objects made of non-metallic elements that have undergone a heating process in their manufacture. The process of manufacturing, for example ceramic tile consists of several steps namely clay preparation, molding, glaze preparation, drying, glazing and decorate the tile, kiln firing, and quality classification [1]. Selection of the tiles is in accordance with the needs of the buildings. ...Classification of Tiles using Convolutional Neural NetworkArticle Full-text available ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Contact Us Contact UsThe Art and Science of Tile Manufacturing Go to Home 1 Home 2 » The Art and Science of Tile Manufacturing Back to Tile TalkA Comprehensive Journey of Tile Manufacturing Tiles have been integral to human civilization for centuries, gracing the floors and walls of palaces, public spaces, and homes. The intricate process of tile production is a fascinating journey of art and science. It intertwines the raw beauty of natural materials with cutting-edge technology and meticulous craftsmanship. In this comprehensive blog, we’ll explore the entire process of tile manufacturing, from the selection of raw materials to the final product, providing insight into one of the world’s most versatile building materials. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "Understanding the Ingredients: What Goes In? The journey of tile production begins with its raw materials. Ceramic and porcelain tiles comprise a blend of natural materials, each playing a crucial role in the final product’s quality and characteristics. The key ingredients include: 1 Ball Clay: Ball clay provides the necessary plasticity for the tile mixture, allowing it to be molded and shaped. Its adhesive properties also help the materials bond together before firing. 2 Quartz: Quartz is prized for its hardness and durability. It increases the strength of the tile and helps it resist wear, making it an essential component in ceramic and porcelain tiles. 3 Feldspar: Feldspar, acting as a fluxing agent, helps the materials melt and bond together during firing, contributing to the tile’s final strength and durability. 4 Kaolin: Kaolin enhances mechanical strength and bonding, especially in porcelain tiles. It is also responsible for the white color of tiles, making it a preferred choice in premium-quality tiles. 5 Talc: Talc is added to the tile mixture to improve the smoothness and workability of the clay, making it easier to form and shape during the production process. 6 Bentonite: Bentonite, known for its exceptional binding properties, is crucial in large-format tiles because it holds the tile together during the greenware stage (the stage before firing).",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "372 15 A Case Study: Ceramic Tile Production This case study deals with a speciﬁc scheduling system development and deploy- ment experience in the Spanish ceramic tile sector. Before entering into the details of the scheduling system developed, a brief description of the industrial problem and scheduling model is given. W e ﬁrst describe the ceramic tile production process. A model of the production process is also given. After this, we describe in detail the development of a scheduling system, which mimics most of the content that has been exposed throughout this book. For example, we provide emphasis on a crucial aspect of the development, which is the data gathering process. Finally , and after exposing the developed scheduling system, some open issues are discussed. 15.2 The Production Process of Ceramic Tiles Ceramic tile production comprehends many different processes according to each different ﬁnished product. Basically , the process is composed of the following stages: • Clay preparation, either by dry grinding or by wet milling and atomization. • Forming or molding of the tile by either dry pressing or by extrusion. • Glaze preparation. • Drying, glazing and decoration of the tile. • Kiln ﬁring. • Classiﬁcation and packing. A more detailed schematics of the process is pictured as a ﬂowchart in Fig. 15.1 . The raw materials preparation, specially by the wet milling process (including spray drying) is usually a separated process, often simply called ‘atomization’ and is carried out by third companies, referred to as ‘atomizers’. The resulting product comes in the form of a clay granulate of tiny hollow spheres, usually referred to as atomized clay. This clay beha ves much like a ﬂuid as it is formed from countless tiny spheres that confer a ﬂuid behavior to the otherwise hard to work with raw clay . There is another process that is often subcontracted to third companies and that is the glaze preparation. Glazes are made of grinded frits and pigments. From all the processes depicted in Fig. 15.1 , single kiln ﬁring (also called fast single ﬁring) is, by far, the most common ceramic tile production method. As a result, the previous production process of Fig. 15.1 can be simpliﬁed as shown in Fig. 15.2 . Here we concentrate only on the production of ceramic tiles, bypassing the produc- tion processes of the aforementioned raw materials like atomized clay , frits, pigments or glazes. In other words, we assume that all these raw materials are readily available. As a result, and as it is common in most ceramic tile production plants, the process starts with the molding or forming of the ceramic tile. From this point, the production of ceramic tiles is very much automated. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "This naturally leads to the minimisation of the makespan, which is the main objective chosen for the models. 15.3 Modeling the Ceramic Tile Production Process 15.3.1 Initial Model The previous section detailing the ceramic tile production process, together with more detailed studies about ceramic tile production, as the one shown in V allada et al. ( 2005 ) allow us to provide a precise modeling of the scheduling prob- lem arising in ceramic tile manufacturing. The ﬁrst observable feature of the ceramic tile production problem (CTPP from now on) is that all products follow a natural ﬂow through the plant, which suggests a ﬂow shop structure. Production plants are divided into sections, usually , molding, glazing, kiln and classiﬁcation. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 4,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "1 Jan 2022 1 Armindo Soares 2 Carina Pimentel 3 Ana Moura View... While production methods differ according to the type of tile, the general process includes clay preparation, forming, glaze preparation, drying, decorating, glazing and kiln firing (Framinan, Leisten, & Ruiz, 2014). Forming techniques may involve compaction, extrusion, dust pressing, slicing from clay sheets, or shaping within metal or wooden moulds (Grimmer & Konrad, 1996). ...Biomorphic Textures in Ceramics: Developing Decorative Art Tiles Through Indigenous Material IntegrationArticle Full-text available ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 5,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "15.2 The Production Process of Ceramic Tiles 373 Raw materials preparation Wet millin g Dry g rindin g Wettin g Kneadin g Extr u sion Spray dryin g Moldin g Dryin g Sin g le fast firin g 1st fast firin g Sin g le slow firin g 2nd fast firin g Glazin g Glaze preparation 1st slow firin g Classification and packin g Fig. 15.1 Detailed ﬂowchart of the production process of ceramic tiles with all variants The ﬁst step is the molding where the atomized clay powder is loaded into molds (here is where the ﬂuidity of the atomized clay plays an important role) and it is pressed by large hydraulic presses to form what is called the bisque.  ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 6,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "This process is 374 15 A Case Study: Ceramic Tile Production Raw materials preparation Millin g and g rindin g Spray dryin g Moldin g Dryin g Sin g le kiln firin g Glazin g Glaze preparation Selection and packin g Fig. 15.2 Wet milling, atomization and single kiln ﬁring ﬂo wchart: the most common ceramic tile production procedure very important as all further operations depend on the correct formation of the tile. The physical dimensions of the tile, often referred to as the format of the tile, depend on the characteristics of the mold employed. Additionally, the visible side of the tile might not be entirely ﬂat as it might have a ‘stone-like’ pattern. This is determined by the plate of the mold. Right after molding, the bisques are quite fragile and should undergo further drying.",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 7,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "After pressing, the tiles enter the drying phase, removing any remaining moisture. This step is crucial to prevent cracking and warping during the firing process. The drying process varies depending on the type of tile. In some cases, the tiles are stored before firing, allowing for greater flexibility in production. Image courtesy of SacmiImage courtesy of SacmiImage courtesy of Ceramica ArchitecturesAdding the Finishing Touches: Glazing and Firing Glazing is where the tile truly begins to take on its final appearance. The glaze is a liquid mixture applied to the tile’s surface before firing. It can add color, texture, and a protective layer to the tile, enhancing its aesthetic appeal. Different glazing technologies are used depending on the desired finish:",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 8,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "1 Curtain or Waterfall Glaze: This method is commonly used for single-color ceramic wall tiles. It involves applying a uniform layer of glaze over the tile. In some cases, an engobe layer (a primer) is applied first, which serves as the base for the final decorative layer. 2 Inkjet Technology: A game-changer in the tile industry, inkjet technology allows for precisely applying intricate designs onto tiles. This process resembles a large-format digital printer, where high-resolution images of stones, wood, or concrete (to name a few) are printed onto the tile surface. This technology has revolutionized tile design, enabling factories to offer virtually unlimited design possibilities.",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 9,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "Ceramic kilns are large horizontal ovens with usually a single plane of rollers that move in one direction, advancing the glazed bisques through the different stages. Each type of clay and tile follows a different temperature curve inside the kiln. This temperature might be also affected by the physical size or format of the tile. A number of physical and chemical reactions undergo inside the kiln to form a hardened and ﬁnished tile. Most notably, the glaze fuses and hardens on top of the tile, conferring most kno wn and desired characteristics of ceramic tiles. After ﬁring, AGVs transport again the ﬁred tiles to an intermediate storage area. The ﬁnal stage is the classiﬁcation and packing of the ﬁred tiles.  ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 10,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "After glazing, the tiles are ready for firing. Industrial kilns, which can be as long as 150 meters (1.5 football fields), are used to fire the tiles at extremely high temperatures. The specific firing temperature depends on the type of tile: 1 Ceramic Tile: Fired at temperatures ranging from 1000° to 1250°C (1832° to 2282°F). The firing process hardens the tiles while fusing the glaze to the surface. 2 Porcelain Tile: Fired at even higher temperatures, between 1300° and 1346°C (2381° to 2455°F). This higher temperature not only increases the density but ensures that it is more water-resistant than ceramic tiles. This makes porcelain tile ideal for use in areas exposed to moisture. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 11,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "Open navigation menuUpload100% (1) 100% found this document useful (1 vote) 1K views 8 pages Defect Analysis of Ceramic Tiles The document discusses several common defects that can occur in ceramic tiles during the manufacturing process, including their probable causes, impacts, and potential remedies. It describes issues like body cracks, shade variation, abnormal surface textures, dimple problems, and pinholes. For each defect, it outlines the factors that can lead to the problem, how it affects the tile's properties, and methods for prevention or correction, such as optimizing firing temperatures and ensuring consistent raw material quality. The goal is to reduce defects and improve tile quality and durability. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 12,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "PMA | IMPERIO Solution For our luxury interior design brand IMPERIO, glaze quality and surface finishing are a top priority. Using premium glazes and advanced firing technology, we ensure that IMPERIO tiles have flawless, beautiful surfaces. The variety of sizes and finishes allows you to create unique, high-end spaces. Final Note Knowing the potential defects in tiles and ceramics helps you make an informed purchase and ensures the product meets your quality expectations. High-quality, standard-compliant products not only look better and last longer but also reduce maintenance and repair costs in the long run. With PMA | IMPERIO products, you can enjoy unmatched quality and beauty. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 13,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process"
+    },
+    {
+      "content": "E. Functional/Performance-Related Defects Defect Description Low Breaking StrengthFails under standard force — indicates poor body formulation. Excessive Water AbsorptionEspecially in porcelain tiles — makes tile unsuitable for certain uses. Slippery SurfacePolished tile with no anti-slip rating used in wet areas. Abrasion FailureGlaze wears out quickly in floor application — poor abrasion class. Inconsistent Gloss (Polished Tiles)Shows “patch” effects under light — affects visual appeal.  ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 14,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "What is wrong with the tile? Oftentimes, a tile consumer with a cracking issue will blame the failure on the tile itself. While the tile is the part of the floor system in which the damage is evident, it is not necessarily the cause of the problem. In fact, if the tiles were tested per the ASTM C648 test method for breaking strength and surpassed the 250 pounds-force specification for floor tiles in ANSI A137.1, then it is likely the tile is not the problem. What might be the cause of the problem? ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 15,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": "B. Dimensional & Flatness Defects Defect Description Length/Width VariationLength/Width Variation Diagonal InaccuracyTile is not square; diagonals don't match. Thickness VariationInconsistent thickness across tiles or within the same box. Center Warpage (Bowing)Tile lifts in the middle when laid flat. Edge WarpageEdges curve upward or downward. Corner LiftCorners of tiles do not touch the ground when laid. Twist DefectUneven height across all four corners — especially in large-format tiles.  ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 16,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "Body (Biscuit) Defects One of the most important stages in production is forming the tile’s body or “biscuit.” Any flaw here can lead to serious issues later. 1 Cracks – These may appear during drying or firing. They can be surface-level or deep, usually caused by thermal stress or excessive moisture. While surface cracks may be hidden by glazing, deep cracks reduce the tile’s strength and durability. 2 Warping or Bending – If the tile is not evenly heated or cooled during firing, it may warp. This is especially noticeable in larger tiles like porcelain or book-matched ceramics, making installation difficult. Large-format porcelain wall tiles must be completely warp-free. 3 Size Variation (Caliber) – This happens when tiles are produced in slightly different sizes, leading to uneven grout lines. Precision manufacturing in modern production lines minimizes this problem. 4 Air Bubbles and Voids – These occur when raw materials aren’t compacted enough or due to improper firing. They weaken the tile and increase water absorption. 5 Stains and Contamination – Foreign particles, like iron or carbon, can enter raw materials during production and show up as unwanted stains after firing. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 17,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process"
+    },
+    {
+      "content": "Also Read: Importance and Types of Tile Adhesive How to avoid cracked tiles? Prevention is key when it comes to avoiding cracked tiles. By taking some proactive measures, you can minimise the risk of floor tiles cracking and avoid the hassle of repairing a cracked tile. Consider implementing the following tips to avoid cracked tiles: 1. Choose Porcelain Tiles Porcelain tiles are highly durable and resistant to cracks. Opting for these types of tiles can significantly reduce the chances of tile cracking. Porcelain tiles are known for their strength and ability to withstand heavy use, making them an excellent choice for high-traffic areas. ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 18,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "1. You can use vitrified tiles for the flooring. They are more durable 2. You can use ceramic or porcelain tiles for your walls. They donâ€™t get dirty easily 3. Kitchen tiles should be scratch and stain proof 4. Bathroom tiles should be skid proof meaning they shouldnâ€™t be slippery 5. For flooring you can also make use of marble or granite slabs For more information on #homebuilding , keep watching #BaatGharKi from UltraTech Cement. Learn more about other tips while home building here â€“ https://www.ultratechcement.com/ â€œUltraTech is Indiaâ€™s No. 1 Cementâ€ About UltraTech: UltraTech Cement Ltd. is the largest manufacturer of grey cement, Ready Mix Concrete (RMC) and white cement in India. It is also one of the leading cement producers globally. UltraTech as a brand embodies 'strength', 'reliability' and 'innovation'. Together, these attributes inspire engineers to stretch the limits of their imagination to create homes, buildings and structures that define the new India. Tiles for Home | Wall and Floor Tiles | Home Construction Tips | Tiles for House Connect with Ultratech on: ",
+      "source_id": "Source_tile1",
+      "source_chunk_index": 19,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "Homepage⟫Blog⟫Article⟫ What Are the Defects in Tiles and Ceramics During Production? {Defects + Solutions}What Are the Defects in Tiles and Ceramics During Production? {Defects + Solutions} Producing tiles and ceramics is a complex and precise process made up of multiple stages, such as raw material preparation, firing, and final finishing. At any stage, defects may occur that can affect the final product’s quality. Being aware of these defects helps you make smarter purchasing decisions and ensures you get a high-quality product. This article explores the most common tile and ceramic defects that can occur during production.",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 0,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process"
+    },
+    {
+      "content": "What is floor tiles cracking? Floor tile cracking refers to the presence of cracks, fractures, or breaks in your floor tiles. These cracks can range from small, unnoticeable fissures that only affect the surface of the tiles to large, noticeable cracks that delve deeper into the tile. Beyond just being aesthetically unpleasing, in some cases, these cracks may signify underlying structural issues that could potentially pose larger threats to the integrity of your home or business's construction. Cracks in your tiles, even a hairline crack tile can be more than just a cosmetic issue. They can act as gateways for moisture to enter underneath your flooring, leading to the growth of mildew. Furthermore, over time, these cracks can also deepen, creating tripping hazards in your space. Understanding the cause of these cracks is crucial for their prevention and prompt repair by filling cracks in tiles with appropriate solutions such as epoxy grout. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 1,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "Body (Biscuit) Defects One of the most important stages in production is forming the tile’s body or “biscuit.” Any flaw here can lead to serious issues later. 1 Cracks – These may appear during drying or firing. They can be surface-level or deep, usually caused by thermal stress or excessive moisture. While surface cracks may be hidden by glazing, deep cracks reduce the tile’s strength and durability. 2 Warping or Bending – If the tile is not evenly heated or cooled during firing, it may warp. This is especially noticeable in larger tiles like porcelain or book-matched ceramics, making installation difficult. Large-format porcelain wall tiles must be completely warp-free. 3 Size Variation (Caliber) – This happens when tiles are produced in slightly different sizes, leading to uneven grout lines. Precision manufacturing in modern production lines minimizes this problem. 4 Air Bubbles and Voids – These occur when raw materials aren’t compacted enough or due to improper firing. They weaken the tile and increase water absorption. 5 Stains and Contamination – Foreign particles, like iron or carbon, can enter raw materials during production and show up as unwanted stains after firing. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 2,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process"
+    },
+    {
+      "content": "C. Edge & Physical Damage Defects Defect Description Chipped EdgeBreak or notch on the side of the tile — caused during cutting or handling. Broken CornersFractured corners due to impact or poor packing. Cracked TileHairline or visible cracks across tile body. Pressed Marks / LinesPress tooling leaves unwanted lines or marks on the tile. Mold DefectsIrregular tile shape due to worn or dirty mold. Uncalibrated EdgeEdge not straight — leads to grout misalignment. D. Packing & Labeling Defects ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 3,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "**Impact on Property:** Body cracks can compromise the structural integrity and strength of the ceramic tile. They can weaken the tile, making it more susceptible to breakage, reducing its load-bearing capacity, and affecting its durability. Additionally, these cracks can lead to increased water absorption, making the tile more vulnerable to staining and damage. **Remedy:** o **Optimized Firing Process**: Ensure that the tiles are fired at a proper and controlled temperature to reduce thermal stress and prevent sudden temperature changes during the process. o **Improved Raw Material Selection and Mixing**: Ensure the raw materials are consistently mixed in the right proportions and of high quality to prevent structural inconsistencies. o **Proper Drying and Pre-treatment**: Allow sufficient time for the tiles to dry adequately before firing to prevent moisture entrapment. o **Quality Control Measures**: Implement stringent quality checks and inspections throughout the manufacturing process to detect any potential issues before the tiles are fired. By addressing these probable sources and implementing appropriate remedies, you can reduce the occurrence of body cracks in ceramic tiles, thereby improving their quality and durability. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 4,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "Uploaded by utpalroy.mme.drive1 Copyright © © All Rights Reserved We take content rights seriously. If you suspect this is your content, claim it here. Available Formats Download as DOCX, PDF, TXT or read online on Scribd You are on page 1 / 8 Defect Analysis of Ceramic Tiles Body Crack: **Probable Source:** Body cracks in ceramic tiles can occur due to various reasons during the manufacturing process. Some potential causes include: o **Thermal Shock**: Sudden and extreme temperature changes during the firing process can cause differential expansion and contraction rates within the tile, leading to internal stress and ultimately resulting in body cracks. o **Inadequate Drying**: Insufficient drying time before firing the tiles can trap moisture within the clay body. During the firing process, this moisture turns into steam, leading to internal pressure and potential cracking. o **Inadequate Composition of Raw Materials**: Variations in the composition of raw materials or improper mixing can cause inconsistencies in the tile structure, leading to weaknesses and eventual cracking. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 5,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "So just in case glaze defects are driving you “craze-y” (sorry, I just couldn’t resist), I thought I would share this excerpt from the late Robin Hopper's book, The Ceramic Spectrum. Read on to get some expert pointers on how to solve five of the most common pottery glaze defects (such as crawling, shown at above). – Jennifer Poellot Harnetty, editor Crazing Crazing is the most common glaze defect, and normally the easiest to correct. In both crazing and shivering the eradication of problems relies on matching the thermal expansion characteristics of both body and glaze. In practice, the most effective ways to correct crazing are: ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 6,
+      "file_path": "https://ceramicartsnetwork.org/daily/article/How-to-Correct-Five-Common-Ceramic-Glaze-Defects "
+    },
+    {
+      "content": "PMA | IMPERIO Solution By using advanced production lines and strict quality control, we eliminate these defects at the manufacturing stage. Our durable, high-quality ceramics are the result of attention to detail. With PMA | IMPERIO products, you can be confident in both quality and durability. Glaze and Surface Defects After firing the body, glazing and surface finishing ensure both beauty and resistance. 1 Pinhole – Tiny needle-like holes in the glaze, usually caused by gases escaping from the body during firing. They ruin the appearance and can trap dirt over time. 2 Crazing – Fine, web-like cracks in the glaze, typically caused by mismatched thermal expansion rates between the glaze and body. These cracks may appear gradually, affecting both looks and durability. 3 Blistering – Small bubbles on the glaze surface caused by trapped gas during firing. 4 Color Variation – Slight or noticeable color changes can result from poor firing, glaze impurities, or incorrect kiln temperature control. 5 Glaze Running – If glaze viscosity or firing temperature isn’t controlled, glaze may flow unevenly, creating drops and streaks. 6 Crater – Small pits in the glaze caused by trapped air or foreign particles. 7 Abrasion – Occurs in low-quality tiles with poor wear resistance, leading to quick scratching and dulling of the surface. 8 Surface Unevenness (Waviness) – The glaze should be perfectly smooth. Uneven application or process issues can cause visible waves, especially noticeable under light reflection. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 7,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process"
+    },
+    {
+      "content": "What causes cracks in tiles? Several factors can contribute to the development of cracks in floor tiles. Understanding these causes is crucial in order to prevent floor tiles cracking effectively. Here are the most common culprits: 1. Hard Impacts One of the primary causes of tile cracking is hard impacts. When heavy objects are dropped onto the tiles or when tiles experience sharp blows, they can develop immediate cracks or weaken over time. It's essential to be cautious when moving furniture or other heavy items on tiled surfaces to avoid damaging the tiles. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 8,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "2. Incorrect Installation Poor installation practices can lead to tile cracks. Inadequate adhesive coverage, improper grouting, or insufficient substrate preparation are common installation mistakes that can result in cracked tiles. Hiring a professional tile installer who follows proper installation techniques is crucial to prevent such issues. 3. Bearing Too Much Weight Excessive weight or pressure on the tiles can cause them to crack, especially in areas with inadequate structural support. This can happen when heavy objects are placed directly on the tiles or when there is concentrated weight on specific spots. Be mindful of the weight distribution on your tiled surfaces and use proper support to prevent cracking. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 9,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "4. Cracked Substrate The subfloor or underlying surface plays a significant role in tile durability. If the subfloor is damaged, cracked, or uneven, it can create stress on the tiles above, leading to cracking. Ensure that the substrate is in good condition before tile installation, and address any structural issues promptly. 5. Tiling Over Control Joints Control joints or expansion joints are designed to allow for natural movement and expansion of building materials. Ignoring these joints when tiling can restrict the movement of the flooring, causing stress on the tiles and resulting in cracks and tile popping. Pay attention to control joints and follow proper tiling practices to accommodate for expansion and contraction. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 10,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": " Inadequate Formulation: An adhesive that lacks flexibility or has poor shrinkage control may crack as it dries or as the substrate moves. Unstable Substrate: Cracks in the underlying substrate that were not repaired before tile installation can propagate into the tile layer. Thermal Expansion and Contraction: Significant temperature fluctuations can cause the adhesive or tiles to expand and contract, leading to cracks. 5. Tile Detachment Tile detachment is a severe problem that often results from poor adhesive performance or improper installation. Common causes include:  ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 11,
+      "file_path": "https://landu-china.com/en/common-problems-with-tile-adhesive-and-their-solutions/"
+    },
+    {
+      "content": "Although it is impossible to specu-late the exact cause of cracked or de-bonded tile without a proper inspec-tion, there are some causes that occur most commonly. In an installation over a concrete subfloor, movement or cracking of the concrete can cause cracking in the tile surface. These are called reflective cracks. Concrete will continue to shrink long after it is first cast, and it is possible for the concrete Tile Q&A By Katelyn Simpson Cracked Tile: Common Causes & Misconceptions Right: Cracked tile may be due to shrink-age of a concrete subfloor or deflection in a wood subfloor. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 12,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": "Concrete will continue to shrink long after it is first cast, and it is possible for the concrete to crack due to shrinkage while it is curing. About the Author Katelyn Simpson works for the Tile Council of North America’s Product Performance Testing Laboratory as a Laboratory Engineer. She is responsible for testing tile, stone and other installation materials to ASTM, ANSI and ISO standards. She is also involved in the development and revision of ASTM and ANSI standards. Mrs. Simpson earned her B.S. degree in Ceramic and Materials Engineering from Clemson University. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 13,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": "in the substrate will cause compres-sive and tensile forces on the grout and tile. Typically, with excessive deflection, the grout will crack first. In more severe cases, the tile will also crack. What can be done to prevent tiles’ cracking or de-bonding? When it comes to concrete, one sim-ple, yet another important issue to consider is how long the concrete is allowed to cure before the tile is installed over it. The longer the con-crete is allowed to cure, the better. If the concrete is allowed to cure for a long period of time, any cracks that ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 14,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/"
+    },
+    {
+      "content": "Common causes of adhesive failures Adhesive failures in tile flooring can result from various factors, including: 1 Inadequate surface preparation: A clean, smooth, and dry surface is crucial for effective adhesive bonding. Any dirt, dust, grease, or moisture can weaken the adhesive's grip, leading to tiles coming loose. 2 Incorrect adhesive selection: Using the wrong type of adhesive for your specific tile and substrate can cause bonding issues. Different adhesives are formulated for various materials and conditions, so selecting the appropriate one is vital. 3 Insufficient adhesive application: Applying too little adhesive can create voids beneath the tiles, reducing their adhesion. On the other hand, excessive adhesive can lead to uneven surfaces and weak spots. 4 Environmental factors: Temperature and humidity levels can affect the curing process of adhesives. Extreme conditions can cause the adhesive to set too quickly or too slowly, compromising its effectiveness. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 15,
+      "file_path": "https://www.cwfloors.com/blog/articles/solving-adhesive-failures-in-tile-flooring"
+    },
+    {
+      "content": "Solutions for adhesive failures Addressing adhesive failures promptly can save your tile flooring from extensive damage. Here are some solutions to consider: 1 Proper surface preparation: Ensure the substrate is clean, dry, and free from contaminants before applying adhesive. Use a suitable primer if necessary to enhance adhesion. 2 Choosing the right adhesive: Consult with a flooring professional to select the appropriate adhesive for your specific tile type and substrate. Consider factors like tile material, size, and environmental conditions. 3 Correct adhesive application: Follow the manufacturer's instructions for mixing and applying adhesive. Use the recommended trowel size to ensure even coverage and eliminate voids. 4 Managing environmental conditions: Install tiles in a controlled environment with stable temperature and humidity levels. Avoid extreme conditions that can interfere with adhesive curing. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 16,
+      "file_path": "https://www.cwfloors.com/blog/articles/solving-adhesive-failures-in-tile-flooring"
+    },
+    {
+      "content": "Also Read: Importance and Types of Tile Adhesive How to avoid cracked tiles? Prevention is key when it comes to avoiding cracked tiles. By taking some proactive measures, you can minimise the risk of floor tiles cracking and avoid the hassle of repairing a cracked tile. Consider implementing the following tips to avoid cracked tiles: 1. Choose Porcelain Tiles Porcelain tiles are highly durable and resistant to cracks. Opting for these types of tiles can significantly reduce the chances of tile cracking. Porcelain tiles are known for their strength and ability to withstand heavy use, making them an excellent choice for high-traffic areas. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 17,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "2. Use Plywood and a Concrete Subfloor Properly preparing the subfloor is essential to prevent tile cracking. Use plywood and a concrete base to create a stable and even surface for the tiles. This helps distribute weight evenly and minimises the risk of cracks due to an unstable foundation. 3. Look for Dead Spots Before tile installation, thoroughly inspect the subfloor for any hollow or uneven areas. These \"dead spots\" can weaken the tiles and make them prone to cracking. Address any issues by reinforcing or repairing the subfloor before tiling. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 18,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "2. Proper Surface Preparation Thorough surface preparation is critical to successful tile installation. The substrate should be clean, dry, and level. If the surface is too smooth, it may require mechanical roughening to improve adhesion. Any cracks or irregularities in the substrate should be repaired before applying the adhesive. 3. Optimizing Application Techniques Correct application techniques are key to achieving a strong bond. The tile adhesive should be mixed according to the manufacturer’s instructions and applied evenly using a notched trowel. The tiles should be pressed firmly into the adhesive to ensure complete coverage and eliminate air pockets. For larger tiles, back-buttering may be necessary to ensure full contact between the tile and adhesive. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 19,
+      "file_path": "https://landu-china.com/en/common-problems-with-tile-adhesive-and-their-solutions/"
+    },
+    {
+      "content": "form can be filled, and any curling (distortion of a slab into a curved shape around the edges) can be ground down. Many people suggest a minimum cure time of 28 days. Some thin-set manufacturers say 14 days may be sufficient, if premium latex-modified thin-set is used. Another option when installing tile over concrete is to use a crack isolation or anti-fracture membrane. The mem-brane bonds to the concrete subfloor, and the tile is installed with thin-set to the membrane’s surface. The anti-frac- ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 20,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": "4. Consider Expansion In larger areas or spaces that experience temperature fluctuations, it's crucial to allow for expansion joints. These joints accommodate the natural movement of the tiles, preventing stress-induced cracks. Consult with a professional installer or follow industry guidelines to determine the appropriate spacing and placement of expansion joints. Cracked or chipped tiles can be a hassle to deal with, but understanding the causes behind them and implementing preventive measures can save you time, money, and frustration. By following the guidelines outlined in this blog, you'll be well on your way to enjoying crack-free and long-lasting tiled surfaces. For more in-depth tile installation tips and techniques, check out our video on tile installation tips that provides valuable insights into proper tile installation practices. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 21,
+      "file_path": "https://www.ultratechcement.com/for-homebuilders/home-building-explained-single/descriptive-articles/floor-tiles-cracking"
+    },
+    {
+      "content": "It is important to understand that all floor installations should have movement joints, and that the use of a crack isolation membrane does not replace or eliminate the need for movement joints. ture membrane is used to reduce or pre-vent movement in the concrete from being directly transferred to the tile. Additionally, when installing over concrete, a lack or improper use of movement joints can cause problems. Movement joints are used to eliminate stresses that occur between the sub-strate and the tile. The 2008 TCA Handbook for Ceramic Tile Installation has guidelines for the use of move-ment joints. It is important to under-stand that all floor installations should have movement joints, and that the use of a crack isolation membrane does not replace or eliminate the need for movement joints. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 22,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": "Lastly, when installing over a wood subfloor, it is important to have appropriate joist spacing to minimize deflection. The 2008 TCA Handbook contains information about maximum deflection and joist spacing. In gener-al, floor systems over which tile is installed must conform to the International Residential Code (IRC) for residential applications, or the International Building Code (IBC) for commercial applications. Further information about this topic and other tile or installation-related issues can be found on Tile Council’s website, www.tileusa.com. TILE  ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 23,
+      "file_path": "https://tcnatile.com/wp-content/uploads/2022/08/Cracked-Tile-Common-Causes-and-Misconceptions.pdf"
+    },
+    {
+      "content": " Low-Quality Adhesive: Using an adhesive that does not provide adequate bonding strength can lead to tile detachment over time. Improper Curing: If the adhesive is not allowed to cure properly, its bonding strength may be compromised. Environmental Factors: External factors such as vibrations, excessive moisture, or freeze-thaw cycles can weaken the adhesive bond, causing tiles to detach. Solutions to the Above Problems 1. Selecting the Right Tile Adhesive Choosing the appropriate tile adhesive for the specific type of tile and substrate is essential. For larger or heavier tiles, a high-strength adhesive should be used. In moisture-prone areas, such as bathrooms, a waterproof adhesive is recommended. Always refer to the manufacturer’s guidelines to ensure the chosen adhesive meets the specific project requirements. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 24,
+      "file_path": "https://landu-china.com/en/common-problems-with-tile-adhesive-and-their-solutions/"
+    },
+    {
+      "content": "4. Controlling Environmental Conditions Maintaining optimal environmental conditions during installation is important. Avoid installing tiles in extreme temperatures or high humidity, as these conditions can affect the adhesive’s performance. Allow for adequate curing time based on the specific adhesive used and environmental factors, and avoid any activities that could disturb the tiles before the adhesive has fully set. 5. Utilizing High-Performance Additives Incorporating additives such as cellulose ethers, including HPMC, HEMC, and so on into the tile adhesive can significantly enhance its performance. These additives improve the adhesive’s water retention, bonding strength, and slipping resistance. Especially the Hydroxypropyl methyl cellulose (HPMC), HPMC provides excellent resistance to sagging, which is particularly important for vertical surfaces. It ensures tiles remain in place during installation, preventing slipping and sliding. HPMC offers significant water retention advantages in tile adhesive formulations. It helps maintain moisture within the adhesive, ensuring better curing and adhesion, especially on porous surfaces. This results in improved workability, extended open time, and stronger bonding, making it essential for high-performance tile adhesives. It also enhances the consistency and smoothness of tile adhesive, making the application process easier and more efficient. This allows for even mortar distribution, resulting in a flawless, high-quality tile installation. It minimizes potential defects and ensures a professional finish. Therefore, choosing excellent HPMC for tile adhesive is vital to improving construction quality. ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 25,
+      "file_path": "https://landu-china.com/en/common-problems-with-tile-adhesive-and-their-solutions/"
+    },
+    {
+      "content": "1 increase the silica, in body or glaze 2 decrease the feldspar, in body or glaze 3 decrease any other material containing sodium or potassium 4 increase the boron 5. increase the alumina, i.e. the clay content increase lead oxide. Shivering Shivering is the most problematic of glaze defects, particularly in any functional ware, since slivers of glaze from the edges can drop into food or drink. These slivers are usually small, sharp, jagged-edged pieces that detach themselves from the body. It is the most dangerous of glaze faults. Shivering is the reverse of crazing, therefore the remedies are the opposite as well: ",
+      "source_id": "Source_tile2",
+      "source_chunk_index": 26,
+      "file_path": "https://ceramicartsnetwork.org/daily/article/How-to-Correct-Five-Common-Ceramic-Glaze-Defects "
+    },
+    {
+      "content": "How Do I Remove Adhesive Residue? Everyone has experienced difficulty in removing the adhesive residues stuck to floor tiles, wall tiles or any hard surface such as tiles, glass or wood. This sticky substance ruins the aesthetic appeal of your tiles and traps dirt. It complicates cleaning work. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 0,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "So, if you're wondering how do I remove adhesive residue effectively from different types of tiles, you must identify the adhesive type to choose the right method of removing the residues without damaging your tiles. Method 1: The Power of Oil-Based Solutions For adhesive residue on delicate tiles such as ceramic tile, glass tile, or marble effect tile, oil-based solutions are a great starting point. Vegetable oil, olive oil, or even baby oil effectively softens the adhesive. Oil makes the process easier to wipe away without scratching or damaging the tile surface. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 1,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": " Tiles Common Defects 1 Home 2 Informations 3 Tiles Common Defects Tile Common Defects – Full List Observed During AQS Inspections We categorize tile defects into 5 practical types for better understanding by importers, site supervisors, and QC teams. A. Surface & Glazing Defects Defect Description PinholeSmall circular holes caused by air bubbles under the glaze. Glaze Skip / Patchy GlazeAreas where glaze is missing, leading to dullness. Uneven Gloss / L Value GapInconsistent polish or shine across the tile surface. Dull SurfaceLack of gloss in polished tiles — may be due to polishing or glaze issues. Bubbles / BlistersSmall glaze bubbles or raised spots formed during firing. Color Firing DefectDiscoloration due to over- or under-firing in the kiln. Digital Print BlurPoor resolution or offset pattern in digital printing. Design MisalignmentMisregistration of the print layers, especially in book-matched tiles. Shade VariationNoticeable color difference between tiles or batches. White Patches (Stains)Mineral deposits, salts, or glaze slip showing up as white patches. Inclusions / Black SpotsSmall black particles embedded into the surface. Oil Marks / Sticky SurfaceImproper cooling or packing can leave sticky residues. Moisture SpotsDamp surface due to improper drying or humidity. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 2,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "Method 2: Use of Rubbing Alcohol or Vinegar For harder-to-remove adhesive residue, use rubbing alcohol or white vinegar. Both are suitable for most tiles, including ceramics and porcelain tiles. They work by losing the sticking of the adhesive. • Steps to Follow: 1 Dip a cotton pad or a cloth in rubbing alcohol/vinegar. 2 Allow the residue to dilute for a minute before dabbing it with the soaked material. 3 Gently scrub the area concerned until the adhesive comes off. 4 Rinse with clean water to clear any remaining droppings from the surface. 5 Wipe the surface clean with a damp cloth to remove any remaining traces. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 3,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "FAQs 1. What is the easiest way to remove adhesive residue? Oil-based products like vegetable oil are the easiest way. Apply, let it sit, and gently rub off the residue. 2. How do you remove heavy-duty adhesive residue? Apply heat with a hairdryer, then gently scrape off the softened adhesive using a plastic scraper, followed by cleaning. 3. Can vinegar remove adhesive? Yes, vinegar can break down adhesive residue on tiles. Apply it, let it sit for a few minutes, then scrub and rinse. Share on Facebook Share on Twitter Share on Email Share on Pinterest Share on Tumblr Share on Telegram Share on WhatsApp How to tile a bathroom floorBack to NewsHow to Tile a Bathroom?Related Articles",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 4,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "• Steps to Follow: 1 Rub a thin layer of oil on the adhesive residue. 2 Let it soak for a few minutes to allow the oil to penetrate and dissolve the adhesive. 3 Wipe it with a soft cloth or your fingers in circular motions. 4 Use a clean and dry cloth to remove the oil and remaining stains on the surface. This method is particularly effective for removing adhesive from delicate surfaces like tiles and wood that might be sensitive to harsher chemicals. It's a gentle yet effective solution for adhesive removal. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 5,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "These substances dissolve the adhesive, making it easy to wipe away. Plus, they evaporate quickly, leaving no lingering odour or mess. Method 3: Heat and Scrape for Heavy-Duty Adhesive Residue Wondering how do I remove adhesive residue in the rigid and resilient form? For stronger and highly set adhesive ones, heat may cause a change in the situation. This method is ideal for structural adhesives or where a particular type of bond is difficult to get into. • Steps to Follow: 1 Using a hairdryer or a heat gun will soften the majority of the adhesive. The heat will also make the adhesive less sticky and easy to dismantle. 2 If the adhesive is warm, start rubbing it with the help of a plastic scraper or an old credit card. 3 Repeat the procedure several times if required to extract all the residue from the reagents. 4 Use a mild soap solution and rinse the surface to wash off residual dust on the surface. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 6,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "Avoid using metal scrapers, as they can scratch and damage surfaces. Always start with gentle pressure to avoid any accidental damage. Method 4: Commercial Adhesive Removers If the stain or the residue is stubborn and you want a quick and effective way of removing the adhesive, then use commercial adhesive removers. These unique products easily remove adhesives without damaging the surfaces. • Steps to Follow: 1 Follow the instructions on the product label carefully. 2 Use the remover to the adhesive residue as directed by the manufacturer. Let it act and then wash out. 3 With a cloth or scraper, wipe off the adhesive that has turned soft and clean. 4 Wash off the area with water to clean any chemical residue. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 7,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "When using commercial removers, ensure that the room has adequate ventilation, as most of the removers have solvents. Final Statements Removing adhesive residue doesn’t have to be a daunting task. With these practical methods, you can easily restore surfaces to their original condition without damaging them. No matter what type of tile you have, there's a suitable solution to get your surfaces looking clean and fresh once more. Trust Tile Topia for well-formulated adhesives tailored to our cheap tiles to ensure a perfect bond every time. ",
+      "source_id": "Source_tile3",
+      "source_chunk_index": 8,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"  
+    },
+    {
+      "content": "Several classiﬁcation and packing lines are usually available. V isual or automated quality control for defects 15.2 The Production Process of Ceramic Tiles 375 is carried out. Depending on the number and importance of defects, tiles are usually classiﬁed into ﬁrst or second quality and discards. Due to small differences in the raw materials and the complex production process, not all tiles result in the same tonality and physical dimensions (calibers) so the tiles are actually assigned to different batches, each one containing the same quality, caliber and tonality . As a ﬁnal step, tiles are boxed and palletised for distribution. [source: https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production]",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "**Impact on Property:** Shade variation affects the aesthetics and uniformity of the tiled surface, potentially leading to dissatisfaction among customers and compromising the overall design or intended appearance of an installation. It might also pose challenges during installation, as installers may need to blend tiles to create a more uniform appearance. **Remedy:** o **Quality Control in Raw Materials**: Ensure consistency in the raw materials used for tile production by thoroughly testing and controlling the quality of clays, glazes, pigments, and other materials. o **Standardized Firing Procedures**: Implement strict control measures during the firing process to maintain consistent temperature, duration, and kiln atmosphere. This includes ensuring uniform heat distribution and proper cooling procedures. o **Enhanced Glaze Application Techniques**: Implement precise and standardized glaze application methods to ensure even coating and thickness, reducing the possibility of shade variation. o **Batch Sorting and Blending**: Sort tiles from different batches and blend them during installation to minimize visible differences. This practice can help create a more consistent appearance across the surface. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 1,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "C. Edge & Physical Damage Defects Defect Description Chipped EdgeBreak or notch on the side of the tile — caused during cutting or handling. Broken CornersFractured corners due to impact or poor packing. Cracked TileHairline or visible cracks across tile body. Pressed Marks / LinesPress tooling leaves unwanted lines or marks on the tile. Mold DefectsIrregular tile shape due to worn or dirty mold. Uncalibrated EdgeEdge not straight — leads to grout misalignment. D. Packing & Labeling Defects [source: https://www.asianqualityservices.com/tiles-common-defects  ]",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 2,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "15.2 The Production Process of Ceramic Tiles 373 Raw materials preparation Wet millin g Dry g rindin g Wettin g Kneadin g Extr u sion Spray dryin g Moldin g Dryin g Sin g le fast firin g 1st fast firin g Sin g le slow firin g 2nd fast firin g Glazin g Glaze preparation 1st slow firin g Classification and packin g Fig. 15.1 Detailed ﬂowchart of the production process of ceramic tiles with all variants The ﬁst step is the molding where the atomized clay powder is loaded into molds (here is where the ﬂuidity of the atomized clay plays an important role) and it is pressed by large hydraulic presses to form what is called the bisque. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 3,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "This process is 374 15 A Case Study: Ceramic Tile Production Raw materials preparation Millin g and g rindin g Spray dryin g Moldin g Dryin g Sin g le kiln firin g Glazin g Glaze preparation Selection and packin g Fig. 15.2 Wet milling, atomization and single kiln ﬁring ﬂo wchart: the most common ceramic tile production procedure very important as all further operations depend on the correct formation of the tile. The physical dimensions of the tile, often referred to as the format of the tile, depend on the characteristics of the mold employed. Additionally, the visible side of the tile might not be entirely ﬂat as it might have a ‘stone-like’ pattern. This is determined by the plate of the mold. Right after molding, the bisques are quite fragile and should undergo further drying.  ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 4,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "This process is usually carried out in either vertical or horizontal dryers (small kilns). After drying, the bisque is hardened to what resembles a chocolate bar and therefore, can withhold further processing operations. The bisque or ceramic tile is then decorated in the glazing lines. Some speciﬁc products are not glazed, however , this is not very common. In a glazing line, tiles mov e over con veyor belts and different applications, decorations and other operations are performed over them. The most basic operation is the application of the base glaze by simple bell or waterfall machines to advanced random rotary decorations, referred to as rotocolors. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 5,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Ceramic kilns are large horizontal ovens with usually a single plane of rollers that move in one direction, advancing the glazed bisques through the different stages. Each type of clay and tile follows a different temperature curve inside the kiln. This temperature might be also affected by the physical size or format of the tile. A number of physical and chemical reactions undergo inside the kiln to form a hardened and ﬁnished tile. Most notably, the glaze fuses and hardens on top of the tile, conferring most kno wn and desired characteristics of ceramic tiles. After ﬁring, AGVs transport again the ﬁred tiles to an intermediate storage area. The ﬁnal stage is the classiﬁcation and packing of the ﬁred tiles. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 6,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Modern glazing equipment includes ‘printers’ which can basically print ceramic tiles with a large array of colours, patterns and decorations. Glazing lines can contain more than 50 different machines and can be up to 50 m long, sometimes even more. The different glaze applications determine the style, colour, surface and characteristics of the tile. Decorated bisques are stored in big boxes or ‘roller stillages’ that contain many roller planes where bisques are fed into, stored and extracted from at later stages. The big boxes are transported from the glazing lines to an intermediate storage area by automated guided vehicles (AGVs). The central stage of the production process is the single kiln ﬁring. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 7,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": " Tiles Common Defects 1 Home 2 Informations 3 Tiles Common Defects Tile Common Defects – Full List Observed During AQS Inspections We categorize tile defects into 5 practical types for better understanding by importers, site supervisors, and QC teams. A. Surface & Glazing Defects Defect Description PinholeSmall circular holes caused by air bubbles under the glaze. Glaze Skip / Patchy GlazeAreas where glaze is missing, leading to dullness. Uneven Gloss / L Value GapInconsistent polish or shine across the tile surface. Dull SurfaceLack of gloss in polished tiles — may be due to polishing or glaze issues. Bubbles / BlistersSmall glaze bubbles or raised spots formed during firing. Color Firing DefectDiscoloration due to over- or under-firing in the kiln. Digital Print BlurPoor resolution or offset pattern in digital printing. Design MisalignmentMisregistration of the print layers, especially in book-matched tiles. Shade VariationNoticeable color difference between tiles or batches. White Patches (Stains)Mineral deposits, salts, or glaze slip showing up as white patches. Inclusions / Black SpotsSmall black particles embedded into the surface. Oil Marks / Sticky SurfaceImproper cooling or packing can leave sticky residues. Moisture SpotsDamp surface due to improper drying or humidity. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 8,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "0 Skip to content Phone: +39-0536-802154 |centro.ceramico@centroceramico.itInstagramLinkedInYouTube Defects of traditional ceramic materials: diagnosis and solution Home/ Defects of traditional ceramic materials: diagnosis and solution Defects of traditional ceramic materials: diagnosis and solutionadmin2019-11-11T15:00:17+00:00 Defects of traditional ceramics: diagnosis and solution This package includes the study and analysis of defects, unevenness and effects visible on ceramic products at the end of the manufacturing cycle and/or after their use, such as “holes”, “cracks”, “dimples in the glaze”, “pinholes”, “black spots”, “side pitting”, “surface cracks”, “unglazed areas”, “black core”, stains, abrasions, detachment of material, corrosion, tarnishing, etc. Here are the different steps included in the package:[source: https://www.centroceramico.it/defects-ceramic-material-diagnosis-solution/?lang=en ]",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 9,
+      "file_path": "https://www.centroceramico.it/defects-ceramic-material-diagnosis-solution/?lang=en "
+    },
+    {
+      "content": "Rough or Uneven Texture: - **Probable Source:** Inconsistent grain size or distribution of raw materials, or issues during the pressing and shaping of the tile. - **Impact on Property:** Rough or uneven surfaces can be unattractive and may trap dirt and grime, making cleaning more challenging. - **Remedy:** Ensure the consistent quality of raw materials, optimize the pressing process, and maintain uniform pressure during shaping to achieve a smoother surface texture. Cratering: - **Probable Source:** During the glazing process, improper glaze application or issues with the composition of the glaze can cause small depressions or craters on the tile's surface. - **Impact on Property:** These craters can affect the aesthetics and, if deep, might accumulate dirt, making cleaning more difficult. - **Remedy:** Improve glaze application techniques and maintain strict control over glaze composition and application thickness. ",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 10,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "Dimple Problem The \"dimple problem\" in ceramic tiles refers to the presence of small, often visible, rounded indentations on the surface of the tile. Here are the potential causes, impacts, and remedies for this issue: Probable Source: o Particle Contamination: Dust, dirt, or other foreign particles that find their way onto the tile surface or within the clay material during the manufacturing process can cause dimples when they are fired into the tile. o Glaze Issues: Uneven glaze application or impurities within the glaze material can lead to dimples during the firing process.",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 11,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "By addressing these factors, DBL Ceramic can effectively reduce shade variation in their tiles, providing a more consistent and visually appealing product for their customers. Abnormal Surface \"Abnormal surface\" in ceramic tiles can encompass various defects, each with its own potential causes and implications. Here are a few types of abnormal surface issues and their possible explanations: Rippling or Waviness: - **Probable Source:** Uneven drying of the clay or inconsistent pressure during the pressing phase might cause this issue. It could also result from irregularities in the kiln firing process. - **Impact on Property:** Aesthetically, this defect can cause an uneven surface, impacting the visual appeal. Functionally, it might affect the tile's ability to fit flush with surrounding tiles during installation. - **Remedy:** Improve the clay drying process, ensure consistent pressure during tile formation, and maintain controlled firing conditions.",
+      "source_id": "Source_tile4",
+      "source_chunk_index": 12,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": " Tiles Common Defects 1 Home 2 Informations 3 Tiles Common Defects Tile Common Defects – Full List Observed During AQS Inspections We categorize tile defects into 5 practical types for better understanding by importers, site supervisors, and QC teams. A. Surface & Glazing Defects Defect Description PinholeSmall circular holes caused by air bubbles under the glaze. Glaze Skip / Patchy GlazeAreas where glaze is missing, leading to dullness. Uneven Gloss / L Value GapInconsistent polish or shine across the tile surface. Dull SurfaceLack of gloss in polished tiles — may be due to polishing or glaze issues. Bubbles / BlistersSmall glaze bubbles or raised spots formed during firing. Color Firing DefectDiscoloration due to over- or under-firing in the kiln. Digital Print BlurPoor resolution or offset pattern in digital printing. Design MisalignmentMisregistration of the print layers, especially in book-matched tiles. Shade VariationNoticeable color difference between tiles or batches. White Patches (Stains)Mineral deposits, salts, or glaze slip showing up as white patches. Inclusions / Black SpotsSmall black particles embedded into the surface. Oil Marks / Sticky SurfaceImproper cooling or packing can leave sticky residues. Moisture SpotsDamp surface due to improper drying or humidity. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": " Several classiﬁcation and packing lines are usually available. V isual or automated quality control for defects 15.2 The Production Process of Ceramic Tiles 375 is carried out. Depending on the number and importance of defects, tiles are usually classiﬁed into ﬁrst or second quality and discards. Due to small differences in the raw materials and the complex production process, not all tiles result in the same tonality and physical dimensions (calibers) so the tiles are actually assigned to different batches, each one containing the same quality, caliber and tonality . As a ﬁnal step, tiles are boxed and palletised for distribution. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 1,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Nowadays, there are many other optional production steps for ceramic tiles, for example, tiles might undergo one or more polishing steps to confer tiles with a stone or mirror ﬁnish. Other process include the rectiﬁcation of the edges of the tile, or cutting processes to produce special pieces like edges or reliefs. Additional detailed decorations and further ﬁring are also possible. As a result, the common production process depicted in Fig. 15.2 can only be regarded as a simpliﬁcation. In any case, the bulk of the ceramic tile production undergoes this main production process. In modern production plants, from start to ﬁnish, the product is rarely touched and very little human intervention is needed. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 2,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Image courtesy of Sacmi Image courtesy of Sacmi The Final Steps: Finishing to Packaging Once the tiles are fired, they undergo a series of finishing processes to enhance their appearance. 1 Polishing: Polishing involves grinding down the tile surface using abrasive heads. It starts with coarse grains and progresses to finer grains, similar to sanding wood. The result can range from a fully polished surface to a lappato (semi-polished) or brushed finish. 2 Rectification: Rectification involves cutting the tiles to ensure precise dimensions. This process allows for minimal grout lines during installation, creating a seamless, modern look that is highly desirable in contemporary design. 3 Sorting: Automated sorting machines use laser technology to categorize tiles based on shade and caliber (size), ensuring consistency within each batch. 4 Packaging: Packaging is the final step, during which the tiles are boxed and palletized to await shipment. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 3,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/"
+    },
+    {
+      "content": "How Do I Remove Adhesive Residue? Everyone has experienced difficulty in removing the adhesive residues stuck to floor tiles, wall tiles or any hard surface such as tiles, glass or wood. This sticky substance ruins the aesthetic appeal of your tiles and traps dirt. It complicates cleaning work. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 4,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "So, if you're wondering how do I remove adhesive residue effectively from different types of tiles, you must identify the adhesive type to choose the right method of removing the residues without damaging your tiles. Method 1: The Power of Oil-Based Solutions For adhesive residue on delicate tiles such as ceramic tile, glass tile, or marble effect tile, oil-based solutions are a great starting point. Vegetable oil, olive oil, or even baby oil effectively softens the adhesive. Oil makes the process easier to wipe away without scratching or damaging the tile surface. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 5,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "• Steps to Follow: 1 Rub a thin layer of oil on the adhesive residue. 2 Let it soak for a few minutes to allow the oil to penetrate and dissolve the adhesive. 3 Wipe it with a soft cloth or your fingers in circular motions. 4 Use a clean and dry cloth to remove the oil and remaining stains on the surface. This method is particularly effective for removing adhesive from delicate surfaces like tiles and wood that might be sensitive to harsher chemicals. It's a gentle yet effective solution for adhesive removal. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 6,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "FAQs 1. What is the easiest way to remove adhesive residue? Oil-based products like vegetable oil are the easiest way. Apply, let it sit, and gently rub off the residue. 2. How do you remove heavy-duty adhesive residue? Apply heat with a hairdryer, then gently scrape off the softened adhesive using a plastic scraper, followed by cleaning. 3. Can vinegar remove adhesive? Yes, vinegar can break down adhesive residue on tiles. Apply it, let it sit for a few minutes, then scrub and rinse. Share on Facebook Share on Twitter Share on Email Share on Pinterest Share on Tumblr Share on Telegram Share on WhatsApp How to tile a bathroom floorBack to NewsHow to Tile a Bathroom?Related Articles ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 7,
+      "file_path": "https://tiletopia.co.uk/blogs/news/how-do-i-remove-adhesive-residue?srsltid=AfmBOopj6me4UkeYkMzbCBqe7pa91jU5iIJ4S7tLeCh8WxqWphbfFWH5"
+    },
+    {
+      "content": "Common causes of adhesive failures Adhesive failures in tile flooring can result from various factors, including: 1 Inadequate surface preparation: A clean, smooth, and dry surface is crucial for effective adhesive bonding. Any dirt, dust, grease, or moisture can weaken the adhesive's grip, leading to tiles coming loose. 2 Incorrect adhesive selection: Using the wrong type of adhesive for your specific tile and substrate can cause bonding issues. Different adhesives are formulated for various materials and conditions, so selecting the appropriate one is vital. 3 Insufficient adhesive application: Applying too little adhesive can create voids beneath the tiles, reducing their adhesion. On the other hand, excessive adhesive can lead to uneven surfaces and weak spots. 4 Environmental factors: Temperature and humidity levels can affect the curing process of adhesives. Extreme conditions can cause the adhesive to set too quickly or too slowly, compromising its effectiveness. ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 8,
+      "file_path": "https://www.cwfloors.com/blog/articles/solving-adhesive-failures-in-tile-flooring"
+    },
+    {
+      "content": " Poor Mixing: Inadequate mixing of the tile adhesive can prevent it from reaching its full bonding potential. Uneven Adhesive Application: If the adhesive is applied unevenly, certain areas may have insufficient coverage, leading to poor adhesion. 2. Hollow-Sounding Tiles Another common issue is the occurrence of hollow-sounding tiles, which indicates voids under the tiles. This problem not only affects aesthetics but can also lead to further loosening or detachment of the tiles. The primary causes of this issue include: ",
+      "source_id": "Source_tile5",
+      "source_chunk_index": 9,
+      "file_path": "https://landu-china.com/en/common-problems-with-tile-adhesive-and-their-solutions/"
+    },
+    {
+      "content": "possible locations in the image and it is compared with the corresponding neighborhood of pixels. Certain operations test whether the element fits within the neighborhood and others test whether it hits or intersects the neighborhood. Table 1. Different types of Defects on Tiles Defect Description Blob Water drop spot on the surface Corner Break down in the corner of tile Crack Break in tile Edge Break in edge Glaze Blurred surface on the tile Pinhole Isolated black-white pinpoint spot Scratch Scratch on surface  ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 0,
+      "file_path": "https://arxiv.org/pdf/1607.06676"
+    },
+    {
+      "content": "C. Edge & Physical Damage Defects Defect Description Chipped EdgeBreak or notch on the side of the tile — caused during cutting or handling. Broken CornersFractured corners due to impact or poor packing. Cracked TileHairline or visible cracks across tile body. Pressed Marks / LinesPress tooling leaves unwanted lines or marks on the tile. Mold DefectsIrregular tile shape due to worn or dirty mold. Uncalibrated EdgeEdge not straight — leads to grout misalignment. D. Packing & Labeling Defects ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 1,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "Rough or Uneven Texture: - **Probable Source:** Inconsistent grain size or distribution of raw materials, or issues during the pressing and shaping of the tile. - **Impact on Property:** Rough or uneven surfaces can be unattractive and may trap dirt and grime, making cleaning more challenging. - **Remedy:** Ensure the consistent quality of raw materials, optimize the pressing process, and maintain uniform pressure during shaping to achieve a smoother surface texture. Cratering: - **Probable Source:** During the glazing process, improper glaze application or issues with the composition of the glaze can cause small depressions or craters on the tile's surface. - **Impact on Property:** These craters can affect the aesthetics and, if deep, might accumulate dirt, making cleaning more difficult. - **Remedy:** Improve glaze application techniques and maintain strict control over glaze composition and application thickness. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 2,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": " This process is usually carried out in either vertical or horizontal dryers (small kilns). After drying, the bisque is hardened to what resembles a chocolate bar and therefore, can withhold further processing operations. The bisque or ceramic tile is then decorated in the glazing lines. Some speciﬁc products are not glazed, however , this is not very common. In a glazing line, tiles mov e over con veyor belts and different applications, decorations and other operations are performed over them. The most basic operation is the application of the base glaze by simple bell or waterfall machines to advanced random rotary decorations, referred to as rotocolors. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 3,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": " Modern glazing equipment includes ‘printers’ which can basically print ceramic tiles with a large array of colours, patterns and decorations. Glazing lines can contain more than 50 different machines and can be up to 50 m long, sometimes even more. The different glaze applications determine the style, colour, surface and characteristics of the tile. Decorated bisques are stored in big boxes or ‘roller stillages’ that contain many roller planes where bisques are fed into, stored and extracted from at later stages. The big boxes are transported from the glazing lines to an intermediate storage area by automated guided vehicles (AGVs). The central stage of the production process is the single kiln ﬁring. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 4,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": " Ceramic kilns are large horizontal ovens with usually a single plane of rollers that move in one direction, advancing the glazed bisques through the different stages. Each type of clay and tile follows a different temperature curve inside the kiln. This temperature might be also affected by the physical size or format of the tile. A number of physical and chemical reactions undergo inside the kiln to form a hardened and ﬁnished tile. Most notably, the glaze fuses and hardens on top of the tile, conferring most kno wn and desired characteristics of ceramic tiles. After ﬁring, AGVs transport again the ﬁred tiles to an intermediate storage area. The ﬁnal stage is the classiﬁcation and packing of the ﬁred tiles. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 5,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Nowadays, there are many other optional production steps for ceramic tiles, for example, tiles might undergo one or more polishing steps to confer tiles with a stone or mirror ﬁnish. Other process include the rectiﬁcation of the edges of the tile, or cutting processes to produce special pieces like edges or reliefs. Additional detailed decorations and further ﬁring are also possible. As a result, the common production process depicted in Fig. 15.2 can only be regarded as a simpliﬁcation. In any case, the bulk of the ceramic tile production undergoes this main production process. In modern production plants, from start to ﬁnish, the product is rarely touched and very little human intervention is needed. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 6,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": " This results in the mass production of ceramic tiles at affordable prices. Given such high automatisation in the sector, companies ha ve heavily in vested in machinery to achieve maximum efﬁciency under this mass production conte xt. The most expensive machinery in the ceramic tile production is the kiln. Small tile producers typically have 2–3 kilns, whereas large producers might hav e several production plants with several kilns each. Therefore, in order to minimise the unit costs due to machine depreciation, machinery usage should be maximised. Again, it is typical for tile producers to operate the kilns in a 24/7 schedule and stopping them only once per year for maintenance. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 7,
+      "file_path": "https://www.researchgate.net/publication/300856811_A_Case_Study_Ceramic_Tile_Production"
+    },
+    {
+      "content": "Defect Description Box MismatchWrong box printed or packed with different design. Incorrect Shade StickerLabel does not match the shade inside. Missing Batch StickerEssential for traceability and laying — sticker not placed or misplaced. Loose PackingTiles move inside box — leads to edge or corner damage. No Paper/Foam SeparatorCauses tiles to rub against each other, damaging the glaze. Low-Quality BoxBox collapses or tears during handling. Improper PalletizationUnstable or loose pallet loading — risk during container movement. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 8,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "E. Functional/Performance-Related Defects Defect Description Low Breaking StrengthFails under standard force — indicates poor body formulation. Excessive Water AbsorptionEspecially in porcelain tiles — makes tile unsuitable for certain uses. Slippery SurfacePolished tile with no anti-slip rating used in wet areas. Abrasion FailureGlaze wears out quickly in floor application — poor abrasion class. Inconsistent Gloss (Polished Tiles)Shows “patch” effects under light — affects visual appeal. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 9,
+      "file_path": "https://www.asianqualityservices.com/tiles-common-defects"
+    },
+    {
+      "content": "PMA | IMPERIO Solution By using advanced production lines and strict quality control, we eliminate these defects at the manufacturing stage. Our durable, high-quality ceramics are the result of attention to detail. With PMA | IMPERIO products, you can be confident in both quality and durability. Glaze and Surface Defects After firing the body, glazing and surface finishing ensure both beauty and resistance. 1 Pinhole – Tiny needle-like holes in the glaze, usually caused by gases escaping from the body during firing. They ruin the appearance and can trap dirt over time. 2 Crazing – Fine, web-like cracks in the glaze, typically caused by mismatched thermal expansion rates between the glaze and body. These cracks may appear gradually, affecting both looks and durability. 3 Blistering – Small bubbles on the glaze surface caused by trapped gas during firing. 4 Color Variation – Slight or noticeable color changes can result from poor firing, glaze impurities, or incorrect kiln temperature control. 5 Glaze Running – If glaze viscosity or firing temperature isn’t controlled, glaze may flow unevenly, creating drops and streaks. 6 Crater – Small pits in the glaze caused by trapped air or foreign particles. 7 Abrasion – Occurs in low-quality tiles with poor wear resistance, leading to quick scratching and dulling of the surface. 8 Surface Unevenness (Waviness) – The glaze should be perfectly smooth. Uneven application or process issues can cause visible waves, especially noticeable under light reflection. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 10,
+      "file_path": "https://pmaimperio.com/en/blog/defects-of-tiles-and-ceramics-in-production-process "
+    },
+    {
+      "content": "Pitting or Pockmarks: - **Probable Source:** Trapped air bubbles or impurities within the clay can cause small pits or holes on the surface. Issues during the glazing process may also lead to pitting. - **Impact on Property:** These pits can be visually unappealing and may compromise the tile's surface integrity, making it more prone to staining or chipping. - **Remedy:** Stricter quality control during the raw material selection, processing, and glazing stages. Properly de-airing the clay and optimizing glaze application to reduce air bubble entrapment. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 11,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "Dimple Problem The \"dimple problem\" in ceramic tiles refers to the presence of small, often visible, rounded indentations on the surface of the tile. Here are the potential causes, impacts, and remedies for this issue: Probable Source: o Particle Contamination: Dust, dirt, or other foreign particles that find their way onto the tile surface or within the clay material during the manufacturing process can cause dimples when they are fired into the tile. o Glaze Issues: Uneven glaze application or impurities within the glaze material can lead to dimples during the firing process. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 12,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": "Remedy: o Improved Glaze Composition and Application: Use high-quality glaze materials and ensure proper mixing to minimize impurities. Implement consistent and adequate glaze application methods. o Optimized Firing Process: Ensure the firing temperature and duration are appropriate for the type of glaze used, allowing it to melt and flow smoothly over the tile's surface. o Quality Control Checks: Regularly inspect the glaze and the tiles before and after firing to identify any potential issues. Implement corrective measures during production to reduce the occurrence of pinholes. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 13,
+      "file_path": "https://www.scribd.com/document/686602113/Defect-Analysis-of-Ceramic-Tiles"
+    },
+    {
+      "content": " The characteristics of the working surface of glazed ceramic tiles have a considerable influence on the mechanical response to the various stresses coming from the environment. Since glazes are essentially a ceramic glass, characterised by rather low toughness values, falling objects and hard sharp particles easily cause surface cracking and material removal, by scratching and chipping [1], with a consequent irreversible degradation of mechanical characteristics and aesthetics. Since the glaze layer is the physical interface between the environment and the ceramic body, its characteristics also determine the service life of the tile. The resistance to surface abrasion of glazed ceramic tiles is usually determined according to the test method specified in the Standard ISO 10545-7 [2]. This test allows to classify the different products on the basis of an apparent visual variation in gloss, caused by a standardised erosive slurry under well established operative conditions. The method it is not able to recognise the wear mechanisms acted during the test and to detect the correlation existing between the characteristics of the material, the glaze, and its abrasion resistance. To clarify the wear response of working surface of glazed tiles, subjected to this test method, the worn areas were analysed using a 3-D optical profilometer. This non-destructive technique allowed to acquire quantitative 3-D images and to measure roughness, waviness and curvature of the worn surface areas. In this way, the mechanisms of material removal have been defined, stage by stage, and the evolution of the surface wear deterioration was explained. Experimental Procedures ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 14,
+      "file_path": "https://www.researchgate.net/profile/Emanuele-Serra/publication/250319733_Surface_Abrasion_of_Glazed_Ceramic_Tiles_A_New_Investigation_Technique/links/00b49525fcb045661c000000/Surface-Abrasion-of-Glazed-Ceramic-Tiles-A-New-Investigation-Technique.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ"
+    },
+    {
+      "content": "at the centre of the worn area. At its sides, near the beginning of the abraded area, hollows, characterised by lower roughness values, are present. To better clarify the mechanisms of abrasion that acted during the tests, SEM observations of the worn areas were conducted. After the tests at the lower numbers of revolutions, corresponding to Table 2. Vickers hardness values. HV [GPa] Indentation load [N] BT WT 1.96 5.78 6.02 4.91 5.38 5.79 9.81 5.65 5.80 19.62 5.39 5.44 a limited increase of surface roughness, the original smooth surfaces is still recognisable. But it is characterised by an homogeneous distribution of holes, material detachments and microscratches. These last ones can be mainly attributed to the impact with the harder particles of alumina, Fig. 3a. Only after 2100 revolutions, the first thin compact surface layer, of both the samples, is removed. The roughness increases, Fig. 1, and the abrasive charge progressively comes into contact with more porous material. The worn surfaces are characterised by the presence of fractured bulk material, uncovered porosity, but also by rather fine debris, compacted during the test, in form of a thin layer, Fig. 3b. This layer can be easily destroyed and can be again rebuilt in different areas, reaching so a sort of stationary condition. The worn surfaces after 6000 revolutions show a similar morphology than that observed after 12000 revolutions. A transient phase, strictly related to the removal of the first more compact surface layer, has been exceeded and a rather constant roughness has been reached for the cyclic building and destruction of layers of compacted debris. Due to the rotatory motion of the system, a centrifugal force acts on the erosive load. That causes a preferential compaction of the debris along the peripheric annulus, as confirmed by the SEM observations. This could also explain the values of roughness measured and their distribution. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 15,
+      "file_path": "https://www.researchgate.net/profile/Emanuele-Serra/publication/250319733_Surface_Abrasion_of_Glazed_Ceramic_Tiles_A_New_Investigation_Technique/links/00b49525fcb045661c000000/Surface-Abrasion-of-Glazed-Ceramic-Tiles-A-New-Investigation-Technique.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ"
+    },
+    {
+      "content": " [1]. L. Esposito, A. Tucci: American Ceramic Society Bulletin, Vol. 79 [5] (2000), p.59. [2]. International Standard ISO 10545-7, Determination of resistance to surface abrasion, Glazed tiles, First Edition 1996. [3]. S.J. Bull, D.S. Rickerby: A Handbook of Surface Engineering. (Ed. D.S. Rickerby and A. Matthews, Blackie, Glasgow United Kingdom 1991). Figure 2. Average roughness, Ra, measured in different positions of the diameter of the worn area of the samples BT and WT after 12000 revolutions.  ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 16,
+      "file_path": "https://www.researchgate.net/profile/Emanuele-Serra/publication/250319733_Surface_Abrasion_of_Glazed_Ceramic_Tiles_A_New_Investigation_Technique/links/00b49525fcb045661c000000/Surface-Abrasion-of-Glazed-Ceramic-Tiles-A-New-Investigation-Technique.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ"
+    },
+    {
+      "content": " For the present study, two commercial single-fired glazed ceramic tiles of different colour, blue and white, were chosen. They were respectively labelled BT and WT. The hardness of the glazed surface of the samples was measured by a hardness tester (Zwick, 3212, Germany), equipped with a Vickers indenter at the following indentation loads 1.95, 2.94, 4.90, 9.81 and 19.62N. At least ten valid impressions for each load were considered. The thickness of the glaze layers was measured via optical microscope observations of polished cross sections of suitable specimens. The comparison, between these values and the depth of the impressions [3], allowed to exclude the contribution of the ceramic body. The resistance to surface abrasion of the glazed ceramic tiles was determined according to the test method specified in the Standard ISO 10545-7 [2]. The test consists in the abrasion, by a standardised abrasive slurry contained in a metal holder, of the working surface of suitable specimens, 100x100mm in dimensions, cut from the glazed tiles to be tested. The erosive slurry, the composition of which is reported in Table 1, consists of steel balls of different diameters, aluminium oxide and distilled water. The system rotates with an eccentricity of 22.5mm for fixed numbers of revolutions 100, 150, 600, 750, 1500, 2100, 6000 and 12000, corresponding to different abrasion stages. At the end of each stage, the specimen is observed following standardised conditions. The determination of the abrasion class, based on the lowest number of revolutions, inducing an apparent visual variation in gloss, was also determined. The worn areas of all the specimens, were analysed using a 3-D optical profilometer, (New View 5000, Zygo Corporation, USA). The system is based on scanning white-light interferometry, a traditional technique in which a pattern of bright and dark lines (fringes) results from an optical path difference between a reference and a sample beam. Incoming light is split inside an interferometer, one beam going to an internal reference surface and the other to the sample. After reflection, the beams recombine inside the interferometer, undergoing constructive and destructive interference and producing the light and dark fringe pattern. In the used instrument, a precision vertical scanning transducer and camera together generate a three-dimensional interferogram of the surface, processed by computer and transformed by frequency domain analysis resulting in a quantitative 3-D image. This non-destructive technique allowed to measure roughness, waviness and curvature of the worn surface areas. The morphology of the differently worn areas was also observed with a scanning electron microscope, SEM (JEOL T330, Japan).  ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 17,
+      "file_path": "https://www.researchgate.net/profile/Emanuele-Serra/publication/250319733_Surface_Abrasion_of_Glazed_Ceramic_Tiles_A_New_Investigation_Technique/links/00b49525fcb045661c000000/Surface-Abrasion-of-Glazed-Ceramic-Tiles-A-New-Investigation-Technique.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ"
+    },
+    {
+      "content": "Advertisement Method 2 Method 2 of 2: Sanding out Tough Burn Marks 1 Download Article 1 Rub 220-grit sandpaper in light circular motions over the burn to remove it. Fold up a piece of 220-grit sandpaper into a small square in your hand. Hold it with your thumb and fingers. Sand the burn mark by applying light pressure with your index and middle fingers and moving it in small, gentle circular motions until the burn disappears.[6]X Research source If the sandpaper wears out, just flip it over or unfold it partially and use a fresh section of it. 2 Keep in mind that this method will actually remove some of the material from the surface of the tile. Use this after you have tried scrubbing out the burn mark with a less abrasive method. 3 Avoid using an electric sander because they are very abrasive and you will end up removing a lot of material from the tile. 1 2 Repeat the process with 400-grit sandpaper to smooth out the repaired area. Apply light pressure and rub the 400-grit sandpaper in small, gentle circular motions over the area you just sanded. Feel the sanded area with your fingertips as you go and try to blend the texture into the surrounding area.[7]X Research source Apply gentle pressure while you’re smoothing out the repaired area and blending it into the surrounding tile, so you don’t end up scratching the finish on the rest of the surrounding tiling. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 18,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/ "
+    },
+    {
+      "content": "Tip: If the repaired area still feels rough after sanding it with 400-grit sandpaper, you can try either switching to an even finer-grit sandpaper, such as 600-grit sandpaper, or wet-sanding the tile by covering it in water and continuing to sand it with the 400-grit sandpaper. 1 3 Apply tile polish to the sanded area using a clean, soft cloth. Put a dab of tile polish that is meant for the specific type of tile you have on the corner of a clean, soft cloth, such as a microfiber cloth. Wipe or blow away the dust from sanding, then rub the polish all over the sanded area using circular motions until you completely cover the whole area.[8]X Research source For example, if your tiles are ceramic, use a ceramic tile polish. If the tiles are natural stone, such as granite, use a polish formulated for granite. 2 You could also use a powdered tile or stone polish, as long as it is meant for the material that your tiles are made out of. 1 4 Buff the tile polish using a clean piece of the cloth until it is all absorbed. Change the position of the cloth in your hand to expose a clean section. Rub the polish into the tile using smooth, circular motions while applying firm pressure until it is all absorbed and there are no streaks or residues remaining.[9]X Research source If the repaired tile looks dull in comparison to the surrounding tiling, you can repeat the process to add another application of polish and blend it in more. 2 If you were unable to remove the burn mark with this method or are unhappy with how the tile looks after the process, you can always replace individual tiles or call a professional tile restoration company to fix it for you. ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 19,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/ "
+    },
+    {
+      "content": " Submit a Tip All tip submissions are carefully reviewed before being published Name Please provide your name and last initial Submit Thanks for submitting a tip for review! Advertisement Warnings 1 If you resort to sanding welding burn marks out of your tiles, be aware that you will be removing some of the original finish from the tiles. You might not be able to restore the sanded tiles to exactly how they were before. Thanks Helpful 0 Not Helpful 0 Advertisement Things You’ll Need ",
+      "source_id": "Source_tile6",
+      "source_chunk_index": 20,
+      "file_path": "https://www.creativematerialscorp.com/tile-talk/the-art-and-science-of-tile-manufacturing/ "
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "entities": [
+    {
+      "entity_name": "screw",
+      "entity_type": "mechanical component",
+      "description": "A screw is identified as a type of mechanical fastener, alongside bolts, nuts, washers, and pins. The threaded fastener is one of the most universal and widely used types of fasteners, produced in a wide variety of shapes and sizes, many of which are internationally standardised. Screws are used in threaded connections, which are designed to be releasable. When tightened, the connection creates a preload force that establishes a frictional connection between components, preventing them from sliding or working loose under load",
+      "source_id": "Source_screw1"
+    },
+    {
+      "entity_name": "good screw",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The metal screws in the images exhibit the expected characteristics of intact fasteners. Each screw features a conical or flat head with a clean recess for a screwdriver, a smooth cylindrical shaft with a helical ridge or thread, and a sharp, pointed tip for easy insertion into materials. The threading is uniform, with no signs of damage or deformation, and the head is symmetric without any visible defects. The overall finish of each screw is consistent, and while some images show minor variations in color or texture, these are attributed to normal manufacturing variances or lighting conditions rather than defects. All screws assessed conform to the normal pattern in design and functionality, indicating they are free from manufacturing anomalies or physical impairments.",
+      "source_id": "Source_screw1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "manipulated_front screw",
+      "entity_type": "physical defect",
+      "description": "<Tip Deformation>\n Description: The defect is characterized by manipulation or damage to the tip of the metal screw, resulting in an irregular or blunted shape that deviates from the expected sharp and uniform point. This deformation is typically located at the front end of the screw, affecting its ability to penetrate materials effectively. The defects can manifest as a crushed appearance, altered contour, or signs of wear that compromise the screw's initial engagement and holding power when driven into substrates. Such defects may arise from manufacturing issues or post-production handling, impacting the functionality and usability of the screws.\n\n",
+      "source_id": "Source_screw2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "scratch_head screw",
+      "entity_type": "physical defect",
+      "description": "<Surface Scratch>\n Description: The defect is characterized by visible scratches or linear marks on the surface of the screw head, which disrupt the otherwise smooth and uniform finish typical for a metal screw. The scratches appear in various locations, often described as being centered, top left, bottom center, or other positions on the screw head. These scratches may vary in depth and visibility, potentially affecting both the aesthetic quality of the screw and its functional integrity, particularly how a tool engages with the head during installation. The presence of these imperfections could be indicative of handling damage or manufacturing flaws.",
+      "source_id": "Source_screw3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "scratch_neck screw",
+      "entity_type": "physical defect",
+      "description": "<Scratch on Screw Neck>\n Description: The defect observed in this batch of images is characterized as a scratch located on the neck of the screw, just below the head. These scratches are linear abrasions or indentations that disrupt the otherwise smooth and uniform surface finish of the screw's neck. The defect is usually lighter in color compared to the surrounding metal, indicating a removal of material from the surface. The scratches are typically positioned centrally on the neck and may vary in length, but they consistently compromise the aesthetic and potentially the structural integrity of the screw. Such imperfections could affect the screw's performance and longevity, particularly when subjected to stress or environmental factors like corrosion.\n ",
+      "source_id": "Source_screw3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "thread_side screw",
+      "entity_type": "physical defect",
+      "description": "<Thread Deformation>\n Description: The defect is characterized by irregularities in the helical threads of the screw, primarily located along the shaft. The anomalies include deformations, interruptions, or malformations in the thread pattern, which can compromise the screw's ability to grip and fasten materials securely. These defects often manifest as inconsistencies in thread spacing, depth, and overall structure, indicating potential issues arising during the manufacturing process or subsequent damage. The areas affected are typically centralized along the thread, impacting the screw's performance and reliability in application.",
+      "source_id": "Source_screw4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "thread_top screw",
+      "entity_type": "physical defect",
+      "description": "<Thread Top Defect>\n Description: The defect is characterized by irregularities in the threading at the top portion of the screw, often referred to as the \"thread top.\" This includes deformations or damages that disrupt the uniform spiral pattern of the thread. The anomalies can manifest as flattened, malformed, or broken sections within the threads, which could significantly impact the screw's ability to engage properly and securely fasten materials. The affected areas may appear less defined and inconsistent when compared to the uniform threads on the rest of the screw, indicating potential issues that could compromise the functionality and integrity of the fastening component. This type of defect is likely a result of manufacturing flaws or handling damage, both of which could hinder the performance of the screw when in use.",
+      "source_id": "Source_screw4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "screw",
+      "tgt_id": "good screw",
+      "description": "Represents a fastener that conforms to international dimensional, mechanical, and surface standards. Serves as the control reference for evaluating quality and detecting deviations.",
+      "keywords": "dimensional accuracy, benchmark, mechanical properties, inspection compliance, defect-free",
+      "weight": 0.95,
+      "source_id": "Source_screw1"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "manipulated_front screw",
+      "description": "Involves severe head deformation or cracking originating from forming stresses or misuse, reducing load capacity and tool engagement integrity.",
+      "keywords": "head crack, shear burst, stripping, forging defect, overload, torque failure",
+      "weight": 0.88,
+      "source_id": "Source_screw2"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "scratch_head screw",
+      "description": "Surface discontinuities along the head or shank that result from forming defects or material seams, creating localized stress concentrators.",
+      "keywords": "surface scratch, shank defect, material seam, fatigue initiation, scoring",
+      "weight": 0.82,
+      "source_id": "Source_screw3"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "scratch_neck screw",
+      "description": "Abrasions located beneath the head in the neck transition zone, typically caused by tool misalignment or friction, which elevate localized stress during tightening.",
+      "keywords": "neck abrasion, under-head wear, torque stress, tool friction, fillet damage",
+      "weight": 0.8,
+      "source_id": "Source_screw3"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "thread_side screw",
+      "description": "Thread flank defects like laps and seams that impair fatigue resistance and dimensional fit. Originating during rolling, they are key QC rejection indicators.",
+      "keywords": "thread flank, lap, die misalignment, rolling defect, fatigue failure",
+      "weight": 0.86,
+      "source_id": "Source_screw4"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "thread_top screw",
+      "description": "Crest irregularities such as burrs or plating buildup alter major diameter tolerance and cause torque variation or stripping under load.",
+      "keywords": "thread crest, major diameter, burrs, plating buildup, torque instability",
+      "weight": 0.84,
+      "source_id": "Source_screw4"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "The threaded fastener is one of the most univer-sal and widely used types of fastener and is manufactured in a wide variety of shapes and sizes. Many types of design are standardised in-ternationally and available throughout the world. The classic threaded connection is formed by joining two or more components by means of form-fit or friction-fit fasteners. The tightening torque applied to the threaded fastener gener-ates a preload force that clamps the compo-nents together, thereby creating a frictional connection between all the contacting surfaces. With a properly designed threaded connection, the preload force is high enough to prevent any relative movement between the components due to the forces acting on the connection. Conversely, the preload force selected must not be so high as to cause the permissible stresses in the joined components to be exceeded during service. The proper design of a threaded connection for a given set of components is not only dependent on positioning and the selection of an appropriate assembly method, but also, most importantly, on the quality of the design of the fastener itself. A large number of different sizes, standards, materials and property classes are available. It remains the task of the user to make the correct choice to provide the preload force required in each case.",
+      "source_id": "Source_screw1",
+      "source_chunk_index": 0,
+      "file_path": "https://media.boellhoff.com/files/pdf1/the-manual-of-fastening-en-8100.pdf?"
+    },
+    {
+      "content": "Internal Threads • GO Maximum Material • GO Threaded Plug Gage • NOGO Minimum Material • NOGO Threaded Plug Gage • Minor Diameter • GO Cylindrical Plug Gage • NOGO Cylindrical Plug Gage When inspecting screws, bolt, and nut threads, do not stop with the GO/NOGO thread gage evaluation. Pass-ing a GO/NOGO threaded gage evaluation provides Inspecting bolt’s major diameter. absolutely no assurance of thread strength. Always inspect the major diameter of external threads and the minor diameter of internal threads assurance of poten-tial thread strength.",
+      "source_id": "Source_screw1",
+      "source_chunk_index": 1,
+      "file_path": "https://greensladeandcompany.com/wp-content/themes/greenslade-theme/pdf/articles/threads/Threads%20-%20Thread%20gages%20are%20not%20enough%20inspection.pdf?"
+    },
+    {
+      "content": "The threads of bolts, screws and nuts must be accurate in terms of their profile and dimensions. Only by meeting these conditions is it possible to ensure there are no problems with screwing the parts together, transferring forces as calculated, or applying a protective coating to the thread. Threads have five dimensions that determine whether they will form a good fit: • Major or nominal diameter is the outer diameter • Minor diameter is the smallest diameter at the root of the thread • Pitch diameter is the mean of the outer and minor diameters • Thread pitch is the distance between thread crests • Included angle is the angle formed at the thread crests Thread profile with no clearance",
+      "source_id": "Source_screw1",
+      "source_chunk_index": 2,
+      "file_path": "https://media.boellhoff.com/files/pdf1/the-manual-of-fastening-en-8100.pdf?"
+    },
+    {
+      "content": "This paper proposes a deep convolutional neural network (CNN) -based technique for the detection of micro defects on metal screw surfaces. The defects we consider include surface damage, surface dirt, and stripped screws. Images of metal screws with different types of defects are collected using industrial cameras, which are then employed to train the designed deep CNN. To enable efficient detection, we first locate screw surfaces in the pictures captured by the cameras, so that the images of screw surfaces can be extracted, which are then input to the CNN-based defect detector. Experiment results show that the proposed technique can achieve a detection accuracy of 98%; the average detection time per picture is 1.2 s. Comparisons with traditional machine vision techniques, e.g., template matching-based techniques, demonstrate the superiority of the proposed deep CNN-based one",
+      "source_id": "Source_screw2",
+      "source_chunk_index": 0,
+      "file_path": "https://pdfs.semanticscholar.org/bd0f/edbf660cc03d919f27fe3d23e008707d3c39.pdf?"
+    },
+    {
+      "content": "Shear Bursts Another type of common crack is a shear burst. These are easily distinguished from other cracks because of their characteristic 45° angle crack interface (See Figure 5). A shear burst is an open break located at an approximate 45° angle to the product axis which results from the material being incapable of withstanding the stresses or strain exerted upon it. Shear bursts pretty much occur only during cold working of These types of cracks are characterized by the following common traits: 1. They occur at the periphery of the head, flange, or collar. 2. They may also occur on the side of a hex shaped part (See Figure 6). 3. They will always exhibit the 45° angled fracture surface. 4. They may be open or closed, although they are mostly partially or totally open. The cause of a shear burst is fundamentally because the material is overloaded. Unfortunately, that opens the door to many root cause possibilities. It also means that cracks such as these cannot be conveniently attributed to material flaws. In fact, organizations experiencing shear bursts should look first at what they are doing before casting blame on the raw material. Some potential causes of shear bursts include: • Poor tool design, especially the first blow upset • Overworking the material prior to upsetting • Poor ductility due to “hard wire” or coarse grain size • Poor or insufficient lubrication • Rough wire surface • Cold drawing the wire with too steep an approach angle (The steeper the approach angle of the draw die, the more concentrated the cold work is on the surface of the wire.) • Surface defects and flaws Some measures that can be employed to prevent this type of failure include the following: • Often this is a tool design issue, so that reworking the upset to move less material or redistribute the material differently may solve the problem. • Reducing the draw percentage on the wire prior to heading. • Replace the wire if obvious surface defects or localized hard spots are detected. • Increase or redirect the lubrication. • Check the draw die to make sure the approach angle is correct for the material being drawn and repolish the die if there is any evidence of scoring the wire. Shear bursts are generally much more noticeable than many of the axial head cracks. Today, sorting them with high-definition cameras is effective. Folds A fold is a lap, folding over, or doubling of metal that occurs during the forming process because of mismatched features or localized buckling. Folds normally occur at the intersection of two features and are commonly evident on",
+      "source_id": "Source_screw2",
+      "source_chunk_index": 1,
+      "file_path": "https://pdfs.semanticscholar.org/bd0f/edbf660cc03d919f27fe3d23e008707d3c39.pdf?"
+    },
+    {
+      "content": "Some measures that might be employed to reduce or eliminate such problems include: 1. Use seam free wire. In many cases this would be considered an extreme fix because the cost to produce seam free wire is significant over normal wire processing methods. 2. Replace the wire. If a seam or defect in the wire is discovered, it is likely far more cost effective to replace the suspect wire with a new coil. Swapping or scrapping a coil of wire is less costly overall than running suspect parts and having to carefully screen them 100% after the fact. 3. Replace the tooling. If the tools that form the head are wearing out or intermittently producing cracked heads, a tool change or machine set-up adjustment might solve the problem. 4. Check the draw die, any rollers, and the cutter mechanism to make sure they are not scratching the wire. If they are or it is suspected that they might be, either polish the tool/component or replace it. Head cracks are reasonably easy to discriminate using simple visual inspection. However, with large production lots the prospect that thousands of parts might need visual inspection is quite onerous. Therefore, automated methods are preferred. As recently as ten years ago, head cracks, especially closed cracks, were hard to sort out on automated sorting equipment. Today, optical sorting technology has gotten so much better that head cracks, even the hard to identify ones, can be accurately recognized and culled from suspect lots with a high degree of precision.",
+      "source_id": "Source_screw2",
+      "source_chunk_index": 2,
+      "file_path": "https://pdfs.semanticscholar.org/bd0f/edbf660cc03d919f27fe3d23e008707d3c39.pdf?"
+    },
+    {
+      "content": "Head Cracks There are several distinct types of head cracks, each derived from different origins. One of the most common types are those that exhibit a crack or burst aligned with the axis of the part. A reasonable definition for this type of defect is an open break in the metal, aligned with the part axis, resulting from a flaw or surface discontinuity opening up during forming. These types of cracks can be characterized by several common traits: 1. They occur most frequently at the periphery of the head or axially along the body of the part. They may be a mostly closed crack where the non-conformity is obvious, but the depth is unknown (See Figure 1) or fully burst open clearly exposing the depth of the fissure (See Figure 2). 2. These cracks are almost always the result of a pre-existing axial defect in the raw material that generates a localized stress riser. During the forming process these f laws produce vulnerable locations to overload conditions on part areas exposed to high degrees of cold working, such as the head or a collar. Typical pre-existing flaws in the raw material include seams, laps, and scratches. Seams, which are an artifact of voids being “drawn out” during hot rolling of billets to rod,",
+      "source_id": "Source_screw3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.fastener-world.com/data/pdf_download/FW_211_E_278.pdf?"
+    },
+    {
+      "content": "Figure 1: “Closed” Head Cracks are usually the most extreme of these three conditions and, thus, will most likely result in the most extreme cracks. Cracks that are the result of a seam are usually obvious because it is easy to trace the path of the seam along the entire length of the part (See Figure 3). Although laps and scratches can display similar appearances along the length of the part, their extent is often less distinguishable than seams because they are not as deep. Seams and laps come exclusively from the mill that is hot rolling the rod. Scratches may be introduced at any time that the wire is sliding past an object that can scratch it. This could be at the mill that processes rod to wire or during manufacturing as the wire is fed into the cold header or in the cold header as the part interfaces with tooling. Figure 3: Example of Head Crack Due to Wire Seam (Note seam running through the threads.) In addition to the pre-existing wire defects there are other potential causes that will generate head cracks of this nature. Any interaction with tooling that generates high friction and galling or any close to the surface stress riser can trigger the formation of such a crack. A list of common causes for these types of cracks includes: • Wire Seams • Wire Laps • Scratches and Scoring (from tools) • Worn-out Tooling (especially the punches used to form the head) • Large Inclusions Near the Surface • Head Markings • A ny F law, Defe c t , o r Su r fa ce Discontinuity that Generates Localized Stress Concentrations",
+      "source_id": "Source_screw3",
+      "source_chunk_index": 1,
+      "file_path": "https://www.fastener-world.com/data/pdf_download/FW_211_E_278.pdf?"
+    },
+    {
+      "content": "The product standards also contain references to basic standards, which specify generally applicable basic requirements. These relate for example to threads, thread run-outs, thread ends, tolerances, force application, and accept-ance testing. Product standard DIN EN ISO 4014 specifies the dimensions for hexagon head bolts. The letter symbols are explained in the table below. From DIN EN ISO 4014 Maximum underhead fillet Reference line for dw Point shall be chamfered or for threads ≤ M 4 may be as-rolled (sheared end) (see ISO 4753) Standards 2 Key to dimensions b Thread length c Height of washer face d Major diameter (nominal diameter) of thread da Transition diameter ds Diameter of unthreaded shank dw Diameter of bearing surface e Width across corners k Height of head k’ Wrenching height l Nominal length lg Distance from last full form thread to bearing surface ls Length of unthreaded shank r Radius of curvature under head s Width across flats These symbols and designations for dimensioning are specified in DIN EN 20225. Standards Thread d M 12 M 16 M 20 M 24",
+      "source_id": "Source_screw3",
+      "source_chunk_index": 2,
+      "file_path": "https://www.fastener-world.com/data/pdf_download/FW_211_E_278.pdf?"
+    },
+    {
+      "content": "SCREW THREADS TERMINOLOGY 1.Screw thread: • A screw thread is the helical ridge produced by forming a continuous helical groove of uniform section on the external or internal surface of a cylinder or cone. • A screw thread formed on a cylinder is known as straight or parallel screw thread, while the one formed on a cone or frustum of a cone is known as tapered screw thread.",
+      "source_id": "Source_screw4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.slideshare.net/slideshow/10-screw-threads-pptpdf/266781813?"
+    },
+    {
+      "content": "2. Axis ofa thread: • This is imaginary line running longitudinally through the centre of the screw. 3. Crest of thread : • This is defined as the prominent part of thread, whether it be external or internal. 4. Root of thread : • This is defined as the bottom of the groove between the two flanks of the thread, whether it be external or internal. 5 6 6. 5. Flanks ofthread : • These are straight edges which connect the crest with the root. 6. Angle of thread (Included angle): • This is the angle between the flanks or slope of the thread measured in an axial plane. 7. Flank angle: • The flank angles are the angles between individual flanks and the perpendicular to the axis of the thread which passes through the vertex of the fundamental triangle. The flank angle of a symmetrical thread is commonly termed as the half-angle of thread.",
+      "source_id": "Source_screw4",
+      "source_chunk_index": 1,
+      "file_path": "https://www.slideshare.net/slideshow/10-screw-threads-pptpdf/266781813?"
+    },
+    {
+      "content": "7 7. 8. Pitch: • Thepitch of a thread is the distance, measured parallel to the axis of the thread, between corresponding points on adjacent thread forms in the same axial plane and on the same side of axis. • The basic pitch is equal to the lead divided by the number of thread starts. On drawings of thread sections, the pitch is shown as the distance from the centre of one thread crest to the centre of the next, and this representation is correct for single start as well as multi-start threads. 7 8 8. 9. Depth ofthread: • This is the distance from the crest or tip of the thread to the root of the thread measured perpendicular to the longitudinal axis or this could be defined as the distance measured radially between the major and minor cylinders. 10. Fundamental triangle: • This is found by extending the flanks and joining the points B and C. Thus in Figure, triangle ABC is referred to fundamental triangle. Here BC = pitch, and the vertical height of the triangle is called angular or theoretical depth. The point A is the apex of the triangle ABC. 8",
+      "source_id": "Source_screw4",
+      "source_chunk_index": 2,
+      "file_path": "https://www.slideshare.net/slideshow/10-screw-threads-pptpdf/266781813?"
+    },
+    {
+      "content": "9 9. 11. Truncation: • Athread is sometimes truncated at the crest or at the root or at both crest and root. • The truncation at the crest is the radial distance from the crest to the nearest apex of the fundamental triangle. • Similarly the truncation at the root is the radial distance from the root to the nearest apex. 9 10 10. 12. Addendum: • Foran external thread, this is defined as the radial distance between the major and pitch cylinders. For an internal thread this is the radial distance between the minor and pitch cylinders. 13. Dedendum: • This is the radial distance between the pitch and minor cylinder for external thread, and for internal thread, this is the radial distance between the major and pitch cylinders. 10",
+      "source_id": "Source_screw4",
+      "source_chunk_index": 3,
+      "file_path": "https://www.slideshare.net/slideshow/10-screw-threads-pptpdf/266781813?"
+    },
+    {
+      "content": "11 11. 14. Major diameter: •In case of a straight thread, this is the diameter of the major cylinder (imaginary cylinder, co-axial with the screw, which just touches the crests of an external thread or the root of an internal thread). • It is often referred to as the outside diameter, crest diameter or full diameter of external threads. 11 12 12. 15. Minor diameter: •In case of straight thread, this is the diameter of the minor cylinder (an imaginary cylinder, co-axial with the screw which just touches the roots of an external thread or the crest of an internal thread). • It is often referred to as root diameter or cone diameter of external threads. 12",
+      "source_id": "Source_screw4",
+      "source_chunk_index": 4,
+      "file_path": "https://www.slideshare.net/slideshow/10-screw-threads-pptpdf/266781813?"
+    }
+  ]
+}

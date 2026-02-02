@@ -1,0 +1,350 @@
+{
+  "entities": [
+    {
+      "entity_name": "cashew",
+      "entity_type": "food",
+      "description": "The cashew nut is a product of the cashew tree (Anacardium occidentale L.) and is central to the global processing industry, valued for its kernel, which is an edible, high-protein food source",
+      "source_id": "Source_cashew1"
+    },
+    {
+      "entity_name": "good cashew",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The cashew nuts presented in the images exhibit a consistent kidney shape, smooth surface, and light creamy or beige color typical for cashew nuts. There are no visible defects or anomalies such as cracks, discolorations, or deformities. The overall appearance aligns with what is expected for healthy cashew nuts. Minor variations in color and texture on the surface are natural characteristics and fall within the normal variation range for this type of organic product, indicative of their growth and processing. The dark textured backgrounds provide contrast that enhances the visibility of the nuts without affecting their perceived quality. All inspected cashew nuts reflect the expected pattern of a normal, undamaged product.",
+      "source_id": "Source_cashew2"
+    },
+    {
+      "entity_name": "burnt cashew",
+      "entity_type": "defect",
+      "description": "A burnt cashew is a kernel that shows areas of excessive browning or scorching, typically caused by over-roasting, high heat exposure, or processing irregularities. Burnt cashews often exhibit darkened spots, uneven coloration, and hardened texture. This defect affects visual quality, flavor, and overall product grading.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "corner or edge breakage cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel exhibiting chipped, cracked, or missing portions along its outer curved edge. This defect occurs when the cashew undergoes mechanical stress during shelling, cutting, drying, or handling. The broken section results in an uneven or jagged edge, reducing the visual quality of the nut while typically not affecting edibility.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "different colour spot cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel exhibiting one or more dark or differently coloured spots that contrast with the cashew’s natural cream or pale yellow surface. These spots may result from scorching, oxidation, fungal activity, or contamination during processing. The defect affects the visual grade and may indicate localized degradation.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "middle breakage cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel showing a broken, chipped, or missing section along its central curve. This defect typically occurs when the cashew experiences pressure or impact during shelling, drying, or handling, leading to a fracture in the mid-section. The break exposes the inner white portion of the nut and affects the uniform shape and visual quality.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "same colour spot cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel exhibiting small spots or patches that are very close to the natural colour of the nut. These spots may appear slightly lighter or slightly darker but remain within the same colour tone, making them subtle yet noticeable upon inspection. They are typically caused by minor processing marks, drying inconsistencies, or natural surface variations.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "small holes cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel showing one or more small holes or punctures on its surface. These holes may form due to insect activity before processing, mechanical piercing during shelling, or internal cavity exposure. The defect disrupts the smooth outer surface of the nut and may indicate weakened structural integrity or contamination risks.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "small scratches cashew",
+      "entity_type": "defect",
+      "description": "A cashew kernel exhibiting fine, shallow scratch marks on its surface. These scratches appear as thin lines or streaks caused by friction against machinery, handling equipment, or other kernels during processing. Although they do not break the structure of the nut, they affect the smooth, clean appearance of the cashew.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "stuck together cashew",
+      "entity_type": "defect",
+      "description": "Two or more cashew kernels that have adhered to each other, forming a joined or fused unit. This defect occurs when cashews come into contact while still moist, during drying, roasting, or packaging, causing them to stick together. It affects uniformity, grading quality, and proper separation of individual kernels.",
+      "source_id": "Source_cashew3"
+    },
+    {
+      "entity_name": "combined defect cashew",
+      "entity_type": "defect group",
+      "description": "A cashew classified under combined defects when it exhibits two or more defect types simultaneously. These may include structural breakages, colour defects, surface marks, burn spots, adhesion issues, or small holes. Combined defect cashews show multiple quality deviations resulting from various stages of processing, handling, or natural kernel variation.",
+      "source_id": "Source_cashew3"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "cashew",
+      "tgt_id": "good cashew",
+      "description": "The relationship between cashew and good quality is fundamental, as achieving good quality is the primary objective of the complex, multi-stage cashew processing procedure. Cashew kernel products cashew processing procedure. Cashew kernel products with high quality and consistency command better prices, ensure market access, and build brand reputation",
+      "keywords": "cashew, good",
+      "weight": 0.8,
+      "source_id": "Source_cashew2"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "burnt cashew",
+      "description": "Indicates that burnt cashew is a defect category occurring during roasting or heat-processing stages of cashew production, representing a quality deviation from normal cashew kernels.",
+      "keywords": "burnt, scorching, over-roasted, discoloration, defect, cashew quality",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "corner or edge breakage cashew",
+      "description": "Indicates that corner or edge breakage is one of the individual defect types contributing to the overall combined defect category for cashews.",
+      "keywords": "edge breakage, chipped edge, broken corner, mechanical damage, cashew defect",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "different colour spot cashew",
+      "description": "Indicates that the cashew contains dark or contrasting spots that disrupt its uniform appearance and are considered a quality defect.",
+      "keywords": "colour spot, dark spot, discoloration, visual defect, contaminated spot",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "middle breakage cashew",
+      "description": "Indicates that the cashew has sustained a fracture or chip in its central curved region, resulting in partial loss of kernel mass.",
+      "keywords": "middle breakage, central crack, broken cashew, mid-section damage",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "same colour spot cashew",
+      "description": "Indicates that the cashew has subtle spots or marks that match closely with the natural colour of the kernel and represent a minor visual defect.",
+      "keywords": "same colour spot, light spot, shade variation, minor surface defect, subtle spot",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "small holes cashew",
+      "description": "Indicates that the cashew contains small holes or puncture marks that alter its natural smooth surface and are considered a quality defect.",
+      "keywords": "small hole, puncture, insect damage, cavity exposure, surface defect",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "small scratches cashew",
+      "description": "Indicates that the cashew contains minor surface abrasions or scratch marks formed during mechanical handling or processing.",
+      "keywords": "scratch, abrasion, surface defect, fine lines, mechanical rubbing",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "stuck together cashew",
+      "description": "Indicates that the cashew exhibits adhesion with another kernel, causing multiple cashews to be joined into a single fused piece.",
+      "keywords": "stuck cashew, fused kernels, adhesion defect, joined cashews",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "combined defect cashew",
+      "description": "Indicates that the cashew contains multiple coexisting defects, classifying it under the combined defect category.",
+      "keywords": "multiple defects, mixed defect, compound defect, multi-issue cashew",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "burnt cashew",
+      "description": "Shows that burnt areas or darkened spots can be one component of a cashew categorized as a combined defect.",
+      "keywords": "burnt, scorched, darkened cashew",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "corner or edge breakage cashew",
+      "description": "Indicates that broken or chipped edges contribute to the combined defect classification.",
+      "keywords": "edge break, corner break, chip, fracture",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "different colour spot cashew",
+      "description": "Captures cases where dark or contrasting spots are one of the multiple defects present on the cashew.",
+      "keywords": "colour spot, dark spot, discoloration",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "middle breakage cashew",
+      "description": "Reflects that fractures in the middle curved section of the cashew may accompany other defects.",
+      "keywords": "middle break, central crack, broken kernel",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "same colour spot cashew",
+      "description": "Represents subtle same-colour spotting as one of the components of a multi-defect cashew.",
+      "keywords": "light spot, shade variation, subtle discoloration",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "small holes cashew",
+      "description": "Indicates that the presence of small punctures or holes forms part of a combined defect cashew.",
+      "keywords": "hole, puncture, cavity defect",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "small scratches cashew",
+      "description": "Shows that fine surface scratches can be one of the multiple defects found on the cashew.",
+      "keywords": "scratches, abrasion, surface marks",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    },
+    {
+      "src_id": "combined defect cashew",
+      "tgt_id": "stuck together cashew",
+      "description": "Indicates that adhesion between two or more cashews can occur alongside other quality defects.",
+      "keywords": "stuck cashew, adhesion, fused kernels",
+      "weight": 0.8,
+      "source_id": "Source_cashew3"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Cashew (Anacardium occidentale L.), a tropical tree crop, plays a vital role in global nut production. Originally native to Brazil, the cashew tree was introduced to India by the Portuguese in the 16th century to control coastal erosion. Today, it is a valuable cash crop and a source of high-protein, energy-dense cashew kernels, along with other by-products like cashew nut shell liquid (CNSL) and cashew apple.",
+      "source_id": "Source_cashew1",
+      "source_chunk_index": 0,
+      "file_path": "https://pmg.engineering/Article/212/cashew-processing-plant-design-and-technology/"
+    },
+    {
+      "content": "A unique feature of the cashew tree is its two-tiered value structure: the cashew apple and the cashew nut. Among these, the cashew apple is often used for local wines or beverages, while the cashew kernel is the part that brings significant commercial value. Each cashew nut consists of: 1 The cashew kernel, which is the edible portion with high export value. 2 The testa (inner skin), peeled after drying. 3 The shell layer containing CNSL, a high-value industrial oil used in producing resins, brake linings, and biochemicals.",
+      "source_id": "Source_cashew1",
+      "source_chunk_index": 1,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "Cashew processing is a multi-stage operation requiring high precision, aimed at transforming raw cashew nuts (RCN) into the high-value, edible product: the cashew kernel. Unlike almonds or hazelnuts, the cashew kernel is enclosed within a complex double-layered shell system, including a caustic CNSL-filled shell and a delicate honeycomb-like membrane called the testa.",
+      "source_id": "Source_cashew1",
+      "source_chunk_index": 2,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "The cashew processing process starts with properly drying and storing the raw cashew nuts to allow processing throughout the year. The subsequent steps involve various activities to remove the cashew kernel from its shell, resulting in the final edible consumer product—the cashew kernel. This complex process adds significant value to the raw cashew nut. The main objectives of cashew processing are to obtain the highest possible weight of kernels, minimize breakage, maintain the distinctive light ivory colour, preserve the natural taste (free from chlorophenol off-flavours), and ensure that kernels meet international food safety standards. Achieving these objectives leads to high-quality cashew kernels at competitive prices. Unlike almonds or hazelnuts, where the nut is enclosed in a hollow shell, the cashew kernel is cushioned within a hard shell by a honeycomb layer called the testa, making its processing more complex to obtain the characteristic half-moon-shaped, light ivory, naturally tasting kernel. The raw cashew nut processing involves three main stages: (a) Heat treatment – the application of direct heat, hot oil, or steam to prepare the nuts for shelling and facilitate shell removal; (b) Shelling and peeling – cracking or cutting the hard shell to expose the kernel with testa, followed by removal of the testa to obtain white kernels; care must be taken as the shells contain corrosive Cashew Nut Shell Liquid (CNSL) which can burn skin and damage machinery; and (c) Grading – the final stage, which involves classifying the kernels based on size, shape, and colour before packaging for sale and distribution.",
+      "source_id": "Source_cashew1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.comcashew.org/downloads/category/comcashew-training-materials?file=files%2Fupload_comcashew%2F2024%2FGuidebook+1_+The+Cashew+Processing+Process.pdf"
+    },
+    {
+      "content": "Grade Colour characteristic: First quality fancy: Uniformly white, pale ivory or light yellow. Second quality scorched: Yellow, light brown, light ivory, light ash-grey or deep ivory. Third quality special scorched: Deep yellow, brown, amber, and light to deep blue. They may be slightly shrivelled, immature, and light-brown speckled, blemished or otherwise discoloured. Fourth quality: They have the same colour characteristics as the first or second quality but have pitted spots. Lightly blemished wholes (LBW): Light brown, light ivory, light ash-grey or deep ivory. Kernels may show light brown speckles or blemishes on the surface, provided that not more than 40% of the kernels are affected. Lightly blemished pieces (LP): They may be light brown, light ivory, light ash-grey or deep ivory. Pieces may show light brown speckles or blemishes on the surface, provided that not more than 20% of the pieces are affected. Blemished wholes (BW): Deep yellow, brown, amber or light to deep blue. Kernels may be slightly shrivelled, immature or may be brown speckled or blemished on the surface, provided that not more than 60% of the kernels are affected. Dessert (D): Cashew kernels may be scraped, deeply scorched, shrivelled, deep-brown-speckled, black-speckled, blemished or otherwise discolored.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 0,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Cashew kernels are also classified according to colour which is white (W), scorched (S) or dessert (D). However, the colour classification also takes into account kernel sizes which are whole or broken pieces.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 1,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Depending on their shape, cashew kernels are classified into whole and broken grades which are butts, splits or pieces as follows: Whole (W): A cashew kernel is classified as whole if it has the characteristic kidney shape of a cashew kernel and not more than 1/8 of the kernel has been broken off. This grade is labelled as grade W. Butts (B): Butts are kernels which have been broken crosswise. They are less than 7/8 but not less than 3/8 of a whole kernel and the cotyledons are still naturally attached. This grade is labelled as grade B. Splits (S): Splits are kernels that have been split lengthwise and not more than 1/8 of its cotyledon has been broken off. This grade is labelled as S. Pieces: Pieces are smaller size broken kernels. They are categorized into the following grades in a decreasing size order: large pieces (LWP, SP, SPS, etc.); small pieces (SWP, SSP, DSP, etc.); chips (CHIPS, SSP1, SSP2, SSP3); baby bits (BB, G1, G2, G3); fine grains (X); fines (FE); mixed pieces (P1M, P2M, P3M).",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 2,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Size is an estimation of the amount of kernel per kilogramme or pound. Classification by size is compulsory for first quality/fancy cashew kernels but is optional for other whole grades. Size Designation Count per Kilo Pound: 180 (266 - 395 / 140-180), 210 (395 - 465 / 180-210), 240 (485 - 530 / 220-240), 320 (660 - 706 / 300-320), 450 (880 - 990 / 400-450). Cashew kernel sizes are classified in two broad categories: 1. Sizing of whole kernels includes ‘size count’ of 180, 210, 240, 320, 450 and less frequently 500. Note: the size count is the number of cashew kernels in 1 lb of cashew sample being considered. For the size grade 180, for example, the number of kernels should ideally be 180 with an allowable range of below 180. That for size grade 210 is 181 to 210. 2. Sizing of broken kernels includes large and small kernels. A combination of these sizing characteristics results in 27 conventional international grades. However, there can be more than 27 grades depending on the country of origin and market demand.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 3,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "The final stage focuses on standardization, quality enhancement, and commercial preparation. Kernel Grading: 1. By size: W180, W240, W320, W450, brokens, pieces. 2. By color: White, scorched, yellow, etc. 3. Optical Sorters (for automated lines): Enhance sorting speed and accuracy. Kernel Rehumidification: 1. Kernels are passed through conditioning chambers to restore moisture to approximately 5%. 2. Prevents brittleness and breakage during packaging. Vacuum Packaging: 1. Kernels are packed in food-grade pouches, vacuum-sealed, optionally flushed with nitrogen or CO₂ gas. 2. Aims to extend shelf life to 12-18 months while maintaining texture and flavor.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 4,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "Key Quality Objectives in Cashew Production: A good QC system ensures cashew kernel products are: 1. Intact, free from cracks, breakage, scratches. 2. Uniform ivory-white color, free from scorching or oil stains. 3. Natural flavor retained, free from smoky or chemical odors like chlorophenol. 4. Free from foreign matter (shell fragments, metal, insects, etc.). 5. Meets microbiological safety standards (free from E. coli, Salmonella, Aflatoxin B1). 6. Clearly traceable via batch codes, with complete production history.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 5,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "The cashew processing process starts with properly drying and storing the raw cashew nuts to allow processing throughout the year. The subsequent steps involve various activities to remove the cashew kernel from its shell, resulting in the final edible consumer product—the cashew kernel. This complex process adds significant value to the raw cashew nut. The main objectives of cashew processing are to obtain the highest possible weight of kernels, minimize breakage, maintain the distinctive light ivory colour, preserve the natural taste (free from chlorophenol off-flavours), and ensure that kernels meet international food safety standards. Achieving these objectives leads to high-quality cashew kernels at competitive prices. Unlike almonds or hazelnuts, where the nut is enclosed in a hollow shell, the cashew kernel is cushioned within a hard shell by a honeycomb layer called the testa, making its processing more complex to obtain the characteristic half-moon-shaped, light ivory, naturally tasting kernel. The raw cashew nut processing involves three main stages: (a) Heat treatment – the application of direct heat, hot oil, or steam to prepare the nuts for shelling and facilitate shell removal; (b) Shelling and peeling – cracking or cutting the hard shell to expose the kernel with testa, followed by removal of the testa to obtain white kernels; care must be taken as the shells contain corrosive Cashew Nut Shell Liquid (CNSL) which can burn skin and damage machinery; and (c) Grading – the final stage, which involves classifying the kernels based on size, shape, and colour before packaging for sale and distribution.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 6,
+      "file_path": "https://www.comcashew.org/downloads/category/comcashew-training-materials?file=files%2Fupload_comcashew%2F2024%2FGuidebook+1_+The+Cashew+Processing+Process.pdf"
+    },
+    {
+      "content": "After grading, the kernels are stored in containers according to grades and labelled for identification. The kernels are then conditioned for packing by maintaining moisture contents of 3.5%–4%, which is ideal for packaging. The maintenance of the ideal moisture content is achieved by either drying or humidification to reach the required moisture content. Low moisture levels result in breakages after.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 7,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "The cashew processing procedure is not merely mechanical shelling; it requires an integrated approach to: 1. Maximize kernel yield per ton of RCN. 2. Minimize rates of kernel breakage, scorching, and discoloration. 3. Maintain the kernel’s natural ivory-white color and characteristic flavor (free from chlorophenol contamination). 4. Ensure food safety compliance according to international standards. When executed effectively, this cashew processing procedure yields high-quality kernels, highly sought after in export markets, bringing both commercial value and brand reputation.",
+      "source_id": "Source_cashew2",
+      "source_chunk_index": 8,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "Grade Colour characteristic: First quality fancy: Uniformly white, pale ivory or light yellow. Second quality scorched: Yellow, light brown, light ivory, light ash-grey or deep ivory. Third quality special scorched: Deep yellow, brown, amber, and light to deep blue. They may be slightly shrivelled, immature, and light-brown speckled, blemished or otherwise discoloured. Fourth quality: They have the same colour characteristics as the first or second quality but have pitted spots. Lightly blemished wholes (LBW): Light brown, light ivory, light ash-grey or deep ivory. Kernels may show light brown speckles or blemishes on the surface, provided that not more than 40% of the kernels are affected. Lightly blemished pieces (LP): They may be light brown, light ivory, light ash-grey or deep ivory. Pieces may show light brown speckles or blemishes on the surface, provided that not more than 20% of the pieces are affected. Blemished wholes (BW): Deep yellow, brown, amber or light to deep blue. Kernels may be slightly shrivelled, immature or may be brown speckled or blemished on the surface, provided that not more than 60% of the kernels are affected. Dessert (D): Cashew kernels may be scraped, deeply scorched, shrivelled, deep-brown-speckled, black-speckled, blemished or otherwise discolored.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 0,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Cashew kernels are also classified according to colour which is white (W), scorched (S) or dessert (D). However, the colour classification also takes into account kernel sizes which are whole or broken pieces.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 1,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Depending on their shape, cashew kernels are classified into whole and broken grades which are butts, splits or pieces as follows: Whole (W): A cashew kernel is classified as whole if it has the characteristic kidney shape of a cashew kernel and not more than 1/8 of the kernel has been broken off. This grade is labelled as grade W. Butts (B): Butts are kernels which have been broken crosswise. They are less than 7/8 but not less than 3/8 of a whole kernel and the cotyledons are still naturally attached. This grade is labelled as grade B. Splits (S): Splits are kernels that have been split lengthwise and not more than 1/8 of its cotyledon has been broken off. This grade is labelled as S. Pieces: Pieces are smaller size broken kernels. They are categorized into the following grades in a decreasing size order: large pieces (LWP, SP, SPS, etc.); small pieces (SWP, SSP, DSP, etc.); chips (CHIPS, SSP1, SSP2, SSP3); baby bits (BB, G1, G2, G3); fine grains (X); fines (FE); mixed pieces (P1M, P2M, P3M).",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 2,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "The cashew processing process starts with properly drying and storing the raw cashew nuts to allow processing throughout the year. The subsequent steps involve various activities to remove the cashew kernel from its shell, resulting in the final edible consumer product—the cashew kernel. This complex process adds significant value to the raw cashew nut. The main objectives of cashew processing are to obtain the highest possible weight of kernels, minimize breakage, maintain the distinctive light ivory colour, preserve the natural taste (free from chlorophenol off-flavours), and ensure that kernels meet international food safety standards. Achieving these objectives leads to high-quality cashew kernels at competitive prices. Unlike almonds or hazelnuts, where the nut is enclosed in a hollow shell, the cashew kernel is cushioned within a hard shell by a honeycomb layer called the testa, making its processing more complex to obtain the characteristic half-moon-shaped, light ivory, naturally tasting kernel. The raw cashew nut processing involves three main stages: (a) Heat treatment – the application of direct heat, hot oil, or steam to prepare the nuts for shelling and facilitate shell removal; (b) Shelling and peeling – cracking or cutting the hard shell to expose the kernel with testa, followed by removal of the testa to obtain white kernels; care must be taken as the shells contain corrosive Cashew Nut Shell Liquid (CNSL) which can burn skin and damage machinery; and (c) Grading – the final stage, which involves classifying the kernels based on size, shape, and colour before packaging for sale and distribution.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 3,
+      "file_path": "https://www.comcashew.org/downloads/category/comcashew-training-materials?file=files%2Fupload_comcashew%2F2024%2FGuidebook+1_+The+Cashew+Processing+Process.pdf"
+    },
+    {
+      "content": "Key Quality Objectives in Cashew Production: A good QC system ensures cashew kernel products are: 1. Intact, free from cracks, breakage, scratches. 2. Uniform ivory-white color, free from scorching or oil stains. 3. Natural flavor retained, free from smoky or chemical odors like chlorophenol. 4. Free from foreign matter (shell fragments, metal, insects, etc.). 5. Meets microbiological safety standards (free from E. coli, Salmonella, Aflatoxin B1). 6. Clearly traceable via batch codes, with complete production history.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 4,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "Recommended Quality Control Procedure: 1. Raw Material (RCN) Inspection: Moisture <10%. Check for presence of mold and foreign matter. 2. In-Process Monitoring: Steaming pressure and time logs. Kernel breakage rate during shelling. Kernel moisture before/after drying. Loss rate during peeling. 3. Finished Kernel Inspection: Kernel grading (size, shape, color). Random sampling for Aflatoxin B1 testing. Microbiological testing (Salmonella, E. coli). Organoleptic testing (taste, odor). 4. Record Keeping and Traceability: Batch codes for each shipment. Processing dates, operational logs. QC checklists for each stage.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 5,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    },
+    {
+      "content": "Cashew moisture should be maintained at 5% or less, exposure to strong odors avoided, and storage conditions should protect them from insects and pests. It is prohibited to carry out chemical storage measures (e.g. gassing with methyl bromide) in mixed storage spaces. Wherever possible, storing both organic and conventional products together in the same warehouse should be avoided. In fact, methyl bromide should never be used to fumigate cashews, as it causes chemical reaction in the nuts that results in a terrible sour milk-like off-flavor. It would be useful to include a cautionary statement in the storage section warning against fumigation of cashew drupes or kernels with methyl bromide, under any circumstances.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 6,
+      "file_path": "https://www.cashews.org/cashew-industry/processing/"
+    },
+    {
+      "content": "After grading, the kernels are stored in containers according to grades and labelled for identification. The kernels are then conditioned for packing by maintaining moisture contents of 3.5%–4%, which is ideal for packaging. The maintenance of the ideal moisture content is achieved by either drying or humidification to reach the required moisture content. Low moisture levels result in breakages after.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 7,
+      "file_path": "https://crunchycashews.com/documents/Guide-Book-on-Crunchy-Cashew-Processing-Process.pdf"
+    },
+    {
+      "content": "Risk Category Potential Issues Mitigation Strategy Raw Material Damp, moldy RCN Sun-dry to <10%, reject defective lots Heat Treatment Over/under steaming, CNSL contamination Use temperature-controlled steamers, trained operators Shelling Kernel breakage, shelling knife accidents Use calibrated shelling machines, workplace safety training Peeling Surface damage, low yield Use air/roller peeling systems Food Safety Bacteria, pathogens, chemical residues Implement HACCP, periodic laboratory testing Labor Safety CNSL burns, smoke exposure Gloves, masks, enclosed CNSL handling systems Packaging Moisture leakage, insect infestation Vacuum sealers, food-grade multilayer packaging Environment CNSL waste, biomass ash CNSL recovery, biomass utilization systems.",
+      "source_id": "Source_cashew3",
+      "source_chunk_index": 8,
+      "file_path": "https://cashewmachinepro.com/cashew-processing-investment-guide/"
+    }
+  ]
+}

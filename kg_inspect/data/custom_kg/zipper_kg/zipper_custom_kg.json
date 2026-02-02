@@ -1,0 +1,818 @@
+{
+  "entities": [
+    {
+      "entity_name": "zipper",
+      "entity_type": "component",
+      "description": "A zipper is a fastening device used to temporarily join two edges of fabric or other flexible material. It consists of interlocking elements (teeth or coils) operated by a slider and supported by fabric tapes, widely used in garments, luggage, and industrial products.",
+      "source_id": "Source_zipper1"
+    },
+    {
+      "entity_name": "good zipper",
+      "entity_type": "quality_class",
+      "description": "The zipper exhibits a standard design with a series of interlocking metal teeth that are evenly spaced and aligned. The surrounding fabric consists of two strips made from a textured, woven material, likely black or a very dark hue. The overall texture of the fabric is consistent and uniform, showing no signs of tears, frays, or discolorations. \n Minor variations in the fabric texture, such as slight differences in weave density or small specks of dust or lint, are present but do not qualify as defects and are considered normal noise features. There are no visible signs of damage or anomalies in the zipper, and it operates smoothly without obstructions. Overall, the zipper and fabric display the expected features typical of a well-made product, indicating that both components are in good condition and free of defects.",
+      "source_id": "Source_zipper1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "broken_teeth zipper",
+      "entity_type": "defect",
+      "description": "The defect is characterized by one or more missing or damaged teeth within the zipper's sequence, which can inhibit both the functionality and appearance of the zipper. The affected area typically shows a visible gap where the teeth should interlock, resulting in a disruption of the otherwise uniform pattern of interlocking elements. This anomaly is often located at the center or near the top of the zipper track and is distinct from the intact teeth due to its irregularity in shape and gap in alignment. The presence of broken teeth not only affects the aesthetic but also compromises the smooth operation essential for the zipper's closing mechanism, making it less effective or completely non-functional.",
+      "source_id": "Source_zipper2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "split_teeth zipper",
+      "entity_type": "defect",
+      "description": "The \"split teeth\" defect in zippers is characterized by a visible separation or misalignment among the interlocking teeth, typically found at specific locations such as the top or bottom center of the zipper. This separation disrupts the otherwise uniform alignment necessary for proper functionality, resulting in gaps where the teeth should be interlocked. Commonly, the affected area will present a distinct discontinuity in the zipper's structure, which may impede the zipper's ability to close securely or move smoothly. In terms of visual features, it is marked by a noticeable gap in the line of teeth compared to the continuous pattern of unblemished sections. The defect may also appear as a missing tooth or damaged configuration that compromises the overall durability and usability of the zipper in various applications, such as garments or bags.",
+      "source_id": "Source_zipper3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "squeezed_teeth zipper",
+      "entity_type": "defect",
+      "description": "The defect manifests as teeth of the zipper that appear squeezed or compressed together, disrupting the otherwise uniform alignment and spacing of the zipper teeth. This irregularity can occur at various locations along the zipper, often concentrated in the central or top/bottom areas. Characteristics of the defect include noticeable distortion in the shape of the teeth, which appear pinched and may vary in spacing compared to the adjacent, properly aligned teeth. The presence of squeezed teeth could potentially hinder the functionality of the zipper, leading to difficulties in smooth opening and closing, or causing the zipper slider to get stuck during use. The affected area is identifiable by its misshapen and irregular appearance, contrasting with the uniform and symmetrical pattern of the healthy zipper teeth surrounding it.",
+      "source_id": "Source_zipper3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "fabric_border zipper",
+      "entity_type": "defect",
+      "description": "The defects identified in the batch all pertain to the fabric borders of the zippers, characterized by frayed edges and irregularities in texture. Notable features of the defects include visible loose or protruding threads, which disrupt the otherwise uniform appearance of the fabric. The fraying typically occurs at various locations such as the top, bottom, and sides of the fabric, indicating potential wear or damage. These irregularities not only affect the aesthetic quality of the zippers but may also compromise their structural integrity and functionality, suggesting a quality defect in the construction of the fabric borders.",
+      "source_id": "Source_zipper4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "fabric_interior zipper",
+      "entity_type": "defect",
+      "description": "The defect manifests as localized irregularities in the fabric texture adjacent to the zipper. These anomalies appear as small, dark spots or areas of disrupted weave and can include fraying, snagging, or discoloration. The affected regions contrast with the otherwise uniform texture of the surrounding fabric, suggesting signs of wear, potential manufacturing flaws, or material integrity issues. The inconsistency in texture and potential color changes indicate that these defects could affect both the aesthetic appeal and the structural integrity of the product.",
+      "source_id": "Source_zipper4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "rough zipper",
+      "entity_type": "defect",
+      "description": "The defect observed across the zippers is characterized by roughness and irregularities in the zipper teeth, which manifest as broken, damaged, or misaligned teeth. These defects primarily occur around the center to bottom center of the zipper, where the uniformity and continuity of the interlocking teeth are disrupted. The affected areas show signs of misshapen or absent segments, which hinder the smooth operation and functionality of the zipper. These imperfections could lead to difficulty in opening or closing the zipper, potentially causing it to snag or become stuck during use. Additionally, the contrast between the damaged teeth and the intact ones highlights the discrepancies, making it a notable quality concern.",
+      "source_id": "Source_zipper5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "combined zipper",
+      "entity_type": "defect_category",
+      "description": "Description: The examined zippers exhibit multiple defects that collectively affect their functionality and aesthetic integrity. Common issues include:\n - Broken or split teeth: Sections of the zipper teeth are either missing or misaligned, disrupting the normal interlocking pattern necessary for the zipper to function properly, often located at the center or bottom area of the zipper. \n - Fabric border fraying: Areas along the fabric edges reveal signs of wear, such as frayed or torn fabric, suggesting improper stitching or material degradation. This fraying can threaten the structural integrity of the zipper attachment to the surrounding garment or fabric.\n - Squeezed or misaligned teeth: Certain sections of the zipper have teeth that appear compressed or out of alignment, which can hinder the smooth operation of the zipper during usage.\n - Fabric interior anomalies: There are visible irregularities in the fabric interior, such as pulled threads or snags, which can further compromise both the appearance and function of the zipper.\n \n Overall, these defects indicate a need for quality control measures, as they could lead to failure during use or an unsatisfactory visual presentation.",
+      "source_id": "Source_zipper6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "zipper",
+      "tgt_id": "good zipper",
+      "description": "Indicates a zipper that operates smoothly, maintaining alignment and strength without visible or functional defects.",
+      "keywords": "quality, performance, durability, smooth_operation, reliability",
+      "weight": 1.0,
+      "source_id": "Source_zipper1"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "broken_teeth zipper",
+      "description": "Represents a critical structural defect where one or more zipper teeth are broken or missing, resulting in chain failure.",
+      "keywords": "missing_teeth, fracture, chain_break, defect, replacement_needed",
+      "weight": 0.9,
+      "source_id": "Source_zipper2"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "split_teeth zipper",
+      "description": "Represents a functional defect where teeth fail to interlock, leading to an open gap after zipping, compromising closure integrity.",
+      "keywords": "chain_separation, open_chain, interlock_failure, slider_issue",
+      "weight": 0.85,
+      "source_id": "Source_zipper3"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "squeezed_teeth zipper",
+      "description": "Represents a geometric deformation where teeth are compressed or misaligned, hindering smooth slider operation.",
+      "keywords": "compression, deformation, alignment_error, slider_blockage",
+      "weight": 0.8,
+      "source_id": "Source_zipper3"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "fabric_border zipper",
+      "description": "Represents a fabric tape defect where the border is frayed, uneven, or damaged due to poor cutting or friction.",
+      "keywords": "frayed_edge, tape_damage, border_defect, cutting_error, fraying",
+      "weight": 0.8,
+      "source_id": "Source_zipper4"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "fabric_interior zipper",
+      "description": "Represents a functional defect caused by loose fabric or thread trapped within the zipper chain, resulting in jamming.",
+      "keywords": "thread_intrusion, fabric_lump, slider_jam, inner_tape_defect",
+      "weight": 0.8,
+      "source_id": "Source_zipper4"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "rough zipper",
+      "description": "Represents a surface quality defect where teeth or tape areas are coarse or abraded, reducing smooth operation.",
+      "keywords": "abrasion, rough_surface, texture_defect, heat_damage",
+      "weight": 0.75,
+      "source_id": "Source_zipper5"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "combined zipper",
+      "description": "Represents the occurrence of multiple defect types within the same zipper system, indicating severe degradation or poor quality control.",
+      "keywords": "multiple_defects, complex_failure, combined_issue, assembly_error",
+      "weight": 0.9,
+      "source_id": "Source_zipper6"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "broken_teeth zipper",
+      "description": "Links combined defect scenarios that include broken or missing zipper teeth as a primary contributing factor to total failure.",
+      "keywords": "teeth_break, fracture, chain_defect, failure_combination",
+      "weight": 0.85,
+      "source_id": "Source_zipper2"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "split_teeth zipper",
+      "description": "Links combined defect conditions involving interlock failure where teeth separate under load, contributing to malfunction.",
+      "keywords": "split_chain, interlock_failure, open_zipper, combined_defect",
+      "weight": 0.8,
+      "source_id": "Source_zipper3"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "squeezed_teeth zipper",
+      "description": "Links combined defect patterns that include compressed or misaligned teeth, worsening the zipper’s operability.",
+      "keywords": "compression, deformation, combined_failure, mechanical_stress",
+      "weight": 0.75,
+      "source_id": "Source_zipper3"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "fabric_border zipper",
+      "description": "Links combined defect scenarios involving frayed or uneven tape edges that accompany mechanical or surface failures.",
+      "keywords": "frayed_tape, border_damage, edge_defect, combined_issue",
+      "weight": 0.8,
+      "source_id": "Source_zipper4"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "fabric_interior zipper",
+      "description": "Links combined failure modes where fabric intrusion or thread entrapment occurs along with other structural defects.",
+      "keywords": "fabric_lump, thread_jam, tape_intrusion, compound_failure",
+      "weight": 0.8,
+      "source_id": "Source_zipper4"
+    },
+    {
+      "src_id": "combined zipper",
+      "tgt_id": "rough zipper",
+      "description": "Links combined failure patterns involving rough surfaces that exacerbate friction or prevent smooth slider movement.",
+      "keywords": "abrasion, rough_surface, heat_damage, friction_issue",
+      "weight": 0.75,
+      "source_id": "Source_zipper5"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "0 Skip to content 0 Search Search Zipper: Types, Parts, Size, Manufacturing and Uses Accessories, Apparel / December 2, 2023 What is Zipper? A zipper, zip, fly, or zip fastener, formerly known as a clasp locker; is a popular device for temporarily joining two edges of fabric. It is used in clothing, luggage, and other bags, sporting goods, camping gear, and other daily-use items. The ‘zipper’ was introduced in 1893 at the Chicago World’s Fair then with the name of ‘Clasp Locker’. Initially, during the 1930s zippers were elements in children’s clothing for aiding them to dress themselves more easily. Zippers came into public interest in 1937 through the fashion designers in France who used them on men’s trousers.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 0,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "0 Skip to content Get A Quote Zipper Materials & Finishes Introduction Zippers are more than simple fasteners — they’re precision-engineered systems designed to perform across garments, bags, outdoor gear, and industrial equipment. Choosing the right zipper materials and finishes ensures long-term strength, flexibility, and corrosion resistance for your specific application. This guide breaks down the most common zipper materials and coatings, explaining how each affects performance, appearance, and environmental durability. For a closer look at how every zipper component works together, visit All About Your Zipper’s Moving Pieces.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 1,
+      "file_path": "https://lenzip.com/zipper-materials-finishes/"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 2,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Objectives of a Zipper: The main objectives of zippers are 1 To increase or decrease the extent of an opening to restrict or permit the passage of items. 2 To join or isolate two panels of a garment, as in front of a dress or skirt. 3 To detach or attach a detachable panel of the garment from another, as in the adaptation between trousers and shorts. 4 To decorate an item. Different Parts of a Zipper: The construction and different parts of a zipper are shown in Figure 1. Figure 1: Different parts of zipper",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 3,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "Where, 1 – Top tape extension 2 – Top stop 3 – Slider 5 – Tape 4 – Pull tab 6 – Chain width 7 – Bottom stop 8 – Bottom tape extension 9 – Single tape width 10 – Insertion pin 11 – Retainer box 12 – Reinforcement film The bulk of a zipper includes tens or hundreds of precisely shaped plastic or metal teeth which are attached to two pieces of fabric tape. These teeth could be either individual or fashioned from an endless coil, known as elements. The slider moves alongside the rows of teeth which have to be operated manually. The Y-shaped network inside the slider interlocks or separates the opposing rows of zipper teeth, based on the direction of the slider’s movement. In zipper construction, either chain zippers where two sets of interlocking teeth are used or coil zippers where coils are used which are attached to a band of fabric tape.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 4,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "Modern zipper testing follows ASTM D2061 tensile and fatigue standards to ensure durability and consistency across thousands of open-close cycles. These performance metrics form part of LenZip’s zipper testing standards, ensuring OEM-grade reliability from design to deployment. For a full component overview, see our Guide to Zipper Teeth, Sliders, and Their Parts. Why Zipper Teeth Fail to Close Most zipper failures can be traced to a few predictable causes: Slider Wear or Stretching Over time, tensile stress widens or deforms the slider. Once the compression between the upper and lower plates weakens, teeth glide through instead of locking together.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 5,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "0 Skip to content Get A Quote Zipper Teeth Not Closing? Causes, Fixes, and When It’s Time to Replace A zipper that won’t close properly can feel like a small inconvenience—until it stops a marine cover installation, delays a PPE delivery, or halts a production run. In industrial, outdoor, and OEM manufacturing, zipper failure isn’t cosmetic—it’s operational. When teeth refuse to close, performance, safety, and reliability are all at risk. At LenZip, a U.S.-owned zipper manufacturer with in-house engineering and testing, we’ve spent decades studying why zippers fail and how to prevent it. Whether you build marine covers, tactical packs, protective gear, or technical upholstery, understanding zipper mechanics helps you decide when a repair will hold—and when replacement is the smarter, long-term solution.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 6,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Build It Right, So It Lasts Longer Zippers fail not by chance but by physics—misalignment, contamination, or fatigue. The key to durability is precision engineering and preventive care. With decades of domestic manufacturing expertise, LenZip designs closures that endure harsh use, environmental stress, and mechanical repetition without failure. Don’t settle for temporary fixes. Request a quote from LenZip to source or design zippers engineered for long-term performance, tested for strength, corrosion, and fatigue—all built in the USA.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 7,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 8,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Corrosion Oxidation—especially in marine or industrial applications—causes metal fatigue and slider binding. LenZip’s corrosion-resistant finishes and ASTM B117 salt-spray testing help prevent this kind of degradation. For maintenance tips that prevent these issues, visit Zipper Maintenance & Care or read about Nylon vs. Polypropylene for Marine & More. How to Fix a Zipper That Doesn’t Close When a zipper fails in the field, a careful, step-by-step approach can often restore short-term function.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 9,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Zipper Finishes Zipper finishes enhance the appearance and corrosion resistance of metal zippers. Common finishes include: 1 Brass : A classic gold-like appearance, offering good corrosion resistance. 2 Nickel : A shiny silver finish, providing a sleek look. 3 Antique Brass : A weathered, vintage appearance. 4 Black Oxide : A matte black finish, offering a modern aesthetic. 5 Polished Finishes : Highly polished surfaces achieved by delicately shaving off the surface of standard metal zippers, available in various colors.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 10,
+      "file_path": "https://lenzip.com/zipper-materials-finishes/"
+    },
+    {
+      "content": "Conclusion Understanding the materials and finishes of zippers is crucial for selecting the appropriate zipper for your product. Each material and finish offers unique characteristics that can enhance the functionality and aesthetics of your design. For personalized assistance in choosing the right zipper for your application, reach out to the LenZip team today. You can also email info@lenzip.com or call 847-368-9000 to speak directly with an expert. Learn more about custom zipper solutions designed for your industry.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 11,
+      "file_path": "https://lenzip.com/zipper-materials-finishes/"
+    },
+    {
+      "content": "Zipper Materials 1 1. Metal ZippersDescription : Metal zippers feature teeth made from metals such as brass, aluminum, or nickel. The teeth are clamped onto the zipper tape at regular intervals. 2 Characteristics : Durable, strong, and often used for heavy-duty applications. Metal zippers can be more rigid and may not be suitable for curved applications. 3 Applications : Jeans, leather jackets, workwear, and heavy bags. 1 2. Coil (Nylon) ZippersDescription : Coil zippers have teeth made from a continuous coil of nylon or polyester monofilament sewn onto the zipper tape. 2 Characteristics : Flexible, lightweight, and smooth operation. Suitable for curved applications and available in various sizes and colors. 3 Applications : Garments, bags, tents, and outdoor gear. 1 3. Molded Plastic ZippersDescription : Molded plastic zippers have teeth made from plastic that are molded and fused directly onto the zipper tape. 2 Characteristics : Lightweight, resistant to corrosion, and available in various colors. Less durable than metal zippers but more flexible. 3 Applications : Children’s clothing, lightweight jackets, raincoats, and swimwear. 1 4. Invisible ZippersDescription : Invisible zippers are designed to be hidden within the seam of the garment, leaving only the zipper pull visible. 2 Characteristics : Lightweight and discreet, providing a seamless look. Typically made from coil zippers with the coil on the backside. 3 Applications : Formal dresses, skirts, blouses, and cushions. 1 5. Water-Resistant ZippersDescription : Water-resistant zippers are designed to prevent water from penetrating through the zipper. They often feature a coating or flap that covers the zipper when closed. 2 Characteristics : Provide superior water resistance, keeping the contents dry. Durable and designed to withstand challenging environmental conditions. 3 Applications : Raincoats, wetsuits, outdoor gear, and sportswear.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 12,
+      "file_path": "https://lenzip.com/zipper-materials-finishes/"
+    },
+    {
+      "content": "Preventing Future Failures A few best practices can extend zipper life dramatically: 1 Regular Cleaning: Rinse off salt, dirt, and debris with fresh water and mild detergent. 1 Lubrication: Apply an approved zipper lubricant to maintain low friction. 1 Proper Handling: Avoid bending or pulling off-axis; align tension along the chain. 1 Material Selection: Choose UV-stable and corrosion-resistant materials at design stage. Learn more at Zipper Maintenance & Care or explore finish options in Zipper Materials & Finishes.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 13,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "How can I prevent zippers from separating? Keep zippers clean, lubricated, and free from salt or dirt. Use UV- and corrosion-resistant materials for outdoor or marine products. Do. es LenZip make replacement zippers for industrial or marine use? Yes. LenZip manufactures heavy-duty replacement zippers for marine, industrial, outdoor, and PPE applications—built for high-stress environments. Bring closure to zipper problems by designing reliability from the start. Partner with LenZip to ensure your products stay secure, functional, and built to last.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 14,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "4. Innovative Zippers: Due to the specific performances of textile and clothing, requirement of specialty zippers are also necessary to meet the functional performance of the garments. As a result, innovations were made to produce novel types of zippers such as flame-resistant zippers, airtight and watertight zippers, chemical-resistant zippers, zippers having electrical conducive yarn, zipper tape printed with ink-jet, environmentally conscious zippers, etc. Manufacturing Process of Zippers: The process sequence of zipper manufacturing is shown in Figure 6.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 15,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "Avoid Yanking the Zipper One of the best ways to prevent zipper problems is to avoid yanking it. Instead, pull steadily and gently to guide the slider along the teeth. Sometimes, rubbing the edge of a candle along the zipper teeth will make it easier for the slider to glide along the teeth. Reduce Pressure on the Zipper Overstuffed bags or tight-fitting clothing can cause zippers to snag or break. To avoid this, try not to force the zipper closed if there’s too much resistance. If the zipper is under too much strain, it’s better to lighten the load or seek alterations (e.g., loosening a seam) to relieve the pressure.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 16,
+      "file_path": "https://static1.squarespace.com/"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 17,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "1 Do not force it: If you feel the zipper getting stuck and not moving smoothly, stop zipping before making it worse. If you are wearing the garment, remove it and examine the problem. 2 Carefully remove caught fabric: Gently pull away the caught fabric, not the zipper. Use needle-nose pliers or tweezers to get a better grip. Slowly ease the fabric from the zipper slider and gradually slide the zipper pull tab up or down for the final release. 3 Use petroleum jelly: Use a lubricant like petroleum jelly on the stuck teeth. Coat a cotton ball with a light layer and work the jelly into the teeth near the stoppage. 4 Lubricate with WD-40: WD-40 lubricant can help metal zippers move more smoothly. Spray the lubricant on a cotton swab and apply it carefully to prevent staining the garment's fabric. 5 Try the graphite pencil trick: Rub the teeth with the lead of a No. 2 pencil. The \"lead\" is graphite, which will help lubricate the metal teeth and allow the zipper slider to move more smoothly. You can also rub the zipper teeth with a bar of soap as another type of lubricant. 6 Realign the zipper teeth: If the zipper teeth look out of place, use your finger to smooth them back together. Before rezipping, check along the zipper to ensure the fabric is moved away from it and loose threads are removed.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 18,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org 3. If the Zipper Is Stuck: Use Tweezers First, check if any fabric or debris is caught in the zipper. If so, try removing the obstruction by hand. If it’s stuck, use tweezers to gently pull the blockage out while wiggling the slider to free it. If tweezers won’t loosen the blockage, try snipping the obstruction close to the teeth. Use a Pencil or Soap or a Candle If the zipper remains stuck, try lubricating the teeth with a pencil (graphite) or a small amount of soap or the edge of a candle. This can help the slider move more smoothly.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 19,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "4. If the zipper is hard to slide up and down Use a candle Rub wax from the end of a candle onto the zipper teeth to help the zipper glide more easily. 5. If the Zipper Won't Stay Up: Use Pliers If your metal-toothed zipper keeps falling down, it could mean the teeth are misaligned or worn. Use pliers to carefully realign any out-of-place teeth. If the teeth seem to be aligned properly, try this next trick. Use Clear Nail Polish Worn teeth on a metal or plastic zipper may lead to the zipper slider falling down. This can sometimes be helped by applying clear nail polish. This will thicken the teeth slightly, helping them to grip better. Apply one or two coats, allowing each to dry fully before testing the zipper.",
+      "source_id": "Source_zipper1",
+      "source_chunk_index": 20,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 0,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "6. If the Zipper Is Missing Teeth: Temporary Fixes Missing zipper teeth can be a real pain, and often require the zipper to be replaced. However, for a quick fix if the missing teeth are near the bottom of the zipper, try using a paper clip or safety pin secured above the missing teeth to hold the zipper together until you can get it repaired. If the missing teeth are at the top end, and there is a risk that the slider will fall off the zipper, prevent the slider from coming up that far by adding a safety pin on one side of the zipper, just below the missing teeth.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 1,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Tip Always make sure the zipper pull or slider is above the spot you are making repairs. Credit: The Spruce / Georgia Lloyd Want more cleaning and organizing tips? Sign up for our free daily newsletter for the latest hacks, expert advice, and more! How to Unstick a Zipper Credit: The Spruce / Georgia Lloyd Zippers can get stuck for several reasons. They may snag on some fabric, one of the teeth can get out of line, or the metal or plastic teeth break or become worn. Whatever method you try, hold the zipper slider by the body closer to the zipper teeth rather than the little pull tab. This will provide more power and control.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Call an Expert If you've tried very at-home trick and none of the remedies work, it may be worth calling or visiting your local tailor shop to handle the zipper problem for you especially if you want to keep the piece of clothing. How to Fix a Zipper That Won’t Stay Up Credit: The Spruce / Georgia Lloyd A zipper that won't stay up can be caused by misaligned zipper teeth or worn-down metal from too much use. 1 Misaligned teeth: Use pliers to gently bend back teeth that have dislodged or fallen out of alignment. 2 Worn teeth: Repetitive use can essentially wear down the metal of the teeth. Paint clear nail polish on the teeth tracks to thicken or build up the teeth again. Allow it to dry before trying the zipper. Add a second or third layer of nail polish if the zipper slips down. 3 Damaged lower teeth (only): If the damaged teeth are close to the bottom of the zipper, move the pull slider above the damaged area and sew a new stop just above the damaged teeth. This option will shorten the length of the zipper, but it should stay up.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 3,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Around my house, things can stay in the mending pile for quite some time! In this case, my flannel jeans had to wait about 2 years before they were rescued! I pulled them out a couple times, to ask sewing advise from my MIL, or to try and come up with a solution. They always ended up back in the mending pile. Last week, as the weather turned very cold, I decided it was time. I was either going to fix those jeans, or send them on their way, and I was really hoping for the prior! What was the trouble? Two teeth had broken off the zipper, about an inch up from the bottom and the zipper pull was now only attached on one side.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 4,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "0 Skip to content Get A Quote Zipper Teeth Not Closing? Causes, Fixes, and When It’s Time to Replace A zipper that won’t close properly can feel like a small inconvenience—until it stops a marine cover installation, delays a PPE delivery, or halts a production run. In industrial, outdoor, and OEM manufacturing, zipper failure isn’t cosmetic—it’s operational. When teeth refuse to close, performance, safety, and reliability are all at risk. At LenZip, a U.S.-owned zipper manufacturer with in-house engineering and testing, we’ve spent decades studying why zippers fail and how to prevent it. Whether you build marine covers, tactical packs, protective gear, or technical upholstery, understanding zipper mechanics helps you decide when a repair will hold—and when replacement is the smarter, long-term solution.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 5,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 6,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 7,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Credit: The Spruce / Georgia Lloyd Position the Zipper Pull 1 Use the pull tab to move the zipper slider to the bottom of the zipper, below the last \"teeth.\" 2 Note where any broken, missing, or damaged teeth are located, and mark the area with a pin or needle. 3 Reshape the zipper pull with pliers if it is distorted. Credit: The Spruce / Georgia Lloyd Realign the Zipper Teeth Realign the zipper teeth so that they all mesh smoothly. If you can't get them to mesh, mark the spot where a problem aligns the teeth. The teeth may be damaged at that spot and will never align properly.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 8,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Tip If the teeth in a zipper get permanently bent or break off, you will likely need to replace the zipper. What You'll Need Equipment / Tools 1 Small needle-nosed pliers 2 Sewing needle (for plastic zipper stop) Materials 1 Thread (for plastic zipper stop) Instructions Credit: The Spruce / Georgia Lloyd How to Fix a Broken or Separated Zipper Use Pliers to Remove the Stopper 1 Use pliers to get a good grip on the bottom stop (the little band of metal or plastic at the bottom of the zipper teeth) and pry it off. If you don't have pliers, you can pry it loose with a flathead screwdriver or the end of a kitchen knife. 2 Save the stopper if it's metal because it may be able to be put back on.Plastic stoppers are less likely to be reused and fixed.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 9,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "1 Inspect the Slider – Look for widening, corrosion, or rough edges. 1 Re-compress the Slider – Using narrow pliers, gently tighten both sides to restore proper tension. 1 Clean the Chain and Slider Path – Wash with mild soap and water or apply zipper lubricant to remove debris. 1 Realign Teeth – Ensure the chain isn’t twisted and that both sides of the tape sit evenly. 1 Test Under Light Load – Open and close several times to confirm smooth engagement. If the teeth still fail to mesh or the slider won’t maintain pressure, it’s time to replace the assembly. For field-critical applications such as industrial covers, PPE, or marine enclosures, replacement is safer than repeated adjustments.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 10,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "All this practice taught me the easiest way to push the teeth back together is to lay the zipper on a hard surface. The arm of a sewing machine proved very useful in this case. That is, in fact, the only thing my sewing machine ended up being useful for in this project. Stack the two sides of the zipper on top of each other, overlapping almost too much, and then press them firmly together with your thumb. Step 4 – Sew heavily to create new bottom stopper To ensure I didn’t loose all the effort I just put in “zipping” the two sides together, I went ahead and created my new bottom stopper just above the broken teeth. Yes, this means loosing an inch of space in the zipper. This is unfortunate since woman’s jeans don’t really leave much room to spare, but to me it was a much better alternative than giving up on this lovely new pair of jeans.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 11,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "My first attempt was to do this with my sewing machine. I’m not a big fan of hand sewing! I can cross stitch all day long, but somehow hand sewing is a different story. But this mending project required a good old fashioned needle and thread and some strong stitching. Back and forth repeatedly and making sure to stitch wide enough that the zipper wouldn’t just slide over the top of it. (If I was to do this project again, I would go ahead and purchase a new bottom stop like pictured and linked above.)",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 12,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "Credit: The Spruce / Georgia Lloyd Reposition the Zipper Pull Move the slider up to the top of the zipper, closing as many teeth as possible. Credit: The Spruce / Georgia Lloyd Reattach or Sew New Zipper Stop 1 Reattach the metal zipper stop with pliers. 2 If the zipper stop was plastic or you can't reattach the metal zipper stop, use thread to make a new stop. Thread the sewing needle with heavy thread and tie a knot at the end. If you don't have heavy (buttonhole) thread, double the thread and then tie the knot at the end of both strands. 3 Pull the thread up through the zipper, leaving the knot on the back side of the zipper (on the inside of the garment). Make six or seven stitches across the bottom of the zipper where you removed the old stop to create a new stop made out of the thread.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 13,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Be careful not to damage the fabric around the stopper. If you pull at it or work too roughly with the pliers, you can weaken the fabric and loosen the weave which would make your zipper floppy. Step 3 – Putting the teeth back together With the zipper pull and the stopper removed, I proceeded to carefully piece the teeth of the zipper back together manually. This was also a frustrating task because, try as I might, keeping these together while playing around with the fabric, stitching, etc., was nearly impossible. I had to re-do this step at least 5 times before my repair job was completed. (Yes, my thumbs were feeling very sore and irritated by the time I was done.)",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 14,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "4. If the zipper is hard to slide up and down Use a candle Rub wax from the end of a candle onto the zipper teeth to help the zipper glide more easily. 5. If the Zipper Won't Stay Up: Use Pliers If your metal-toothed zipper keeps falling down, it could mean the teeth are misaligned or worn. Use pliers to carefully realign any out-of-place teeth. If the teeth seem to be aligned properly, try this next trick. Use Clear Nail Polish Worn teeth on a metal or plastic zipper may lead to the zipper slider falling down. This can sometimes be helped by applying clear nail polish. This will thicken the teeth slightly, helping them to grip better. Apply one or two coats, allowing each to dry fully before testing the zipper.",
+      "source_id": "Source_zipper2",
+      "source_chunk_index": 15,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Modern zipper testing follows ASTM D2061 tensile and fatigue standards to ensure durability and consistency across thousands of open-close cycles. These performance metrics form part of LenZip’s zipper testing standards, ensuring OEM-grade reliability from design to deployment. For a full component overview, see our Guide to Zipper Teeth, Sliders, and Their Parts. Why Zipper Teeth Fail to Close Most zipper failures can be traced to a few predictable causes: Slider Wear or Stretching Over time, tensile stress widens or deforms the slider. Once the compression between the upper and lower plates weakens, teeth glide through instead of locking together.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 0,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "0 Skip to content Get A Quote Zipper Teeth Not Closing? Causes, Fixes, and When It’s Time to Replace A zipper that won’t close properly can feel like a small inconvenience—until it stops a marine cover installation, delays a PPE delivery, or halts a production run. In industrial, outdoor, and OEM manufacturing, zipper failure isn’t cosmetic—it’s operational. When teeth refuse to close, performance, safety, and reliability are all at risk. At LenZip, a U.S.-owned zipper manufacturer with in-house engineering and testing, we’ve spent decades studying why zippers fail and how to prevent it. Whether you build marine covers, tactical packs, protective gear, or technical upholstery, understanding zipper mechanics helps you decide when a repair will hold—and when replacement is the smarter, long-term solution.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 1,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 2,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "1. If the Zipper Separates After Fastening: Use pliers to tighten a loose slider If your zipper seems to work but then separates after being zipped up, and the garment is not overly tight and pulling at the zipper, the problem is likely with the slider. Over time, the slider can become loose, making it less effective at keeping the zipper teeth locked together. Here’s a quick fix: While the slider is still attached to the garment, use a pair of pliers to gently pinch the top and bottom plates of the slider together. This will help restore its original tightness. Be careful not to apply too much pressure, to avoid breaking the slider or making it too tight. (See REI photo)",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 3,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 4,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "FAQ: Zipper Teeth Not Closing Why won’t my zipper teeth close properly? Wear, contamination, or slider fatigue prevents teeth from locking. Cleaning and re-compression may help, but replacement is often necessary for lasting results. Can I fix a broken zipper without replacing it? Minor alignment issues can be corrected by adjusting the slider and cleaning debris. However, damage to the tape or chain requires a new zipper. What causes a zipper slider to stop working? Metal fatigue, corrosion, or over-tension can deform the slider, reducing its ability to pull teeth together.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 5,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Corrosion Oxidation—especially in marine or industrial applications—causes metal fatigue and slider binding. LenZip’s corrosion-resistant finishes and ASTM B117 salt-spray testing help prevent this kind of degradation. For maintenance tips that prevent these issues, visit Zipper Maintenance & Care or read about Nylon vs. Polypropylene for Marine & More. How to Fix a Zipper That Doesn’t Close When a zipper fails in the field, a careful, step-by-step approach can often restore short-term function.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 6,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "How hard is it to replace a broken zipper? It's not hard to replace a broken zipper if you're handy with a sewing machine, but for a valuable item it's better to go to a tailor for a relatively inexpensive fix. Is it possible to fix a zipper that splits open? Yes, you can fix a zipper that splits open. Take a pair of pliers and tighten the zipper sealer, then look for any bent or misaligned teeth and use the pliers to adjust them. Explore more: 1 Cleaning & Organizing 2 Laundry 3 Laundry How-Tos More from The Spruce",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 7,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "FAQ What is the easiest way to fix a broken zipper? Most times, when a zip starts to break, it's because continued use widens the gap or hole the teeth go through. The easiest way to tighten this gap is to use pliers to gently squeeze the top plate and bottom plate of the zipper closer together. Be careful not to crush the slider. How do you put a zipper back on track? Take off the item to put the zipper back on track. Do not force the zipper, but gently move the zipper up and down on the track. Try WD-40 to lubricate it, or if it doesn't move, stick a sharp pin tip into the track where it's stuck to get it to move. Once back on track, use WD-40 to get it moving easily.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 8,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "1 Inspect the Slider – Look for widening, corrosion, or rough edges. 1 Re-compress the Slider – Using narrow pliers, gently tighten both sides to restore proper tension. 1 Clean the Chain and Slider Path – Wash with mild soap and water or apply zipper lubricant to remove debris. 1 Realign Teeth – Ensure the chain isn’t twisted and that both sides of the tape sit evenly. 1 Test Under Light Load – Open and close several times to confirm smooth engagement. If the teeth still fail to mesh or the slider won’t maintain pressure, it’s time to replace the assembly. For field-critical applications such as industrial covers, PPE, or marine enclosures, replacement is safer than repeated adjustments.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 9,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "1 Do not force it: If you feel the zipper getting stuck and not moving smoothly, stop zipping before making it worse. If you are wearing the garment, remove it and examine the problem. 2 Carefully remove caught fabric: Gently pull away the caught fabric, not the zipper. Use needle-nose pliers or tweezers to get a better grip. Slowly ease the fabric from the zipper slider and gradually slide the zipper pull tab up or down for the final release. 3 Use petroleum jelly: Use a lubricant like petroleum jelly on the stuck teeth. Coat a cotton ball with a light layer and work the jelly into the teeth near the stoppage. 4 Lubricate with WD-40: WD-40 lubricant can help metal zippers move more smoothly. Spray the lubricant on a cotton swab and apply it carefully to prevent staining the garment's fabric. 5 Try the graphite pencil trick: Rub the teeth with the lead of a No. 2 pencil. The \"lead\" is graphite, which will help lubricate the metal teeth and allow the zipper slider to move more smoothly. You can also rub the zipper teeth with a bar of soap as another type of lubricant. 6 Realign the zipper teeth: If the zipper teeth look out of place, use your finger to smooth them back together. Before rezipping, check along the zipper to ensure the fabric is moved away from it and loose threads are removed.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 10,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Call an Expert If you've tried very at-home trick and none of the remedies work, it may be worth calling or visiting your local tailor shop to handle the zipper problem for you especially if you want to keep the piece of clothing. How to Fix a Zipper That Won’t Stay Up Credit: The Spruce / Georgia Lloyd A zipper that won't stay up can be caused by misaligned zipper teeth or worn-down metal from too much use. 1 Misaligned teeth: Use pliers to gently bend back teeth that have dislodged or fallen out of alignment. 2 Worn teeth: Repetitive use can essentially wear down the metal of the teeth. Paint clear nail polish on the teeth tracks to thicken or build up the teeth again. Allow it to dry before trying the zipper. Add a second or third layer of nail polish if the zipper slips down. 3 Damaged lower teeth (only): If the damaged teeth are close to the bottom of the zipper, move the pull slider above the damaged area and sew a new stop just above the damaged teeth. This option will shorten the length of the zipper, but it should stay up.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 11,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "4. If the zipper is hard to slide up and down Use a candle Rub wax from the end of a candle onto the zipper teeth to help the zipper glide more easily. 5. If the Zipper Won't Stay Up: Use Pliers If your metal-toothed zipper keeps falling down, it could mean the teeth are misaligned or worn. Use pliers to carefully realign any out-of-place teeth. If the teeth seem to be aligned properly, try this next trick. Use Clear Nail Polish Worn teeth on a metal or plastic zipper may lead to the zipper slider falling down. This can sometimes be helped by applying clear nail polish. This will thicken the teeth slightly, helping them to grip better. Apply one or two coats, allowing each to dry fully before testing the zipper.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 12,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Credit: The Spruce / Georgia Lloyd Position the Zipper Pull 1 Use the pull tab to move the zipper slider to the bottom of the zipper, below the last \"teeth.\" 2 Note where any broken, missing, or damaged teeth are located, and mark the area with a pin or needle. 3 Reshape the zipper pull with pliers if it is distorted. Credit: The Spruce / Georgia Lloyd Realign the Zipper Teeth Realign the zipper teeth so that they all mesh smoothly. If you can't get them to mesh, mark the spot where a problem aligns the teeth. The teeth may be damaged at that spot and will never align properly.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 13,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Preventing Future Failures A few best practices can extend zipper life dramatically: 1 Regular Cleaning: Rinse off salt, dirt, and debris with fresh water and mild detergent. 1 Lubrication: Apply an approved zipper lubricant to maintain low friction. 1 Proper Handling: Avoid bending or pulling off-axis; align tension along the chain. 1 Material Selection: Choose UV-stable and corrosion-resistant materials at design stage. Learn more at Zipper Maintenance & Care or explore finish options in Zipper Materials & Finishes.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 14,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org 3. If the Zipper Is Stuck: Use Tweezers First, check if any fabric or debris is caught in the zipper. If so, try removing the obstruction by hand. If it’s stuck, use tweezers to gently pull the blockage out while wiggling the slider to free it. If tweezers won’t loosen the blockage, try snipping the obstruction close to the teeth. Use a Pencil or Soap or a Candle If the zipper remains stuck, try lubricating the teeth with a pencil (graphite) or a small amount of soap or the edge of a candle. This can help the slider move more smoothly.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 15,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "This guide includes some simple and effective methods to repair some common zipper problems. If these don’t work, replacing the zipper may be the best or, indeed, only option. Where can I buy a new zipper? It is best to take the garment with you to the fabric or notions store when purchasing a replacement. Or, if that isn’t possible remove the old zipper and take it with you. Types of zippers There are many colours, lengths and types of zippers. Some zippers are plastic and others are metal. Do you need a zipper that can separate? This type is often used on sweaters that open in the front. Do you need a 2-way separable zipper? These are often used on longer length coats so they can be zipped up and then partially opened from the bottom and the top.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 16,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 17,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Where, 1 – Top tape extension 2 – Top stop 3 – Slider 5 – Tape 4 – Pull tab 6 – Chain width 7 – Bottom stop 8 – Bottom tape extension 9 – Single tape width 10 – Insertion pin 11 – Retainer box 12 – Reinforcement film The bulk of a zipper includes tens or hundreds of precisely shaped plastic or metal teeth which are attached to two pieces of fabric tape. These teeth could be either individual or fashioned from an endless coil, known as elements. The slider moves alongside the rows of teeth which have to be operated manually. The Y-shaped network inside the slider interlocks or separates the opposing rows of zipper teeth, based on the direction of the slider’s movement. In zipper construction, either chain zippers where two sets of interlocking teeth are used or coil zippers where coils are used which are attached to a band of fabric tape.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 18,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "Tip Always make sure the zipper pull or slider is above the spot you are making repairs. Credit: The Spruce / Georgia Lloyd Want more cleaning and organizing tips? Sign up for our free daily newsletter for the latest hacks, expert advice, and more! How to Unstick a Zipper Credit: The Spruce / Georgia Lloyd Zippers can get stuck for several reasons. They may snag on some fabric, one of the teeth can get out of line, or the metal or plastic teeth break or become worn. Whatever method you try, hold the zipper slider by the body closer to the zipper teeth rather than the little pull tab. This will provide more power and control.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 19,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Tip If the teeth in a zipper get permanently bent or break off, you will likely need to replace the zipper. What You'll Need Equipment / Tools 1 Small needle-nosed pliers 2 Sewing needle (for plastic zipper stop) Materials 1 Thread (for plastic zipper stop) Instructions Credit: The Spruce / Georgia Lloyd How to Fix a Broken or Separated Zipper Use Pliers to Remove the Stopper 1 Use pliers to get a good grip on the bottom stop (the little band of metal or plastic at the bottom of the zipper teeth) and pry it off. If you don't have pliers, you can pry it loose with a flathead screwdriver or the end of a kitchen knife. 2 Save the stopper if it's metal because it may be able to be put back on.Plastic stoppers are less likely to be reused and fixed.",
+      "source_id": "Source_zipper3",
+      "source_chunk_index": 20,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "The Parts of a Zipper Slider The slider is the piece that closes the teeth of the zipper by moving up and down the chain. Different types of sliders exist depending on the type of zipper. Pull-Tab The pull-tab is the most important element of the slider. It allows you to use the zipper and helps you pull the slider across the teeth. Pro Tip: Additional parts of the slider include the body and throats as well as the crown, which is typically visible. Tape The tape is the fabric on which the zipper sits. In most cases, the fabric is polyester, though manufacturers may use other materials.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 0,
+      "file_path": "Important Zipper Terminology You Should Know - FixnZip"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 1,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 2,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org As Fabric Repair Cafe menders we’ve compiled this guide to assist novices in their mending tasks. There are many ways to approach each repair. If you find another way works beAer for you use that. Zipper Problems: tips and repairs Torn Fabric on Zipper Sometimes the fabric part of a zipper will tear. For example, a coat that is frequently zipped and unzipped might have a tear near the bottom of one or both sides of the zipper teeth. Although a person might add some zig-zag stitches by hand to draw the edges of the tear together, this can compromise the zipper’s ability to zip up and down. For a long-lasting repair, the zipper should be replaced.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 3,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Be careful not to damage the fabric around the stopper. If you pull at it or work too roughly with the pliers, you can weaken the fabric and loosen the weave which would make your zipper floppy. Step 3 – Putting the teeth back together With the zipper pull and the stopper removed, I proceeded to carefully piece the teeth of the zipper back together manually. This was also a frustrating task because, try as I might, keeping these together while playing around with the fabric, stitching, etc., was nearly impossible. I had to re-do this step at least 5 times before my repair job was completed. (Yes, my thumbs were feeling very sore and irritated by the time I was done.)",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 4,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "1 Home 2 Products 3 News 4 Services 5 Contact Us 1 EN 2 VN 3 CN Why Zipper is Wavy, Uneven, or Buckled Zippers After Sewing Home » News » Why Zipper is Wavy, Uneven, or Buckled Zippers After Sewing Why Zipper is Wavy, Uneven, or Buckled Zippers After Sewing 19/06/2025 Hoshima Int2025-08-04T16:08:09+07:00 In the garment industry, uneven, buckled, or wavy zipper after sewing are common issues—especially in high-precision products such as jackets, dresses, and sportswear. These problems negatively affect product aesthetics and quality, leading to higher costs due to rework or defects.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 5,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "3. Uneven Stitching or Improper Sewing Technique Distortion can also arise from the sewing process itself. Inconsistent thread tension, excessive pulling on the zipper or fabric, and using unsuitable presser feet can all result in raised, skewed, or puckered zippers. Using a presser foot specifically designed for zipper insertion, combined with careful control of sewing speed and manual tension, significantly improves alignment and reduces distortion. Training operators on consistent techniques is equally important in maintaining product quality.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 6,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "5. Inappropriate Heat Pressing After Sewing Even after careful sewing, one of the main reason cause wavy zipper after sewing is improper heat pressing can ruin a zipper’s structure. Applying high heat directly on the zipper—particularly while the fabric is stretched—may cause the zipper to shrink or warp. The pressing process should be adjusted based on the type of zipper and fabric. Avoid pressing directly on the zipper by using a protective cloth or pressing from the underside. Lower heat settings and steam control also help maintain the zipper’s integrity.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 7,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 8,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Teeth Teeth are molded plastic or metal that links together to fasten items together. Some are individually sewn into the tape while others are made as a unit. Stops At the bottom and top of the tape, you’ll find a tiny piece of plastic or metal that prevents the slider from falling off the chain. These are top and bottom stops. Extensions The pieces of fabric at the top and bottom of the zipper are known as edges or extensions. They help when sewing in a zipper. Heat-Seal Patch A heat-seal patch is used to reinforce the tape. It’s a piece of laminated material at the bottom of separating zippers. It protects the bottom edge or extension.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 9,
+      "file_path": "Important Zipper Terminology You Should Know - FixnZip"
+    },
+    {
+      "content": " Fixing a broken zipper can save your favorite garments and accessories with simple solutions. By using a few basic tools and a bit of patience, you can repair a zipper that has come off track or separated on one side. To realign a zipper, gently move the slider up and down the track, and use WD-40 to help it glide smoothly. If it remains stuck, carefully insert a pin or needle into the track to encourage movement. The following methods will guide you in unsticking a zipper on various items like jackets, jeans, or bags.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 10,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Tip Always make sure the zipper pull or slider is above the spot you are making repairs. Credit: The Spruce / Georgia Lloyd Want more cleaning and organizing tips? Sign up for our free daily newsletter for the latest hacks, expert advice, and more! How to Unstick a Zipper Credit: The Spruce / Georgia Lloyd Zippers can get stuck for several reasons. They may snag on some fabric, one of the teeth can get out of line, or the metal or plastic teeth break or become worn. Whatever method you try, hold the zipper slider by the body closer to the zipper teeth rather than the little pull tab. This will provide more power and control.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 11,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "1 Do not force it: If you feel the zipper getting stuck and not moving smoothly, stop zipping before making it worse. If you are wearing the garment, remove it and examine the problem. 2 Carefully remove caught fabric: Gently pull away the caught fabric, not the zipper. Use needle-nose pliers or tweezers to get a better grip. Slowly ease the fabric from the zipper slider and gradually slide the zipper pull tab up or down for the final release. 3 Use petroleum jelly: Use a lubricant like petroleum jelly on the stuck teeth. Coat a cotton ball with a light layer and work the jelly into the teeth near the stoppage. 4 Lubricate with WD-40: WD-40 lubricant can help metal zippers move more smoothly. Spray the lubricant on a cotton swab and apply it carefully to prevent staining the garment's fabric. 5 Try the graphite pencil trick: Rub the teeth with the lead of a No. 2 pencil. The \"lead\" is graphite, which will help lubricate the metal teeth and allow the zipper slider to move more smoothly. You can also rub the zipper teeth with a bar of soap as another type of lubricant. 6 Realign the zipper teeth: If the zipper teeth look out of place, use your finger to smooth them back together. Before rezipping, check along the zipper to ensure the fabric is moved away from it and loose threads are removed.",
+      "source_id": "Source_zipper4",
+      "source_chunk_index": 12,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 0,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Preventing Future Failures A few best practices can extend zipper life dramatically: 1 Regular Cleaning: Rinse off salt, dirt, and debris with fresh water and mild detergent. 1 Lubrication: Apply an approved zipper lubricant to maintain low friction. 1 Proper Handling: Avoid bending or pulling off-axis; align tension along the chain. 1 Material Selection: Choose UV-stable and corrosion-resistant materials at design stage. Learn more at Zipper Maintenance & Care or explore finish options in Zipper Materials & Finishes.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 1,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "How can I prevent zippers from separating? Keep zippers clean, lubricated, and free from salt or dirt. Use UV- and corrosion-resistant materials for outdoor or marine products. Do. es LenZip make replacement zippers for industrial or marine use? Yes. LenZip manufactures heavy-duty replacement zippers for marine, industrial, outdoor, and PPE applications—built for high-stress environments. Bring closure to zipper problems by designing reliability from the start. Partner with LenZip to ensure your products stay secure, functional, and built to last.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 2,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Call an Expert If you've tried very at-home trick and none of the remedies work, it may be worth calling or visiting your local tailor shop to handle the zipper problem for you especially if you want to keep the piece of clothing. How to Fix a Zipper That Won’t Stay Up Credit: The Spruce / Georgia Lloyd A zipper that won't stay up can be caused by misaligned zipper teeth or worn-down metal from too much use. 1 Misaligned teeth: Use pliers to gently bend back teeth that have dislodged or fallen out of alignment. 2 Worn teeth: Repetitive use can essentially wear down the metal of the teeth. Paint clear nail polish on the teeth tracks to thicken or build up the teeth again. Allow it to dry before trying the zipper. Add a second or third layer of nail polish if the zipper slips down. 3 Damaged lower teeth (only): If the damaged teeth are close to the bottom of the zipper, move the pull slider above the damaged area and sew a new stop just above the damaged teeth. This option will shorten the length of the zipper, but it should stay up.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 3,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Corrosion Oxidation—especially in marine or industrial applications—causes metal fatigue and slider binding. LenZip’s corrosion-resistant finishes and ASTM B117 salt-spray testing help prevent this kind of degradation. For maintenance tips that prevent these issues, visit Zipper Maintenance & Care or read about Nylon vs. Polypropylene for Marine & More. How to Fix a Zipper That Doesn’t Close When a zipper fails in the field, a careful, step-by-step approach can often restore short-term function.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 4,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "5. Inappropriate Heat Pressing After Sewing Even after careful sewing, one of the main reason cause wavy zipper after sewing is improper heat pressing can ruin a zipper’s structure. Applying high heat directly on the zipper—particularly while the fabric is stretched—may cause the zipper to shrink or warp. The pressing process should be adjusted based on the type of zipper and fabric. Avoid pressing directly on the zipper by using a protective cloth or pressing from the underside. Lower heat settings and steam control also help maintain the zipper’s integrity.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 5,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "So, what causes these zipper issues? And how can manufacturers effectively and permanently fix wavy zippers? In this article, Hoshima outlines the 5 most common causes and presents the most reliable solution: zipper pre-expansion using a zipper heat press machine. 1. Zippers Were Not Pre-Expanded Before Sewing Zippers—particularly those with plastic or polyester cores—are sensitive to temperature and humidity. Without pre-expansion, they can shrink or warp when exposed to heat during later processing, resulting in buckled seams or a distorted zipper line. This issue is common in high-temperature environments like pressing or curing rooms.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 6,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "To avoid this, manufacturers should use a zipper pre-expansion machine (also known as a zipper heat press). This machine stabilizes the length and shape of the zipper before sewing, preventing shrinkage and ensuring the zipper stays flat and straight in the finished garment. Solution:Use a zipper pre-expansion machine (zipper heat treatment machine) to flatten and stabilize the zipper before sewing. This crucial step prevents shrinkage and deformation, ensuring the zipper remains straight after being sewn.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 7,
+      "file_path": "https://hoshima-int.com/why-zipper-wavy-after-sewing.html"
+    },
+    {
+      "content": "Tip If the teeth in a zipper get permanently bent or break off, you will likely need to replace the zipper. What You'll Need Equipment / Tools 1 Small needle-nosed pliers 2 Sewing needle (for plastic zipper stop) Materials 1 Thread (for plastic zipper stop) Instructions Credit: The Spruce / Georgia Lloyd How to Fix a Broken or Separated Zipper Use Pliers to Remove the Stopper 1 Use pliers to get a good grip on the bottom stop (the little band of metal or plastic at the bottom of the zipper teeth) and pry it off. If you don't have pliers, you can pry it loose with a flathead screwdriver or the end of a kitchen knife. 2 Save the stopper if it's metal because it may be able to be put back on.Plastic stoppers are less likely to be reused and fixed.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 8,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 9,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "1 Do not force it: If you feel the zipper getting stuck and not moving smoothly, stop zipping before making it worse. If you are wearing the garment, remove it and examine the problem. 2 Carefully remove caught fabric: Gently pull away the caught fabric, not the zipper. Use needle-nose pliers or tweezers to get a better grip. Slowly ease the fabric from the zipper slider and gradually slide the zipper pull tab up or down for the final release. 3 Use petroleum jelly: Use a lubricant like petroleum jelly on the stuck teeth. Coat a cotton ball with a light layer and work the jelly into the teeth near the stoppage. 4 Lubricate with WD-40: WD-40 lubricant can help metal zippers move more smoothly. Spray the lubricant on a cotton swab and apply it carefully to prevent staining the garment's fabric. 5 Try the graphite pencil trick: Rub the teeth with the lead of a No. 2 pencil. The \"lead\" is graphite, which will help lubricate the metal teeth and allow the zipper slider to move more smoothly. You can also rub the zipper teeth with a bar of soap as another type of lubricant. 6 Realign the zipper teeth: If the zipper teeth look out of place, use your finger to smooth them back together. Before rezipping, check along the zipper to ensure the fabric is moved away from it and loose threads are removed.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 10,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org 3. If the Zipper Is Stuck: Use Tweezers First, check if any fabric or debris is caught in the zipper. If so, try removing the obstruction by hand. If it’s stuck, use tweezers to gently pull the blockage out while wiggling the slider to free it. If tweezers won’t loosen the blockage, try snipping the obstruction close to the teeth. Use a Pencil or Soap or a Candle If the zipper remains stuck, try lubricating the teeth with a pencil (graphite) or a small amount of soap or the edge of a candle. This can help the slider move more smoothly.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 11,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": " Fixing a broken zipper can save your favorite garments and accessories with simple solutions. By using a few basic tools and a bit of patience, you can repair a zipper that has come off track or separated on one side. To realign a zipper, gently move the slider up and down the track, and use WD-40 to help it glide smoothly. If it remains stuck, carefully insert a pin or needle into the track to encourage movement. The following methods will guide you in unsticking a zipper on various items like jackets, jeans, or bags.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 12,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "FAQ What is the easiest way to fix a broken zipper? Most times, when a zip starts to break, it's because continued use widens the gap or hole the teeth go through. The easiest way to tighten this gap is to use pliers to gently squeeze the top plate and bottom plate of the zipper closer together. Be careful not to crush the slider. How do you put a zipper back on track? Take off the item to put the zipper back on track. Do not force the zipper, but gently move the zipper up and down on the track. Try WD-40 to lubricate it, or if it doesn't move, stick a sharp pin tip into the track where it's stuck to get it to move. Once back on track, use WD-40 to get it moving easily.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 13,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "4. If the zipper is hard to slide up and down Use a candle Rub wax from the end of a candle onto the zipper teeth to help the zipper glide more easily. 5. If the Zipper Won't Stay Up: Use Pliers If your metal-toothed zipper keeps falling down, it could mean the teeth are misaligned or worn. Use pliers to carefully realign any out-of-place teeth. If the teeth seem to be aligned properly, try this next trick. Use Clear Nail Polish Worn teeth on a metal or plastic zipper may lead to the zipper slider falling down. This can sometimes be helped by applying clear nail polish. This will thicken the teeth slightly, helping them to grip better. Apply one or two coats, allowing each to dry fully before testing the zipper.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 14,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "1 Inspect the Slider – Look for widening, corrosion, or rough edges. 1 Re-compress the Slider – Using narrow pliers, gently tighten both sides to restore proper tension. 1 Clean the Chain and Slider Path – Wash with mild soap and water or apply zipper lubricant to remove debris. 1 Realign Teeth – Ensure the chain isn’t twisted and that both sides of the tape sit evenly. 1 Test Under Light Load – Open and close several times to confirm smooth engagement. If the teeth still fail to mesh or the slider won’t maintain pressure, it’s time to replace the assembly. For field-critical applications such as industrial covers, PPE, or marine enclosures, replacement is safer than repeated adjustments.",
+      "source_id": "Source_zipper5",
+      "source_chunk_index": 15,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 0,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Understanding the Zipper Mechanism A zipper looks simple but functions as a precision-engineered closure. When the slider moves, it forces alternating teeth (or coils) together in a tight, interlocking sequence. Any deformation in that sequence—slider fatigue, misaligned tape, corrosion, or contamination—can prevent full engagement. Every zipper relies on four key components that must work in sync: the teeth or coil, the slider, the woven tape, and the interlocked chain. If one element loses alignment or strength, the whole system fails.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 1,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Where, 1 – Top tape extension 2 – Top stop 3 – Slider 5 – Tape 4 – Pull tab 6 – Chain width 7 – Bottom stop 8 – Bottom tape extension 9 – Single tape width 10 – Insertion pin 11 – Retainer box 12 – Reinforcement film The bulk of a zipper includes tens or hundreds of precisely shaped plastic or metal teeth which are attached to two pieces of fabric tape. These teeth could be either individual or fashioned from an endless coil, known as elements. The slider moves alongside the rows of teeth which have to be operated manually. The Y-shaped network inside the slider interlocks or separates the opposing rows of zipper teeth, based on the direction of the slider’s movement. In zipper construction, either chain zippers where two sets of interlocking teeth are used or coil zippers where coils are used which are attached to a band of fabric tape.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 2,
+      "file_path": "https://textileengineering.net/zipper-types-parts-size-manufacturing-and-uses/"
+    },
+    {
+      "content": "Misaligned or Damaged Teeth Off-angle pulling, fabric distortion, or over-tension can shift teeth out of position. Even one misaligned segment disrupts closure across the full chain. Contamination Dust, sand, salt, or grease trapped inside the slider track raises friction and prevents full engagement. Cleaning is essential for zippers in marine or outdoor settings. Tape Distortion or Shrinkage Heat, moisture, and chemical exposure can warp zipper tape. When the base fabric twists or contracts, teeth misalign and closure fails.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 3,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "Around my house, things can stay in the mending pile for quite some time! In this case, my flannel jeans had to wait about 2 years before they were rescued! I pulled them out a couple times, to ask sewing advise from my MIL, or to try and come up with a solution. They always ended up back in the mending pile. Last week, as the weather turned very cold, I decided it was time. I was either going to fix those jeans, or send them on their way, and I was really hoping for the prior! What was the trouble? Two teeth had broken off the zipper, about an inch up from the bottom and the zipper pull was now only attached on one side.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 4,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "Learn more about performance validation in our Zipper Testing Standards. When to Replace Instead of Repair Some failures can’t be safely repaired. Replace the zipper if you observe: 1 Missing or broken teeth that prevent full chain engagement 1 Tape tearing, delamination, or severe fabric distortion 1 Corroded or permanently stretched sliders 1 Fatigue cracking from extended use or high-cycle exposure LenZip designs and produces heavy-duty U.S.-made zippers for industrial, outdoor, and marine applications—engineered to exceed ASTM, NFPA, and MIL-SPEC requirements. Explore LenZip Custom Coverall Zippers or our guide to Finding Industrial-Strength Zippers for Any Project.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 5,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "6. If the Zipper Is Missing Teeth: Temporary Fixes Missing zipper teeth can be a real pain, and often require the zipper to be replaced. However, for a quick fix if the missing teeth are near the bottom of the zipper, try using a paper clip or safety pin secured above the missing teeth to hold the zipper together until you can get it repaired. If the missing teeth are at the top end, and there is a risk that the slider will fall off the zipper, prevent the slider from coming up that far by adding a safety pin on one side of the zipper, just below the missing teeth.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 6,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Call an Expert If you've tried very at-home trick and none of the remedies work, it may be worth calling or visiting your local tailor shop to handle the zipper problem for you especially if you want to keep the piece of clothing. How to Fix a Zipper That Won’t Stay Up Credit: The Spruce / Georgia Lloyd A zipper that won't stay up can be caused by misaligned zipper teeth or worn-down metal from too much use. 1 Misaligned teeth: Use pliers to gently bend back teeth that have dislodged or fallen out of alignment. 2 Worn teeth: Repetitive use can essentially wear down the metal of the teeth. Paint clear nail polish on the teeth tracks to thicken or build up the teeth again. Allow it to dry before trying the zipper. Add a second or third layer of nail polish if the zipper slips down. 3 Damaged lower teeth (only): If the damaged teeth are close to the bottom of the zipper, move the pull slider above the damaged area and sew a new stop just above the damaged teeth. This option will shorten the length of the zipper, but it should stay up.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 7,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "All this practice taught me the easiest way to push the teeth back together is to lay the zipper on a hard surface. The arm of a sewing machine proved very useful in this case. That is, in fact, the only thing my sewing machine ended up being useful for in this project. Stack the two sides of the zipper on top of each other, overlapping almost too much, and then press them firmly together with your thumb. Step 4 – Sew heavily to create new bottom stopper To ensure I didn’t loose all the effort I just put in “zipping” the two sides together, I went ahead and created my new bottom stopper just above the broken teeth. Yes, this means loosing an inch of space in the zipper. This is unfortunate since woman’s jeans don’t really leave much room to spare, but to me it was a much better alternative than giving up on this lovely new pair of jeans.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 8,
+      "file_path": "https://www.wifeinthecountry.com/how-to-fix-a-zipper-with-broken-teeth/"
+    },
+    {
+      "content": "1. If the Zipper Separates After Fastening: Use pliers to tighten a loose slider If your zipper seems to work but then separates after being zipped up, and the garment is not overly tight and pulling at the zipper, the problem is likely with the slider. Over time, the slider can become loose, making it less effective at keeping the zipper teeth locked together. Here’s a quick fix: While the slider is still attached to the garment, use a pair of pliers to gently pinch the top and bottom plates of the slider together. This will help restore its original tightness. Be careful not to apply too much pressure, to avoid breaking the slider or making it too tight. (See REI photo)",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 9,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Modern zipper testing follows ASTM D2061 tensile and fatigue standards to ensure durability and consistency across thousands of open-close cycles. These performance metrics form part of LenZip’s zipper testing standards, ensuring OEM-grade reliability from design to deployment. For a full component overview, see our Guide to Zipper Teeth, Sliders, and Their Parts. Why Zipper Teeth Fail to Close Most zipper failures can be traced to a few predictable causes: Slider Wear or Stretching Over time, tensile stress widens or deforms the slider. Once the compression between the upper and lower plates weakens, teeth glide through instead of locking together.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 10,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "How hard is it to replace a broken zipper? It's not hard to replace a broken zipper if you're handy with a sewing machine, but for a valuable item it's better to go to a tailor for a relatively inexpensive fix. Is it possible to fix a zipper that splits open? Yes, you can fix a zipper that splits open. Take a pair of pliers and tighten the zipper sealer, then look for any bent or misaligned teeth and use the pliers to adjust them. Explore more: 1 Cleaning & Organizing 2 Laundry 3 Laundry How-Tos More from The Spruce",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 11,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": "1 Do not force it: If you feel the zipper getting stuck and not moving smoothly, stop zipping before making it worse. If you are wearing the garment, remove it and examine the problem. 2 Carefully remove caught fabric: Gently pull away the caught fabric, not the zipper. Use needle-nose pliers or tweezers to get a better grip. Slowly ease the fabric from the zipper slider and gradually slide the zipper pull tab up or down for the final release. 3 Use petroleum jelly: Use a lubricant like petroleum jelly on the stuck teeth. Coat a cotton ball with a light layer and work the jelly into the teeth near the stoppage. 4 Lubricate with WD-40: WD-40 lubricant can help metal zippers move more smoothly. Spray the lubricant on a cotton swab and apply it carefully to prevent staining the garment's fabric. 5 Try the graphite pencil trick: Rub the teeth with the lead of a No. 2 pencil. The \"lead\" is graphite, which will help lubricate the metal teeth and allow the zipper slider to move more smoothly. You can also rub the zipper teeth with a bar of soap as another type of lubricant. 6 Realign the zipper teeth: If the zipper teeth look out of place, use your finger to smooth them back together. Before rezipping, check along the zipper to ensure the fabric is moved away from it and loose threads are removed.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 12,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org 3. If the Zipper Is Stuck: Use Tweezers First, check if any fabric or debris is caught in the zipper. If so, try removing the obstruction by hand. If it’s stuck, use tweezers to gently pull the blockage out while wiggling the slider to free it. If tweezers won’t loosen the blockage, try snipping the obstruction close to the teeth. Use a Pencil or Soap or a Candle If the zipper remains stuck, try lubricating the teeth with a pencil (graphite) or a small amount of soap or the edge of a candle. This can help the slider move more smoothly.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 13,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "4. If the zipper is hard to slide up and down Use a candle Rub wax from the end of a candle onto the zipper teeth to help the zipper glide more easily. 5. If the Zipper Won't Stay Up: Use Pliers If your metal-toothed zipper keeps falling down, it could mean the teeth are misaligned or worn. Use pliers to carefully realign any out-of-place teeth. If the teeth seem to be aligned properly, try this next trick. Use Clear Nail Polish Worn teeth on a metal or plastic zipper may lead to the zipper slider falling down. This can sometimes be helped by applying clear nail polish. This will thicken the teeth slightly, helping them to grip better. Apply one or two coats, allowing each to dry fully before testing the zipper.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 14,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Tip Always make sure the zipper pull or slider is above the spot you are making repairs. Credit: The Spruce / Georgia Lloyd Want more cleaning and organizing tips? Sign up for our free daily newsletter for the latest hacks, expert advice, and more! How to Unstick a Zipper Credit: The Spruce / Georgia Lloyd Zippers can get stuck for several reasons. They may snag on some fabric, one of the teeth can get out of line, or the metal or plastic teeth break or become worn. Whatever method you try, hold the zipper slider by the body closer to the zipper teeth rather than the little pull tab. This will provide more power and control.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 15,
+      "file_path": "https://www.thespruce.com/how-to-fix-a-broken-zipper-2145771"
+    },
+    {
+      "content": " 739 Palmerston Ave (Karma Lane), Toronto, Ontario, M6G 2R3, www.karmacoop.org As Fabric Repair Cafe menders we’ve compiled this guide to assist novices in their mending tasks. There are many ways to approach each repair. If you find another way works beAer for you use that. Zipper Problems: tips and repairs Torn Fabric on Zipper Sometimes the fabric part of a zipper will tear. For example, a coat that is frequently zipped and unzipped might have a tear near the bottom of one or both sides of the zipper teeth. Although a person might add some zig-zag stitches by hand to draw the edges of the tear together, this can compromise the zipper’s ability to zip up and down. For a long-lasting repair, the zipper should be replaced.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 16,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    },
+    {
+      "content": "Get A Quote Zipper Teeth Not Closing? Causes, Fixes, and When It’s Time to Replace A zipper that won’t close properly can feel like a small inconvenience—until it stops a marine cover installation, delays a PPE delivery, or halts a production run. In industrial, outdoor, and OEM manufacturing, zipper failure isn’t cosmetic—it’s operational. When teeth refuse to close, performance, safety, and reliability are all at risk. At LenZip, a U.S.-owned zipper manufacturer with in-house engineering and testing, we’ve spent decades studying why zippers fail and how to prevent it. Whether you build marine covers, tactical packs, protective gear, or technical upholstery, understanding zipper mechanics helps you decide when a repair will hold—and when replacement is the smarter, long-term solution.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 17,
+      "file_path": "https://lenzip.com/zipper-teeth-not-closing/"
+    },
+    {
+      "content": "This guide includes some simple and effective methods to repair some common zipper problems. If these don’t work, replacing the zipper may be the best or, indeed, only option. Where can I buy a new zipper? It is best to take the garment with you to the fabric or notions store when purchasing a replacement. Or, if that isn’t possible remove the old zipper and take it with you. Types of zippers There are many colours, lengths and types of zippers. Some zippers are plastic and others are metal. Do you need a zipper that can separate? This type is often used on sweaters that open in the front. Do you need a 2-way separable zipper? These are often used on longer length coats so they can be zipped up and then partially opened from the bottom and the top.",
+      "source_id": "Source_zipper6",
+      "source_chunk_index": 18,
+      "file_path": "https://static1.squarespace.com/static/61b227835d47140cb5db1e81/t/68c965d8fafae92a7057ce67/1758029272248/Zipper+Repairs.pdf"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "entity_name": "hazelnut",
+      "entity_type": "ingredients",
+      "description": "A hazelnut is the edible nut produced by the hazel tree, specifically Corylus avellana. It holds a relevant role in the agroindustry due to its unique and distinctive flavour and significant nutritional value. Hazelnuts are rich in essential components, including oil (monounsaturated fatty acids), protein, fiber, and antioxidants",
+      "source_id": "Source_hazelnut1"
+    },
+    {
+      "entity_name": "good hazelnut",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The hazelnut in the images is characterized by a smooth, glossy shell that transitions in color from a warm brown to reddish-brown, with a pronounced pointed end and a rounded base. The surface typically features natural striations, ridges, and variations in color that are common in healthy hazelnuts. The calyx end shows a rough, fibrous texture where the nut attached to the plant, which is a standard feature. Upon inspection, all examined hazelnuts appear intact, without any visible cracks, holes, discoloration, or any anomalies that would indicate defects. The overall appearance suggests that these nuts are of high quality, adhering to the expected characteristics of a healthy hazelnut, and display the natural imperfections that are typical of this type of nut but do not represent defects.",
+      "source_id": "Source_hazelnut1"
+    },
+    {
+      "entity_name": "crack hazelnut",
+      "entity_type": "physical defect",
+      "description": "<Hazelnut Shell Crack>\n Description: The defect is characterized by cracks or breaks in the hazelnut shell, often visible as jagged, irregular openings that expose the inner kernel or nut. The cracks vary in severity but generally indicate a compromise in the structural integrity of the shell. These defects typically manifest in various locations around the nut, such as the center, bottom, or near the pointed tip, often appearing as dark lines against the brown shell. The presence of these cracks can significantly affect the quality and freshness of the nut inside, making it potentially unsuitable for sale. Visual features useful for identifying this defect include jagged edges, irregular openings, and contrasting colors between the cracked areas and the intact shell.",
+      "source_id": "Source_hazelnut2"
+    },
+    {
+      "entity_name": "cut hazelnut",
+      "entity_type": "physical defect",
+      "description": "<Hazelnut Shell Cuts>\n Description: The defect type observed is characterized by linear cuts or cracks on the surface of the hazelnut shells. These defects appear as straight, elongated markings that disrupt the otherwise smooth and glossy shell. The cuts are often lighter in color compared to the surrounding shell, making them noticeable against the typical brown hues of the nut. They can be oriented both horizontally and vertically, with some appearing as slight diagonal or curved imperfections. The presence of these defects compromises the shell's integrity, potentially exposing the nut to spoilage or insect damage. This type of defect deviates from the normal intact condition expected of hazelnuts, indicating a breach in the protective layer of the shell.",
+      "source_id": "Source_hazelnut2"
+    },
+    {
+      "entity_name": "hole hazelnut",
+      "entity_type": "physical defect",
+      "description": "<Hazelnut Shell Hole>\n Description: The defect is characterized by a hole located at or near the center of the hazelnut shell, which is irregular in shape and can appear jagged or rough around the edges. This hole penetrates the shell's surface, compromising the structural integrity of the hazelnut and potentially allowing for pest invasion or contamination of the nut inside. The surrounding area often displays signs of cracking or discoloration, indicating additional damage. The presence of this defect significantly detracts from the quality and suitability of the hazelnut for consumption or sale.",
+      "source_id": "Source_hazelnut3"
+    },
+    {
+      "entity_name": "print hazelnut",
+      "entity_type": "surface modification",
+      "description": "<Print Defect on Hazelnut Shell>\n Description: The defect is characterized by irregular white markings or blemishes on the smooth, glossy brown shell of the hazelnut. These markings, which resemble printed text or graphics, disrupt the natural appearance and uniform texture of the shell. The defects generally appear at or near the center of the hazelnut and stand out starkly against the brown background. The shapes of the defects are often irregular and may vary in size and intensity, indicating potential issues during processing or natural variations. The presence of these anomalies affects the aesthetic quality of the hazelnut, making it noticeable when compared to the standard appearance of an intact hazelnut.",
+      "source_id": "Source_hazelnut4"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "good hazelnut",
+      "description": "An intact, structurally sound shell preserves kernel quality and meets sale-grade expectations.",
+      "keywords": "intact shell, structural integrity, grading",
+      "weight": 0.92,
+      "source_id": "Source_hazelnut1"
+    },
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "crack hazelnut",
+      "description": "Shell fractures arise from mechanical/thermal stresses (e.g., drying), reducing protection of the kernel.",
+      "keywords": "fracture, drying stress, barrier loss",
+      "weight": 0.9,
+      "source_id": "Source_hazelnut2"
+    },
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "cut hazelnut",
+      "description": "Sharp, localized damage from handling or equipment can nick shell or kernel, lowering commercial value.",
+      "keywords": "tooling damage, misalignment, handling",
+      "weight": 0.8,
+      "source_id": "Source_hazelnut2"
+    },
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "hole hazelnut",
+      "description": "Through_shell punctures from insects or mechanical penetration compromise the protective barrier.",
+      "keywords": "puncture, insects, penetration",
+      "weight": 0.8,
+      "source_id": "Source_hazelnut3"
+    },
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "print hazelnut",
+      "description": "Intentional surface marking (ink/laser) provides branding or traceability without inherent quality loss if food-safe and properly applied.",
+      "keywords": "branding, traceability, food-safe marking",
+      "weight": 0.8,
+      "source_id": "Source_hazelnut4"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Overview Hazelnut is the nut from the hazel tree (Corylus avellana). It is rich in monounsaturated fatty acids and is commonly eaten as food. Hazelnut contains oil, protein, fiber, and antioxidants. The antioxidants in hazelnut might have heart health benefits. People use hazelnut for obesity, high cholesterol, heart disease, dementia, and other purposes, but there is no good scientific evidence to support these uses. Hazelnut is a tree nut. It is considered a major food allergen. Uses & Effectiveness Possibly Ineffective for 1 Obesity. Eating hazelnuts or taking hazelnut oil by mouth doesn't seem to decrease body weight in people who are obese or overweight. There is interest in using hazelnut for a number of other purposes, but there isn’t enough reliable information to say whether it might be helpful. Side Effects When taken by mouth: Hazelnut is commonly consumed in foods. It’s usually well-tolerated, but some people are allergic to hazelnuts. Serious allergic reactions are possible.",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.webmd.com/vitamins/ai/ingredientmono-865/hazelnut#overview"
+    },
+    {
+      "content": "MATERIAL AND METHODS FRUIT MATERIAL Hazelnuts were used as the sample organic material in this study to investigate deformation under compressi-on scenarios. 'Tombul' variety nuts (Corylus avellana) --- 150 --- using a CAD model geometry and shell thickness was measured with Vernier calliper (± 0.01 mm) (Celik, 2017a). Fruit mass (M) was measured using a precise balance (± 0.001 g). Fruit density was determined using the li-quid displacement method. Toluene (C7H8) was used instead of water, as it is absorbed by fruit to a lesser ex-tent. Also, its surface tension is low, so that it fills even shallow dips in a fruit and its dissolution power is low (Mohsenin, 1980; Sitkei, 1986).",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.weinobst.at/dam/jcr%3A7c641282-8182-4bb1-b62d-8ecc93a01f87/148-2020.pdf?"
+    },
+    {
+      "content": "provided a correct classification rate higher than 90% for all ions. The applied methodology is suitable to support sensory quality control programs of raw hazelnuts in confectionary industries. 1. Introduction Hazelnuts (Corylus avellana L.) have a relevant role in agroindustry due to their nutritional and their unique and distinctive flavour (Ciar-miello et al., 2014; Wang et al., 2018) which makes them appreciated as ingredient in a variety of food products. More than one million tons of hazelnuts were produced worldwide in 2017, being Turkey the main producer (67.1%) followed by Italy (13.1%). Only 5% of hazelnuts production is intended for direct consumption while about 95% is used and processed by confectionary, chocolate and bakery industries (Eskandari, Kermani, Kouravand, & Zarafshan, 2018).",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643821002425?via%3Dihub"
+    },
+    {
+      "content": "Hazelnuts market standards imply severe quality control: cultivar, cultural techniques, geographical origin, harvesting time, post-harvest management and processing, morphological and physio-chemical characteristics and aroma are the main parameters monitored to assess the final hazelnut quality (Cubero-Leon, Peñalver, & Maquet, 2014; Klockmann, Reiner, Cain, & Fischer, 2017; Locatelli et al., 2011). The “rotten hazelnut” is one of the major defects affecting com- mercial quality, yield losses and market values since it is associated with negative sensory attributes, such as mold, old, bitter and earthy tastes (Battiliani et al. 2018). In commercial evaluation, rotten includes defects like brown spotted or mouldy kernels and can originate along the supply chain, especially during harvest and post-harvest stages. Different fast and non-invasive sorting technologies for hazelnuts defects were tested in agroindustry (Moscetti et al., 2015), however, most of them consider only visible defects which represent less than 50% of uncompliant products (Battilani et al., 2018). Investigation of raw hazelnuts “vola-tilome” - the main responsible of hazelnuts flavour perception – could be a valid alternative for quality control. Surprisingly, it has been evaluated only marginally as most of the studies have been focusing on volatile organic compounds (VOCs) and aroma produced after the roasting process. Burdack-Freitag and Schieberle (2010) quantified 37",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643821002425?via%3Dihub"
+    },
+    {
+      "content": "2. GENERAL PROPERTIES OF HAZELNUT CRUSHING PLANT Firstly, in order to better define the hazelnut cracking and processing activities and to determine the specific properties of the produced hazelnut varieties, studies were made on the standardization of hazelnuts according to certain criteria (Baş H. 1993). In this scope, descriptive hazelnut standards such as internal hazelnut, foreign matter, bitter nuts, brittle and wrinkled rotten nuts in Turkey are defined according to TS 3074. TS 3075 (TSE. 2016). While hazelnuts are divided into groups according to hazelnut trade and shapes (internal plump and pointed kernel and other), they are also divided into classes according to their characteristics such as extra, class 1 and second class.",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 4,
+      "file_path": "https://annals.fih.upt.ro/pdf-full/2018/ANNALS-2018-4-22.pdf?"
+    },
+    {
+      "content": "According to the size of the nuts, it is observed they are divided into dimensions. Especially in longitudinal, the difference between the largest and smallest diameters cannot exceed 2 mm. Depending on the smallest diameter in the method of separating the lengths for extra and class 1, any kind of sorting can be done by 2 mm difference (Baş H. 1993) (Figure 1). Determination of the differences between hazelnut varieties and physical properties such as hazelnut size, shape, porosity, volume, density, limit speed and breaking force is necessary for the development of hazelnut processing machines.",
+      "source_id": "Source_hazelnut1",
+      "source_chunk_index": 5,
+      "file_path": "https://annals.fih.upt.ro/pdf-full/2018/ANNALS-2018-4-22.pdf?"
+    },
+    {
+      "content": "During postharvest drying hazelnuts experience shell-cracks, which could accelerate quality deterioration and microbial contamination of nuts during storage. This study investigated shell-cracking mechanisms and devel-oped strategies to reduce cracking during hot-air drying. Physicochemical properties of shells or kernels, moisture desorption isotherm, structure of inshells, and morphological property of inner fiber attached to shells were correlated with cracking ratios for four hazelnut cultivars (Barcelona, Jefferson, Yamhill, and Wepster). A systematic experimental approach combining Taguchi design and gradient drying was utilized to reduce shell cracks while retaining drying efficiency. Among the four cultivars, Jefferson with hygroscopic and lower density shell, larger air-gap between shell and kernel, and thicker and strongly bound shell fibers had the highest cracking ratio. During hot-air drying, relative humidity (RH) was the most contributing factor inducing shell cracks of Jefferson than temperature and air velocity. Using gradient drying through increasing RH from 50 to 60% or reducing temperature from 38 to 32 °C when inshells reached ∼16 g/100 g moisture content (MC) reduced cracking ratio < 30% and drying time<15 h for Jefferson. This study generated new knowledge of hazelnut shell cracking mechanisms and provided a practical drying strategy for reducing shell cracks.",
+      "source_id": "Source_hazelnut2",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643818307059?"
+    },
+    {
+      "content": "Hot-air drying is an essential postharvest practice for fresh hazelnut inshells (i.e. unshelled hazelnuts). USDA required a< 10 g/100 g moisture content (MC, on wet basis) of dried hazelnut inshells and< 6 g/100 g of dried kernels (USDA, 2016). The typical hot-air drying in the hazelnut industry takes 24–48 h at ∼37.7 °C (100 F) depending on the initial MC of freshly harvested nuts, the type of dryer, and air ve-locity. For saving cost and energy, the industry is aimed to reduce drying time for improving drying efficiency and retaining quality of kernels. Shell integrity is essential for protecting kernels from lipid oxidation (Ghirardello et al., 2013) and microbial contamination (Ozay, Seyhan, Pembeci, Saklar, & Yilmaz, 2008) during transportation and storage. Unfortunately, a significant amount of shell cracks could occur during hot-air drying when the initial MC of inshell is higher, and the cracking ratio varied among different cultivars of hazelnut (Wang et al., 2018). The shell cracks could diminish quality and safety of kernels. It is thus necessary to understand shell-cracking mechanisms and their correlations with the characteristics of different hazelnut cultivars as well as developing strategies for reducing shell cracks.",
+      "source_id": "Source_hazelnut2",
+      "source_chunk_index": 1,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643818307059?"
+    },
+    {
+      "content": "Shell cracks of hazelnut inshells during drying process may be at-tributed to the bulky structure and air-gap between shells and kernels that have poor heat conductivity and the different drying rates between kernels and shells as illustrated in the schematic diagram (Fig. 1). Since heat conductivity slows down from shells to kernels (Wang et al., 2001), shells could be dried faster than that of kernels and be subjected to structural and morphological changes (Zhou, Gao, Mitcham, & Wang, 2018). Hence, generated moisture vapor from kernels could be accu-mulated within shells and eventually result in cracks in the most vul-nerable part of hazelnut shells (Rahman, 2001), called hilum. It was noticed that the degree of cracks varied among different hazelnut cul-tivars, probably due to their different physicochemical and structural properties. Hence, this study comprehensively investigated the corre-lation of shell cracks with the density of shell and kernels, structures of inshell, chemical properties of shells (chemical and lignocellulosic compositions), moisture desorption isotherm of inshells, and morpho-logical properties of inner fibers within shells for different cultivars of hazelnuts predominantly produced in Oregon, USA.",
+      "source_id": "Source_hazelnut2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643818307059?"
+    },
+    {
+      "content": "Improvement of some growth properties of herbaceous plants in stress condition by citric acid and malic acid sprays are reported earlier. This research evaluates these substances on the pistachio tree as an important domestic product. The early splitting and brown kernel occurrence rate were observed as signs of aflatoxin contamination potency and status. The study was conducted in a minimally cultivated orchard of the 'Kallehghoochi' cultivar of pistachio. The treatments were as follows; 1 mM malic acid, 3 mM malic acid, 3 mM citric acid, 3% potassium sulphate, 5% potassium sulfate, 3% potassium sulfate + 1 mM malic acid, 0.1 mM salicylic acid, 0.1 mM salicylic acid + 3 mM citric acid and the control treatment. Except for SA 0.1 mM, the rest of the treatments reduced the percentage of early split pistachio nuts having brown color in the intra-cotyledonary region, down to 50%; however, the fall was significant in 3 mM citric acid, which was reduced by 96% to 10.6 brown kernel per 10000 nuts. All treatments significantly controlled the sunburn damage of pistachio nuts. Treatments containing 1 mM malic acid were superior to control in taste as determined by panelists.",
+      "source_id": "Source_hazelnut2",
+      "source_chunk_index": 3,
+      "file_path": "https://www.academia.edu/74436168/Improving_hazelnut_quality_at_harvest_and_non_destructive_assessment_of_post_harvest_nut_quality?"
+    },
+    {
+      "content": "Hazelnuts are subjected to major quality losses because of undesired physical damage during harvesting, threshing and processing. Therefore, mechanical properties and deformation behavior of the product should be determined to minimize the damage and losses during harvest and post-harvest operations. This would also help in designing agri-cultural machines. However, it is quite difficult to determine the amount of damage on agricultural products under dynamic loading conditions. Nowadays, one of the useful methods used in deformation analyses of the materials is the finite element analysis which has also been used in different engineering disciplines to simulate the deformation behavior of materials since the 1950's. In this study, a compression simulation was carried out for the hazelnut variety 'Tombul'. Some cracking properties were also determined using experimental and finite element analyses. As a result, it was highlighted that computer-aided simulations can help determe the behavior of biological materials under phy-sical loading during pre-harvest and post-harvest operations. Keywords: hazel nut, simulation, FEM (finite elements method), compression",
+      "source_id": "Source_hazelnut2",
+      "source_chunk_index": 4,
+      "file_path": "https://www.weinobst.at/dam/jcr%3A7c641282-8182-4bb1-b62d-8ecc93a01f87/148-2020.pdf?"
+    },
+    {
+      "content": "2. Material and methods 2.1. Samples All hazelnuts samples were obtained from a selection operated by the industrial partner through industrial quality protocols and parameters. The procedure is described in the following paragraphs. The samples obtained through this procedure are a representation of the quality variability levels that agroindustry operates with. 2.1.1. Visual defects experiment Raw hazelnuts samples (Corylus avellana L.) were obtained from different lots of chopped Turkish hazelnuts (Akçakoca region, 2017) after visual inspection according to industry quality standards (Fig. 1). These visual inspections were conducted by trained inspectors in quality control from the industrial partner during one year. The inspection divided the samples in good quality (YES) and rotten samples. Rotten samples were divided by industrial evaluation in three different classes (LIGHT, DARK and MOLD rotten) according to the type and the degree of the defect (Battilani et al., 2018; Pscheidt, Heckert, Wiseman, & Jones, 2019): samples with internal discoloration which tend to opa-que/white to translucent, buttery yellow colour where assigned to the “LIGHT” class, samples with darker colour/black spots to the “DARK” class and samples with white and green molds to the “MOLD” class.",
+      "source_id": "Source_hazelnut3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0023643821002425?via%3Dihub"
+    },
+    {
+      "content": "This paper discloses a new class of foliar nutritive fluids with multiple biological functions, whose core components are the micellar overbasic metallic naphthenates, accompanied in all formulations by the common nutrient elements found in liquid fertilizers. Active primary raw components and additives have been selected according to the ecological requirements for this type of products. Three commercial brands have been formulated to provide appropriate amounts of nutrients at the convenient uptake rates according to the stage of crop development. Taking over unusual overbasic potassium naphthenate physical and chemical attributes, some new properties adequate to the foliar nutrition were investigated and tied up to foliar products with defined purpose to improve their fertilizing, fungicide and growth enhancing functions. The field experiments were designed in 5 treatment plots linearly located and 4 replications with the apple trees cultivars as factor A, ecological product application as factor B and the moment of application as factor C. Foliar application of ecological products has induced a shoot growth of about 25% in the 'Jonathan' apples, respectively 30% in 'Idared' apples. Fruit yield in the 2 apple cultivars was significantly increased versus the control treatment. The ecological products had also a good effect on the fruit quality (means weight, firmness and color) and protect crop against storage diseases after harvesting. Products do not change neither the chemical composition nor the taste or flavor of the treated apple fruits.",
+      "source_id": "Source_hazelnut3",
+      "source_chunk_index": 1,
+      "file_path": "https://www.academia.edu/74436168/Improving_hazelnut_quality_at_harvest_and_non_destructive_assessment_of_post_harvest_nut_quality"
+    },
+    {
+      "content": "Legibility Videojet inks are designed to be highly legible, ‘low bleed’ inks. Our new faster drying ink is based on formula that produces smaller droplets with high color contrast, enabling placement of information in a limited space with higher resolution than competitive inks for higher readability. Fast-dry ink Faster dry time also produces a small dot on the egg, so more information can be printed in a limited space. These new inks feature higher condensation resistance that allows excellent print quality even when condensation forms on the eggs. This is especially important as condensation, which can form shortly before printing, can alter the drying process and make the ink more susceptible to smearing.",
+      "source_id": "Source_hazelnut4",
+      "source_chunk_index": 0,
+      "file_path": "https://global.videojet.com/wp-content/uploads/dam/pdf/NA%20-%20English/Application-Notes/an-choosing-the-optimum-ink-for-printing-on-shell-eggs-us.pdf?"
+    }
+  ]
+}

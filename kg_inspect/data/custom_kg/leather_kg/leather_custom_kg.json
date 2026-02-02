@@ -1,0 +1,218 @@
+{
+  "entities": [
+    {
+      "entity_name": "leather",
+      "entity_type": "material",
+      "description": "Leather is a natural, versatile, and durable fabric made from tanned animal hides or skins. It combines strength, flexibility, water resistance, and luxurious softness. It is recognized as one of the earliest engineered materials developed by humans.",
+      "source_id": "Source_leather1"
+    },
+    {
+      "entity_name": "good leather",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The images consistently depict a surface resembling leather, characterized by a rich, consistent brown color. The texture showcases a natural embossed pattern with variations in creases and grain typical of genuine leather. The grain pattern is uniform and undisturbed, showing no visible defects or anomalies such as tears, discoloration, or irregularities. The expected features of the leather include subtle variations and a tight, consistent pebbled or crisscrossed texture, which are inherent to leather materials. Overall, the surfaces exemplify standard quality without any noticeable flaws or signs of damage, indicating that they meet the expected standards for leather products.",
+      "source_id": "Source_leather1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "color leather",
+      "entity_type": "Surface contamination",
+      "description": "<Color Anomaly in Leather>\n Description: The defect manifests as a distinct discoloration on the leather surface, appearing as small, irregularly shaped marks or spots varying in hues, primarily reddish or bluish-gray, contrasting with the otherwise uniform brown or burgundy color of the leather. These anomalies are positioned across various regions of the leather, such as the top left, center, or bottom right of the images, disrupting the expected homogeneity of the material. The texture of the leather surrounding these defects remains consistent, indicating that the discoloration is superficial and could be attributed to issues with dye application, contamination, or damage during the manufacturing process. The stark color differences make these anomalies easily identifiable against the typical leather grain pattern.",
+      "source_id": "Source_leather2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "cut leather",
+      "entity_type": "physical defect",
+      "description": "<Leather Cut Defect>\n Description: The defect is characterized by the presence of linear disruptions in the textured surface of the leather, commonly identified as cuts or tears. These defects typically feature irregular shapes with jagged or frayed edges and are located variably throughout the leather piece, often prominently situated at the center or towards one side. The cuts are usually lighter in color than the surrounding material, contrasting distinctly against the deep brown hues typical of genuine leather. The imperfections result in noticeable disruptions in the continuity of the leather's texture, revealing underlying lighter fibers and indicating potential damage to the material's structural integrity. This condition can adversely affect both the aesthetic appeal and functionality of the leather, raising concerns over quality control in leather goods manufacturing.",
+      "source_id": "Source_leather3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "fold leather",
+      "entity_type": "physical defect",
+      "description": "<Fold Defect>\n Description: The defect identified is a fold in the leather, characterized by a raised, irregular line that disrupts the otherwise uniform texture of the leather surface. Folds are typically located in various positions across the leather piece, such as towards the center, center-right, or central areas. Visually, these folds may appear as slightly elevated ridges or creased areas, creating shadows and contrasting light reflections compared to the surrounding material. The texture in the vicinity of the fold is often distorted, and the affected area may have a coloration that is either lighter or more pronounced than the rest of the leather. This defect can affect both the aesthetic quality and structural integrity of the leather, making it a significant concern in quality assessments.",
+      "source_id": "Source_leather4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "glue leather",
+      "entity_type": "Surface contamination",
+      "description": "<Adhesive Residue>\n Description: The defects observed across the leather images are characterized by small, irregularly shaped areas that exhibit a shiny or glossy texture, contrasting with the surrounding matte finish of the leather. These anomalies often present as slightly raised spots or deposits, typically indicative of foreign substances such as adhesives or glues that were unintentionally applied during the manufacturing process. The color of these defects tends to differ from the consistent dark brown hue of the leather, with shades ranging from lighter tones to more pronounced irregularities. The presence of these glossy areas disrupts the otherwise uniform texture and grain pattern of the leather, which is expected to maintain a smooth and consistent appearance throughout its surface. The defects are positioned centrally or towards the edges of the leather, making them visibly noticeable against the backdrop of the standard leather texture.",
+      "source_id": "Source_leather5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "poke leather",
+      "entity_type": "physical defect",
+      "description": "<Puncture Defect>\n Description: The defect is characterized by a small puncture or \"poke\" in the brown leather, resulting in a noticeable disruption of the material's texture and pattern. The punctures vary in position, typically found towards the center, top, or bottom regions of the leather piece. Visually, these defects appear as dark spots or small holes that break the regular grain or textured pattern of the leather, often accompanied by irregular edges or fraying. In some instances, there may be contrasting lighter spots surrounding the puncture, indicating the depth and integrity loss. Overall, this defect affects the leather's aesthetic appeal and structural integrity by introducing localized weaknesses in the material.",
+      "source_id": "Source_leather6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "leather",
+      "tgt_id": "good leather",
+      "description": "Good leather represents defect-free material with strong fiber structure, uniform color, no cuts or pokes, and proper flexibility. It passes all mechanical and visual inspection standards.",
+      "keywords": "quality grade, defect-free, inspection, structure, uniform finish",
+      "weight": 0.8,
+      "source_id": "Source_leather1"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "color leather",
+      "description": "Color is an essential surface property of leather resulting from dyeing and finishing. Uniform color indicates good finishing quality, while uneven color or stains suggest surface contamination or chemical imbalance.",
+      "keywords": "dyeing, finishing, color uniformity, staining, surface defect",
+      "weight": 0.85,
+      "source_id": "Source_leather2"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "cut leather",
+      "description": "Cuts occur during manufacturing or testing when tools or knives penetrate the grain. They compromise structural integrity and reduce tear strength, making the leather unsuitable for load-bearing or visible parts.",
+      "keywords": "mechanical damage, incision, tear strength, structure, production defect",
+      "weight": 0.9,
+      "source_id": "Source_leather3"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "fold leather",
+      "description": "Folds form when leather is bent or flexed. Controlled folding is used for testing durability, but improper folding during handling causes wrinkles and cracks that lower the visual quality of the surface.",
+      "keywords": "flexing, wrinkle, crease, durability, mechanical stress",
+      "weight": 0.8,
+      "source_id": "Source_leather4"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "glue leather",
+      "description": "Glue contamination occurs when adhesive droplets fall on the surface during assembly. It creates glossy, uneven patches and affects visual and tactile quality, requiring careful process control.",
+      "keywords": "adhesive residue, bonding defect, surface contamination, assembly error",
+      "weight": 0.75,
+      "source_id": "Source_leather5"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "poke leather",
+      "description": "Poke marks or punctures occur from sharp tools or stitching needles during processing. They compromise grain integrity and are classified as critical physical defects, especially on visible panels.",
+      "keywords": "puncture, hole, needle damage, mechanical defect, processing",
+      "weight": 0.9,
+      "source_id": "Source_leather6"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Leather is a natural fabric made using tanned animal skin. Believed to be the first fabric crafted with human hands, leather has evolved significantly over the millennia. Leather remains, however, one of the most desirable textile products due to its durability, water-resistance, insulative properties, and luxurious softness. Available in many different styles, grades, and colors, leather is one of the most diversified natural textiles.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 0,
+      "file_path": "https://sewport.com/fabrics-directory/leather-fabric"
+    },
+    {
+      "content": "Fabric name Leather Fabric also known as Hide, skin Fabric composition Tanned animal skins Fabric breathability Low Moisture-wicking abilities Low Heat retention abilities High Stretchability (give) Low Prone to pilling/bubbling Low Country where fabric was first produced Unknown - prehistoric origins Biggest exporting/producing country today Italy (by value) or China (by volume) Recommended washing temperatures Hand wash cold Commonly used in Jackets, coats, wallets, belts, bags, gloves, shoes, book bindings, upholstery, automobile seats, saddles, luggage, sporting goods",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 1,
+      "file_path": "https://sewport.com/fabrics-directory/leather-fabric"
+    },
+    {
+      "content": "A high-tech fabric based on a natural raw material. Offers impressive physical performance combined with classic aesthetic characteristics. Alternative fabrics and materials often can achieve higher standards in individual physical performance, but their broad range of properties can be very limited.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 2,
+      "file_path": "https://iultcs.org/wp-content/uploads/2025/01/Making-Leather-An-Introduction.pdf?"
+    },
+    {
+      "content": "Instead, today is high-quality leather epicenter is Italy, which has remained the world is premier maker of fine leather for more than 500 years. People from every nation go out of their way to buy genuine Italian leather goods, and the most recognizable designer brands, including Gucci and Coach, almost exclusively use Italian-made leather. The modern era has seen the dawn of some of the worst-quality leather, including recycled or “bonded” leather goods made in third-world countries, and also the finest leather goods made in history, including genuine Italian top-grain leather. While leather has lost some degree of popularity in recent decades due to animal rights concerns, it remains common knowledge that there is simply no substitute for artisan-crafted leather goods.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 3,
+      "file_path": "https://sewport.com/fabrics-directory/leather-fabric"
+    },
+    {
+      "content": "How much does leather fabric cost? The price of leather fabric varies considerably depending on the grade and the way it was manufactured. Top-grain Italian leather, for instance, can be remarkably expensive while reconstituted Chinese leather might be similar in price to other natural fabrics like wool or cotton. What different types of leather fabric are there? There are quite a few different types of leather, and each of these variations has unique properties: 1. Genuine leather Whether it’s top-grain, split, or reconstituted, any leather derived from animal hide is genuine leather. Genuine leather varies widely in terms of quality and durability.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 4,
+      "file_path": "https://sewport.com/fabrics-directory/leather-fabric"
+    },
+    {
+      "content": "2. Imitation leather Sometimes called pleather or artificial leather, artificial leather is a textile made with polyvinyl chloride (PVC) or a similar substance. Textile manufacturers design artificial leather to approximate the attributes and benefits of genuine leather. Carroll Leather Caprone Handmade Cowhide Area Rug Color Raven 3. Top-grain leather Top-grain leather is the outer layer of an animal hide, and it is remarkably strong and durable since it is filled with densely-packed, fine fibers. This type of leather varies in thickness, and there are a few sub-variations of top-grain leather.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 5,
+      "file_path": "https://sewport.com/fabrics-directory/leather-fabric"
+    },
+    {
+      "content": "Leather has played a very important role in human life for thousands of years. Ensuring the quality of leather and addressing surface defects poses significant challenges. Traditionally, human inspectors are responsible for detecting surface defects in tanneries, but this approach is labor-intensive and susceptible to human error. As a result, there is a growing demand for automated systems to detect the defects. Herein, artificial intelligence (AI) was developed to detect the defects on leather surfaces. Six targeted defect types, denoted as insect bites, scratches, holes, stitch marks, diseased and ruptures, were specifically addressed to enhance the overall quality assessment process. AI-based vision techniques were used to detect flaws on the leather on photographs taken with a high-res-olution camera. Deep learning algorithms Mask R-CNN, YOLOv8 and within the framework of Detectron2, RetinaNet R101 3x, Faster R-CNN R101-FPN 3x models were performed and a comparison was made between these algorithms. By using the slicing aided hyper-inference (SAHI) algorithm in coordination with these algorithms, the detection rates of small defects on the images were increased. The highest accuracy rate was achieved when the YOLOv8 algorithm had 75 epoch values for training, and the SAHI algorithm had slice height-width values of 256 × 256 pixels.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 6,
+      "file_path": "https://link.springer.com/content/pdf/10.1186/s42825-024-00186-2.pdf?"
+    },
+    {
+      "content": "This document describes a widely-used method with a flexing apparatus for determining the dry or wet flex resistance of leather and finishes applied to leather. The number of flexing cycles chosen depends on the end use of the leather and the expected performance. The leather specification normally defines the number of flex cycles that the leather is required to achieve without damage. In addition, the flexing process can be used as a pre-treatment for other test procedures.",
+      "source_id": "Source_leather1",
+      "source_chunk_index": 7,
+      "file_path": "https://cdn.standards.iteh.ai/samples/75893/6457145f450f458b85611d5eb331c8d0/ISO-5402-1-2022.pdf?"
+    },
+    {
+      "content": "Specific colours and textures are introduced in these processes. Here, the properties of the original tannage can be modified. Natural and synthetic agents are used to fill spaces within the fibre structure. Softening products are used as well, based on vegetable, fish, animal and synthetic oils. These are applied under slightly acidic conditions.",
+      "source_id": "Source_leather2",
+      "source_chunk_index": 0,
+      "file_path": "https://iultcs.org/wp-content/uploads/2025/01/Making-Leather-An-Introduction.pdf?"
+    },
+    {
+      "content": "Surface coatings are mainly applied to the grain side of dry leather for protection, precise colour, and for visual enhancement. Many different effects are possible to meet fashion demands and customer specifications. This protective finish is normally built up on the grain surface using a series of machine applications.",
+      "source_id": "Source_leather2",
+      "source_chunk_index": 1,
+      "file_path": "https://iultcs.org/wp-content/uploads/2025/01/Making-Leather-An-Introduction.pdf?"
+    },
+    {
+      "content": "Discoloration _ Many chemicals can strip the color off of a leather sofa.  Sometimes it happens in a moment, as with a nail-polish remover spill.  Sometimes the discoloration takes years, as with the chemicals and oils from the hair discoloring a leather headrest.  Either way, when the correct steps are taken to prepare the leather and match the color, a good leather pro can return the finish to new. Like in this example.",
+      "source_id": "Source_leather2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.leatherhelp.com/what-leather-repair/#:~:text=Punctures%20in%20leather%E2%80%93%20Leather%20is,by%20fixing%20punctures%20like%20these."
+    },
+    {
+      "content": "4.3 Press knife, as specified in ISO 2419, capable of cutting rectangular test pieces of the type shown in Figure 1 in one operation. All parts of the press knife shall lie in the same plane. Figure 1 — Test piece for single edge tear Table 1 — Dimensions of test piece Dimensions in millimetres (tolerance 1 mm) Designation a b c d Standard 70 40 b/2 20 Large 100 50 b/2 50 If “large” test pieces are used, the size of the test piece shall be mentioned in the test report. NOTE For manual evaluation, it is advantageous to use the “large” specimen.",
+      "source_id": "Source_leather3",
+      "source_chunk_index": 0,
+      "file_path": "https://cdn.standards.iteh.ai/samples/51511/ba0139450f034d96bae4f10f034e3c2d/ISO-3377-1-2011.pdf?"
+    },
+    {
+      "content": "ISO 7500-1, Metallic materials — Verification of static uniaxial testing machines — Part 1: Tension/compression testing machines — Verification and calibration of the force-measuring system 3 Principle A rectangular test specimen partially slit from one short edge is pulled so that a tear is propagated from the end of the slit. The mean force exerted during separation of the test piece is recorded. 4 Apparatus 4.1 Tensile testing machine, with  a force range appropriate to the specimen under test,",
+      "source_id": "Source_leather3",
+      "source_chunk_index": 1,
+      "file_path": "https://cdn.standards.iteh.ai/samples/51511/ba0139450f034d96bae4f10f034e3c2d/ISO-3377-1-2011.pdf?"
+    },
+    {
+      "content": "Most furniture will puddle in the seats with use, but it is what is in the core (the “guts”) that will dictate how much puddle you get. Regular (low density) foam rubber and down feathers will puddle the most. To prevent Ponding, high density foam is better, though the best cushion core options are called a spring loft or spring fiber. These cushions not only have foam, but they also have springs in the seat core itself. These work very much like a mattress would. Once you get up, they will spring back to retain the original shape, not allowing a puddle to be created. Some folks call Ponding comfort wrinkles and yes, they will develop over time if you buy a softer seat core or cushion and a really soft leather. A good informed upholsterer or manufacturer can help you with the right seat cushion for you if you mention your concern. You can always expect this to happen when the seat core is too soft or when down is used, even with fabrics. Not all leather furniture will show Ponding. It’s all in the seat cushion core and the leather you select.",
+      "source_id": "Source_leather4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.ctlleather.com/wp-content/uploads/2025/05/CTL-Removing-Wrinkles-Marks-and-Creases-in-Leather.pdf?"
+    },
+    {
+      "content": "PREVENTING PONDING & WRINKLES ON LEATHER SEATS What To Do if Ponding Occurs : Responses to Ponding vary depending on the style of furniture and interior setting. To some, wrinkles in the seat and back cushions are natural occurrences that are accepted and even embraced for the relaxed, worn comfort that the leather exhibits. The Ponding is simply left alone. To others, a smooth, refined look is important and Ponding is seen as a negative. The best way to handle Ponding when it occurs is to remove the cushions and “fluff” them, similar to fluffing a pillow. This action returns airflow to the cushion and helps the leather to retain its original shape. It is also best to flip the cushions periodically to mitigate the wear pattern. If the cushions are contact an upholsterer to resew the leather more tightly around the frame.",
+      "source_id": "Source_leather4",
+      "source_chunk_index": 1,
+      "file_path": "https://www.ctlleather.com/wp-content/uploads/2025/05/CTL-Removing-Wrinkles-Marks-and-Creases-in-Leather.pdf?"
+    },
+    {
+      "content": "How to Prevent Wrinkles on Leather Seats (AKA Ponding): If Ponding is a concern, it is always best to speak with your designer or upholsterer ahead of time, before the furniture is made. The best way to prevent Ponding is to use a firm, sturdy foam with springs in a design that pulls the leather taught over the filling in order to provide sufficient support. The amount of Ponding that occurs is mostly determined by the manner in which the furniture is upholstered and not by the type of leather that is used.",
+      "source_id": "Source_leather4",
+      "source_chunk_index": 2,
+      "file_path": "https://www.ctlleather.com/wp-content/uploads/2025/05/CTL-Removing-Wrinkles-Marks-and-Creases-in-Leather.pdf?"
+    },
+    {
+      "content": "Leather goods like handbags, shoes, jackets, furniture, and automobile interiors can occasionally develop sticky surfaces that feel tacky or clingy. This stubborn stickiness is often caused by exposure to moisture, heat, oils, and other environmental factors that allow residues to accumulate on the leather slowly over time. Sticky leather can be frustrating to handle on purses, demanding to sit on in car seats and making jackets uncomfortable. The clingy, stubborn residue seems to penetrate deeper into the leather grain the longer it goes untreated, deteriorating the appearance, feel, and suppleness of leather items.",
+      "source_id": "Source_leather5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.leatherneo.com/blogs/news-and-stories/sticky-residue-on-leather-learn-how-to-remove-it-with-ease"
+    },
+    {
+      "content": "Punctures in leather_ Leather is a very strong material.  Although, a direct blow with a sharp object will put a hole in it.  I have gotten more than a few husbands who forgot they had a screwdriver in the back pocket out of deep trouble by fixing punctures like these.",
+      "source_id": "Source_leather6",
+      "source_chunk_index": 0,
+      "file_path": "https://www.leatherhelp.com/what-leather-repair/#:~:text=Punctures%20in%20leather%E2%80%93%20Leather%20is,by%20fixing%20punctures%20like%20these."
+    },
+    {
+      "content": "Leather can wear out in different ways, and each issue calls for a slightly different approach. So, before you jump into the repairs, know what kind of help you need to deal with: Here are the most common types: Surface scratches: As the name says, these are the light, superficial marks that don’t go all the way through. Small cuts or tears: These usually happen from sharp objects or rough use. They are still fixable, but it requires a bit of glue and patience to fix them. Large rips or holes: When the damage is more than skin-deep, you might need to bring in extra support, like a sub-patch or filler. Peeling or cracked leather: When the leather dries out over time due to lack of conditioning or sunlight, you can manage the right products.",
+      "source_id": "Source_leather6",
+      "source_chunk_index": 1,
+      "file_path": "https://www.klaussner.com/blogs/project/how-to-repair-a-tear-in-a-leather-sofa#:~:text=or%20drying%20out.-,How%20To%20Prevent%20Further%20Leather%20Damage?,Conclusion"
+    }
+  ]
+}

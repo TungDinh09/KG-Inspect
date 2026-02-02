@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "entity_name": "candle",
+      "entity_type": "decor",
+      "description": "A candle is fundamentally a simple product designed to provide illumination. In its simplest form, it consists of a central string, known as the wick, surrounded by a fuel source, which is typically a type of wax today.",
+      "source_id": "Source_candle1"
+    },
+    {
+      "entity_name": "good candle",
+      "entity_type": "quality status",
+      "description": "The images depict a set of four round, tea light candles arranged in a 2x2 grid against a dark background. Each candle features a central wick and displays a uniform off-white or creamy color with a smooth surface texture. Throughout the examination, there are no visible defects or anomalies identified; all candles maintain consistent shapes, colors, and overall appearances as expected for new, unused items. Minor variations such as slight imperfections in the wax surface or minor noise features attributed to lighting and shadows are present but do not interfere with the candles' functionality or aesthetic. These characteristics are common in mass-produced candles and are not regarded as defects or anomalies, leading to the conclusion that the objects exhibit the typical normal pattern expected for tea light candles without any notable irregularities.",
+      "source_id": "Source_candle1"
+    },
+    {
+      "entity_name": "different colour spot candle",
+      "entity_type": "defect type",
+      "description": "Visible patches or spots on the candle surface where the color differs from the normal uniform wax color, usually caused by contamination, pigment separation, or foreign material.",
+      "source_id": "Source_candle2"
+    },
+    {
+      "entity_name": "extra wax in candle",
+      "entity_type": "defect type",
+      "description": "Excess wax forming unusual bumps, accumulations, or overflow on the candle surface, often due to overpouring, uneven molding, or wax backflow.",
+      "source_id": "Source_candle3"
+    },
+    {
+      "entity_name": "foreign particles on candle",
+      "entity_type": "defect type",
+      "description": "Unwanted contaminants such as dust, fibers, or debris embedded on or within the candle’s wax surface.",
+      "source_id": "Source_candle4"
+    },
+    {
+      "entity_name": "wax melted out of the candle",
+      "entity_type": "defect type",
+      "description": "Wax leakage or melt-out resulting in deformed edges, exposed wick base, or uneven wax loss.",
+      "source_id": "Source_candle5"
+    },
+    {
+      "entity_name": "weird candle wick",
+      "entity_type": "defect type",
+      "description": "Abnormal wick shape, length, bending, or positioning that deviates from the expected centered and straight wick.",
+      "source_id": "Source_candle6"
+    },
+    {
+      "entity_name": "chunk of wax missing",
+      "entity_type": "defect type",
+      "description": "Portions of wax missing from the candle surface or edges, indicating breakage, poor molding, or improper demolding.",
+      "source_id": "Source_candle7"
+    },
+    {
+      "entity_name": "combined candle defects",
+      "entity_type": "defect type",
+      "description": "A candle exhibiting multiple simultaneous defects such as color spots, wax deformation, wick irregularities, or foreign particles.",
+      "source_id": "Source_candle8"
+    },
+    {
+      "entity_name": "damaged corner of packaging",
+      "entity_type": "defect type",
+      "description": "Damage, crushing, tearing, or deformation on the corner of the candle’s packaging.",
+      "source_id": "Source_candle9"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "candle",
+      "tgt_id": "good candle",
+      "description": "The relationship between a candle and good quality lies in how well the candle’s design, materials, and safety standards come together to ensure optimal performance.",
+      "keywords": "candle, good",
+      "weight": 0.8,
+      "source_id": "Source_candle1"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "different colour spot candle",
+      "description": "Color spot defects indicate inconsistent pigmentation or contamination in candle wax.",
+      "keywords": "candle, color spot defect",
+      "weight": 0.75,
+      "source_id": "Source_candle2"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "extra wax in candle",
+      "description": "Extra wax defects result from overpouring or excess molding material.",
+      "keywords": "candle, extra wax",
+      "weight": 0.75,
+      "source_id": "Source_candle3"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "foreign particles on candle",
+      "description": "Foreign particles indicate contamination during manufacturing or storage.",
+      "keywords": "candle, contamination",
+      "weight": 0.8,
+      "source_id": "Source_candle4"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "wax melted out of the candle",
+      "description": "Wax melt-out defects result from heat exposure, improper formulation, or structural weakness.",
+      "keywords": "candle, melted wax",
+      "weight": 0.8,
+      "source_id": "Source_candle5"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "weird candle wick",
+      "description": "Abnormal wick positioning or shape affects candle usability and burn quality.",
+      "keywords": "candle, wick defect",
+      "weight": 0.7,
+      "source_id": "Source_candle6"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "chunk of wax missing",
+      "description": "Missing wax indicates breakage or poor molding integrity.",
+      "keywords": "candle, missing wax",
+      "weight": 0.8,
+      "source_id": "Source_candle7"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "combined candle defects",
+      "description": "A candle may exhibit multiple defects simultaneously, complicating inspection.",
+      "keywords": "candle, combined defects",
+      "weight": 0.9,
+      "source_id": "Source_candle8"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "damaged corner of packaging",
+      "description": "Packaging corner damage indicates handling or storage issues rather than manufacturing defects.",
+      "keywords": "candle, packaging damage",
+      "weight": 0.6,
+      "source_id": "Source_candle9"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Candle has become a very popular home decoration, lifestyle and wellness product worldwide. Safety concerns however remain high as candle could lead to fire hazards from improper product design, wrong labelling and other factors. Maintaining rigorous quality control in candle can be effective in delivering a product that satisfies both the customers and safety requirements.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals/"
+    },
+    {
+      "content": "How a candle works A candle is a very simple product which in its simplest form is made up of a central string, (known as the wick) which is surrounded by a fuel source that nowadays is almost always a type of wax. When the wick is lit the heat of the flame melts the surrounding fuel (wax) into a liquid pool which is absorbed by the wick. The heat produced causes the liquid wax to vaporise and this vapour becomes the fuel for the burning flame. In a well designed candle the wick and the wax will burn off at a slow and uniform rate to provide a steady flame and dripping will not occur. Candlemaking materials Waxes (the fuel for the candle) Historically candles were made from animal fats such as beef, sheep and whale fat, but today cleaner and more efficient waxes are used. Most modern candles are made predominantly from paraffin wax which is usually mixed with a small proportion of other wax such as stearine. Paraffin wax Paraffin wax is the most important raw material used in candlemaking. It is available in most countries in solid slabs or as pellets or flakes. It is usually white in appearance but goes clear when liquid. It is odourless, tasteless and firm to the touch. Paraffin waxes are supplied with various melting-points ranging from 46° to 68°C. Those waxes which melt at around 58°C are ideal for candlemaking in temperate climates, although wax with a higher melting point is required for use in hotter climates. Stearine Stearine is a component of many animal and vegetable fats and has become an important material in candle making. It is important as a hardening agent for paraffin wax owing to its good temperature stability. It helps to overcome the problem of 'bending' which is sometimes experienced with paraffin wax candles in hotter climates. Stearine also helps in the release of candles from moulds, and improves burning qualities. It is commonly supplied as white flakes or granules. Stearine is usually added to paraffin wax in quantities of about 10% but this can be increased to achieve quality improvements. Candles can be made from 100% stearine.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.doc-developpement-durable.org/file/Fabrications-Objets-Outils-Produits/Bougie/Candlemaking.pdf"
+    },
+    {
+      "content": "Key Candle Safety Standards: ASTM F2417 (USA) – The ASTM F2417 standard outlines the safety specifications for candles, including requirements for fire safety such as ensuring that the candle's flame self-extinguishes before reaching the bottom, and limits on the production of soot and other emissions. EN 15493 (EU) – The European EN 15493 standard specifies safety requirements for fire safety, soot production, and burning behavior. Candles must meet these standards to be sold in the European market, ensuring they burn safely and cleanly.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.japagregulatorysolutions.com/post/essential-safety-standards-for-candle-manufacturers"
+    },
+    {
+      "content": "Flame Height Measurement: This is an essential on-site test to assess the safety of candles, as excessively tall flames can indicate a potential fire hazard. By measuring the flame height, it ensures candles are safe for consumer use. Flame height shall not exceed 3 inches (ASTM F2417-23 Sec. 4.1) or 75 mm, except tea lights (EN 15493:2019 Clause 4.3), when measured from the base of the flame to the tip of the flame. After Smoke Time: This performance test evaluates how long smoke is emitted after extinguishing the candle. The procedure involves lighting the candle for one minute and then extinguishing it. The after-smoke time should be less than 15 seconds; if it exceeds this duration, the test is considered a fail, indicating a potential issue with the candle's composition or wick.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "2. Burn Test: During on-site burn tests, candles are lit and their burn characteristics are carefully monitored and evaluated by inspectors. This process includes assessing flame height, burn time, and any dripping behavior. The goal is to ensure that the candle burns safely, evenly, and consistently, avoiding hazardous or undesirable effects such as excessive flame height or uneven wax pooling. 3. Fragrance Evaluation: For scented candles, the fragrance strength and consistency are tested to ensure the scent is evenly distributed and meets expectations. This includes checking for balanced fragrance release throughout the burn cycle, ensuring that the scent intensity is neither overpowering nor underwhelming, and confirming that the fragrance lasts for the expected duration without fading prematurely.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 4,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "Beeswax: Beeswax is a highly regarded candle-making material, excellent for making dipped and poured candles that are usually marketed as premium products. The wax burns slowly and emits a pleasant natural aroma. It is obtained by melting the honeycomb of bees in hot water, straining it, and allowing it to cool. Initially brownish-yellow, it can be lightened by bleaching. With a melting point of about 64°C, beeswax is relatively soft and sticky, making it difficult to mould in rigid moulds. It can be mixed with about 5% paraffin wax to improve both burning time and appearance. Vegetable Waxes: Many plants, shrubs, and trees yield waxes that can be extracted and processed for candle manufacture. Some can serve as the main candle fuel, while others are used in small amounts to enhance another wax’s properties. Vegetable waxes such as soy are marketed as sustainable, renewable, and cleaner-burning alternatives to paraffin wax. Other Waxes and Additives: Various specialist waxes and additives are available from candle-making suppliers, though none are essential for beginners. These include dip and carve wax (soft enough to shape at low temperatures), microcrystalline waxes (to adjust hardness), and overdipping wax (for a high-gloss finish). Wick: The wick is a vital candle component and must be chosen carefully. Most modern wicks are made from braided cotton strands, not cotton thread. A flat braid suits most candles, but square and round braids are also available. Some wicks include a paper or wire core for stiffness in container candles, but lead-core wicks should be avoided. Wicks can be purchased from suppliers or made by hand. When lit, the flame should melt a small wax pool at the top; the liquid wax is drawn up by capillary action, vaporised, and burned. A properly sized wick curls into the flame’s hottest part and burns cleanly. The general rule is: the larger the candle diameter, the thicker the wick. A wick too thick causes fast melting and dripping; too thin, and the flame may drown in wax. Viscous waxes like beeswax require thicker wicks. Dyes and Scents: When candles are sold as decorative rather than functional items, colour and fragrance can enhance their appeal.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 5,
+      "file_path": "https://www.doc-developpement-durable.org/file/Fabrications-Objets-Outils-Produits/Bougie/Candlemaking.pdf"
+    },
+    {
+      "content": "On-site Candle Inspection Checkpoints: To conduct a thorough quality control assessment of a candle’s safety and quality, several critical checkpoints must be addressed during on-site inspections. These checkpoints ensure that every aspect of the candle meets the required standards before the product reaches consumers. 1. Dimension Checks: Dimensions are the first aspect to be inspected for both performance and aesthetics. Inspectors measure the height, diameter, and wick length to verify they meet the specified requirements. Consistency in dimensions is essential to ensure even burning, stable performance, and an appealing product appearance.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 6,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "4. Appearance Inspection: Like many other products, candles are visually evaluated for their overall appearance. Inspectors check for cracks, air bubbles, uneven surfaces, misaligned wicks, or any other defects that could affect the candle’s aesthetic value. Such imperfections should be identified and addressed before the product proceeds to packaging to ensure a polished and high-quality final appearance. 5. Adhesion and Stability Evaluation: Candles must maintain their structural integrity during storage and transportation. Adhesion: Inspectors check the wax’s adhesion to the container, as poor adhesion can cause separation between the wax and container walls, leading to compromised appearance and quality. Stability: The candle should remain securely positioned in its container or base without wobbling or detaching, ensuring safe handling and consistent burning performance.",
+      "source_id": "Source_candle1",
+      "source_chunk_index": 7,
+      "file_path": ""
+    },
+    {
+      "content": "Beeswax: Beeswax is a highly regarded candle-making material, excellent for making dipped and poured candles that are usually marketed as premium products. The wax burns slowly and emits a pleasant natural aroma. It is obtained by melting the honeycomb of bees in hot water, straining it, and allowing it to cool. Initially brownish-yellow, it can be lightened by bleaching. With a melting point of about 64°C, beeswax is relatively soft and sticky, making it difficult to mould in rigid moulds. It can be mixed with about 5% paraffin wax to improve both burning time and appearance. Vegetable Waxes: Many plants, shrubs, and trees yield waxes that can be extracted and processed for candle manufacture. Some can serve as the main candle fuel, while others are used in small amounts to enhance another wax’s properties. Vegetable waxes such as soy are marketed as sustainable, renewable, and cleaner-burning alternatives to paraffin wax. Other Waxes and Additives: Various specialist waxes and additives are available from candle-making suppliers, though none are essential for beginners. These include dip and carve wax (soft enough to shape at low temperatures), microcrystalline waxes (to adjust hardness), and overdipping wax (for a high-gloss finish). Wick: The wick is a vital candle component and must be chosen carefully. Most modern wicks are made from braided cotton strands, not cotton thread. A flat braid suits most candles, but square and round braids are also available. Some wicks include a paper or wire core for stiffness in container candles, but lead-core wicks should be avoided. Wicks can be purchased from suppliers or made by hand. When lit, the flame should melt a small wax pool at the top; the liquid wax is drawn up by capillary action, vaporised, and burned. A properly sized wick curls into the flame’s hottest part and burns cleanly. The general rule is: the larger the candle diameter, the thicker the wick. A wick too thick causes fast melting and dripping; too thin, and the flame may drown in wax. Viscous waxes like beeswax require thicker wicks. Dyes and Scents: When candles are sold as decorative rather than functional items, colour and fragrance can enhance their appeal.",
+      "source_id": "Source_candle2",
+      "source_chunk_index": 0,
+      "file_path": "https://www.doc-developpement-durable.org/file/Fabrications-Objets-Outils-Produits/Bougie/Candlemaking.pdf"
+    },
+    {
+      "content": "4. Appearance Inspection: Like many other products, candles are visually evaluated for their overall appearance. Inspectors check for cracks, air bubbles, uneven surfaces, misaligned wicks, or any other defects that could affect the candle’s aesthetic value. Such imperfections should be identified and addressed before the product proceeds to packaging to ensure a polished and high-quality final appearance. 5. Adhesion and Stability Evaluation: Candles must maintain their structural integrity during storage and transportation. Adhesion: Inspectors check the wax’s adhesion to the container, as poor adhesion can cause separation between the wax and container walls, leading to compromised appearance and quality. Stability: The candle should remain securely positioned in its container or base without wobbling or detaching, ensuring safe handling and consistent burning performance.",
+      "source_id": "Source_candle3",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "It has been observed that the existing candle-moulding machine has a poor mechanism for centering the wick in the candle wave. This is a major problem encountered in designing a simple and effective method for centering the wick.",
+      "source_id": "Source_candle4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.cambridgenigeriapub.com/wp-content/uploads/2021/01/CJERT_Vol18_No5_Sept_2020-28.pdf"
+    },
+    {
+      "content": "**5. Adhesion and Stability Evaluation:** Candles must maintain their structural integrity during storage and transport. **Adhesion:** Check the wax’s adhesion to the container, as poor adhesion can lead to separation and compromised product quality. **Stability:** Assess the overall stability of the candle to prevent deformation and damage during handling. **6. On-site Safety and Performance Testing:** On-site tests are crucial for evaluating the functional performance and safety of candles, identifying any issues that could compromise their quality or consumer safety. The tests outlined below are designed to detect potential problems that may affect the candle’s burn quality, safety, and overall consumer experience.",
+      "source_id": "Source_candle5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "How a candle works A candle is a very simple product which in its simplest form is made up of a central string, (known as the wick) which is surrounded by a fuel source that nowadays is almost always a type of wax. When the wick is lit the heat of the flame melts the surrounding fuel (wax) into a liquid pool which is absorbed by the wick. The heat produced causes the liquid wax to vaporise and this vapour becomes the fuel for the burning flame. In a well designed candle the wick and the wax will burn off at a slow and uniform rate to provide a steady flame and dripping will not occur. Candlemaking materials Waxes (the fuel for the candle) Historically candles were made from animal fats such as beef, sheep and whale fat, but today cleaner and more efficient waxes are used. Most modern candles are made predominantly from paraffin wax which is usually mixed with a small proportion of other wax such as stearine. Paraffin wax Paraffin wax is the most important raw material used in candlemaking. It is available in most countries in solid slabs or as pellets or flakes. It is usually white in appearance but goes clear when liquid. It is odourless, tasteless and firm to the touch. Paraffin waxes are supplied with various melting-points ranging from 46° to 68°C. Those waxes which melt at around 58°C are ideal for candlemaking in temperate climates, although wax with a higher melting point is required for use in hotter climates. Stearine Stearine is a component of many animal and vegetable fats and has become an important material in candle making. It is important as a hardening agent for paraffin wax owing to its good temperature stability. It helps to overcome the problem of 'bending' which is sometimes experienced with paraffin wax candles in hotter climates. Stearine also helps in the release of candles from moulds, and improves burning qualities. It is commonly supplied as white flakes or granules. Stearine is usually added to paraffin wax in quantities of about 10% but this can be increased to achieve quality improvements. Candles can be made from 100% stearine.",
+      "source_id": "Source_candle6",
+      "source_chunk_index": 0,
+      "file_path": "https://www.doc-developpement-durable.org/file/Fabrications-Objets-Outils-Produits/Bougie/Candlemaking.pdf"
+    },
+    {
+      "content": "On-site Candle Inspection Checkpoints: To conduct a thorough quality control assessment of a candle’s safety and quality, several critical checkpoints must be addressed during on-site inspections. These checkpoints ensure that every aspect of the candle meets the required standards before the product reaches consumers. 1. Dimension Checks: Dimensions are the first aspect to be inspected for both performance and aesthetics. Inspectors measure the height, diameter, and wick length to verify they meet the specified requirements. Consistency in dimensions is essential to ensure even burning, stable performance, and an appealing product appearance.",
+      "source_id": "Source_candle7",
+      "source_chunk_index": 0,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "Flame Height Measurement: This is an essential on-site test to assess the safety of candles, as excessively tall flames can indicate a potential fire hazard. By measuring the flame height, it ensures candles are safe for consumer use. Flame height shall not exceed 3 inches (ASTM F2417-23 Sec. 4.1) or 75 mm, except tea lights (EN 15493:2019 Clause 4.3), when measured from the base of the flame to the tip of the flame. After Smoke Time: This performance test evaluates how long smoke is emitted after extinguishing the candle. The procedure involves lighting the candle for one minute and then extinguishing it. The after-smoke time should be less than 15 seconds; if it exceeds this duration, the test is considered a fail, indicating a potential issue with the candle's composition or wick.",
+      "source_id": "Source_candle8",
+      "source_chunk_index": 0,
+      "file_path": "https://www.eurofins.com/assurance/resources/articles/mastering-candle-quality-control-a-guide-for-industry-professionals"
+    },
+    {
+      "content": "If the outer packaging is damaged but the candle itself is intact, it's generally safe to use. However, if the candle or its glass container is damaged, you should contact the seller immediately to arrange for a replacement or refund and should not attempt to use a broken glass candle.",
+      "source_id": "Source_candle9",
+      "source_chunk_index": 0,
+      "file_path": "https://www.google.com/search?q=candle+damaged+corner+of+packaging&sca_esv=e2c075d3965e5d0f&udm=50&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zENwnGygERInUV_0g0XKeHGJRAdFPaX_SSIJt7xYUfpm-_vQHq3hzHA2DKyn4_QBnQmzJzRbbjOPw1BvHSgNexNC5jSodwJyUf9ShepeRyo9v8zFXa2L8yHpwYqfwHO1OhlqKIRkTHraEoOB3eu_IxqCAwwguA&aep=1&ntc=1&sa=X&ved=2ahUKEwjGuoyJ25iRAxV7cvUHHTzoAOkQ2J8OegQIDRAE&biw=1875&bih=947&dpr=1&mstk=AUtExfBofLI2bmUxEccF1qjS3EJmWXBwZSBat6hZqXRftIBKuuGPxO6krihbvtin_lkzSuSNZjHT-nTwMatpGnYio0TvXfi470xPAJY0ZWilbIk_5SWl6C3mo-WaND4IuE4hQF5kmFdpV7Xuw3O8BSx_aNZAm-SGdnBtmb4n3vT0eKaMT-unRDX7nJ0lOWJxiv5lKBLhWDCsZ2e7dNBeXr4lcIrnZwuvMXr44qe5JJgmzHupdcav4OaacapaZQ&csuir=1"
+    }
+  ]
+}

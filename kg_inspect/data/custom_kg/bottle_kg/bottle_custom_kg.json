@@ -1,0 +1,286 @@
+{
+  "entities": [
+    {
+      "entity_name": "bottle",
+      "entity_type": "container",
+      "description": "A good container is one that will successfully pass the inspection standards set to meet a customer's needs before it is released for sale from the glass plant. It should go through the customer's filling line without causing difficulty and must carry the product to the consumer. Finish is The top of the container located above the neck ring parting line. It is one of the most vital parts as it must be free of all serious defects to guarantee complete sealing on the filling line. It includes the sealing surface, the bore (or mouth, used for filling and emptying), and the bead or collar (ring). Neck is the part that extends from the parting line down to the curve at the base of the neck, shoulder is the area that extends from the neck to the body, and body is the main portion of the container. The base is the bottom of the container, which may be flat, concave, or have a kick-up. Shoulder is The section that extends from the base of the neck to the straight part of the body. Body is main part of the container designed to hold the product. Insweep (Heel) is the curve located between the body and the bottom, included to improve glass distribution and thus strength. Bottom is the part of the container on which it stands when upright. Push-Up the raised center of the bottom, which is provided to create a flat surface on the outer edge of the bottom, ensuring the container has firm seating.",
+      "source_id": "Source_bottle1",
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "entity_name": "broken_large bottle",
+      "entity_type": "physical defect",
+      "description": "The defect is characterized by significant breakages or chips in the edges of the bottle openings. These defects typically manifest as jagged, irregular breaks with sharp edges that disrupt the otherwise smooth and uniform circular contour of the bottle's rim. The breaks are usually large enough to compromise the structural integrity and functionality of the bottle, often appearing at various positions around the opening, including the center and edges. The exposed surfaces where material is missing contrast starkly with the intact areas of the bottle, showing a deviation in both texture and color. This type of defect presents safety hazards and may lead to product rejection during quality inspections. Useful visual features for distinguishing this defect include the jagged edge appearance, irregular shapes, and the presence of missing or chipped material around the bottle's opening.",
+      "source_id": "Source_bottle2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "broken_small bottle",
+      "entity_type": "physical defect",
+      "description": "The defect characterized here is a small breakage or chip on the rim of the bottle's opening. This defect typically presents as an irregular, jagged edge where a piece of the material has been broken or chipped away. The affected area often shows a contrast in texture and color compared to the surrounding surface, with the break appearing lighter or darker than the continuous material. The disruption of the otherwise smooth and circular outline of the bottle rim indicates a physical alteration, possibly compromising the bottle's structural integrity. The defect is generally located at various positions around the rim, notably described as being towards the center left, center right, or bottom center, depicting a common vulnerability in the bottle's design.",
+      "source_id": "Source_bottle3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "contamination bottle",
+      "entity_type": "physical defect",
+      "description": "The defects identified present as irregular anomalies within the interior of a bottle's opening. These anomalies generally contrast with the expected uniform dark appearance and smooth texture of the interior surface. Visually, the contamination appears as lighter patches, smudges, cloudy areas, or irregular shapes differing from the surrounding material. Some defects exhibit jagged or rough edges, suggesting foreign substances or residue that compromise the cleanliness and quality of the bottle's contents. The contaminants are typically located at or near the center of the bottle opening, often exhibiting varying colors or textures that disrupt the expected appearance of the product, indicating potential quality control issues in manufacturing or handling.",
+      "source_id": "Source_bottle4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "good bottle",
+      "entity_type": "quality status",
+      "description": "The images depict the top view of various bottles with a circular opening leading to their interiors. The characteristics include a symmetrical and intact circular rim, which may feature threading for screw-on caps. The bottles are typically made of dark glass or plastic, showcasing a glossy surface that reflects light. The dark central area usually indicates the empty interior of the bottles, while the rim displays variations in color and texture that are expected due to manufacturing processes. No visible defects such as chips, cracks, or irregularities are noted in any of the images, and the overall appearance aligns with what is considered standard for such products. Minor variations in reflectiveness or noise features due to lighting conditions are typical and do not signify any defects. All inspected objects follow the normal patterns expected for bottles of this kind.",
+      "source_id": "Source_bottle1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "bottle",
+      "tgt_id": "broken_large bottle",
+      "description": "Significant physical defect in the glass structure, as a characteristic result of catastrophic failure",
+      "keywords": "defect, bottle, large, broken",
+      "weight": 0.9,
+      "source_id": "Source_bottle2"
+    },
+    {
+      "src_id": "bottle",
+      "tgt_id": "broken_small bottle",
+      "description": "Minor manufacturing and handling defects that manifest as small breaks or cracks in the glass",
+      "keywords": "defect, bottle, broken, small",
+      "weight": 0.8,
+      "source_id": "Source_bottle3"
+    },
+    {
+      "src_id": "bottle",
+      "tgt_id": "contamination bottle",
+      "description": "Significant concern for both the structural integrity and the contents of a glass bottle, arising from manufacturing defects, external degradation, or introduction during bottling and filling processes.",
+      "keywords": "defect, bottle, contamination",
+      "weight": 0.75,
+      "source_id": "Source_bottle4"
+    },
+    {
+      "src_id": "bottle",
+      "tgt_id": "good bottle",
+      "description": "successfully fulfills, ensuring smooth operations during manufacturing and maintaining product quality until consumption",
+      "keywords": "good, bottle",
+      "weight": 0.9,
+      "source_id": "Source_bottle1"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "A good container is a container that will go through the customer’s filling line without causing any difficulty and will carry his product to the consumer. Therefore, it is essential that before a container is released for sale from the glass plant, it successfully passes an inspection with standards set to meet the customer’s needs. There are approximately one hundred defects which can develop in the container during the production process, some beyond the control of the operator, for example stones; but by far the largest number occur either in the feeder or machine operation. It Is important that all production personnel learn to recognize the defects and understand what remedies to use in order to eliminate them.",
+      "source_id": "Source_bottle1",
+      "source_chunk_index": 0,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "The sealing device is in the finish (see next section), also the bore or mouth for filling and emptying. The bead or collar is used to assist In transferring the parison into the blow mold. Neck The part which extends from the parting line to the curve at the base of the neck. Shoulder This extends from the base of the neck to the straight part of the body. Body The main part of the container which holds the product. Bottom The part of the container on which it stands when upright. Insweep (Heel) The curve between body and bottom which helps to improve glass distribution and thus strength. Push-Up The center of the bottom which is raised up to provide a flat surface on the outer edge of the bottom and thus provide a firm seating. Bore Finish Bead or Collar (Ring) Base of neck Shoulder Body Lower Contact Point Insweep (Heel) Bottom Push Up Neck Upper Contact The various parts of a container (cont’d) When producing a glass container, various mold equipment items are used: blank mold, baffle, plunger, neck ring, blow mold and bottom plate. Where these items join, seams are produced in the container. If the seams do not meet the standard specified, the container is rejected. It is, therefore, essential that all mold equipment be examined in the mold shop and again in the production department. It must be stored correctly and handled with care at all times.",
+      "source_id": "Source_bottle1",
+      "source_chunk_index": 1,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Since glass bottles are often reused in bottling plants, they become increasingly susceptible to wear and tear, further elevating the risk of breakage over time. Proper line setup and maintenance are crucial to minimize these risks. Common Causes of Damage The graphic below shows common areas on the line where glass damage may occur. As shown, glass damage can occur at almost any point along the production line, but the most critical zones are typically: 1 Washer exit 2 Packer infeed 3 Pasteurizer Achieving operational efficiency requires managing key parameters: pressure, speed, temperature, and lubrication. ",
+      "source_id": "Source_bottle1",
+      "source_chunk_index": 2,
+      "file_path": "https://smartskintech.com/blog/food-and-beverage/understanding-glass-damage-in-beverage-manufacturing"
+    },
+    {
+      "content": "C. Mold equipment • Check blank design and decrease run-down • Check dimensions of blank mold neck and blow mold opening. Section 6 Other Defects Broken Ware Definition Ware which is cracked or broken into pieces. Causes A. Feeder 1. Cold glass B. Machine setup and operation 1. Machine speed too low 2. Improper timing setup for forming cycle 3. Too much final blow pressure 4. Ware too cold 5. Excessive swabbing 6. Blank and blow mold are too cold C. Mold equipment 1. Incorrect mold design 2. Blanks and baffles not correctly matched ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 0,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "weight and shape (may need to change orifice ring) • Centralize the plunger • Lower the shear height • Change orifice ring to a smaller one • Change the feeder plunger B. Machine setup and operation • Increase blank cooling and plunger cooling Broken Finish Definition A finish which has cracks or actual pieces of glass broken out of it. Causes A. Feeder 1. Glass too cold B. Machine setup and operation 1. Plunger contact time too long 2. Finish equipment running too cold 3. Incorrect adjustment of plunger mechanism height ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 1,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Cavity Identification The bumps on the heel and/or rings on the bottom enable inspection equipment to read the bottle information Manufacturer’s mark Additional information may include plant identification, year manufactured, mold number, container capacity and fill level 1 1 2 2 3 3 Forming processes Blow and blow Blank side Blow side Wide mouth press and blow Blank side Blow side Narrow neck press and blow Blank side Blow side Main types of sealing systems The finish is one of the most vital parts of the container. It must be free of all serious defects to guarantee complete sealing on the filling line. Some defects, such as crizzles on the top sealing surface, may cause a container to leak slowly; which will only be discovered when opened and the contents found to be stale or to have spoiled. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 2,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Section 6 Other Defects 183 Broken Ware ................................................................. 184 Cords ............................................................................. 186 Out-Of-Shape Ware or Leaner .................................... 188 Stuck Ware ................................................................... 190 Uneven or Bad Distribution ....................................... 192 Alphabetical index of defects 194 The examination of a container A good container is a container that will go through the customer’s filling line without causing any difficulty and will carry his product to the consumer. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 3,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "of direction is typical. There is no vertical fissure and Every bottle manufacturer knows that a thermal shock no spiral Assure traveling down to the base; there is no fracture, as made in his testing department, does not in the crack in the base at all. This is entirely different from least resemble the cracks from a hydrostatic test. In the typical beers, sodas, etc. The fissure is very smooth and highly polished, and in this ense the bottle did not break thermal shock test, the bottle, though cracked, likely Into two separated parts, though such a result is more remains in one piece or, at the most, the bottom comes usual. Arrows mark directions of propagation, Crack out separately. If the glass is bad or the shock unusually made by quenching in water at 78\"F differential.  ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 4,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "In the present instance, the base The general principles aie laid down first, because the did not separate completely from the rest of the bottle, forms of fractures are altogether too complicated to be and the exact position of the origin was not determined. understood in the absence of guiding principles. The erack tends to be very smooth and brightly polished throughout most of its extent, without forks, and striated only where it turns at a flat angle to the face. Il. Examples of Typical Breaks\" FIG. 2 .- A thermal shock crack in a 10 sided emerald We mentioned at the outset that the fragments of # green siphon bottle, The crack is confined to a circum- broken bottle are not just an amorphous, meaningless ferential fissure around two-thirds of the shoulder. The origin is a trifle abnormal in showing a sharp change of muss, but that they can usually be made to outline the direction of the externat trace; a much slighter change circumstances producing the break. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 5,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "For some reason, the bases of these bottles are not vul- nerable, perhaps owing to favorable stresses left by an- ntaling, perhaps to odber circumstances not yet fully worked out. The baffe marks are usually less conspicuous in siphous, and it is these which seem to be the Achilles' heel of the average be verage bottle. Ordinarily thermal shock fractures do not fork and be- come multiple fissures. The fracture surfaces are smooth and polished and nearly featureless, There is no gray or mat surface as a nale. The fissure apparently is a slow Fig. 3 Fig. 4 traveling one. Woodworth feathers or \"striations\" Fio. 3 .- Thermal shock crack in a cylindrical siphon; may be (and usually www) found toward the ends of the origin near the shoulder, at a very slight bruise; main fissure, which usually tries to turn over and change its crack vertical, as in typical sodas and beers, but origi- plane. nating at a totally different place. The fissure is at right angles to the surface of the glass Fro. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 6,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "As if these complications were not enough, we discover tempt to express their strength in terms of tensile stress, that the tensile strength of a glass object tends to vary but simply record, in the case of internal pressure, that greatly with its line, Thus a glass fiber gives a much pressure at which the bottles, on the average, break, In the case of thermal shock, we usually give the tem- greater strength than a thin rod, and a thin rod is much perature differential that breaks 50% of them when the quenching medium is water. As will appear later, there ones. The important thing, theoretically, is the ratio of are several factors that must be specified before these the wall thickness to the internal diameter. In practice, figures mean very tauch. this is troublesome to measure, and the criterion used is A thick-walled soda bottle, when new, may have a the \"weight per capacity ratio.\" Thus a bottle may strength in excess of 1000 lb./sq. in, hydrostatic pressure. weigh 32 oz. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 7,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "top of the panel not only indicate the temperatures but, The operator at his convenience takes out the bottles by connections with solenoid valves, they also maintain one by one and inspects them for cracks; for whereas an the proper temperatures automatically. The water in the internal pressure break destroys the whole bottle and leaves nothing but fragments, a thermal shock test usually produces a simple split. Normally, it is enough to let the water out of the bottle and so betray its presence, but not always; therefore the bottles must be inspected. The recommended differential on the shock test is 75ºF, with the cold bath at 70ºF, and the hot bath at 145ºF. Other Tests The above tests are all that are at present sufficiently well understood to be recommended for a check on factory operation. To deal with complaints from customers and with troubles produced by the customers themselves, some additional equipment is advisable. ",
+      "source_id": "Source_bottle2",
+      "source_chunk_index": 8,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "• Adjust gob temperature • Reshape the gob B. Machine setup and operation • Increase settle blow time and swab the blank • Increase the plunger contact time • Use the neck ring cooling nozzle • Use a smaller final blow tube and/or a larger exhaust hole • Realign the blowhead over the mold • Increase the counterblow C. Mold equipment • Increase the depth of blowhead • Clear vent holes in blowhead • Check neck of mold for correct size Checked Finish or Finish Tear Definition A finish which has a light surface crack in the threads or in the middle of the finish. ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 0,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Chipped Finish Definition A finish from which a small section is broken on the top or side. Causes A. Feeder 1. Glass too cold B. Machine setup and operation 1. Neck ring closing too soon when reverting, pinching the finish 2. Insufficient or unequal neck ring opening 3. Incorrect cushioning of invert mechanism on the blow mold side 4. Neck ring opening too hard 5. Incorrect setting of blowhead (out of center) 6. End of outstroke cushioning on take out incorrect 7. Take out tongs are out of line or closing too hard 8. Incorrect setting of neck ring over the mold 9. Bottom plate too high ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 1,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Letter Checks Definition Small cracks or fissures which occur from any lettering or embossing. Causes B. Machine setup and operation 1. Incorrect mold temperature 2. Too much final blow pressure 3. Bottom plate setting too high or too low - bottle dropping or lifting when mold opens 4. Vent holes blocked C. Mold equipment 1. Check relief in lettering 2. Engraving should be relieved 3. Shape of engraving does not correspond to ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 2,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "4. Internal pressure break in typical soda bottle. This bottle was not very strong and broke at a moderate at its point of origin aad usually throughout much of its pressure. In consequence, the amount of forking of the length, particularly wa, the vertical split; these parts of cracks is moderate also; when a bottle breaks under high the fissure are nearly featureless so much so that the pressure, the number of fissures is vastly greater. The origin is often difficult to locate with certainty. origin is in normal position, on the barrel of the bottle, This description apoles only to the case where thermal and normally oriented, i.e., the initial fissure runs straight up and down. It forks at a normal time, vis .. shock sets alone; necessarily the picture is changed if the just as soon as the bright polished area of the origin bottle is under intentil pressure when the thermal shock gives way to a gray striated structure (shown in Fig. 44. is administered. ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 3,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "It is margined by a long as it is deep, Checks may have almost any orienta- gray or mat aren; immediately beyond this, rough stria- tion. tions appear, and the fracture forks into several cracks The complex cases resulting from prying on a bottle (Fig. 4). Some of these fissures may not go entirely containing internal pressure, hitting such a bottle a blow, through the thickness of the glass; the outermost do and and so on, are among the most confusing. The Internal usually some of the others. pressure usually dominates the pattern after the start, As it is usually quite impossible to arrest the pressure and it is important to get all possible information about the at this stage, the fractures travel completely round the start or origin. bottle and meet on the far side, The neck is intact, and The origin in a pressure breuk is well defined, and in 999 attached to it is the fan of fissures representing the upper casca out of 1000, there is only one origin per bottle. ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 4,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "In \"radiant.\" The base is typically intact, and attached to it freak instances, two may be present. Whenever multiple is the lower fan of fissures. The barrel of the bottle may origins are found, the circumstances are suspicious, for remain in one piece, like a collot, narrow on one side at the origin and wide on the other. More often it is in two large pieces, the collar splitting up the back with a crack which is not perpendicular to the surface. These three or four pieces are a theoretical minimum. In practice, the number of fragments is usually much greater, partly be- cause the radiants or fans of fissures may break the end pieces, partly because the fragments usually drop a greater or less distance and break over again. Under normal testing conditions, however, the pattern is remarkably face Outer uniform. Fig. 5A Fig.5B Fig. 5c Siphon bottles usually have their origin very high, near Fics. 5(A, B, C). ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 5,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "This matter is still sub judice, for on the face of things, cracks can travel continuously severe, he may get two or three separate pieces, but on a at exceedingly siow velocities (see Part IV, Experiment \"pressure\" test, be usually gets a great many fragments, No. 1, p. 7). and these dagger-sharp (not rounded), Most manufac- We can say, however, with some confidence that turers would be able to identify a bottle broken by a nor- Schardin has shown that if a crack in a bottle is a foot mal thermal shock and would recognize it as something long, it could be formed in 1/as part of a second, if it were all formed at maximum speed. In practice, it would seem likely that the peak velocity may be reached for a short part of the time, but on the fractured surface at the end of the experiment, there are features that appear to depend on the violence of the cracking process, which we have hitherto called the \"speed\" of the fracture. ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 6,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "(empty) and be intended to hold 28 oz. of A typical siphon bottle may average 500 lb,/sq. in. on a water, Its weight per capacity ratio in then 32 to 28 or \"soup\" test. A typical beer bottle may run around 400 1.14. It is found, in practice, that to a first approxima- 1b./sq. in .; a lightweight Steinle may be around 200 lb./- tion, bottles having the same weight per capacity ratio sq. In .; and a square bottle may he only 50 1b./sq. in. teud to have somewhat similar internal pressure strengths. The extent of this correlation may be judged from the 1100 graph in Fig. 8. Additional data are given in Table III. AVERAGE SNAP PRESSURE STRENGTH OF A FEW TYPICAL EXAMPLES OF PRESSURE WARM Type Capacity Strength 900 (Ib./sq. ",
+      "source_id": "Source_bottle3",
+      "source_chunk_index": 7,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "Stones Definition Small pieces of refractory or unmelted batch materials. May appear on the finish, sidewall, or base. Note: The production personnel cannot cure this defect, but it must be reported immediately as it is symptomatic of more serious trouble. Some Possible Causes 1. Refractories from the furnace or forehearth are falling into the molten glass 2. Batch materials are contaminated or Incorrectly melted 3. Furnace pull may be too high 4. Flames impinging on furnace refractories 5. Contaminated cullet ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 0,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "guide ring • Check for correct design of plunger • Redesign parison Seeds Definition Very small bubbles in the glass. May appear on the finish, sidewall, or base. Note: This defect cannot always be remedied by the production personnel. Causes 1. Furnace pull is too high 2. Furnace temperatures too low 3. Glass composition out of control 4. The atmosphere in the rear of the furnace contains carbon monoxide (CO) Remedies A. Feeder • Adjust air/gas mixture in the forehearth to give “flameless” combustion ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 1,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "is hot D. Conveyor • Increase the conveyor speed - that is increase the spacing G. Lehr operation • Improve lehr loading • Adjust lehr temperature and/or speed • Use a more suitable lehr belt • Protect from draughts, wind, etc. Cords Definition Streaks of glass having a composition different from the main body of glass. Causes 1. Batch is incorrectly proportioned 2. Batch scales are faulty 3. Batch segregation is occurring 4. Faulty batch charging into the furnace 5. Foreign cullet is being used ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 2,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Remedies • This defect cannot be remedied by the production personnel but it must be reported as soon as it is observed. It is a serious defect and can cause trouble in the customer’s plant. Out-Of-Shape Ware or Leaner Definition Containers which are tilted to one side due to bottom not being level. Note: They must be corrected at once, as they may cause trouble on the customer’s filling line, when washing, filling or labeling. Causes A. Feeder 1. Glass too hot B. Machine setup and operation 1. Insufficient final blow time and/or pressure 2. Incorrect application of cooling wind - mold too hot 3. Machine speed is too high 4. Blow mold cycle too short 5. Unsuitable ware pusher design 6. Container not hanging in the take out long enough ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 3,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "For this purpose, the tint plate is best removed, All commercial bottles tend to be slightly cordy, and and the cross then becomes black. this is true of handmade bottles imported from Europe The cross arises, of course, from the fact that ordinary just as much as of the product of the high speed machinery polariscopes use plane polarized light; in circularly po of America. In general, it appears that cord can become larized light (which is used in a good many photoclastle quite conspicuous in the polariscope without affecting in polariscopes, following a suggestion of Silvanus Thomp- any measurable way the properties of the bottles, At a somewhat uncertain point, cord becomes \"excessive.\" * December 22, 1936. and thermal shock strength drops off. The bottles may 19 See footnote 7(d). also show weakness under long-continued hydrostatic pressure, as if they had a high fatigue rate. ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 4,
+      "file_path": "kg_inspect/data/doc/source_bottle/p049-bottle_breakage_-_causes_adn_types_of_fractures.pdf"
+    },
+    {
+      "content": "bottom plate • Check cooling on time - is not on too early • Vertiflow on before revert on Black Spots Definition Small black specs in the container. May appear on the sidewall or base. Note: They may come from oil, rust, graphite, or even furnace droppings. Causes A. Feeder 1. Foreign matter in glass 2. Bad combustion - air/gas ratio too low 3. Oil or dirty shear blades 4. Foreign matter in the forehearth generally 5. Buildup of deposit on spout casing from the shear sprays B. Machine setup and operation 1. Dirty delivery equipment 2. Insufficient cooling wind on all mold equipment 3. Excessive use of oil doper  ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 5,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "swabbing compound C. Mold equipment • Use a smaller size blank • Alter the blank shape to give easier loading • Check for correct size of funnel Oil Marks Definition Strings of small bubbles in the container. May appear on the sidewall or base. Causes B. Machine setup and operation 1. Oil accumulation on shears, delivery equipment and mold equipment 2. Oil accumulation on take out Remedies B. Machine setup and operation • Clean shears, delivery equipment and mold equipment Pressure Checks Definition Checks characterized by thin, vertical cracks appearing at the seam. ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 6,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Remedies A. Feeder • Adjust gob temperature B. Machine setup and operation • Reduce plunger cooling air • Blow out the final blow air line • Reduce doping oil • Use final blow tube with smaller hole • Reduce the vacuum time • Insulate take out tongs C. Mold equipment • Correct the depth of blowhead • Check take out tongs for clearance • Polish and relieve neck rlng form Dirty or Rough Finish Definition A finish which has a scaly appearance and which may even have black spots on it. Note: If it is badly pitted, it will cause sealing problems on the filling line. ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 7,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "C. Mold equipment 1. Incorrect blank mold and neck ring match 2. Offset blank mold holder Remedies A. Feeder • Adjust the feeder temperature • Correct the gob shape • Reset the shears B. Machine setup and operation • Check neck ring setting • Check plunger cylinder setting • Reduce the settle blow time • Reset deflectors and check the gob loading C. Mold equipment • Check with mold gauges • Change the blank mold holder Dirty Neck Definition A neck which has a dirty or scaly appearance. ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 8,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "C. Mold equipment • Correct mold design - reduce mold weight • Increase venting of mold • Check venting of blowhead Dirty Ware Definition Ware which has carbon or dirty deposits on it. May appear on the sidewall or base. Causes A. Feeder 1. Excessive oil on the shears B. Machine setup and operation 1. Excessive swabbing or oil spray 2. Blank and/or blow mold dirty 3. Excessive sulphur 4. Dirty delivery equipment 5. Insufficient cooling wind 6. Dirt or scale on the delivery equipment C. Mold equipment 1. Poor quality mold castings ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 9,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Causes B. Machine setup and operation 1. Too much cooling on the blank mold 2. Buildup of carbon on neck of the blank due to excessive swabbing 3. Dirty swab 4. Swabbing compound too thick 5. Swab made of incorrect material and wrong shape 6. Wrong grade of mold lubricant 7. Excessive oil on the delivery equipment C. Mold equipment 1. Poor surface of blank cavity Remedies B. Machine setup and operation • Reduce the blank cooling • Change blank • Use a new clean swab of correct shape • Use a correct grade swabbing compound • Use a swab made from cotton • Use correct grade of mold lubricant • Fit drip pan to deflector ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 10,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+
+    {
+      "content": "D. Conveyor • Increase the deadplate cooling wind • Reset the deadplate cooling time • Change the worn deadplates Base Spikes Definition A small projection of glass in the bottom of the container. Note: The effect of a spike can be produced by a glass particle falling or being blown into a hot container and sticking to the bottom. Good housekeeping is required to remove all possible particles from the machine. Causes A. Feeder 1. Glass too hot B. Machine setup and operation 1. Plunger is too hot (press and blow operation) 2. Plunger dirty (press and blow process) 3. Plunger adapter has become loose 4. Restriction of the cooling and/or exhaust air ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 11,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "C. Mold equipment • Check blank design and decrease run-down • Check dimensions of blank mold neck and blow mold opening Section 6 Other Defects Broken Ware Definition Ware which is cracked or broken into pieces. Causes A. Feeder 1. Cold glass B. Machine setup and operation 1. Machine speed too low 2. Improper timing setup for forming cycle 3. Too much final blow pressure 4. Ware too cold 5. Excessive swabbing 6. Blank and blow mold are too cold C. Mold equipment 1. Incorrect mold design 2. Blanks and baffles not correctly matched ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 12,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "weight and shape (may need to change orifice ring) • Centralize the plunger • Lower the shear height • Change orifice ring to a smaller one • Change the feeder plunger B. Machine setup and operation • Increase blank cooling and plunger cooling Broken Finish Definition A finish which has cracks or actual pieces of glass broken out of it. Causes A. Feeder 1. Glass too cold B. Machine setup and operation 1. Plunger contact time too long 2. Finish equipment running too cold 3. Incorrect adjustment of plunger mechanism height ",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 13,
+      "file_path": "kg_inspect/data/doc/source_bottle/BR0060-Container-defect-causes-and-remedies.pdf"
+    },
+    {
+      "content": "Identifying Glass Damage Shattered brown beer bottle While most people think of “glass breakage” as a bottle cracking or shattering, other, less obvious forms of damage are equally important to monitor. These include: 1 Scuffing/Scratches – Minor abrasions that may compromise bottle integrity. 2 Cracks – Leading to product spillage or weakening of the glass structure. 3 Micro-breakage – Small fractures visible only at a microscope level but are still dangerous. 4 Glass Breakage – Obvious and hazardous breakage. 5 Glass Explosion – The most severe form of damage, posing immediate safety risks.",
+      "source_id": "Source_bottle4",
+      "source_chunk_index": 14,
+      "file_path": "https://smartskintech.com/blog/food-and-beverage/understanding-glass-damage-in-beverage-manufacturing"
+    }
+  ]
+}

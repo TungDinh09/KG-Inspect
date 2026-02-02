@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "entity_name": "bottle",
+      "entity_type": "container",
+      "description": "A bottle used for storing liquids.",
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    },
+    {
+      "entity_name": "broken_large",
+      "entity_type": "physical defect",
+      "description": "A large broken defect with jagged edges.",
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    },
+    {
+      "entity_name": "MVTec-AD",
+      "entity_type": "anomaly detection dataset",
+      "description": "Dataset for benchmarking anomaly detection methods.",
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "bottle",
+      "tgt_id": "broken_large",
+      "description": "The object has a specific defect.",
+      "keywords": "defect, object",
+      "weight": 0.9,
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    },
+    {
+      "src_id": "bottle",
+      "tgt_id": "MVTec-AD",
+      "description": "The object is part of the dataset.",
+      "keywords": "dataset, object",
+      "weight": 0.8,
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    },
+    {
+      "src_id": "broken_large",
+      "tgt_id": "bottom right",
+      "description": "The defect is located at the bottom right.",
+      "keywords": "location, defect",
+      "weight": 0.85,
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "The object, a bottle, has a large broken defect at the bottom right, characterized as a jagged irregular break, which presents a safety hazard.",
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad",
+      "source_chunk_index": 0
+    },
+    {
+      "content": "MVTec AD is a dataset for benchmarking anomaly detection methods with a focus on industrial inspection.",
+      "source_id": "https://www.mvtec.com/company/research/datasets/mvtec-ad",
+      "source_chunk_index": 1
+    }
+  ]
+}

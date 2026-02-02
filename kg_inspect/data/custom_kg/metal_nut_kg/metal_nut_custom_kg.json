@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "entity_name": "metal_nut",
+      "entity_type": "mechanical component",
+      "description": "A metal nut is an internally threaded fastener intended to mate with an externally threaded bolt/screw/stud to clamp parts together. Key quality drivers are accurate internal threads, correct wrenching geometry, flat and square bearing face, compliant material/heat treatment, and a sound protective finish where specified",
+      "source_id": "Source_metal_nut1"
+    },
+    {
+      "entity_name": "good metal_nut",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The item in the images is identified as a metal nut, typically featuring a hexagonal shape with a central threaded hole designed for fastening to a bolt or a similar fastener. The nuts maintain uniformity in their external shape and internal threading, showing no visible defects or anomalies in the surface texture. The metal surfaces are consistent with a smooth and reflective finish typical of well-manufactured components. All inspected nuts present clear, sharp edges without any visible deformations, scratches, or machining flaws, adhering to expected manufacturing standards. Lighting variations are noted but do not indicate defects, as they are part of the natural appearance of industrial components. Overall, the nuts feature crisp geometries and intact threading, matching the normal pattern expected from this type of hardware.",
+      "source_id": "Source_metal_nut1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "bent metal_nut",
+      "entity_type": "physical defect",
+      "description": "<Metal Nut Deformation and Surface Defects>\n Description: The observed defects across the metal nut images predominantly include bending deformities and surface scratches. The bending defect typically affects the smooth contour of the hexagonal shape, creating noticeable irregularities in symmetry and structurally altering the expected profile. This bending may manifest as a distortion in either the edges or lobes of the nut, often described as outward or inward curves deviating from a perfectly symmetrical hexagonal outline. Additionally, surface scratches are characterized by linear marks that disrupt the otherwise consistent metallic texture, potentially indicating surface weakness or manufacturing inconsistencies. Both types of defects compromise the functional integrity of the nut and may affect its ability to secure onto mating components effectively.",
+      "source_id": "Source_metal_nut2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "color metal_nut",
+      "entity_type": "physical defect",
+      "description": "<Color and Texture Defects>\n Description: The defects identified across the metal nuts primarily involve irregularities in color and texture. Common characteristics include:\n - Color Anomalies: Various instances of discoloration manifesting as darker areas, smears, or patches, often contrasting with the surrounding uniform metallic surface. These discolored areas can appear in shades such as blue, red, pink, or indicate variations that differ from the standard metallic gray of the nut.\n - Texture Disruption: Many of the defects are accompanied by scratches or abrasions, typically presenting as linear marks that disrupt the smooth metallic finish. These scratches can be darker than the unaffected areas, suggesting material removal or surface disturbance.\n Overall, these defects indicate potential issues with material inconsistencies, manufacturing processes, or external influences affecting the metal's appearance and integrity, which may compromise the functionality or aesthetic quality of the nuts.",
+      "source_id": "Source_metal_nut3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "scratch metal_nut",
+      "entity_type": "physical defect",
+      "description": "<Scratch Defect>\n Description: The defect is characterized by visible linear markings on the surface of a metal nut, often lighter in color compared to the intact areas, indicating a disturbance in the metal's finish. These scratches disrupt the uniform texture and reflective properties of the nut, suggesting potential abrasion from handling or manufacturing processes. The scratches can vary in length and position, commonly found near the center, and may extend towards the edges of the nut, creating notable discontinuities in the otherwise smooth surface. Such defects can compromise the aesthetic quality and potentially the structural integrity of the nut, necessitating careful evaluation to determine their impact on function.",
+      "source_id": "Source_metal_nut4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "metal_nut",
+      "tgt_id": "good metal_nut",
+      "description": "A nut is considered good when it conforms to dimensional, mechanical, and workmanship/finish requirements and assembles to provide reliable clamp force.",
+      "keywords": "nut, good, acceptance, pass inspection",
+      "weight": 0.95,
+      "source_id": "Source_metal_nut1"
+    },
+    {
+      "src_id": "metal_nut",
+      "tgt_id": "bent metal_nut",
+      "description": "Out-of-form geometry (warped body, out-of-square face, distorted flats) prevents proper seating/tooling and may compromise thread alignment and clamp force.",
+      "keywords": "nut, bent, deformed, out-of-form, dimensional",
+      "weight": 0.88,
+      "source_id": "Source_metal_nut2"
+    },
+    {
+      "src_id": "metal_nut",
+      "tgt_id": "color metal_nut",
+      "description": "Non-uniform or defective finish indicates coating/workmanship issues that can reduce corrosion protection and aesthetic acceptance.",
+      "keywords": "nut, finish, plating, color, appearance",
+      "weight": 0.82,
+      "source_id": "Source_metal_nut3"
+    },
+    {
+      "src_id": "metal_nut",
+      "tgt_id": "scratch metal_nut",
+      "description": "Surface abrasions from handling or transport that can breach coatings and create corrosion initiation sites; deep scratches are not acceptable.",
+      "keywords": "nut, scratch, abrasion, coating damage",
+      "weight": 0.86,
+      "source_id": "Source_metal_nut4"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Tee nuts, also known as T-nuts, are small but essential fasteners used in various woodworking and furniture-making applications. Their unique design and functionality make them popular among hobbyists and professionals. But what exactly are tee nuts used for? As a professional t nuts supplier, XINCHI will gladly share tee nuts’ applications, benefits, and installation process. What are Tee Nuts? Tee nuts are typically made of metal and have a cylindrical shape with prongs that extend outward from one end. This design allows them to be embedded into the wood while providing a strong, threaded anchor point for screws or bolts. They come in various sizes and thread types, making them versatile for projects.[source :https://www.xinchi-industry.com/news/what-are-tee-nuts-used-for/]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "What are T Nuts: Types, Uses and Installation T nuts, also known as tee nuts or blind nuts, are a type of fastener that is used to fasten objects to wood, plastic, and metal. T nuts are typically made of steel or stainless steel, and they have a long, thin body with a flange at one end. The flange resembles a T in profile, hence the name. T nuts are commonly used in furniture, signage, and other applications where a flush finish is desired. They are also used in applications where access to the end of the material is limited.[source :https://www.kenenghardware.com/what-are-t-nuts-types-uses-and-installation/]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 1,
+      "file_path": ""
+    },
+    {
+      "content": "Types, Causes, appearance and limits of surface discontinuities Even if the permissible limits for surface discontinuities indicated in this clause occur, the minimum values for the mechanical and functional properties specified in ISO 898-2, ISO 898-6 and ISO 2320, as appropriate, shall still be met. In addition, the dimensional requirements of the appropriate product Standard shall be satisfied.[source :https://cdn.standards.iteh.ai/samples/12402/649a6a1f1e804ffcbd2381200b1201fb/ISO-6157-2-1995.pdf]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 2,
+      "file_path": ""
+    },
+    {
+      "content": "It applies to prevailing torque all metal type nuts and prevailing torque non-metallic insert type nuts: — with triangular ISO thread in accordance with ISO 68-1; — with diameter/pitch combination in accordance with ISO 261 and ISO 262; — with coarse pitch thread M5 to M39 or with fine pitch thread M8 × 1 to M39 × 3; — with thread tolerances in accordance with ISO 965-2; — with mechanical properties in accordance with ISO 898-2; Prevailing torque values specified in this standard are based on laboratory test conditions.[source :https://cdn.standards.iteh.ai/samples/12402/649a6a1f1e804ffcbd2381200b1201fb/ISO-6157-2-1995.pdf]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 3,
+      "file_path": ""
+    },
+    {
+      "content": "Corrosion Resistance Scratches, dents, and poor surface coatings can lower a fastener’s corrosion resistance. When protective coatings are compromised, the underlying material becomes exposed to environmental factors like moisture and chemicals, accelerating corrosion processes. This degradation not only affects the appearance of the fasteners but also their functional performance, potentially leading to rust and weakening the fastener’s structural integrity over time. Dimensional Precision Fasteners with dimensional defects such as improper threading, inconsistent diameters, or deformed heads may not fit correctly in their intended applications. These dimensional inaccuracies can lead to improper load distribution, misalignment, and even failure to achieve the required clamping force. Precision in manufacturing is critical to ensure that fasteners meet the specified tolerances and function as intended in their applications.[source :https://cdn.standards.iteh.ai/samples/12402/649a6a1f1e804ffcbd2381200b1201fb/ISO-6157-2-1995.pdf]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 4,
+      "file_path": ""
+    },
+    {
+      "content": "Performance Under Dynamic Loads Fasteners are often subjected to dynamic loads, such as vibrations and impact forces. Defects like micro-cracks and material inconsistencies can impair the fastener’s ability to absorb and dissipate these dynamic loads, leading to failure. The presence of defects reduces the resilience of fasteners, making them more susceptible to loosening or breaking under fluctuating stresses. Compatibility with Mating Components Defective fasteners may not engage properly with mating components, leading to issues such as cross-threading, galling, and improper torque application. These compatibility issues can result in inadequate fastening, which compromises the stability and performance of the assembled components. Ensuring that fasteners are free from defects is essential for achieving proper fit and function in their applications.[source :https://cdn.standards.iteh.ai/samples/12402/649a6a1f1e804ffcbd2381200b1201fb/ISO-6157-2-1995.pdf]",
+      "source_id": "Source_metal_nut1",
+      "source_chunk_index": 5,
+      "file_path": ""
+    },
+    {
+      "content": "Causes of Thread-Related Defects These defects generally occur during the thread-forming process, like rolling or cutting, due to improper tool design, incorrect operation, or uneven metal flow. Fastener Head Defects The head of the fastener is critical for ensuring proper torque application and overall stability. Defects in this area can severely affect performance. Types of Fastener Head Defects 1 Irregular Metal Flow Lines: Uneven distribution of metal within the fastener head, which can reduce mechanical properties. 2 Head Cracks: Fractures within the head that can compromise its ability to hold torque. 3 Deformation: Distortion of the head shape, which can affect the fastener’s fit and function. Causes of Fastener Head Defects These defects often result from improper forging die design, incorrect forging methods, or manual operation errors during manufacturing. Precise control over the forging process is essential to prevent these issues.[source :https://artizono.com/understanding-fastener-defects-a-technical-deep-dive/?]",
+      "source_id": "Source_metal_nut2",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "Corrosion Resistance Scratches, dents, and poor surface coatings can lower a fastener’s corrosion resistance. When protective coatings are compromised, the underlying material becomes exposed to environmental factors like moisture and chemicals, accelerating corrosion processes. This degradation not only affects the appearance of the fasteners but also their functional performance, potentially leading to rust and weakening the fastener’s structural integrity over time. Dimensional Precision Fasteners with dimensional defects such as improper threading, inconsistent diameters, or deformed heads may not fit correctly in their intended applications. These dimensional inaccuracies can lead to improper load distribution, misalignment, and even failure to achieve the required clamping force. Precision in manufacturing is critical to ensure that fasteners meet the specified tolerances and function as intended in their applications.[source :https://artizono.com/understanding-fastener-defects-a-technical-deep-dive/?]",
+      "source_id": "Source_metal_nut2",
+      "source_chunk_index": 1,
+      "file_path": ""
+    },
+    {
+      "content": "Causes of Fastener Head Defects These defects often result from improper forging die design, incorrect forging methods, or manual operation errors during manufacturing. Precise control over the forging process is essential to prevent these issues. Assembly-Related Defects Assembly-related defects can occur during the installation of fasteners, affecting their performance and longevity. Types of Assembly-Related Defects 1 Misalignment: Fasteners not aligned correctly with mating components, leading to uneven load distribution. 2 Oblique Fastening: Fasteners inserted at an angle, which can compromise the connection’s strength. 3 Tool Wear: Wear and tear on fastening tools that can lead to improper installation.[source :https://artizono.com/understanding-fastener-defects-a-technical-deep-dive/?]",
+      "source_id": "Source_metal_nut2",
+      "source_chunk_index": 2,
+      "file_path": ""
+    },
+    {
+      "content": "Workmanship—The surface of the electroplated article shall be uniform in appearance, free of visible coating defects, such as blisters, pits, roughness, nodules, burning, cracks, or unplated areas, and other defects that will affect the function of the coating. The coating shall not be stained or discolored. However, superficial staining that results from rinsing or slight discoloration resulting from any drying or baking operation to relieve hydrogen embrittlement, shall not be cause for rejection. On articles in which a visible contact mark is unavoidable, its position shall be that chosen by the purchaser. The electroplated article shall be clean and free of damage.[source :https://boltport.com/specifications/astm-b633/?]",
+      "source_id": "Source_metal_nut3",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "1. The coatings shall be non-alloyed zinc produced by electrodeposition. 2. Defects in the surface of the basis metal, such as scratches, porosity, pits, inclusions, cracks, roll marks, and die marks, may adversely affect the appearance and performance of coatings applied there to despite the observance of the best electroplating practices. Accordingly, the electroplater’s responsibility for defects in the coating resulting from such conditions shall be waived, except when he is the prime contractor supplying electroplated parts. In this event, the basis metal shall be subjected to such polishing or buffing operations as are necessary to yield deposits with the desired final luster and appearance. To minimize problems of this sort, the specifications covering the basis material on the item to be electroplated shall contain appropriate limitations to such basis metal conditions.[source :https://boltport.com/specifications/astm-b633/?]",
+      "source_id": "Source_metal_nut3",
+      "source_chunk_index": 1,
+      "file_path": ""
+    },
+    {
+      "content": "3. Cleaning of Basis Metal—Proper preparatory procedures and thorough cleaning of the basis metal are essential to ensure satisfactory adhesion and corrosion resistance performance of the coating. It is recommended that the following appropriate recommended practices and guides be used: B183, B242, B254, B320, and B322. 4. Pretreatment of Iron or Steel for the Purpose of Reducing the Risk of Hydrogen Embrittlement—All steel parts having an ultimate tensile strength greater than 1000 MPa (31 HRC) and that have been machined, ground, cold formed, or cold straightened, shall be heat treated for stress relief to reduce the risk of hydrogen embrittlement in the part before clean and electroplate processes. If these heat treatments are not required, the purchaser shall specify in the ordering information their exception. If the purchaser does not specify an exception to heat treatment, then the plater shall use Table 1 in B849 to determine the appropriate heat treatment for the steel based on its tensile strength.[source :https://boltport.com/specifications/astm-b633/?]",
+      "source_id": "Source_metal_nut3",
+      "source_chunk_index": 2,
+      "file_path": ""
+    },
+    {
+      "content": "Types of Surface Defects 1 Dents: Small indentations on the surface of the fastener, usually caused by impact during handling or storage. 2 Scratches: Superficial marks that can occur due to friction or contact with abrasive surfaces. 3 Cracks: Fissures that can penetrate deeper into the material, potentially compromising structural integrity. Causes of Surface Defects Surface defects often arise from mishandling, improper storage conditions, or manufacturing errors. For example, inadequate tool maintenance or insufficient protection during transport can lead to these issues.[source :https://artizono.com/understanding-fastener-defects-a-technical-deep-dive/?]",
+      "source_id": "Source_metal_nut4",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "Corrosion Resistance Scratches, dents, and poor surface coatings can lower a fastener’s corrosion resistance. When protective coatings are compromised, the underlying material becomes exposed to environmental factors like moisture and chemicals, accelerating corrosion processes. This degradation not only affects the appearance of the fasteners but also their functional performance, potentially leading to rust and weakening the fastener’s structural integrity over time. Dimensional Precision Fasteners with dimensional defects such as improper threading, inconsistent diameters, or deformed heads may not fit correctly in their intended applications. These dimensional inaccuracies can lead to improper load distribution, misalignment, and even failure to achieve the required clamping force. Precision in manufacturing is critical to ensure that fasteners meet the specified tolerances and function as intended in their applications.[source :https://artizono.com/understanding-fastener-defects-a-technical-deep-dive/?]",
+      "source_id": "Source_metal_nut4",
+      "source_chunk_index": 1,
+      "file_path": ""
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "entities": [
+    {
+      "entity_name": "pill",
+      "entity_type": "Medication form",
+      "description": "A solid pharmaceutical dosage form manufactured by compression or molding of powdered ingredients containing one or more active pharmaceutical ingredients (APIs) and excipients, designed for oral administration.",
+      "source_id": "Source_pill1"
+    },
+    {
+      "entity_name": "good pill",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The object in the images is an oval-shaped pill, predominantly white, with the letters \"FF\" embossed in the center. The pill exhibits a speckled pattern consisting of small reddish-brown spots distributed uniformly across its surface. These speckles are an intended feature of the pill's design and are not indicative of any defect or anomaly. The overall shape, color, and texture of the pill are smooth, with clearly defined edges and a well-formed imprint of the letters. \n The speckles, while varying slightly in size and distribution, are consistent with the normal pattern observed in reference images and do not impact the integrity or identification of the pill. Throughout careful examination, no visible defects such as chips, cracks, deformities, or discolorations have been detected, affirming that the pill conforms to the expected quality standards and characteristics for this type of product. \n",
+      "source_id": "Source_pill1"
+    },
+    {
+      "entity_name": "color pill",
+      "entity_type": "physical defect",
+      "description": "<Color Anomalies in Pills>\n Description: The defects consist primarily of irregular colorations and speckles present on the surface of the oval-shaped pills, which have a base color of white or off-white with red speckles. The anomalies include clusters or isolated spots of colors such as red, yellow, blue, and reddish-brown that deviate from the uniform speckling pattern expected in a normal sample. These color irregularities tend to be located in various areas of the pills, often near the center or along the edges, and may indicate possible contamination or structural issues. Some pills also exhibit minor imperfections suggestive of cracks or marks, which could further affect the integrity and appearance of the product. The presence of these defects disrupts the expected consistent appearance and may raise concerns regarding the manufacturing process and quality control.",
+      "source_id": "Source_pill2"
+    },
+    {
+      "entity_name": "contamination pill",
+      "entity_type": "physical defect",
+      "description": "<Contamination and Structural Defects>\n Description: The inspected pills exhibit defects primarily characterized by contamination and structural anomalies. The contamination often presents as irregular discolorations, protrusions, or uneven textures that contrast with the uniform smooth and speckled surface expected in a normal pill. These irregularities may manifest in various locations, such as the center, sides, or near imprinted letters, indicating the presence of foreign substances or material inconsistencies. Additionally, structural defects resembling cracks, scratches, or chips are frequently noted, compromising the pill's integrity. These imperfections disrupt both the visual uniformity and the intended functionality of the product, suggesting potential quality control issues that could impact safety or effectiveness. The combination of contamination and structural defects leads to significant deviations from the anticipated characteristics of a standard pill.",
+      "source_id": "Source_pill3"
+    },
+    {
+      "entity_name": "crack pill",
+      "entity_type": "physical defect",
+      "description": "<Crack and Contamination>\n Description: The defect described in the series of captions primarily consists of noticeable cracks located in various parts of the oval-shaped white pills. These cracks often take the form of irregular lines or fissures that disrupt the otherwise smooth surface of the pill, affecting its structural integrity. Cracks are frequently found positioned at the top, bottom, or sides of the pill, indicating physical damage that could compromise the product's efficacy and safety. In addition to cracks, there are also observations of minor contamination, characterized by irregular spots or discolorations that deviate from the normal speckled appearance of the pill. These anomalies appear as faint imperfections contrasting with the normal surface texture, implying potential quality control issues within the production of the pills. Overall, these defects collectively raise concerns regarding the product's quality and reliability.",
+      "source_id": "Source_pill4"
+    },
+    {
+      "entity_name": "faulty_imprint pill",
+      "entity_type": "physical defect",
+      "description": "<Faulty Imprint>\n Description: The defect is characterized by an irregular or incomplete imprint of the letters \"F\" or \"F F\" on the surface of the oval-shaped pill. This imprinting issue appears as faded, smudged, or missing portions of the letters, disrupting their clarity and legibility. The anomalies are primarily located in the center area of the pill, affecting the definition and symmetry expected from a properly manufactured product. In some cases, additional surface imperfections such as minor scratches or potential marks that could indicate contamination are also present, although the main concern centers on the clarity and accuracy of the imprint, which is crucial for proper identification and quality control of the medication.",
+      "source_id": "Source_pill5"
+    },
+    {
+      "entity_name": "scratch pill",
+      "entity_type": "physical defect",
+      "description": "<Surface Scratch or Abrasion>\n Description: The defects characterized in this batch involve scratches or abrasions on the surface of oval-shaped pills. These scratches disrupt the otherwise smooth and uniform surface of the pills, typically manifesting as thin, irregular lines or marks. The locations of these defects vary, with some being on the center-right, center-left, or adjacent to the embossed letters on the pill. The scratches often appear lighter in color than the pill's surface, indicating a level of material removal or damage underneath. There are also mentions of additional minor imperfections, such as cracks or chips, which further compromise the aesthetic and potentially the structural integrity of the pills. The pills generally have a predominantly white color with small reddish-brown speckles, which are considered normal, but the presence of these surface defects distinctly marks them as anomalies compared to an ideal product.",
+      "source_id": "Source_pill6"
+    },
+    {
+      "entity_name": "combined pill",
+      "entity_type": "physical defect",
+      "description": "<Pill Surface Defects>\n Description: The defects observed in this set of images include a combination of structural and visual anomalies on oval-shaped pills. Common characteristics of these defects are cracks that disrupt the smooth surface, often found primarily on the center-right or top edges of the pill. Additionally, flawed imprints of letters such as \"FF\" or \"FI\" indicate issues during the manufacturing process, creating irregularities in the expected design. There are also scratches or abrasion-like marks visible on various parts of the pills, which compromise texture and uniformity. Discoloration and contamination from foreign materials manifest as unusual spots or smudges dispersed across the pill surface, with specific clusters of color anomalies such as yellow or reddish-brown specks that deviate from the normal speckled pattern. These defects cumulatively affect the visual integrity and structural quality of the pills, suggesting irregularities in both production and handling.",
+      "source_id": "Source_pill7"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "pill",
+      "tgt_id": "good pill",
+      "description": "Establishes acceptance criteria for tablets that are free of visual and functional defects and meet quality tests.",
+      "keywords": "acceptance, quality, conformity, inspection",
+      "weight": 0.95,
+      "source_id": "Source_pill1"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "color pill",
+      "description": "Visual appearance defect category involving nonuniform color such as mottling or shade variation.",
+      "keywords": "appearance, color, mottling, shade variation",
+      "weight": 0.85,
+      "source_id": "Source_pill2"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "contamination pill",
+      "description": "Defect due to foreign matter or extraneous particles on/in the tablet distinct from intended colorants.",
+      "keywords": "foreign matter, impurity, specks, stains",
+      "weight": 0.9,
+      "source_id": "Source_pill3"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "crack pill",
+      "description": "Mechanical/structural integrity defect including cracks, chipping, and lamination.",
+      "keywords": "cracking, chipping, lamination, fracture",
+      "weight": 0.92,
+      "source_id": "Source_pill4"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "faulty_imprint pill",
+      "description": "Identification/marking defect such as double impression, illegible or damaged imprint.",
+      "keywords": "imprint, embossing, debossing, double impression",
+      "weight": 0.88,
+      "source_id": "Source_pill5"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "scratch pill",
+      "description": "Surface abrasion/roughness defect distinct from structural fracture.",
+      "keywords": "scratch, abrasion, rough surface",
+      "weight": 0.83,
+      "source_id": "Source_pill6"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "combined pill",
+      "description": "Represents co-occurrence of multiple defect types on a single tablet requiring root-cause analysis.",
+      "keywords": "multi-defect, appearance defect, RCA",
+      "weight": 0.9,
+      "source_id": "Source_pill7"
+    },
+    {
+      "src_id": "combined pill",
+      "tgt_id": "color pill",
+      "description": "Combined cases may include color nonuniformity alongside other defects.",
+      "keywords": "multi-defect, color variation",
+      "weight": 0.75,
+      "source_id": "Source_pill7"
+    },
+    {
+      "src_id": "combined pill",
+      "tgt_id": "contamination pill",
+      "description": "Combined cases may include presence of foreign specks with other defects.",
+      "keywords": "multi-defect, foreign matter",
+      "weight": 0.78,
+      "source_id": "Source_pill7"
+    },
+    {
+      "src_id": "combined pill",
+      "tgt_id": "crack pill",
+      "description": "Combined cases may include structural cracking with other visual defects.",
+      "keywords": "multi-defect, fracture",
+      "weight": 0.8,
+      "source_id": "Source_pill7"
+    },
+    {
+      "src_id": "combined pill",
+      "tgt_id": "faulty imprint pill",
+      "description": "Combined cases may include imprint defects occurring with other appearance issues.",
+      "keywords": "multi-defect, imprint",
+      "weight": 0.75,
+      "source_id": "Source_pill7"
+    },
+    {
+      "src_id": "combined pill",
+      "tgt_id": "scratch pill",
+      "description": "Combined cases may include surface abrasion alongside structural or color defects.",
+      "keywords": "multi-defect, abrasion",
+      "weight": 0.75,
+      "source_id": "Source_pill7"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Tablets are the most common type of pill. They’re an inexpensive, safe, and effective way to deliver oral medication. These units of medication are made by compressing one or more powdered ingredients to form a hard, solid, smooth-coated pill that breaks down in the digestive tract. In addition to active ingredients, most tablets contain additives that hold the pill together and improve the taste, texture, or appearance. Tablets can be round, oblong, or disc-shaped. Oblong tablets are known as caplets, which can be easier to swallow. Some have a line scored across the middle, making them easier to split in half.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.healthline.com/health/capsule-vs-tablet#tablet"
+    },
+    {
+      "content": "Some tablets have a special coating that prevents them from breaking down in the stomach. This coating helps ensure that the tablet will only dissolve after entering the small intestine. Other tablets come in chewable forms, or as orally dissolving tablets (ODT), which break down on their own in saliva. These types of tablets can be especially helpful for people who have trouble swallowing. In every case, the dissolved tablet medication is eventually absorbed into your bloodstream. The dissolved medication travels to your liver and is then distributed to one or more target areas in your body so that it can do its job. Throughout this process, the drug undergoes chemical changes, known as metabolism. It’s eventually excreted in your urine or feces.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.healthline.com/health/capsule-vs-tablet#tablet"
+    },
+    {
+      "content": "Tablets are the solid Pharmaceutical dosage form which contains drug/sand excipients. Tablets are manufactured by 2 methods, Compression method and molding method, and administered through Oral ,Sublingual, Buccal and Vaginal route. To manufacture an ideal tablets, it is necessary to perform Pre-formulation studies. Now pre-formulation studies are study of Physicochemical characteristics of drug substances. Physicochemical characteristics are the study of chemical and physical properties of a drug substance. Characterization of drug molecule is major step in product development. Pre- formulation studies are conducted to collect all necessary data on drug substances, excipients and packaging materials that may affects formulation, method of manufacturing, pharmacokinetics and bioavailability of drug.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 2,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "Tablets are defined as solid dosage form which are made by using mainly two type of technique such as compression or mouding techniques which contain material with diluents[4]. These tablets are formulated by different methods using different ingredients As we know tablet mainly contain active pharmaceutical ingredient (API) as a main ingredient and also contain excipient such as fillers, binders, disintegrates, glidants,coloring agents, coating, buffering agents, flavouring agent, preservative, antioxidant, sorbents solvent and co-solvent, viscosity imparting agent, surface agent, etc.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 3,
+      "file_path": "https://tijer.org/jnrid/papers/JNRID2412028.pdf?"
+    },
+    {
+      "content": "Tablets are defined as solid dosage form which are made by using mainly two type of technique such as compression or mouding techniques which contain material with diluents[4]. These tablets are formulated by different methods using different ingredients As we know tablet mainly contain active pharmaceutical ingredient (API) as a main ingredient and also contain excipient such as fillers, binders, disintegrates, glidants,coloring agents, coating, buffering agents, flavouring agent, preservative, antioxidant, sorbents solvent and co-solvent, viscosity imparting agent, surface agent, etc.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 4,
+      "file_path": "https://tijer.org/jnrid/papers/JNRID2412028.pdf?"
+    },
+    {
+      "content": "Tablet pros: 1 Inexpensive. Although it depends on the active ingredient and the casing, tablets are generally cheaper to manufacture than capsules. This often makes them more affordable for consumers. 2 Durable and long-lasting. Tablets are more stable and typically have a longer shelf life than capsules. 3 Higher dosages. A single tablet can accommodate a higher dose of an active ingredient than a single capsule. 4 Can be split. Unlike capsules, tablets can be cut in two for a smaller dose, if needed. 5 Chewable. Some tablets are available in chewable or even orally-dissolving tablet forms. 6 Variable delivery. Tablets can come in quick release, delayed release, or extended release formats.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 5,
+      "file_path": "https://www.healthline.com/health/capsule-vs-tablet#tablet"
+    },
+    {
+      "content": "Tablet manufacturing is a complex process that requires precision, consistency, and stringent quality control to produce high-quality pharmaceutical tablets. Tablet defects can significantly affect the efficacy, safety, and overall performance of a drug. Defective tablets may lead to compromised drug delivery, altered dosage, or even potential health risks to patients. This highlights the importance of identifying and preventing tablet defects in the pharmaceutical manufacturing process.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 6,
+      "file_path": "https://pharmatimesofficial.com/project/identifying-and-preventing-tablet-defects-in-pharmaceutical-manufacturing-processes/?"
+    },
+    {
+      "content": "Tablet Shape Recommendations The FDA states that manufacturing tablets and capsules in round or flat shapes makes them easier to swallow than others like squares and rectangles. When selecting and manufacturing the shape of generic tablets or capsules, evaluate and compare the largest cross-sectional RLD areas to the generic product to measure shape changes. Other Physical Characteristic Recommendations Other tablet and capsule physical characteristics to improve swallowing include consistent tablet coating, weight, surface area, disintegration time, and swelling propensity.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 7,
+      "file_path": "https://thomasprocessing.com/different-pharmaceutical-tablet-shapes/#:~:text=to%20the%20report.-,Studies%20show%20that%20oval%20tablets%20may%20be%20easier%20to%20swallow,compliance%20with%20the%20medication%20regimens."
+    },
+    {
+      "content": "An ideal tablet should be free from any visual defect or functional defect. The advancements and innovations in tablet manufacture have not decreased the problems, often encountered in the production, instead have increased the problems, mainly because of the complexities of tablet presses; and/or the greater demands of quality. An industrial pharmacist usually encounters number of problems during manufacturing. Majority of visual defects are due to inadequate fines or inadequate moisture in the granules ready for compression or due to faulty machine setting. Functional defects are due to faulty formulation. Solving many of the manufacturing problems requires an in–depth knowledge of granulation processing and tablet presses, and is acquired only through an exhaustive study and a rich experience. Here, we will discuss the imperfections found in tablets along–with their causes and related remedies. The imperfections are known as: ‗Visual Defects‘ and they are either related to imperfections in any one or more of the factors",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 8,
+      "file_path": "https://pdfs.semanticscholar.org/70d3/8ebdb56f674f3944f75e604ed392514656c7.pdf"
+    },
+    {
+      "content": "Standard tablets formulation is totally depending on Chemical and Physical properties of excipients and active ingredients. Cracking, Chipping, Blooming, Colour variation are most common defects in tablets. Improper coating of tablets may produce defects in tablets. Technique formulation of tablet is also a source of defect. Techniques like wet granulation, dry granulation which are initial process of tablet formulation. Flow properties of material also play an important role in standard tablet formulation. Properties of material like density, particle size, particle shape, surface area, angle of repose, Housner's ratio. These all are main sources of defects in tablet formulation. This article on these variations.it pinpoint the possible causes of these defects and offers advice on preventing and fixing the source of the problems.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 9,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "A tablet’s overall look,identity, and elegance are crucial for consumer adoption as well as for maintaining tablet-to-tablet and lot-to-lot uniformity. Measurements of size, shape, colour, odour, taste, and other characteristics are all part of the overall apperance control process. 6.2. Size and shape It is controllable and dimentially characterized. A tablet’s thickness is merely a variable. A micrometer or another tool can be used to measure the thickness of a tablet. The thickness of tablets should be kept within a standard value fluctuation of +,- 5% These marking make use of printing, engraving, or embossing. These markings consist of the product code, product name, company name, or emblem, among others.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 10,
+      "file_path": "https://tijer.org/jnrid/papers/JNRID2412028.pdf?"
+    },
+    {
+      "content": "2. PROPERTIES OF TABLET 1) Tablets should have uniform weight and accurate shape and size. 2) Tablet should not contain any type of incompatibility. 3) In tablet accurate amount of drug should be distributed. 4) Tablet should have accurate size and shape for easy administration. 5) During storage tablets should be chemically and physically stable in form. 6) They should not contain any type of incompatibility. 7) During transportation tablet should not be break while handling. 8) Apperance should be attractive.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 11,
+      "file_path": "https://tijer.org/jnrid/papers/JNRID2412028.pdf?"
+    },
+    {
+      "content": "Tablet defects can come from any of the unit operation upstream and from the tablet press. The raw materials may be of poor quality or do not meet specification, causing excessive fines that lead to a host of defects. The formulation may be the source of defects if the material do not compress well or the processing step specified within the formulation fail to produce a powder a good flow, compressibility, and ejection properties. The processing and granulation of powder is often the source of defect. Every product behaves differently on a tablet press, even if it‘s the same product run on a different day. The variation often stems from changes in the properties of the raw materials—active ingredients and excipients- from batch to batch. Naturally, the goal is to minimize these changes. Tablet press operators, however, don‘t have any control over formulation and granulation. Tablet specifications are tight, and the list of possible defects is long: Variable weight, sticking, picking, capping, lamination, variable hardness, among others. This article focuses on these variations. It pinpoints the possible causes of these defects and offers advice on preventing and fixing the source of the problems.",
+      "source_id": "Source_pill1",
+      "source_chunk_index": 12,
+      "file_path": "https://pdfs.semanticscholar.org/70d3/8ebdb56f674f3944f75e604ed392514656c7.pdf"
+    },
+    {
+      "content": "Mottling: Mottling refers to uneven coloring on the tablet surface. It can be a result of inconsistent dye distribution during the mixing process.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 0,
+      "file_path": "https://pharmatimesofficial.com/project/identifying-and-preventing-tablet-defects-in-pharmaceutical-manufacturing-processes/?"
+    },
+    {
+      "content": "Investigate other steels or other materials or modify granulation. Rework to proper size. Increase clearance. Reduce pressure. Or Modify granulation. MOTTLING Mottling is the term used to describe an unequal distribution of colour on a tablet, with light or dark spots standing out in an otherwise uniform surface. Reason: One cause of mottling may be a coloured drug, whose colour differs from the colour of excipients used for granulation of a tablet. The SOURCES AND PRECAUTIONS Of Mottling SOURCES Coloured drug used with colourless excipients Improper mixing",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 1,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "MOTTLING ‗Mottling‘ is the term used to describe an unequal distribution of colour on a tablet, with light or dark spots standing out in an otherwise uniform surface. Reason: One cause of mottling may be a coloured drug, whose colour differs from the colour of excipients used for granulation of a tablet.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 2,
+      "file_path": "https://pdfs.semanticscholar.org/70d3/8ebdb56f674f3944f75e604ed392514656c7.pdf"
+    },
+    {
+      "content": "2 The Causes And Remedies Of Mottling Rana et al Journal of Drug Delivery & Therapeutics; 2013, 3(6), 200-206 204 Causes I. A coloured drug used along with colourless or white-coloured excipients. II. A dye migrates to the surface of granulation while drying. III. Improperly mixed dye, especially during ‗Direct Compression‘. IV. Improper mixing of a coloured binder solution. Remedies I. Use appropriate colourants. II. Change the solvent system, Change the binder, Reduce drying temperature and Use a smaller particle size. III. Mix properly and reduce size if it is of a larger size to prevent segregation. IV. Incorporate dry colour additive during powder blending step, then add fine powdered adhesives such as acacia and tragacanth and mix well and finally add granulating liquid.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 3,
+      "file_path": "https://pdfs.semanticscholar.org/70d3/8ebdb56f674f3944f75e604ed392514656c7.pdf"
+    },
+    {
+      "content": "Mottling: It is either due to any one or more of these factors: Due to a colored drug, which has different color than the rest of the granular material (Excipient- related); improper mixing of granular material (Process-related); dirt in the granular material or on punch faces; oil spots by using oily lubricant. The defect due to Machine Double Impression: It is due to free rotation of the punches, which have some engraving on the punch faces. Further, in this section, each problem is described along- with its causes and remedies which may be related to either of formulation (granulation) or of machine (dies, punches and entire tablet press).",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 4,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "Colour variation A defect which involves variation in colour of the film. Reason: Alteration of the frequency and duration of appearance of tablets in the spray zone or the size/shape of the spray zone.8 The Cause And Remedy Of Colour Variation Cause Improper mixing, uneven spray pattern, insufficient coating, migration of soluble dyes-plasticizers and other additives during drying. Remedy Go for geometric mixing, reformulation with different plasticizers and additives or use mild drying conditions.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 5,
+      "file_path": "https://pdfs.semanticscholar.org/70d3/8ebdb56f674f3944f75e604ed392514656c7.pdf"
+    },
+    {
+      "content": "BLOOMING It is defect where coating becomes dull immediately or after prolonged storage at high temperatures. Reason: It is due to collection on the surface of low molecular weight ingredients included in the coating formulation. In most circumstances the ingredient will be plasticizer. The SOURCES AND PRECAUTIONS Of Blooming SOURCES High concentration and low molecular weight of plasticizer. PRECAUTIONS Decrease plasticizer concentration and increase molecular weight of plasticizer.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 6,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "BLUSHING It is defect best described as whitish specks or haziness in the film. Reason: It is thought to be due to precipitated polymer exacerbated by the use of high coating temperature at or above the thermal gelation temperature of the polymers. The SOURCES AND PRECAUTIONS Of Blushing Causes High coating temperature. Use of sorbitol in formulation which causes largest fall in the thermal gelation temperature of the Hydroxy Propyl Cellulose, Hydroxy Propyl Methyl Cellulose, Methyl Cellulose and Cellulose ethers.",
+      "source_id": "Source_pill2",
+      "source_chunk_index": 7,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "CHIPPING Chipping is defined as the breaking of tablet edges, while the tablet leaves the press or during subsequent handling and coating operations. SOURCES Incorrect machine settings, specially mis- set ejection take-off. The SOURCES AND PRECAUTION Of Chipping Related ToFormulation (Granulation) SOURCES Sticking on punch faces Too dry granules. Too much binding causes chipping at bottom. PRECAUTIONS Dry the granules properly or increase lubrication. Moisten the granules to plasticize. Add hygroscopic substances. The SOURCES ANDPRECAUTIONS Of Chipping Related To Machine‘ (Dies, Punches And Tablet Press) SOURCES Barreled die (centre of the die wider than ends) Edge of punch face turned inside/inward. Concavity too deep to compress properly. PRECAUTION Polish the die to make it cylindrical Polish the punch edges Reduce concavity of punch faces. Use flat punches.",
+      "source_id": "Source_pill4",
+      "source_chunk_index": 0,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "CRACKING Small, fine cracks observed on the upper and lower central surface of tablets, or very rarely on the sidewall are referred to as Cracks. Reason: It is observed as a result of rapid expansion of tablets, especially when deep concave punches are used. The SOURCES AND PRECAUTION Of Cracking Related To Formulation (Granulation) SOURCES Large size of granules. Too dry granules. Tablets expand. PRECAUTIONS Reduce granule size. Add fines. Moisten the granules properly and add proper amount of binder. Compress at room temperature. The SOURCES AND PRECAUTION Of Cracking Related To Machine (Die Punches And Tablet Press) SOURCES Tablet expands on ejection due to air entrapmentDeep concavities cause cracking while removing tablets PRECAUTIONS Use tapered die. Use special take-off.",
+      "source_id": "Source_pill4",
+      "source_chunk_index": 1,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "1. Chipping The cause of chipping is extremly dry particles.[6] When a pill splits along its edges after being removed from the oress, it is said to be “chipping”. This happens during handling or coating procedures. Inaccurate machine settings could be the root reason, particularly when it comes to miss-set ejection take-off.[7]",
+      "source_id": "Source_pill4",
+      "source_chunk_index": 2,
+      "file_path": "https://tijer.org/jnrid/papers/JNRID2412028.pdf?"
+    },
+    {
+      "content": "Chipping: This defect involves small pieces of the tablet breaking off along the edges, which can occur due to excessive hardness or improper handling.Cracking or Splitting: Cracking often happens due to excessive moisture content or high compaction forces.",
+      "source_id": "Source_pill4",
+      "source_chunk_index": 3,
+      "file_path": "https://pharmatimesofficial.com/project/identifying-and-preventing-tablet-defects-in-pharmaceutical-manufacturing-processes/?"
+    },
+    {
+      "content": "Spacks:- The foreign compounds, extraneous particles or contaminating agents were attracted on the tablet and it becomes main reason for the production of defected tablet, it can altered the therapeutical effects of the tablet and also can shows the harmful and unwanted action is called as the Spacks defect of tablets.",
+      "source_id": "Source_pill3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.jetir.org/papers/JETIR2403397.pdf?"
+    },
+    {
+      "content": "Evaluation of drug on the basis of color, texture and taste. Because it should be in good appearance, color should be appealing to eye, taste and odour. Purity studies are essential for further studies to be carried out safely because impurities may make a compound toxic or render it unstable. Thin layer chromatography (TLC),High pressure liquid chromatography(HPLC), Gas chromatography(GC). These techniques are used to determine impurity index(II) and Homogeneity index(IH). Particle size, Shape and Surface area are the properties of drugs that affect biopharmaceutical behavior. The big difference in the particle size affect flow properties of powder and cause impair mixing efficiency. Fine powder is also susceptible to attack by heat or atmosphere or light or humidity which further cause stability issues. The methods used to obtain particle size distribution are Microscopy, Optical microscopy, Sieving, Sedimentation rate, Elutriation studies, Centrifugal studies, Permeability studies, Light scattering. Shape and surface properties affects flow and dissolution. Shape Factor is determined which is the ratio of the longest to the shortest dimensions. Surface area may be determined by the BET equation based on the theory of absorption.",
+      "source_id": "Source_pill3",
+      "source_chunk_index": 1,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "The new guidelines for microbial purity of pharmaceutical preparations are intended only to provide information and guidance for manufacturers, essentially for process validation, and those involved in quality assurance within the drug distribution system, for periodic monitoring of finished products. The test method for bacterial endotoxins is intended for substances for par-enteral or sterile administration, and replaces the pyrogen test used so far. The limits are currently being evaluated and, where appropriate, have been added to certain monographs. The test for visible particulate contamination is pro-vided for use only as a simple batch acceptance criterion in commerce, and occasionally for random checking of products in the distribution system to ensure quality control during storage. It should be noted that this test is not suitable for use by manufacturers for the purposes of batch release.",
+      "source_id": "Source_pill3",
+      "source_chunk_index": 2,
+      "file_path": "https://iris.who.int/server/api/core/bitstreams/f8fc6fa7-1100-4eb5-a329-45600617ba41/content"
+    },
+    {
+      "content": "Inconsistent Weight: Tablets should have uniform weight, but variations in weight may occur due to incorrect compression settings, improper powder flow, or poor mixing.",
+      "source_id": "Source_pill3",
+      "source_chunk_index": 3,
+      "file_path": "https://pharmatimesofficial.com/project/identifying-and-preventing-tablet-defects-in-pharmaceutical-manufacturing-processes/?"
+    },
+    {
+      "content": "Illegible print:- The problems which are related to the prints, any print defect in which dose not resemble the description it is called as Illegible print",
+      "source_id": "Source_pill5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.jetir.org/papers/JETIR2403397.pdf?"
+    },
+    {
+      "content": "PICKING Picking is the term used when a small amount of material from a tablet is sticking to and being removed off from the tablet-surface by a punch face.The problem is more prevalent on the upper punch faces than on the lower ones. The problem worsens, if tablets are repeatedly manufactured in this station of tooling because of the more and more material getting added to the already stuck material on the punch face. Reason: Picking is of particular concern when punch tips have engraving or embossing letters, as well as the granular material is improperly dried. The SOURCES AND PRECAUTIONS Of Picking Related To Formulation (Granulation) SOURCES Excessive moisture in granules. Too little or improper lubrication. Low melting point substances, may soften from the heat of compression and lead to picking. Too warm granules when compressing. Too much amount of binder.",
+      "source_id": "Source_pill5",
+      "source_chunk_index": 1,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "Picking:- This results in the tablet's upper surface being struck by one of the punches, eroding the surface. A particular kind of sticking is called picking. It happens when the punch faces with embossing designs have tablet material left on them. Tablet surface damage, partial tablets, and changes in weight and appearance can all be caused by picking. The problem worsens with frequent pill use. Due to the growing amount of material being introduced to the substance on the punch face that has already been stuck, produce at this tooling station. When punch tips include letter engraving or embossing in addition to the granular material not being completely cured, picking becomes a serious hazard.[10,22] Causes.:- • Friction between the tablet and tablet and the embossing letter or logos on the punch face is increase when there are insufficient lubricants. So it is very important to use perfect amounts of lubricant. • There are sticky or cohesive ingredients in the composition. So it’s important to use correct amount of excipients. • The amount of time the punch stays in contact with the tablet material known as dwell time. It’s important to sure that it is not long enough. [29,14]",
+      "source_id": "Source_pill5",
+      "source_chunk_index": 2,
+      "file_path": "https://www.jetir.org/papers/JETIR2403397.pdf?"
+    },
+    {
+      "content": "Double impression :- It happens when the tablet material is compressed between several impressions, which causes markings to overlap or duplicate. One of the causes of double impression is incorrect punch alignment inside the die cavity. Punches delivered from lower body rotation are not well controlled. The term \"double impression\" refers only to punches that feature an engraving, such as a monogram. Reason: The punch impression is transferred to the tablet at the point of compression. Now, on some machines, the lower punch drops freely and travels erratically for a brief distance before riding up the ejection cam to force the tablet out of the die. The punch rotates during this free travel, and at this point, it might leave a fresh impression on the tablet's bottom. [13,15] Causes:- When ejecting a tablet, one can freely rotate their upper or lower punch.",
+      "source_id": "Source_pill5",
+      "source_chunk_index": 3,
+      "file_path": "https://www.jetir.org/papers/JETIR2403397.pdf?"
+    },
+    {
+      "content": "Rough surface:- The tablets have a rough surface or which contain irregular surface through it process of manufacturing is called as the Rough surface tablet . it can be easily contaminated.[13] 5) Partially coated:- The tablets which are not properly coated with coating solution or which are improperly coated. mostly tablets are masked with some of the coting material for masking its test or for prolong release of the of tablet.",
+      "source_id": "Source_pill6",
+      "source_chunk_index": 0,
+      "file_path": "https://www.jetir.org/papers/JETIR2403397.pdf?"
+    },
+    {
+      "content": "BINDING Binding‘ in the die, is the term used when the tablets adhere, seize or tear in the die. A film is formed in the die and ejection of tablet is hindered. With excessive binding, the tablet sides are cracked and it may crumble apart. Reason: Binding is usually due to excessive amount of moisture in granules, lack of lubrication and/or use of worn dies. The SOURCES AND PRECAUTIONS Of Binding Related To Formulation (Granulation) SOURCES Too moist granules and extrudes around lower punch. Insufficient or improper lubricant. Too coarse granules. Too hard granules for the lubricant to be effective. PRECAUTIONS Modify granulation. Reduce granular size. If coarse granules, reduce its size. Use wear-resistant dies. Reduce temperature. Increase clearance if it is extruding. The SOURCES AND PRECAUTIONS Of Binding Related To Machine (Dies, Punches And Tablet Press) SOURCES Poorly finished dies. Rough dies due to abrasion, corrosion. Undersized dies. Too little clearance. Too much pressure in the tablet press.",
+      "source_id": "Source_pill6",
+      "source_chunk_index": 1,
+      "file_path": "https://ijprajournal.com/issue_dcp/Tablet%20Formulation%20and%20Defects%20of%20Tablets%20A%20Review.pdf?"
+    },
+    {
+      "content": "A strong culture of continuous improvement is crucial for reducing defects over time. This includes: Employee Training: Ensuring that all personnel are well-trained in the manufacturing process, quality control measures, and equipment operation helps reduce human error and improves the consistency of the product. Root Cause Analysis: In the event of defects, a thorough root cause analysis should be conducted to identify underlying issues and implement corrective actions. Conclusion Identifying and preventing tablet defects in pharmaceutical manufacturing requires a thorough understanding of the entire manufacturing process, from formulation and granulation to compression and packaging. By focusing on optimizing each step, implementing strict quality control measures, and utilizing automated monitoring systems, manufacturers can minimize the occurrence of defects and ensure the production of high-quality, safe, and effective pharmaceutical tablets.",
+      "source_id": "Source_pill7",
+      "source_chunk_index": 0,
+      "file_path": "https://pharmatimesofficial.com/project/identifying-and-preventing-tablet-defects-in-pharmaceutical-manufacturing-processes/?"
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "entities": [
+    {
+      "entity_name": "MVTec-AD",
+      "entity_type": "Dataset",
+      "description": "MVTec AD is a dataset for benchmarking anomaly detection methods with a focus on industrial inspection. It contains over 5000 high-resolution images divided into fifteen different object and texture categories. Each category comprises a set of defect-free training images and a test set of images with various kinds of defects as well as images without defects.\n    Pixel-precise annotations of all anomalies are also provided. More information can be in our paper \"MVTec AD \u2013 A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection\" and its extended version \"The MVTec Anomaly Detection Dataset: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection\". ",
+      "source_id": "./data/datasets_info.csv",
+      "sourceUrl": "https://www.mvtec.com/company/research/datasets/mvtec-ad"
+    },
+    {
+      "entity_name": "VisA",
+      "entity_type": "Dataset",
+      "description": "The VisA dataset contains 12 subsets corresponding to 12 different objects as shown in the above figure. There are 10,821 images with 9,621 normal and 1,200 anomalous samples. Four subsets are different types of printed circuit boards (PCB) with relatively complex structures containing transistors, capacitors, chips, etc. For the case of multiple instances in a view, we collect four subsets: Capsules, Candles, Macaroni1 and Macaroni2. Instances in Capsules and Macaroni2 largely differ in locations and poses. Moreover, we collect four subsets including Cashew, Chewing gum, Fryum and Pipe fryum, where objects are roughly aligned. The anomalous images contain various flaws, including surface defects such as scratches, dents, color spots or crack, and structural defects like misplacement or missing parts.",
+      "source_id": "./data/datasets_info.csv",
+      "sourceUrl": "https://registry.opendata.aws/visa/"
+    },
+    {
+      "entity_name": "bottle",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "cable",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "capsule",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "carpet",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "grid",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "hazelnut",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "leather",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "metal_nut",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pill",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "screw",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "tile",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "toothbrush",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "transistor",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "wood",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "zipper",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "candle",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "capsules",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "cashew",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "chewinggum",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "fryum",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "macaroni1",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "macaroni2",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pcb1",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pcb2",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pcb3",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pcb4",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "entity_name": "pipe_fryum",
+      "entity_type": "Category",
+      "description": "",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "bottle",
+      "tgt_id": "MVTec-AD",
+      "description": "bottle is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "MVTec-AD",
+      "description": "cable is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "MVTec-AD",
+      "description": "capsule is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "carpet",
+      "tgt_id": "MVTec-AD",
+      "description": "carpet is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "grid",
+      "tgt_id": "MVTec-AD",
+      "description": "grid is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "hazelnut",
+      "tgt_id": "MVTec-AD",
+      "description": "hazelnut is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "leather",
+      "tgt_id": "MVTec-AD",
+      "description": "leather is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "metal_nut",
+      "tgt_id": "MVTec-AD",
+      "description": "metal_nut is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pill",
+      "tgt_id": "MVTec-AD",
+      "description": "pill is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "screw",
+      "tgt_id": "MVTec-AD",
+      "description": "screw is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "tile",
+      "tgt_id": "MVTec-AD",
+      "description": "tile is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "toothbrush",
+      "tgt_id": "MVTec-AD",
+      "description": "toothbrush is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "transistor",
+      "tgt_id": "MVTec-AD",
+      "description": "transistor is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "wood",
+      "tgt_id": "MVTec-AD",
+      "description": "wood is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "zipper",
+      "tgt_id": "MVTec-AD",
+      "description": "zipper is a data type of MVTec-AD",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "candle",
+      "tgt_id": "VisA",
+      "description": "candle is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "capsules",
+      "tgt_id": "VisA",
+      "description": "capsules is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "cashew",
+      "tgt_id": "VisA",
+      "description": "cashew is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "VisA",
+      "description": "chewinggum is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "VisA",
+      "description": "fryum is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "macaroni1",
+      "tgt_id": "VisA",
+      "description": "macaroni1 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "macaroni2",
+      "tgt_id": "VisA",
+      "description": "macaroni2 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pcb1",
+      "tgt_id": "VisA",
+      "description": "pcb1 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pcb2",
+      "tgt_id": "VisA",
+      "description": "pcb2 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pcb3",
+      "tgt_id": "VisA",
+      "description": "pcb3 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pcb4",
+      "tgt_id": "VisA",
+      "description": "pcb4 is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "VisA",
+      "description": "pipe_fryum is a data type of VisA",
+      "keywords": "",
+      "weight": 0.8,
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "MVTec AD is a dataset for benchmarking anomaly detection methods with a focus on industrial inspection. It contains over 5000 high-resolution images divided into fifteen different object and texture categories. Each category comprises a set of defect-free training images and a test set of images with various kinds of defects as well as images without defects.\n    Pixel-precise annotations of all anomalies are also provided. More information can be in our paper \"MVTec AD \u2013 A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection\" and its extended version \"The MVTec Anomaly Detection Dataset: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection\". ",
+      "source_id": "./data/datasets_info.csv",
+      "source_chunk_index": 0
+    },
+    {
+      "content": "The VisA dataset contains 12 subsets corresponding to 12 different objects as shown in the above figure. There are 10,821 images with 9,621 normal and 1,200 anomalous samples. Four subsets are different types of printed circuit boards (PCB) with relatively complex structures containing transistors, capacitors, chips, etc. For the case of multiple instances in a view, we collect four subsets: Capsules, Candles, Macaroni1 and Macaroni2. Instances in Capsules and Macaroni2 largely differ in locations and poses. Moreover, we collect four subsets including Cashew, Chewing gum, Fryum and Pipe fryum, where objects are roughly aligned. The anomalous images contain various flaws, including surface defects such as scratches, dents, color spots or crack, and structural defects like misplacement or missing parts.",
+      "source_id": "./data/datasets_info.csv",
+      "source_chunk_index": 1
+    },
+    {
+      "content": "The object, a bottle, has a large broken defect at the bottom right, characterized as a jagged irregular break, which presents a safety hazard.",
+      "source_id": "./data/metadata_MVTEC_ViSa_enriched_with_full_answers.csv",
+      "source_chunk_index": 2
+    }
+  ]
+}

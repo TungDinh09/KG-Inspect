@@ -1,0 +1,567 @@
+{
+  "entities": [
+    {
+      "entity_name": "capsule",
+      "entity_type": "Medication form",
+      "description": "A solid dosage form with hard or soft shells, usually gelatin or HPMC, containing a single dose of one or more active ingredients intended for oral administration. The shell is designed to disintegrate in digestive fluids to release the contents.",
+      "source_id": "Source_capsule1"
+    },
+    {
+      "entity_name": "good capsule",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The capsule is a two-toned pharmaceutical product consisting of two distinct color sections: one half is black and the other is a reddish-orange color. The orange half has the number \"500\" printed on it, indicating the dosage. The capsule has a smooth, matte finish, and both halves fit together seamlessly without any signs of misalignment or gaps. The printing is clear, legible, and correctly applied, with no visible smudging or misprints. \n\n Shape and Structure: The capsule's shape is uniform, with no signs of cracks, deformation, or any irregularities that would indicate defects. The separation line between the two halves is clean and consistent.\n\n Color and Design: The colors of both halves are vibrant and consistent throughout, without any discoloration, bleeding, or fading. The logo and dosage imprint contrast well with their backgrounds for enhanced visibility.\n\n Surface and Texture: The surface of the capsule is intact and smooth, showing no blemishes, scratches, or other defects. Any minor lighting variations seen in the images are typical and do not affect the capsule's integrity.\n\n Overall, the capsules from the series of images conform to a normal pattern, suggesting they maintain the expected quality and characteristics suitable for pharmaceutical use, with no detectable defects or anomalies.",
+      "source_id": "Source_capsule1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "crack capsule",
+      "entity_type": "physical defect",
+      "description": "<Crack on Capsule>\n Description: The defect manifests as a crack or fissure on the surface of the two-toned capsule, often located at the junction where the two colors meet. The cracks are typically irregular in shape and may extend across one or both halves of the capsule. The visible appearance of the crack is usually characterized by a jagged or white line that disrupts the otherwise smooth and glossy surface of the capsule. Additionally, some capsules exhibit minor surface abrasions or scratches in proximity to the cracks, suggesting possible prior physical stress or damage. This type of defect may compromise the structural integrity of the capsule, potentially affecting its capacity to contain the medication effectively.",
+      "source_id": "Source_capsule2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "faulty_imprint capsule",
+      "entity_type": "physical defect",
+      "description": "<Faulty Imprint>\n Description: The defect is characterized by various abnormalities related to the imprint on the capsule's surface. Common visual features include incomplete, smeared, or blurred imprints of numbers or text that are intended for dosage identification (e.g., \"500\" or \"50\"). The defects are usually located in the center-right section of the capsule and occur on the colored half, often resulting in a lack of clarity that deviates from the expected sharp and distinct appearances of a properly printed capsule. Additional minor defects may include scratches or blemishes on the capsule's body, typically less pronounced than the imprint issues but still indicative of manufacturing or handling errors. The presence of these imperfect imprints can compromise the legibility of critical information, affecting product integrity and user identification.",
+      "source_id": "Source_capsule3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "poke capsule",
+      "entity_type": "physical defect",
+      "description": "<Poke or Indentation Defect>\n Description: The defect is characterized by a small, localized indentation or puncture on the capsule's surface, often referred to as a \"poke.\" This anomaly typically appears as a circular or irregular white area that disrupts the otherwise smooth and shiny exterior of the capsule. The location of the defect varies but is commonly found near the center or towards the edges of the capsule. The surrounding surface remains intact, allowing the indentation to stand out against the capsule's uniform color. This defect signals a potential compromise in the capsule's integrity, which could affect its contents and functionality. The differences in color and texture around the defect area are key visual features used to identify this type of defect.",
+      "source_id": "Source_capsule4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "scratch capsule",
+      "entity_type": "physical defect",
+      "description": "<Scratch Defect>\n Description: The defect presents as a series of fine, linear markings or scratches on the surface of the capsule, disrupting its smooth texture and uniform appearance. These scratches are typically lighter in color compared to the surrounding area, making them conspicuous against the capsule's background. They are often located around the center-right of the capsule, affecting either the peach or orange half, depending on the specific capsule design. The appearance of these scratches can vary from straight and parallel lines to more irregular and curvilinear forms, suggesting possible abrasion or mishandling during manufacturing or packaging. The presence of these scratches may compromise the aesthetic quality and perceived integrity of the capsule.",
+      "source_id": "Source_capsule6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "squeeze capsule",
+      "entity_type": "physical defect",
+      "description": "<Capsule Deformation (Squeeze)>\n Description: The defect is characterized by visible deformations on the surface of the two-toned capsule, which features one colored half and another that is typically a different shade. These deformations appear as inward dents or compressions, often located where the two colors meet, disrupting the capsule's smooth, uniform shape. The affected areas create irregular contours and may lead to a wavy surface texture. The distortions are not severe enough to break the surface but compromise the capsule's integrity and uniformity. The identification of this defect is critical, as it may affect the capsule's seal and dosage accuracy, which are essential for pharmaceutical products. Key visual features for distinguishing this defect include irregular indentations on the surface, the presence of distorted or non-uniform contours, and areas of visual discrepancy where the colors align.",
+      "source_id": "Source_capsule5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "capsules",
+      "entity_type": "physical defect",
+      "description": "A collection of soft-gel capsules that appear uniform in size, shape, and color. These capsules are smooth, oval-shaped, and have a translucent green appearance. This entity represents the general form of capsules before identifying any specific defect type.",
+      "source_id": "Source_capsule1"
+    },
+    {
+      "entity_name": "bubble capsules",
+      "entity_type": "physical defect",
+      "description": "Capsules that contain visible air bubbles trapped within the soft-gel shell. These bubbles disrupt surface uniformity and may affect capsule strength, appearance, or dosage consistency. Air entrapment typically occurs during filling or sealing of the capsule.",
+      "source_id": "Source_capsule7"
+    },
+    {
+      "entity_name": "combined capsules",
+      "entity_type": "physical defect",
+      "description": "A group of capsules exhibiting multiple defect types simultaneously. This may include air bubbles, deformation, discoloration, or structural irregularities. The combined category is used for capsules that cannot be classified under a single defect type because they present multiple visual deviations.",
+      "source_id": "Source_capsule7"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "capsule",
+      "tgt_id": "good capsule",
+      "description": "Defines the acceptable quality standard for capsules that meet inspection and pharmacopoeial specifications; used as the reference class for defect detection.",
+      "keywords": "acceptance, quality, inspection, standard",
+      "weight": 0.95,
+      "source_id": "Source_capsule1"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "crack capsule",
+      "description": "Represents a surface integrity defect on the capsule shell, where structural failure occurs due to brittle gelatin, low moisture content, or mechanical stress.",
+      "keywords": "integrity, fracture, shell, brittleness",
+      "weight": 0.9,
+      "source_id": "Source_capsule2"
+    },
+    {
+      "src_id": "capsule ",
+      "tgt_id": "faulty_imprint capsule",
+      "description": "Represents a visual identification defect where the printed text or symbol on the capsule is missing, blurred, or illegible, impairing product traceability.",
+      "keywords": "imprint, print, identification, marking",
+      "weight": 0.88,
+      "source_id": "Source_capsule3"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "poke capsule",
+      "description": "A type of surface damage, typically appearing as a hole, puncture, or scratch on the shell",
+      "keywords": "deformation, dent, tip, closing pressure",
+      "weight": 0.85,
+      "source_id": "Source_capsule4"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "scratch capsule",
+      "description": "Represents a surface abrasion defect caused by friction or contact with mechanical parts, distinct from deeper cracks or fractures.",
+      "keywords": "surface, abrasion, friction, mark",
+      "weight": 0.83,
+      "source_id": "Source_capsule6"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "squeeze capsule",
+      "description": "Represents an overall shape deformation or flattening caused by excessive pressure during handling or compression, categorized as a shape defect.",
+      "keywords": "deformation, pressure, compression, shape",
+      "weight": 0.82,
+      "source_id": "Source_capsule5"
+    },
+    {
+      "src_id": "capsule",
+      "tgt_id": "capsules",
+      "description": "Indicates that the term 'capsules' refers to multiple units of the single capsule form, representing a collection or batch of individual capsules.",
+      "keywords": "multiple units, batch, group of capsules, collection",
+      "weight": 0.8,
+      "source_id": "Source_capsule1"
+    },
+    {
+      "src_id": "capsules",
+      "tgt_id": "bubble capsules",
+      "description": "Represents defects where air pockets or bubbles are trapped within the capsule shell during manufacturing, leading to compromised integrity and potential leakage.",
+      "keywords": "air pocket, trapped bubble, manufacturing defect, leakage",
+      "weight": 0.79,
+      "source_id": "Source_capsule7"
+    },
+    {
+      "src_id": "capsules",
+      "tgt_id": "combined capsules",
+      "description": "Represents defects where two or more capsules are improperly joined or fused together during manufacturing, leading to functional issues.",
+      "keywords": "fusion, joining, manufacturing defect, functional issue",
+      "weight": 0.78,
+      "source_id": "Source_capsule7"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "bubble capsules",
+      "description": "Indicates that bubble defects are one of the multiple defect types that may appear together within the combined capsules category.",
+      "keywords": "air bubble, trapped air, internal bubble, surface bubble, soft-gel defect",
+      "weight": 0.78,
+      "source_id": "Source_capsule6"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "poke capsule",
+      "description": "Shows that poke marks or puncture-type defects are included as part of the combined capsule defect group, where multiple issues occur simultaneously.",
+      "keywords": "puncture, poke mark, surface dent, physical damage",
+      "weight": 0.78,
+      "source_id": "Source_capsule4"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "crack capsule",
+      "description": "Represents that cracks or fractures on the capsule surface can coexist with other defects within the combined capsules category.",
+      "keywords": "crack, fracture, split shell, structural defect",
+      "weight": 0.78,
+      "source_id": "Source_capsule2"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "faulty_imprint capsule",
+      "description": "Shows that defective or incomplete printed markings on capsules are among the defects grouped under combined capsules.",
+      "keywords": "imprint error, misprint, faded print, incorrect marking",
+      "weight": 0.78,
+      "source_id": "Source_capsule3"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "scratch capsule",
+      "description": "Indicates that scratch marks or surface abrasions are included among the multiple defects present in the combined capsules set.",
+      "keywords": "scratch, abrasion, surface mark, rubbed area",
+      "weight": 0.78,
+      "source_id": "Source_capsule6"
+    },
+    {
+      "src_id": "combined capsules",
+      "tgt_id": "squeeze capsule",
+      "description": "Shows that deformation caused by squeezing or pressure is one of the defect types categorized under combined capsules.",
+      "keywords": "deformation, squeezed shape, compression, dented capsule",
+      "weight": 0.78,
+      "source_id": "Source_capsule5"
+    }
+  ],
+
+  "chunks": [
+    {
+      "content": "Capsule A capsule is a type of dosage form used in medicine to deliver drugs to the body. It typically consists of a small, cylindrical container made of gelatin or a similar material, which encases the medication. Capsules are designed to be swallowed whole, allowing the medication inside to be released in the digestive tract. One of the main benefits of capsules is their ability to mask the taste of the medication, making them more palatable for patients. They also provide an easy way to deliver precise doses of medication. Additionally, capsules can be made to release their contents at different rates, allowing for controlled and sustained drug delivery over time.[source: https://nextclinic.com.au/glossary/capsule]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 0,
+      "file_path": "https://nextclinic.com.au/glossary/capsule"
+    },
+    {
+      "content": "Capsules are solid dosage forms in which medicine or a combination of drugs, with or without excipients, is enclosed in Hard Gelatin Capsule Shells, soft, soluble gelatin shells, or hard or soft shells of any other acceptable material, in a variety of shapes and capacities. Normally, they are meant for oral consumption and contain a single dose of active ingredient(s). But capsules must be free from manufacturing defects during the manufacturing process. During manufacturing, capsules may get different types of defects that can be identified at the same time. Capsule Defects and Remedies are provided below to remove such types of defects.[source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 1,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "Capsules are a solid dosage form consisting of a shell and a filling containing one or more active substances, often with added excipients. Each capsule contains a measured portion of medicine, either a single dose or part of a dose. This form of medicine comes in various shapes and sizes and is indivisible. Traditional capsule shells are made of gelatin. Based on their structure, capsules can be classified as hard or soft. The filling can be in solid form (e.g., powders, granules, pellets) or liquid form. The active ingredient may also be in a paste-like (semi-solid) consistency. The capsule’s contents must be physicochemically compatible with the shell, must not damage it, and must not affect the rate of dissolution or disintegration. Pharmacopoeias distinguish between oral capsules: 1 Hard capsules, 2 Soft capsules, 3 Enteric-coated capsules, 4 Starch capsules, 5 DuoCaps, 6 Modified-release capsules.[source: https://eubioco.eu/en/what-is-the-difference-between-capsules-and-tablets/#:~:text=What%20Are%20Capsules?,Modified%2Drelease%20capsules.]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 2,
+      "file_path": "https://eubioco.eu/en/what-is-the-difference-between-capsules-and-tablets/#:~:text=What%20Are%20Capsules?,Modified%2Drelease%20capsules."
+    },
+    {
+      "content": "Capsules are solid dosage forms with hard or soft shells. They are of various shapes 54 and sizes and contain a single dose of one or more active ingredients. They are 55 intended for oral administration. Their surfaces may bear symbols or other markings. 56 Capsule shells are made of gelatin, hydroxypropyl methyl cellulose (HPMC), or other 57 substances, the consistency of which may be adjusted by the addition of substances 58 such as glycerol or sorbitol. The shell should disintegrate in the presence of digestive 59 fluids so that the contents are released. The contents of capsules may be solid, liquid 60 or of a paste-like consistency. Capsule shells and contents may contain excipients 61 such as diluents, solvents, surface-active substances, opaque fillers, antimicrobial 62 agents, sweeteners, colouring matter authorized by the appropriate national or regional 63 authority, flavouring substances, disintegrating agents, glidants, lubricants, gelling 64 agents and substances capable of modifying the behaviour of the active ingredient(s) 65 in the gastrointestinal tract. The contents should not cause deterioration of the shell. 66 When excipients are used, it is necessary to ensure that they do not adversely affect 67 the stability, dissolution rate, bioavailability, safety or efficacy of the active 68 ingredient(s); there must be no incompatibility between any of the components of the 69 dosage form.[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 3,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "The different categories of capsule include: 71 Working document QAS/23.927 page 4 • hard capsules; 72 • soft capsules; 73 • modified-release capsules (including delayed-release capsules (gastro-74 resistant/enteric capsules) and sustained-release capsules (extended-/prolonged-75 release capsules)). 76 Manufacture 77 The manufacturing and filling processes for capsules should meet the requirements of 78 good manufacturing practices (GMP). 79 Very broad guidelines concerning the main critical steps to be followed during 80 production of capsules, indicating those that are the most important, are provided 81 below. 82 Additional guidelines specific for hard or soft capsules are provided in the respective 83 subsections below. 84 In the manufacture of capsules, measures are taken to: 85 • ensure that the active ingredient(s), when present in solid-state form, have 86 appropriate solid-state properties such as particle-size distribution and 87 polymorphic form; 88 • ensure that mixing with excipients is carried out in a manner that ensures 89 homogeneity; 90 • minimize the degradation of the active ingredient(s); 91 • minimize the risk of microbial contamination; 92 • minimize the risk of cross contamination. 93 The particle size of the active ingredient(s) may be of primary significance in 94 determining the rate and extent of dissolution and the bioavailability of the drug 95 product, especially for substances of low solubility in aqueous media. The uniformity 96 Working document[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 4,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "Capsules should be kept in well-closed containers. They should be protected from 142 light, when required, and from excessive moisture or dryness and should not be 143 subjected to temperatures above 30 °C. Additional special packaging, storage and 144 transportation recommendations are provided, where necessary, in the individual 145 monograph. 146 Requirements for specific types of capsules 147 Hard capsules 148 Definition 149 Hard capsules have shells consisting of two prefabricated cylindrical sections that fit 150 together. One end of each section is rounded and closed and the other is open. The 151 contents of hard capsules are usually in solid form (powder or granules). 152 Manufacture 153[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 5,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "Sometimes the physical characteristics of the mixture of the active ingredient(s) and 154 excipients allow it to be directly filled into the shell but it may occasionally be 155 necessary to granulate before filling. Normally the granulate needs to be mixed with 156 lubricants and/or disintegrating agents. The use of excessive amounts of lubricants 157 should be avoided since these may deleteriously affect the capsules. 158 In-process controls during hard capsule production should include the moisture 159 content of the mixture and/or granulate (as well as of the shells), the size of granules, 160 the flow of the final mixture and the uniformity of mass, capsule size, integrity of the 161 seals and disintegration or dissolution rate (e.g. for modified-release capsules) of the 162 finished dosage form[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 6,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "HPMC capsule shells can be manufactured in different ways, for example with and 164 without the use of gelling agents. Different manufacturing methods can affect aspects 165 of the capsule shells and thus lead to variability in product characteristics including 166 dissolution. Manufacturer should understand these differences and minimize changes 167 in shell supplier and/or method of manufacture (i.e. different products from the same 168 supplier). Such changes may require significant validation to demonstrate that the 169 change(s) have not affected the final product properties, for example, dissolution. 170 Disintegration test 171 Hard capsules comply with 5.3 Disintegration test for tablets and capsules. 172 Use water as the immersion fluid unless another medium is specified in the individual 173 monograph. Operate the apparatus for 30 minutes unless otherwise justified and 174 authorized and examine the state of the capsules. 175 If capsules float, use a disc as described under 5.4 Disintegration test for 176 suppositories.[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 7,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "Soft capsules have thicker shells than hard capsules and antimicrobial preservatives 180 are usually added. The shells are of one piece and various shapes. The contents of soft 181 capsules are usually solutions or suspensions of the active ingredient(s) in non-182 aqueous liquids. Partial migration of the contents into the shell may occur (and vice 183 versa) depending on the nature of the materials used and the product in question. 184 Manufacture 185 Soft capsules are usually formed, filled and sealed in one operation. However, shells 186 for extemporaneous use are sometimes prefabricated. Liquids may be incorporated[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 8,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "Capsules are the second most frequently used drug delivery dosage form, right after the tablets. Due to their high flexibility in terms of usability and filling material, they are popular in pharmaceutical as well as nutraceutical industry. Even though they’ve been widely used for more than a century, modern shell manufacturing and encapsulation processes still face some challenges for providing perfect capsules, without defects.[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 9,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "The proposed method is based on comparison of an inspected print to a print appearance model of non-defective print. Before the comparison, segmentation, i.e. partitioning the image into capsule region and the background, is done using the border tracking algorithm [9]. Then, shape normalization [8] of the capsule is per-formed in order to eliminate the spatial distortion caused by capsules’ shape. Shape normalization consists of cap-sule rotation into vertical position and transformation of the image cartesian coordinates into cylindrical coordi-nates (x, y)  (, y) with a constant step of . The last preprocessing step is print localization [8], which deter-mines the region of interest (ROI), i.e. the print region, and sets the prints into spatial correspondence, enabling the generation of the print appearance model and com-parison of the inspected print to the print appearance model. The method consists of two stages (Figure 3). In the first, training stage, the print appearance model is gener-ated from the training images, i.e. images of print without defects. In the second, on-line (verification) stage, a given input image is compared to the corresponding print ap-pearance model and then accordingly classified. [source: https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 10,
+      "file_path": "https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?"
+    },
+    {
+      "content": "Throughout manufacturing, certain procedures should be validated and monitored by 99 carrying out appropriate in-process controls. These should be designed to guarantee 100 the effectiveness of each stage of production. 101 Packaging is required to be adequate to protect capsules from light when required, and 102 from moisture and damage during transportation. 103 Visual inspection 104 Unpack and inspect at least 20 capsules. They should be smooth and undamaged. 105 Evidence of physical instability is demonstrated by gross changes in physical 106 appearance, including hardening or softening, cracking, swelling, mottling or 107 discoloration of the shell. 108 Uniformity of mass 109 Capsules comply with the test for 5.2 Uniformity of mass for single-dose 110 preparations, unless otherwise specified in the individual monograph. 111 Uniformity of content 112 Where a requirement for compliance with the test for 5.1 Uniformity of content for 113 single-dose preparations is specified in an individual capsule monograph, the test for 114 5.2 Uniformity of mass for single-dose preparations is not required. 115 Dissolution/disintegration 116 Where a choice of test is given (“Either test A or test B may be applied”), follow the 117 instructions in the monograph. Where a requirement for compliance with a dissolution 118[source: https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 11,
+      "file_path": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/2025-07-26-capsules-qas23-927-forpubcon.pdf?sfvrsn=98c4a3f4_3"
+    },
+    {
+      "content": "Even though the manufacturing and filling processes have come a long way since the introduction of first capsules in the nineteenth century, both face challenges when it comes to providing defect-free capsules even today. Taking into consideration that modern production machines operate 24/7, producing and filling large quantities of different capsules, it is inevitable, as in all industrial processes, that a certain number of capsules will come out defective one way or another. A capsule can be defective in a number of ways. In our case, we will focus on visual defects on the capsule shell, which are either caused during the capsule shell manufacturing or filling (encapsulation) process. As you can see in the table below, there is a wide range of defects that can be found on hard shell capsules, ranging from major ones that are considered critical and affect performance of the final product, to minor ones that include visual imperfections of the capsule and raise serious doubts about the integrity and quality of the product.[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule1",
+      "source_chunk_index": 12,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "Cracks Capsules crack during or after the filling process. What Causes It? 1 Brittle capsules due to poor storage conditions. 2 Hygroscopic fill material . How to Solve It: 1 Storage optimization: Store capsules at 40–60% relative humidity to maintain flexibility. 2 Capsule selection: Avoid using gelatin based capsules with hygroscopic fill. HPMC capsules are much less prone to cracking.[source: https://blog.capscanada.com/capsule-filling-defects-capscanada?]",
+      "source_id": "Source_capsule2",
+      "source_chunk_index": 1,
+      "file_path": "https://blog.capscanada.com/capsule-filling-defects-capscanada?"
+    },
+    {
+      "content": "Crack Improper (storage) conditions that favor the transfer of moisture from the capsule shell to encapsulated components, misalignment of the upper and lower capsule segments or incorrect setting of the cap hold-down pin in the joining station. Improper mechanical properties of the gelatin due to low amount of plasticizer or low equilibrium moisture or use of hygroscopic components that absorb water from the capsule shell.[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "Cracks in Capsules Causes 1. Improper (storage) conditions favor the transfer of moisture from the capsule shell to encapsulated components. 2. Misalignment of the upper and lower capsule segments incorrect setting of the cap hold-down pin in the joining station. Remedies 1. Store the capsule properly 2. Make a Proper setting of the station. 4. Telescopic Capsules Causes1. Misalignment of cap and body bush 2. Closing pin not in the center of body bushes 3. Damage the rubber sheet of the closing plate Remedies1. Align cap/body bush to bush gauge. 2. Check pin straightness using a gauge pin If bent replaces it with a new one. 3. Wear of capsule closing units rubber sheet specifically at the point where the capsule strikes the sheet would lead to telescopic. Replace if required[source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule6",
+      "source_chunk_index": 0,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "In order to protect the customer from mix-ups among various types of pharmaceutical products, a regulation code 21CFR206 [1], issued by the Food and Drug Ad-ministration, enforces the pharmaceutical companies to produce products with unambiguous identification of products' active substance and dosage by size, shape, texture, imprint, etc. Besides the identification [2], visual appearance also plays an important role in marketing, because imperfect appearance of a single product in a package can raise serious doubts about integrity and quality of the product. Since manual visual inspection of large batches is subjective, unreliable, slow, tedious and costly, automated visual inspection systems are more and more commonly used.[source: https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?]",
+      "source_id": "Source_capsule3",
+      "source_chunk_index": 3,
+      "file_path": "https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?"
+    },
+    {
+      "content": "Various automated visual inspection systems for tablets and capsules are being produced by companies, such as Ackley, Eisai, Ikegami, Mutual, Proditec, Seidenader, Sensum and Viswill. These systems have to be robust and general enough to be able to inspect the vast amount of all possible products and defects. However, the robustness comes with the price of sensitivity. The robust-ness-sensitivity trade-off means that these inspection systems in general perform well in detecting large defects such as cracks, broken products, contrast stains, dots and size variations on products without imprints or texture, but have suboptimal performance for some specific products, such as tablets and capsules with imprints. In case of products with imprints, defects in the vicinity of the imprint can have similar contrast to imprint and therefore, before the classification, the system should distinguish defects from imprint. In addition, imprint quality has to be inspected. Good imprint quality, a print property that makes the imprint legible, is crucial for the identification. The imprint quality is reduced by imprint degradations such as partly missing imprint, blurred im-print, low contrast imprint, color and size variations of imprint, etc.[source: https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?]",
+      "source_id": "Source_capsule3",
+      "source_chunk_index": 2,
+      "file_path": "https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?"
+    },
+    {
+      "content": "In this paper, the problem of print quality inspection on pharmaceutical capsules is addressed. Good print quality, a property that makes the print legible, is of utmost im-portance for identification and preventing mix-ups among various types of capsules. Spatial distortion obtained at image formation process, where a 3-D surface gets pro-jected onto a 2-D image plane, causes print appearance variations. Elimination or compensation of print ap-pearance variations is necessary for improving defect detection performance of inspection systems. For that reason, a novel appearance-based method for print qual-ity inspection on capsules is proposed. The performance of the proposed method was evaluated on a real capsule image database of printed capsules, where a \"gold stan-dard\" was established by manually classifying the capsules into non-defective and defective class. The ob-tained results indicate that the proposed method is more effective than the standard defect detection method.[source: https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?]",
+      "source_id": "Source_capsule3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.mva-org.jp/Proceedings/2011CD/papers/09-19.pdf?"
+    },
+    {
+      "content": "Damaged print Improper ink viscosity and applying pressure, uneven flow of the ink, clogged ink jets, incomplete drying of ink etc. Improper formulation of the ink blends with a combination of coating ingredients. Thin/thick wall Uneven distribution of gelatine on dip-coated pins (thin wall). The pins are dipped twice or are in the gelatin too long (thick wall). Improper viscosity of the gelatin solution, insufficient presence of wetting agent.[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule3",
+      "source_chunk_index": 1,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "1. Dents Capsule domes are indented What Causes It? 1 Excessive closing pressure. 2 Excessive fill material How to Solve It: 1 Capsule length adjustment: Ensure the capsules are adjusted to fit within the proper gap of the go no-go gauge 2 Capsule fill volume: Overfilling is a common root cause of denting. Use of elongated capsules can provide the additional space you need.[source: https://blog.capscanada.com/capsule-filling-defects-capscanada?]",
+      "source_id": "Source_capsule5",
+      "source_chunk_index": 3,
+      "file_path": "https://blog.capscanada.com/capsule-filling-defects-capscanada?"
+    },
+    {
+      "content": "Dents and pinholes (on tips) Excessive closing length setting during the encapsulation process, excessive lock length, excessive closing pressure, over-filling of capsules, incorrect pin size or pin configuration, improper storage conditions (moisture).[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "2. Dents and pinholes (on tips) Causes: Excess closing/lock length setting during the encapsulation process, excessive lock length, excessive closing pressure, over-filling of capsules, incorrect pin size or pin configuration, and improper storage conditions (moisture). Remedies: Ensure the correct size disc is used and also ensure the correct amount of dose is filled in the capsule[source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule5",
+      "source_chunk_index": 1,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "Telescoped Unaligned body and cap due to excessive gap in the counter bearing, general misalignment of filling machine components or worn-out machine components, capsule fill weight too high, bad quality of the formed powder slug, high capsule size variation, improper environment conditions (temperature swings) and/or worn-out cap seat or body passage. Distorted shape of capsules due to coarse fill components with hard and sharp edges. Improperly closed/unclosed Improper closing length setting and closing pressure, improper pin configuration. Contamination of the body-cap interface (lock area) and overfilling.[source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule5",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": " Holes Mechanical problems or poor machine setup causing the stripper jaws touching the shell as it moves forward to strip it off during the removal of dried films from the mold pin. [source: https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?]",
+      "source_id": "Source_capsule4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sensum.eu/posts/reasons-for-most-common-capsule-defects/?"
+    },
+    {
+      "content": "Poorly joined hard-shell capsules are both visually unappealing and have the potential to leak. A leaking capsule will not have the appropriate fill weight, and its contents may spill onto other capsules, making them unpleasant for patients to ingest. One of the most common types of poorly joined capsules is a defect called the cap tuck. Cap tucks occur during the closing step of the capsule- filling process when the filled capsule body is pushed up into the cap. Instead of the smaller-diameter body sliding smoothly into the larger-diameter cap, the open (cut) edges of the body and cap collide, and a portion of the cut edge of the cap folds up under itself. In some cases, fill material may become lodged between the cap and the body, causing the cap tuck. A cap tuck problem can result in hours of additional inspection time and a poor yield for the batch, so it’s critical that machine operators quickly identify the cause and resolve the issue. Cap tucks are generally caused by one or more of the following factors: the filling-machine settings, the fill material, the quality of the powder slug, the condition of the filling-machine components, and the quality and design of the empty capsules.[source: https://www.tabletscapsules.com/3641-Technical-Articles/590837-Capsule-Filling-Making-Cap-Tucks-a-Thing-of-the-Past/#:~:text=January%2010%2C%202020,design%20of%20the%20empty%20capsules.]",
+      "source_id": "Source_capsule4",
+      "source_chunk_index": 1,
+      "file_path": "https://www.tabletscapsules.com/3641-Technical-Articles/590837-Capsule-Filling-Making-Cap-Tucks-a-Thing-of-the-Past/#:~:text=January%2010%2C%202020,design%20of%20the%20empty%20capsules."
+    },
+    {
+      "content": "Figure 1: Softgel manufacturing. PRESENCE OF DEFECTS Despite advances in manufacturing processes, producing defect-free softgels remains challenging. Modern production machines operate 24/7, producing large quantities of capsules, making it inevitable that some defects will occur. In the table below, we provide an overview of the most common visual softgel defects, categorized by their source—fill material preparation, gelatin preparation, encapsulation, drying, and printing. Each defect is described along with its cause. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "1 Skip to contentHome 2 Production 3 Pharma Guidelines 4 Quality Assurance 5 Audit 6 Quality Control 7 Pharma SOPs 8 Microbiology 9 Engineering Capsule Defects and Remedies During Filling Process Published on: June 6, 2022 by Naresh BhakarCapsules are solid dosage forms in which medicine or a combination of drugs, with or without excipients, is enclosed in Hard Gelatin Capsule Shells, soft, soluble gelatin shells, or hard or soft shells of any other acceptable material, in a variety of shapes and capacities. Normally, they are meant for oral consumption and contain a single dose of active ingredient(s). But capsules must be free from manufacturing defects during the manufacturing process. During manufacturing, capsules may get different types of defects that can be identified at the same time. Capsule Defects and Remedies are provided below to remove such types of defects. [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 1,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "Process Defects Related causes FILL MATERIAL PREPARATION Color variation Can occur due to variations in the composition or concentration of colorants used in the fill material preparation. It may result from improper mixing, inadequate dispersion of colorants, or inconsistencies in raw material quality. Air bubbles in fill Trapped air within the softgel capsule, typically visible as small voids or bubbles. This defect can arise during the mixing or filling process if proper deaeration techniques are not employed. Air bubbles can compromise the integrity of the fill material, leading to uneven distribution of the active pharmaceutical ingredient (API) and excipients. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Sedimentation Refers to the settling of suspended particles within the softgel capsule, resulting in uneven distribution of solid components. This defect is common in suspension-based fill formulations and can occur if the fill material is not properly homogenized or if the suspension lacks adequate viscosity or stability. GELATINE PREPARATION Opacity Can result from improper gelatin hydration. Inadequate hydration affects the gelatin’s transparency, leading to a cloudy appearance. This may occur due to insufficient mixing time, improper water-to-gelatin ratio or inadequate control during gelatin preparation. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 3,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Uneven surface Inconsistent bloom levels can cause variations in capsule thickness and texture, resulting in an uneven surface and compromised visual appearance. The reason for that may lay in variations in gelatin hydration, temperature or pH during its preparation. Color variation Uneven color variation is a defect that can happen either in gelatin production or encapsulation. In case of gelatin preparation, inconsistent dispersion or blending of colorants will lead to color variations within the same batch of softgels. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 4,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Leakers Leakers, a very common issue in every softgel production process, can be a result of different factor. One of the reasons for capsules to leak can also be found in improper gelatin viscosity. Air bubbles in gelatin Improper degassing techniques during gelatin preparation can lead to air entrapment within the capsule shell. ENCAPSULATION/CAPSULE FILLING Color variation / Color spot Color variation can also result from gelatin migration during encapsulation, causing uneven distribution of the fill material, resulting in visible streaks or patches on the capsule surface. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 5,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Bubbles Bubbles inside of the softgel can result from excessive agitation or improper filling techniques. Leakers /Damadged seam Leakers are a critical issue that can also be a result of inadequate sealing pressure or equipment malfunctions during encapsulation. Dots and speckles These defects can originate from contaminants of foreign particles introduced during the manufacturing process or inadequate cleaning of equipment. Contaminants can enter the softgel capsules during gelatin preparation, encapsulation, or drying stages if the equipment or manufacturing environment is not properly cleaned and maintained. Improper handling of raw materials can also introduce contaminants into the gelatin-filling material mixture, leading to dots and speckles on the capsule surface. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 6,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Burr Occurs during the encapsulation phase when the die rollers do not cut the gelatin properly. As a result, excess gelatin is not fully trimmed and remains attached to the softgel capsule, leading to unwanted gelatin fragments or ‘burrs’ on the capsule surface around the seam. Size Inconsistency Occurs due to issues such as equipment malfunction (dye roles are misaligned, worn out), uneven gelatin ribbon thickness, improper filling machine calibration, fill material variability, or temperature and humidity fluctuations. It results in not uniform softgel sizes, potentially affecting dosage accuracy and product quality. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 7,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Shape Uncontrolled gelatin viscosity, humidity or temperature during encapsulation may result in misshapen softgel capsules, as for example elongation, deformation etc. Misshapen capsules can occur if the gelatin viscosity is not properly controlled, leading to variations in capsule thickness or shape. Temperature and humidity fluctuations during encapsulation can also affect gelatin flow properties, resulting in misshapen capsules. DRYING Wrinkling/shrinking Inadequate drying or cooling conditions can cause wrinkling and/or shrinkage of the gelatin shell leading to improper shape. This may stem from too high temperature which causes rapid moisture evaporation and uneven drying. Cooling too quickly the capsules after encapsulation can lead to uneven shrinkage as well. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 8,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Twins Improper drying and cooling conditions may cause softgels sticking together due to residual moisture on the softgel surface. It can also result from inadequate airflow or improper spacing between capsules while drying. Cracks Unoptimized drying parameters can cause gelatin cracks that are visible as lines or fractures on the capsule surface. In addition, excessive pressure or vibration as well as rapid temperature changes can also cause thermal stress that lead to gelatin cracking. Leakers [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 9,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Leakers can also be a result of improper drying or cooling conditions that cause extensive shrinkage of capsules and damage integrity of the seal. PRINTING Missing print The intended print, whether text, logo, or design, is completely absent from the surface of the softgel capsule. It can result from ink supply issues, equipment malfunction, or poor ink adhesion to the gelatin shell. Print position Misalignment or off-center printing of the intended design or text on the softgel surface. This can occur due to mis-calibrated printing equipment or mechanical errors during the printing process. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 10,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "Incomplete print Only a portion of the intended design or text is transferred onto the softgel surface, leaving gaps or missing sections. This can result from insufficient ink supply, printing equipment malfunction, or improper ink adhesion. Illegible print Printed markings that are unclear, fuzzy, or difficult to read, compromising the legibility and visibility of the intended design or text. This can result from printing equipment malfunction, improper ink application, or poor printing resolution. [source: https://www.sensum.eu/posts/common-softgel-capsule-defects/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 11,
+      "file_path": "https://www.sensum.eu/posts/common-softgel-capsule-defects/"
+    },
+    {
+      "content": "HARD AND SOFT GELATIN CAPSULES Capsules are solid oral dosage forms in which the drug is enclosed within a hard or soft shell. The shell is normally made from gelatin and results in a simple, easy - to -swallow formulation with no requirement for a further coating step. They can be either hard or soft depending on the nature of the capsule shell, with soft capsules possessing a fl exible, plasticized gelatin fi lm. Hard gelatin capsules are usually rigid two - piece capsules that are manufactured in one procedure and packed in another totally separate operation, whereas the formulation of soft gelatin capsules is more complex but all steps are integrated. [source: https://www.pharmaexcipients.com/wp-content/uploads/attachments/Capsules.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 12,
+      "file_path": "https://www.pharmaexcipients.com/wp-content/uploads/attachments/Capsules.pdf"
+    },
+    {
+      "content": "These steps might be done by different companies, but they're crucial for getting a final product that's free from flaws. Generally, the first step involves creating gelatin from collagen, then using specialized steel pins to shape the gelatin into the desired form. This process is called dipping and only lasts a short time before the pins are removed and sent to dry. Once dry, the capsule parts are taken off the pins, cut to size, and joined together in preparation for filling. Filling capsules involves putting the right ingredients inside them, which can range from powders to liquids or even a mix of these. This process uses specialized machines that align the capsules correctly before filling and sealing them. If the contents are liquid, an extra step called banding is applied to prevent leaks. After this, the capsules are ready for packaging. Despite advancements in manufacturing and filling processes, defects still occur. [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 13,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "Uploaded by enjelina sds Copyright © © All Rights Reserved We take content rights seriously. If you suspect this is your content, claim it here. Available Formats Download as PDF, TXT or read online on Scribd You are on page 1 / 4 CAPSULE DEFECTS FROM h t t p s : / / w w w. s e n s u m. e u / p o s ts / re a s o n s - fo r- most-common-capsule-defects/ CAPSULE SHELL MANUFACTURING AND FILLING PROCESSES FORMULATION RELATED DEFECTS PROCESS RELATED CAUSES CAUSES Colour deviation Relative bad stability of selected dyes Improper storage conditions (exposure to and pigments, improper amount of light, heat, pH, microbial contamination the pigment or improper etc.). homogenization of the pigment [source: https://www.scribd.com/document/919434987/Defects-on-Capsule]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 14,
+      "file_path": "https://www.scribd.com/document/919434987/Defects-on-Capsule"
+    },
+    {
+      "content": "Short body/cap Insufficient entry of the body/cap into the DEFECTS ON collet prior to cutting operation due to wet CAPSULE SHELL shell or problem with the collet. PRODUCTION Long body/cap Caused by a missing knife or a broken PROCESS knife during cutting operation. Small fragments of shell walls generated Dots/specks during the trimming process getting into the Foreign materials in the gelatin dipping area. This happens during the solution or improper homogenization mold dipping process. Could also be result of the pigment. of a print. Loose cap fits over the body of another Double cap capsule after one of the caps is loose due to insufficient pre-lock position in joining / block. This happens during handling of capsules. FORMULATION RELATED DEFECTS PROCESS RELATED CAUSES CAUSES Holes/scratch Mechanical problems or poor machine setup / causing the stripper jaws touching the shell as it moves forward to strip it off during the removal of dried films from the mold pin. Joints/damaged edge/rough cut Caused by a blunt knife during cutting / operation. [source: https://www.scribd.com/document/919434987/Defects-on-Capsule]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 15,
+      "file_path": "https://www.scribd.com/document/919434987/Defects-on-Capsule"
+    },
+    {
+      "content": "Star ends DEFECTS ON Uneven distribution of gelatin on dip-coated pins or an excessive amount of gelatin solution Improper viscosity of gelatin formulation. CAPSULE SHELL on the end of the pin. PRODUCTION Bubbles PROCESS Improper vacuum or duration of the gelatin / bubbles extraction process. Damaged print Improper ink viscosity and applying pressure, Improper formulation of the ink blends with a uneven flow of the ink, clogged ink jets, combination of coating ingredients. incomplete drying of ink etc. [source: https://www.scribd.com/document/919434987/Defects-on-Capsule]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 16,
+      "file_path": "https://www.scribd.com/document/919434987/Defects-on-Capsule"
+    },
+    {
+      "content": "Thin/thick wall Uneven distribution of gelatine on dip-coated Improper viscosity of the gelatin solution, pins (thin wall). The pins are dipped twice or insufficient presence of wetting agent. are in the gelatin too long (thick wall). Split Caused by uneven drying or an uneven film Insufficient amount of plasticizer, low thickness at the point of split. equilibrium moisture. You might also like 1 A Look Into The Most Common Softgel Capsule DefectsPDF No ratings yet A Look Into The Most Common Softgel Capsule Defects 9 pages 2 Tablet and Coating Defects GuidePDF No ratings yet Tablet and Coating Defects Guide 5 pages 3 Capsule Defects and RemediesPDF No ratings yet Capsule Defects and Remedies 4 pages 4 AR-Caps Technical Data Sheet (PR00373576)PDF No ratings yet AR-Caps Technical Data Sheet (PR00373576) 8 pages 5 Defects in TabletsPDF No ratings yet Defects in Tablets 36 pages 6 Tablet Defects and Coating Defects and Others PDFPDF No ratings yet Tablet Defects and Coating Defects and Others PDF 3 pages 7 Name of Defect Description Illustration Reason Remedy 1. ChippingPDF 100% (1) Name of Defect Description Illustration Reason Remedy 1. Chipping 2 pages 8 PT515PDF No ratings yet PT515 11 pages 9 Common Defects Observed During TabletingPDF 100% (1) Common Defects Observed During Tableting 9 pages 10 Manufacturing Defect of TabetsPDF No ratings yet Manufacturing Defect of Tabets 7 pages 11 Part (Tablet & Capsule)PDF No ratings yet Part (Tablet & Capsule) 2 pages 12 Common Tablet DefectsPDF No ratings yet Common Tablet Defects 9 pages 13 Tablet Defects-DosagePDF No ratings yet Tablet Defects-Dosage 3 pages 14 Tablet Processing Problems and Its RemediesPDF No ratings yet Tablet Processing Problems and Its Remedies 39 pages 15 Capsule Manufacturing GuidePDF No ratings yet Capsule Manufacturing Guide 22 pages 16 Problems and Remedies For Tablet CoatingPDF No ratings yet Problems and Remedies For Tablet Coating 7 pages 17 Tablet Defects: Causes & SolutionsPDF No ratings yet Tablet Defects: Causes & Solutions 1 page 18 Hard Gelatin CapsulesPDF No ratings yet Hard Gelatin Capsules 72 pages 19 Industrial Pharmacy I Unit 3 (AWP)PDF No ratings yet Industrial Pharmacy I Unit 3 (AWP) 23 pages 20 Capsules Lecture 2PDF No ratings yet Capsules Lecture 2 22 pages 21 Tablet Processing ProblemsPDF 86% (7) Tablet Processing Problems 41 pages 22 Tablet Manufacturing Processing IssuesPDF 100% (1) Tablet Manufacturing Processing Issues 3 pages 23 Hard Gelatin Capsules OverviewPDF No ratings yet Hard Gelatin Capsules Overview 10 pages 24 Gelcote Faults and RemediesPDF No ratings yet Gelcote Faults and Remedies 16 pages 25 Polyethylene (PE) Blown Film: Troubleshooting GuidePDF 100% (1) Polyethylene (PE) Blown Film: Troubleshooting Guide 24 pages 26 Understanding Gelatin Capsule ManufacturingPDF No ratings yet Understanding Gelatin Capsule Manufacturing 53 pages 27 Tablet DefectsPDF No ratings yet Tablet Defects 2 pages 28 Manuf Lec HWPDF No ratings yet Manuf Lec HW 2 pages 29 Tablet Coating Defects and SolutionsPDF 100% (2) Tablet Coating Defects and Solutions 3 pages 30 Solving Four Common Problems in PET SBMPDF No ratings yet Solving Four Common Problems in PET SBM 4 pages 31 CNS Stimulants: Mechanisms and ClassificationPDF No ratings yet CNS Stimulants: Mechanisms and Classification 41 pages 32 Equine Veterinary Journal - 2023 - Tallon - Antibiotic Usage in 14 Equine Practices Over A 10 Year Period 2012 2021PDF No ratings yet Equine Veterinary Journal - 2023 - Tallon - Antibiotic Usage in 14 Equine Practices Over A 10 Year Period 2012 2021 8 pages 33 Taiwan API Manufacturer ListPDF No ratings yet Taiwan API Manufacturer List 4 pages 34 Manufacturing Formula: Product: Ctzine SyrupPDF 100% (1) Manufacturing Formula: Product: Ctzine Syrup 6 pages 35 GLP Compliance in Pharma IndustryPDF No ratings yet GLP Compliance in Pharma Industry 4 pages 36 Chemistry Concepts for Pharmacy StudentsPDF No ratings yet Chemistry Concepts for Pharmacy Students 10 pages [source: https://www.scribd.com/document/919434987/Defects-on-Capsule]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 17,
+      "file_path": "https://www.scribd.com/document/919434987/Defects-on-Capsule"
+    },
+    {
+      "content": "Table of Contents 0 Toggle Types of Capsule Defects and Remedies: 1 Loss of cap during transfer / Misalignment of cap and body bush 2 Dents and pinholes (on tips) 3 Cracks in Capsules 4 Telescopic Capsules 5 Dusty Capsules 6 Empty Capsules 7 Damaged band 8 The capsule does not enter the rectifier block 9 Capsule getting damaged during loading 10 Capsule non-separation 11 Target weight not achieved 12 Weight variation 13 Capsule lock length variation Details of Capsule filling Problems and Solutions are Provided Below in this entire article. [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 18,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "SEE PROFILE All content following this page was uploaded by Sagar Kishor Savale on 14 April 2023. The user has requested enhancement of the downloaded file. Capsule Defects And Remedies For Pharmaceutical Industries Mr. Sagar Kishor Savale, Technology Transfer Scientist, Shirpur, 425405, Maharashtra, India Capsules are solid dosage forms in which medicine or a combination of drugs, with or without excipients, is enclosed in Hard Gelatin Capsule Shells, soft, soluble gelatin shells, or hard or soft shells of any other acceptable material, in a variety of shapes and capacities. Capsule Defects and Remedies are provided below to remove such types of defects –  Loss of cap during transfer / Misalignment of cap and body bush  Dents and pinholes (on tips)  Cracks in Capsules  Telescopic Capsules  Dusty Capsules  Empty Capsules  Damaged band  The capsule does not enter the rectifier block  Capsule getting damaged during loading  Capsule non-separation  Target weight not achieved  Weight variation  Capsule lock length variation [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 19,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "1. Loss of cap during transfer / Misalignment of cap and body bush Causes: High vacuum Remedies: Reduce vacuum but make sure that it is not so low that capsule separation is not observed. 2. Dents and pinholes (on tips) Causes: Excess closing/lock length setting during the encapsulation process, excessive lock length, excessive closing pressure, over-filling of capsules, incorrect pin size or pin configuration, and improper storage conditions (moisture). Remedies: Ensure the correct size disc is used and also ensure the correct amount of dose is filled in the capsule. [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 20,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "1. Loss of cap during transfer / Misalignment of cap and body bush Causes: High vacuum Remedies: Reduce vacuum but make sure that it is not so low that capsule separation is not observed Kindly check the alignment of the cap and body bush visually to remove the Misalignment of the 2. Dents and pinholes (on tips) Causes: Excess closing/lock length setting during the encapsulation process, excessive lock length, excessive closing pressure, over-filling of capsules, incorrect pin size or pin configuration, and improper storage conditions (moisture). Remedies: Ensure the correct size disc is used and also ensure the correct amount of dose is filled in the capsule [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 21,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "3. Cracks in Capsules Causes 1. Improper (storage) conditions favor the transfer of moisture from the capsule shell to encapsulated components. 2. Misalignment of the upper and lower capsule segments incorrect setting of the cap hold-down pin in the joining station. Remedies 1. Store the capsule properly 2. Make a Proper setting of the station. 4. Telescopic Capsules Causes1. Misalignment of cap and body bush 2. Closing pin not in the center of body bushes 3. Damage the rubber sheet of the closing plate Remedies1. Align cap/body bush to bush gauge. [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 22,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "3. Cracks in Capsules Causes: Improper (storage) conditions favor the transfer of moisture from the capsule shell to encapsulated components. Misalignment of the upper and lower capsule segments incorrect setting of the cap hold-down pin in the joining station. Remedies: Store the capsule properly & make a proper setting of the station. Mr. Sagar Kishor Savale Sks747202@gmail.com 4. Telescopic Capsules Causes: Misalignment of cap and body bush. Closing pin not in the center of body bushes and Damage the rubber sheet of the closing plate. Remedies: Align cap/body bush to bush gauge. Check pin straightness using a gauge pin if bent replaces it with a new one. Wear of capsule closing units rubber sheet specifically at the point where the capsule strikes the sheet would lead to telescopic. Replace if required. [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 23,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "2. Check pin straightness using a gauge pin If bent replaces it with a new one. 3. Wear of capsule closing units rubber sheet specifically at the point where the capsule strikes the sheet would lead to telescopic. Replace if required 5. Dusty Capsules: Causes1. Filling dusty fill. Remedies: 1. Use capsule polisher 6. Empty Capsules Causes1. Malfunction in capsule filling machine which is preventing empty capsules from reaching exit chute (e.g. load cells, capacitive sensors, etc.). Remedies1. Make the sure presence of safeguards in the capsule filling machine which is preventing empty or under-filled capsules from reaching the exit chute (e.g. load cells, capacitive sensors, etc.). [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 24,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "5. Dusty Capsules: Causes: Filling dusty fill. Remedies: Use capsule polisher. 6. Empty Capsules Causes: Malfunction in capsule filling machine which is preventing empty capsules from reaching exit chute (e.g. load cells, capacitive sensors, etc.). Remedies: Make the sure presence of safeguards in the capsule filling machine which is preventing empty or under- filled capsules from reaching the exit chute (e.g. load cells, capacitive sensors, etc.). 7. Capsule non-separation Causes: Insufficient vacuum or incorrect vacuum pump. Remedies: Proper capacity pump. In case of vacuum drops kindly check the filters on the vacuum pump. Cleaned and/or replace it if required. [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 25,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "7. Damaged band Causes1. Badly tuned banding process, such as improper wheel height and speed, improper processing temperature, improper band thickness, and poor/bad band wheel. Remedies1. Set all the parameters accurately. 8. Capsule does not enter the rectifier block Causes1. Capsule stored overnight and without climatic control. 2. Magazine non-alignment with rectifier block Remedies 1. This may be due to improper room conditions or the capsules having been affected by improper storage conditions. In this case, some of the capsules stick to each other preventing them to be transferred to the magazine slots. [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 26,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "2. Magazine alignment with the rectifier block could have shifted or not been set right. Align to the rectifier block using a gauge. Read Also:Tablets Manufacturing Defects and remedies 9. Capsule getting damaged during loading Cause1. Misalignment of rectifier block with bushes Remedies1 Verify visually if the rectifier block is in alignment with the cap/body bush. Use alignment gauge if any doubt. 10. Capsule non-separation Causes 1. Insufficient vacuum or incorrect vacuum pump 2. Leakage through filters [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 27,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "3. Cap body bush misalignment 4. Worn out bushes 5. Loss of spring tension at the top slide Remedies1. Proper capacity pump. 2. In case of vacuum drops kindly check the filters on the vacuum pump. Cleaned and/or replace it if required 3. A misalignment of cap and body bush can cause non-separation. 4. If non-separation occurs in specific bushes and cleaning does not help, replace these bushes with a new one. 5. Poor spring tension at the top side or sluggish movement of the top slide probably caused by pin results in improper closing of cap/body bush holder plate. Replace it [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 28,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "11. Target weight not achieved Causes1. Incorrect target weight with respect to selected capsule size 2. Improper slug formation due to incorrect setting parameters 3. Insufficient binding selected capsule size 4. Poor flow of product Remedies 1. Check for the variation in physical parameters (Tapped density, moisture content, particle size distribution & Flow 2. Check for correct parameters setting 3. If a proper slug is not formed, part of the powder could be lost before delivery to the capsule [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 29,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "8. Target weight not achieved Causes: Incorrect target weight with respect to selected capsule size. Insufficient binding selected capsule size & Poor flow of product. Remedies:  Check for the variation in physical parameters (Tapped density, moisture content, particle size distribution & Flow.  Check for correct parameters setting.  If a proper slug is not formed, part of the powder could be lost before delivery to the capsule.  Poor flow of the powder in the dosing disc will result in insufficient powder flowing in the disc cavity properties of the formulation). [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 30,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "4. Poor flow of the powder in the dosing disc will result in insufficient powder flowing in the disc cavity properties of the formulation ) 12. Weight variation Causes 1 Wrong selection of dosing disc thickness Incorrect gap between 1 dosing disc and supporting pad 2 Tamping pin and body bush 3 Dosing disc and wiper block 4 Dosing disc and body bush Remedies: 1 Kindly select the proper dosing disc for filling of powder fully onto the capsule shell Correct the Gap Between: 1 dosing disc and supporting pad: NMT 0.1 mm 2 Tamping pin and body bush: maintained at 0.2 to 0.4 mm 3 Dosing disc and wiper block: NMT 0.1 mm 4 Dosing disc and body bush: maintained at 0.8 to 1.0 mm [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 31,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "9. Weight variation Causes:  Wrong selection of dosing disc thickness Incorrect gap between,  Dosing disc and supporting pad  Tamping pin and body bush  Dosing disc and wiper block  Dosing disc and body bush Mr. Sagar Kishor Savale Sks747202@gmail.com View publication stats Remedies:  Kindly select the proper dosing disc for filling of powder fully onto the capsule shell Correct the Gap Between:  Dosing disc and supporting pad: NMT 0.1 mm  Tamping pin and body bush: maintained at 0.2 to 0.4 mm  Dosing disc and wiper block: NMT 0.1 mm  Dosing disc and body bush: maintained at 0.8 to 1.0 mm [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 32,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "13. Capsule lock length variation CausesRemedies 1. Excess joined length 2. Improper setting of the closing plate 3. Damage the rubber sheet of the closing plate 4. Incorrect setting of the closing plate Remedies: 1. Check for the standard locking length 2. Check for the gap between the closing unit rubber sheet and capsules. The distance between the two points should be between 0.5 and 0.8 mm. 3. Wear off of capsule closing unit rubber sheet, especially at the point where capsule strikes the sheet would lead to this problem. Replace it with a new one. 4. The flap should be visually parallel to the cap bush lock plate. Check to ensure that capsules are hitting the center of the rubber sheet and not the edge. If this were the case, the capsule would fall off the edge and fail to lock properly. [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 33,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    },
+    {
+      "content": "10. Capsule lock length variation Causes:  Excess joined length  Improper setting of the closing plate  Damage the rubber sheet of the closing plate  Incorrect setting of the closing plate Remedies:  Check for the standard locking length.  Check for the gap between the closing unit rubber sheet and capsules. The distance between the two points should be between 0.5 and 0.8 mm.  Wear off of capsule closing unit rubber sheet, especially at the point where capsule strikes the sheet would lead to this problem. Replace it with a new one.  The flap should be visually parallel to the cap bush lock plate. Check to ensure that capsules are hitting the center of the rubber sheet and not the edge. If this were the case, the capsule would fall off the edge and fail to lock properly. [source: https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 34,
+      "file_path": "https://cdn.prod.website-files.com/66f3eac3760c536281199f50/672170fe5bef5c883e4689e6_vepemofokikinapidatonemij.pdf"
+    },
+    {
+      "content": "Other Common Capsule Defects and Remedies: Deliquescent / Hygroscopic powders- Adsorbent [magnesium carbonate, heavy / light magnesium oxide] A small dose of drug Remedy-Addition of inert powder. Incompatibilities of materials -Use of two capsules – small in large Lack of adhesiveness difficult to fill by punch method-Moistened with alcohol, granules reduced to powders. Other inquiries Related to Capsule filling Problems: Problems in capsule filling and remedies pdf Capsules defects and remedies [source: https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/]",
+      "source_id": "Source_capsule7",
+      "source_chunk_index": 35,
+      "file_path": "https://pharmaguddu.com/capsule-defects-and-remedies-during-filling-process/"
+    }
+  ]
+}

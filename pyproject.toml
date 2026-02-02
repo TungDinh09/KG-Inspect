@@ -1,0 +1,62 @@
+[build-system]
+# Định nghĩa công cụ để build dự án (thường là setuptools)
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kg-inspect"
+version = "0.3.0"
+description = "Một CLI tool để quản lý và tương tác với Knowledge Graph."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name = "Dinh Xuan Tung", email = "tungdxhe1172611@fpt.edu.vn" },
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "python-dotenv",
+    "neo4j",
+    "networkx",
+    "matplotlib",
+    "lightrag-hku",
+    "sentence-transformers",
+    "ollama",
+    "faiss-cpu",
+    "click",
+    "rich",
+    "raganything",
+    "open_clip_torch",
+    "hnswlib",
+    "paddlepaddle",
+    "pyyaml",
+    "httpx",
+    "gradio",
+    "mimetype",
+    "google-generativeai",
+]
+
+[project.scripts]
+kg-inspect = "kg_inspect.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",        # Để chạy test
+    "black",         # Để format code
+    "isort",         # Để sắp xếp import
+    "pipreqs",       # Để tạo requirements.txt (nếu cần)
+    "build",         # Để build gói
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.setuptools]
+packages = ["kg_inspect"]

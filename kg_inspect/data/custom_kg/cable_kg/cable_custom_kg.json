@@ -1,0 +1,620 @@
+{
+  "entities": [
+    {
+      "entity_name": "cable",
+      "entity_type": "material",
+      "description": "high-temperature superconducting (HTS) cable, is an advanced technology designed for power system and transportation applications",
+      "source_id": "Source_cable1",
+      "file_path": "kg_inspect/data/doc/source_cable/High_temperature_superconducting_cables_and_their_.pdf"
+    },
+    {
+      "entity_name": "bent_wire cable",
+      "entity_type": "physical defect",
+      "description": "The defect is characterized by visible bending and misalignment of the wires within the multi-core electrical cable. This causes distortions in the normally neat arrangement, leading to some wires being splayed outward or protruding irregularly from their expected circular configuration. In several instances, there are gaps where wires are missing, reducing the density and disrupting the overall symmetry of the cable's structure. This deformation can potentially compromise the electrical integrity and functionality of the cable, raising concerns about its performance and safety.\n\n",
+      "source_id": "Source_cable2",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "cable_swap",
+      "entity_type": "physical defect",
+      "description": "The defects present in the series of images primarily consist of \"cable swap\" anomalies and \"missing wire\" defects. The \"cable swap\" defect is characterized by incorrect positioning of the insulated conductors within the electrical cable, where conductors that should have specific color-coded insulation are found in incorrect locations, leading to color mismatches with the expected pattern. This misplacement affects the clarity of identification for electrical connections, potentially posing operational risks during installation or usage. Visual features indicating a swap include differing insulation colors that do not align with standard configurations. The \"missing wire\" defect is noted by the absence of one or more metallic strands within the conductor's central core, resulting in visible voids where the wires are expected to be tightly bundled. This absence is critical as it compromises the cable's electrical integrity and performance, making it prone to failure under load. The combination of these defects can severely impact the functionality and safety of the electrical cable, necessitating corrective measures before usage.",
+      "source_id": "Source_cable3",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "combined cable",
+      "entity_type": "physical defect",
+      "description": "The batch of images reveals multiple defect types within multi-core electrical cables, showcasing crucial structural and functional concerns that deviate from normal characteristics. The key defects identified include: \n \n 1. **Missing Components**: This defect often manifests as entirely absent cables or conductors, leading to gaps where one would normally find a complete core structure. Such defects are critical as they compromise the cable's functionality.\n \n 2. **Cut or Damaged Insulation**: This includes both outer and inner layers of insulation that show visible cuts, nicks, or punctures. These anomalies can lead to exposure of the internal conductors, increasing the risk of short circuits and reducing the overall safety of the cable.\n \n 3. **Deformed Conductors**: Bending or deformation of wires within the conductors can occur, resulting in irregular arrangements of copper strands. This defect may strain the conductor\u2019s integrity and effectiveness.\n \n 4. **Cable Swaps or Misplacements**: There are instances where the arrangement of colored insulations does not match the expected standard, suggesting that the internal order of conductors has been altered, which may spread confusion in wiring applications and poses operational risks.\n \n Overall, each defect has the potential to significantly impact the performance, reliability, and safety of the electrical cables, highlighting the necessity for thorough quality control checks during manufacturing and assembly processes.",
+      "source_id": "Source_cable4",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "cut_inner_insulation cable",
+      "entity_type": "physical defect",
+      "description": "The defect is characterized by cuts or damage to the inner insulation of multi-core electrical cables. This defect is commonly observed on the blue, green, or brown insulated conductors, where irregular cuts or breaches expose the underlying metallic conductors. The appearance of the defect typically includes jagged, uneven edges on the insulation, which disrupts the otherwise smooth and continuous surface. These anomalies can lead to serious issues, such as short circuits or electrical hazards, compromising the functional integrity and safety of the cable. Distinguishing features include visible exposure of conductors, irregularities at the insulation's surface, and comparison against a normal sample shows significant inconsistencies.",
+      "source_id": "Source_cable5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "cut_outer_insulation cable",
+      "entity_type": "physical defect",
+      "description": "The defect involves a cut or tear in the outer insulation layer of the multi-core cable, which is visually evident as irregular, jagged, or straight lines disrupting the normal contour. This cut exposes the inner insulating layers or the metallic conductive wires, compromising the cable\u2019s integrity and safety. In addition, there may also be missing or displaced conductive wire strands within one or more of the insulated cores, leading to an inconsistent appearance compared to the normal reference. The missing wires present a void or reduced density within the conductor, further indicating defects that may affect performance.\n\n Visual Features for Distinguishing the Defect:\n - Shape: Irregular cuts or tears in the outer insulation with contrasting exposed inner layers.\n - Color Contrast: The inner layers or exposed wires may have a color that significantly differs from the intact outer insulation.\n - Texture Difference: The cut areas may exhibit roughness or frayed edges, contrasting with the smooth, intact surface typical of undamaged insulation.\n - Additional Indicators: Areas of diminished or absent metallic strands within the conductors suggest physical damage beyond the outer layer.",
+      "source_id": "Source_cable5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "missing_cable",
+      "entity_type": "physical defect",
+      "description": "The defect is characterized by the absence of one or more conductive cores within a multi-core electrical cable. In all instances examined, the defect presents as a void where the core materials should be located, disrupting the expected symmetry and arrangement of the cable. Typically, the expected structure consists of multiple insulated conductors, each surrounded by insulation and containing tightly grouped copper wires. The missing segments create noticeable gaps in the cross-section, which can significantly impact the cable's functionality and safety, leading to compromised electrical continuity and performance. The visual features indicative of this defect include clear voids in the cross-section, contrasting with the filled sections that contain insulated conductors as per the normal template.",
+      "source_id": "Source_cable6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "missing_wire cable",
+      "entity_type": "physical defect",
+      "description": "The defect is characterized by the absence of several metallic wire strands within the conductive cores of a multi-core cable. This defect is visible as voids or gaps at specific locations in the wiring, leading to irregular patterns compared to the normal arrangement of tightly bundled wires. The missing wire strands can occur in various insulated conductors, which are typically color-coded (e.g., green/yellow, blue, brown). The lack of these wires can significantly impact the electrical performance of the cable, resulting in reduced current-carrying capacity and potential electrical failures. The affected areas display a less dense arrangement of wires, visibly contrasting with the full complement present in the normal samples.",
+      "source_id": "Source_cable6",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "poke_insulation cable",
+      "entity_type": "physical defect",
+      "description": "The images collectively highlight two types of defects present in multi-core electrical cables: \"poke insulation\" and \"missing wire.\" \n\n Poke Insulation:\n- Shape: The insulation of the affected conductors shows localized disturbances, resembling punctures or indentations, indicating physical compromise.\n- Surface Integrity: The affected areas are less uniform, with deformations that disrupt the otherwise smooth surface of the insulation. This can indicate a breach that threatens the insulation's effectiveness.\n- Location: Commonly found in green/yellow, blue, or brown insulated conductors, typically along curvatures where they meet the outer sheath or at random locations within the insulation.\n\n Missing Wire:\n- Shape: Characterized by gaps or less dense packing within the wire bundles, indicating that some wire strands could either be absent or misaligned.\n- Structural Integrity: The absence of wire strands can significantly impact the electrical performance and safety of the cable, potentially leading to short circuits or other electrical failures.\n- Location: Usually observed in the central region of the conductor bundles, where the copper strands are grouped together.\n\n Type: These defects are critical as they compromise the electrical performance and safety of the cables, necessitating repair or replacement of the affected sections to ensure reliable functionality.",
+      "source_id": "Source_cable5",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    },
+    {
+      "entity_name": "good cable",
+      "entity_type": "quality status",
+      "description": "The cross-sectional view of the electrical cables consistently shows three insulated conductors, each with a color-coded insulation: green/yellow for the ground wire, blue for neutral, and brown for live wires. Each conductor has a central core composed of multiple copper strands, which are tightly bundled and uniformly arranged. The insulation layers are intact, exhibiting vibrant and consistent colors without any visible signs of damage, such as nicks, cuts, or discoloration. The outer protective sheath is also intact, showing no irregularities or deformities. The overall structure reflects standard manufacturing practices, indicating the cables are defect-free, adhering to safety and quality expectations. Minor variations in color saturation or texture within the insulation and conductors are expected as normal manufacturing noise and do not indicate any defects. The cables are characterized by their well-aligned conductors, uniform insulation, and absence of any visible anomalies upon inspection.",
+      "source_id": "Source_cable1",
+      "file_path": "https://github.com/jam-cc/MMAD/blob/main/dataset/MMAD/domain_knowledge.json"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "cable",
+      "tgt_id": "bent_wire cable",
+      "description": "primarily centered on mechanical stress and resulting failure modes, especially when the bending is excessive, repeated, or executed over a tight radius",
+      "keywords": "mechanical stress, bending, deformation, structural integrity, conductor damage",
+      "weight": 0.75,
+      "source_id": "Source_cable2"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "cable_swap",
+      "description": "the defect of a wrong color cable inside is rooted in manufacturing defects specific to the cable's intricate construction",
+      "keywords": "manufacturing defect, wiring error, color mismatch, assembly fault, identification error",
+      "weight": 0.7,
+      "source_id": "Source_cable3"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "combined cable",
+      "description": "the simultaneous occurrence of multiple defects (a combined defect state) represents cascading and often catastrophic failure driven by the cable's complex internal structure and susceptibility to stress factors",
+      "keywords": "multiple defects, cascading failure, compound damage, structural interaction, degradation sequence",
+      "weight": 0.9,
+      "source_id": "Source_cable4"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "cut_inner_insulation cable",
+      "description": "critical connection, as a cut in the inner insulation represents a fault mechanism that compromises the electrical integrity of the cable, potentially leading to immediate or eventual failure",
+      "keywords": "inner insulation, electrical fault, short circuit, conductor exposure, internal damage",
+      "weight": 0.85,
+      "source_id": "Source_cable5"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "cut_outer_insulation cable",
+      "description": "cut outer insulation (or outer jacket) represents failure of the primary line of defense, exposing internal structure to environmental and mechanical hazards that lead to catastrophic electrical failures",
+      "keywords": "outer insulation, environmental exposure, jacket damage, protection failure, insulation breach",
+      "weight": 0.8,
+      "source_id": "Source_cable5"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "missing cable",
+      "description": "missing cable relates to the absence or deficiency of critical structural or material components within the cable assembly, which can lead to specific, recognizable failure modes",
+      "keywords": "missing component, structural deficiency, assembly error, incomplete cable, production fault",
+      "weight": 0.7,
+      "source_id": "Source_cable6"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "missing_wire cable",
+      "description": "missing wire or missing core defines how the absence of an intended internal conductor compromises the structural and electrical design of the cable, leading to severe failure modes",
+      "keywords": "missing conductor, open circuit, continuity loss, electrical failure, design compromise",
+      "weight": 0.75,
+      "source_id": "Source_cable6"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "poke_insulation cable",
+      "description": "poke insulation, caused by piercing or puncturing the insulating material, focuses on how mechanical or structural weaknesses lead to severe internal electrical faults",
+      "keywords": "insulation puncture, mechanical injury, dielectric failure, piercing damage, stress defect",
+      "weight": 0.8,
+      "source_id": "Source_cable5"
+    },
+    {
+      "src_id": "cable",
+      "tgt_id": "good cable",
+      "description": "quality or performance is defined by the inherent structural advantages and best manufacturing practices ensuring reliability and efficiency in complex systems",
+      "keywords": "quality assurance, manufacturing control, performance integrity, electrical reliability, durability",
+      "weight": 0.95,
+      "source_id": "Source_cable1"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "bent_wire cable",
+      "description": "The combined defect includes bent wire instances where mechanical stress or improper handling has caused wire deformation, affecting electrical continuity.",
+      "keywords": "bending stress, deformation, wire distortion, compound defect, electrical loss",
+      "weight": 0.85,
+      "source_id": "Source_cable2"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "cable_swap",
+      "description": "The combined defect includes cases where cables are incorrectly swapped or connected to wrong terminals, leading to signal or power faults.",
+      "keywords": "cross connection, wiring error, polarity mismatch, combined fault, power failure",
+      "weight": 0.75,
+      "source_id": "Source_cable3"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "cut_inner_insulation cable",
+      "description": "The combined defect includes cases of damaged inner insulation, exposing conductors and increasing the risk of short circuits.",
+      "keywords": "inner insulation, short circuit, exposure, compound insulation defect, electrical hazard",
+      "weight": 0.9,
+      "source_id": "Source_cable5"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "cut_outer_insulation cable",
+      "description": "The combined defect includes cases of damaged or cut outer insulation, reducing cable protection and exposing inner layers to external stress.",
+      "keywords": "outer insulation, protective breach, compound failure, exposure, structural weakness",
+      "weight": 0.85,
+      "source_id": "Source_cable5"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "missing_cable",
+      "description": "The combined defect includes missing cable occurrences where entire sections of cabling are absent from the assembly.",
+      "keywords": "absent cable, structural loss, assembly omission, compound defect, connectivity gap",
+      "weight": 0.7,
+      "source_id": "Source_cable6"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "missing_wire cable",
+      "description": "The combined defect includes missing wire occurrences where entire sections of internal conductors are absent from the assembly.",
+      "keywords": "absent wire, missing conductor, open path, electrical discontinuity, compound fault",
+      "weight": 0.75,
+      "source_id": "Source_cable6"
+    },
+    {
+      "src_id": "combined cable",
+      "tgt_id": "poke_insulation cable",
+      "description": "The combined defect includes punctured or poked insulation, typically caused by sharp tools or improper stripping, compromising dielectric strength.",
+      "keywords": "insulation damage, puncture, dielectric weakness, mechanical piercing, compound defect",
+      "weight": 0.85,
+      "source_id": "Source_cable5"
+    }
+  ],
+
+  "chunks": [
+    {
+      "content": "Abstract Along with advancements in superconducting technology, especially in high-temperature superconductors (HTSs), the use of these materials in power system applications is gaining outstanding attention. Due to the lower weight, capability of carrying higher currents, and the lower loss characteristic of HTS cables, compared to conventional counterparts, they are among the most focused large-scale applications of superconductors in power systems and transportation units. In near future, these cables will be installed as key elements not only in power systems but also in cryo-electrified transportation units, that take advantage of both cryogenics and superconducting technology simultaneously, e.g., hydrogen-powered aircraft. Given the sensitivity of the reliable and continuous performance of HTS cables, any failures, caused by faults, could be catastrophic, if they are not designed appropriately. Thus, fault analysis of superconducting cables is crucial for ensuring their safety, reliability, and stability, and also for characterising the behaviour of HTS cables under fault currents at the design stage. Many investigations have been conducted on the fault characterisation and analysis of HTS cables in the last few years. This paper aims to provide a topical review on all of these conducted studies, and will discuss the current challenges of HTS cables and after that current developments of fault behaviour of HTS cables will be presented, and then we will discuss the future trends and future challenges of superconducting cables regarding their fault performance. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 0,
+      "file_path": "kg_inspect/data/doc/source_cable/High_temperature_superconducting_cables_and_their_.pdf"
+    },
+    {
+      "content": "(Some figures may appear in colour only in the online journal) 1. Introduction Although superconductivity was discovered in the last century [1, 2], its application in power system apparatuses was not economically possible until the discovery of high-temperature superconductors (HTSs). Ever since, many research and devel-opment activities have been conducted to integrate HTS tech-nologies in power systems aiming the enhancement of gener-ation, conversion, transmition, and even storing the electrical energy with low loss [2]. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 1,
+      "file_path": "kg_inspect/data/doc/source_cable/High_temperature_superconducting_cables_and_their_.pdf"
+    },
+
+    {
+      "content": "Communication Cables These cables support data and signal transmission in telecommunications and networking applications. Common types include twisted pair cables, coaxial cables, and fiber optic cables. Fiber optics, known for their high bandwidth and low signal loss, are increasingly used in high-speed internet, cloud computing, and long-distance communication networks. Classification by Construction Single-core vs. Multi-core Cables A single-core cable contains one conductor and is typically used in high-voltage applications where flexibility is less critical. Multi-core cables contain multiple conductors within a single sheath, making them ideal for complex wiring systems in buildings and control circuits. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "2. Types of Cables and Applications Classification by Application Power Cables Designed to transmit electrical energy, power cables are widely used in power distribution systems, including substations, industrial facilities, and residential buildings. They vary by voltage level — low voltage (LV), medium voltage (MV), and high voltage (HV) — and may include features such as fire resistance or flame retardancy for enhanced safety. Control Cables Used for transmitting control signals in automation systems, control cables are essential in manufacturing lines, machinery control panels, and building management systems. These cables often include shielding to protect against electromagnetic interference (EMI) and ensure signal accuracy. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+
+    {
+      "content": "Advantages of Copper Wire Cables Copper Cable has Low Resistivity Aluminum wire cables have a resistivity approximately 1.68 times higher than copper wire cables. Good Ductility The ductility of copper alloy is 20~40%, the ductility of copper for electricians is more than 30%, while aluminum alloy is only 18%. High Strength The allowable stress at room temperature is 7~28% higher for copper than aluminum. Especially at high temperatures, the difference between the two stresses is very far. Fatigue Resistance ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 4,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Aluminum is easy to break after repeated bending, while copper is not. In terms of elasticity index, copper is also about 1.7~1.8 times higher than aluminum. Higher Flow Capacity Because of the low resistivity, the same cross-section of copper wire cable as aluminum wire cable allows the maximum current through the current-carrying capacity, high 30% -50% or so, especially more and more household appliances, and home furnishings with basic copper wire. Low Voltage Loss Due to the low resistivity of copper wire cable, copper wire cable voltage drop is small in the same cross-section flowing through the same current. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 5,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Therefore, a higher voltage quality can be guaranteed for the same transmission distance. Or, under the condition of permissible voltage drop, copper wire cable transmission can reach a longer distance. In other words, the power supply covers a large area, which is conducive to the planning of the network and reduces the number of power supply points to be set up. Low Heat Generation Under the same current, the heat generation of copper wire cable with the same cross-section is much smaller than that of aluminum wire cable, which makes the operation safer. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 6,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Resistant to Oxidation and Corrosion Copper cables have stable connectors that do not cause accidents due to oxidation. Aluminum cables have unstable connectors, and accidents often occur due to oxidation, which increases the contact resistance and generates heat. Therefore, the accident rate is much larger than that of copper cables. Especially in some copper wire and aluminum wire butt joint places, a little bit is not connected well as long as the problem. Therefore, copper and aluminum wire butts must be strictly required to connect well. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 7,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Construction Convenience Copper wire flexibility is good, and the allowable bending radius is small, so it is convenient to turn an easy-to-wear pipe. Copper wire fatigue resistance and repeated bending are not easy to break, so the wiring is convenient. The copper wire of high mechanical strength can withstand greater mechanical tension, to the construction of the laying of a great convenience, but also for the mechanization of the construction has created conditions. Understanding the common types of cable faults and treatment methods, as well as some suggestions for preventing faults, helps us to better manage and maintain copper core cables to ensure the normal operation and safe use of cables. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 8,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Frequent cable defects in moving applications 0 Buy cables 1 Why chainflex®? 2 Cable structure Broken wires Core rupture is the failure of electrical conductivity in cables due to broken copper wires caused by mechanical overloading/tensile strain of the individual cores under continuous bending stress. [source: https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables ]",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 9
+    },
+    {
+      "content": "To avoid corkscrews, igus® relies on cores wound in bundles for cables with more than 12 cores. The cores are stranded several times and therefore change the inner and outer radius of the bent cable several times at the same distance. This ensures that the tensile and compression forces are compensated and significantly extends the service life of a cable. Insulation damage Insulation damage can cause short circuits in electrical cables due to damage to the insulation around the conductor. This can be caused by material fatigue under continuous bending stress or material abrasion within the stranded structure. Single wire breaks in the conductor or the braided shielding lead to puncturing of the insulation. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 10,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "Core rupture is usually caused by incorrect stranded wires and/or incorrect pitch directions and lengths. Although the use of stranded wires that are too thin offers more flexibility, it can lead to breakage in the long term. igus® relies on an optimised combination of individual wire diameter and pitch direction or pitch length, which has resulted from endurance tests in the igus® test laboratory. Corkscrew A corkscrew is the term used for an externally recognisable screw-like deformation of the entire cable caused by mechanical overload/tensile strain during the bending process. A corkscrew is usually caused by a faulty cable structure. Cores wound in layers, an outer jacket extruded onto a hose or a missing core can lead to problems here. In addition, an application outside the specified parameters (bend radius too small, travel too long) can lead to corkscrews. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 11,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "5. Corkscrewing Failures Excessive Tension - Excessive tension on the cable can cause the conductors to be pulled out of their “lay.” Once conductors are pulled out of their lay, they are no longer properly configured within the cable build, and the cable will begin to corkscrew. This may lead to the cable core puncturing through the jacket. Bend Radius - Too tight of a bend radius will lead to cable corkscrewing. It is important to follow the cable manufacturers' recommended minimum bend radius.  ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 12,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "To prevent insulation damage to the core insulation, materials such as TPE or PVC are used that do not stick together. The insulation materials are also tested in millions of test strokes in the igus® test laboratory. Jacket damage Jacket swelling or jacket damage refers to damage to the outer jacket of a cable. The jacket becomes soft and misshapen or breaks until the stranding or the shield can be seen. This can be caused by the wrong choice of material in terms of the oils or other chemical materials used. An ambient temperature that is too low can also lead to jacket damage if the temperature is too far below the minimum temperature specified in the data sheet. As soon as jacket swelling or jacket damage occurs, the cable must be replaced immediately. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 13,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "Copper Braid Shields - Copper braid shields may become mechanically fatigued especially when placed under torsional or twisting type motion. 4. Jacket FailuresJacketing protects the inner conductors and cable components from the external environment. It receives the most abuse from mechanical, chemical, and effects of weather. Cracking/Swelling - Exposure to certain oils, chemicals, or fluids may result in the jacket material having a negative reaction. Depending on the chemical, this can lead to the jacketing either swelling up and becoming soft and easily torn or becoming hard and brittle leading to cracking.  ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 14
+    },
+    {
+      "content": "Amphenol TPC Wire & Cable Blog https://www.tpcwire.com/blog/understanding-why-cable-fails Posted by TPC Team on March 31, 2022 Your cable has failed! Your operation has come to a halt and every minute down is costing your operation resources. Even though you cannot turn back time, you can help prevent costly downtime in the future by understanding why your cable has failed. Selecting the appropriate cable for your harsh industrial environment is vital to your operation. Let’s look at six common types of cable failure modes.  ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 15,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "To avoid jacket breakage, it is recommended that the temperature range and oil resistance of a cable be considered first and foremost. If cables are used in oil-free environments, non-oil-resistant PVC cables are sufficient, provided the permanent ambient temperature is above 5°C. If cables come into contact with oils, chainflex® cables with a PUR or TPE outer jacket are recommended. Cables with a TPE jacket are also resistant to organic oils. The oil resistance of all chainflex® cables is specified according to DIN standards. These jacket materials are also suitable for temperatures of -25°C (PUR) or even -35°C (TPE) for permanent use in the energy chain. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 16,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "Common errors on types of sheathed cables: - Conductor: scratched surface, diameter after pressing, high rate of resistance, quickly faded copper - Insulation: the sheath is deviated or thicker than specified, lumpy, uncovered copper, broken colored tape. - Twisted core, wrapped bandage: Diameter is often larger than the regulation, the rate of the oval is huge which is approximately 10%, Wrapping tape is exposed or not tightly attached to the cable. - Lining (PVC): Thickness is often larger than being specified, lumpy plastic (if scrap PVC is used) ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 17,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Sheathing, printing: The thickness is often larger than regulated, the diameter of the sheath is larger than regulated, the oval is large which is approximately 10% for multi-core cables, the letters are irregularly smudged, removed, uneven distance. Tran Phu Electric Engineering has extensive experience in the field of manufacturing electric wires and cables With 36 years of experience in manufacturing electric cables, thanks to continuous improvement in technology and engineering, Tran Phu Electric Engineering has minimized most common errors, meeting the requirements of the most difficult customers in both domestic and foreign markets. This is not something that any brand or unit can achieve. In the present and in the future, the whole Tran Phu officials and employees will try and make more efforts to offer more qualified products to deserve the trust of customers. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 18,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 19,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "HTS transformers [4–7], HTS machines [8–13], supercon-ducting fault current limiters (SFCLs) [14–16], superconduct-ingmagnetic energy storages (SMESs) units [17, 18], andHTS cables [19–22] are the most common application of supercon-ductors in power systems. HTSmaterials would also play a key role in upcoming power grids and cryo-electrified transporta-tion units (CETU) [23]. It was anticipated that HTS cables will be fully commercialised by 2030 [24]. HTS cables have numerous advantages against their con-ventional counterparts, such as extremely low resistive losses, 5× to 8× compacter structure, fault current limiting capab-ility, etc. [25]. Given the potential role of the HTS cable in future, acquiring a complete understanding of their behaviour under different circumstances is crucial. The occurrence of faults, failures, and abnormalities in the cable itself or in the power system to which the cable is connected, can jeopardise the appropriate functionality of HTS cables. Thus, the fault performance study of HTS cables is vital to analyse the elec-tromagnetic coupled with thermomechanical characteristics of HTS cables. High fault currents, i.e., low impedance faults can dramatically jeopardise the safe operation of HTS tapes and without a proper protection or a fault current limiter device, the burnout of HTS tapes is most likely. In some specific HTS cables, former is designed as a bypass path to keep HTS tapes safe in the case of short circuit events or SFCLs are loc-ated in series with HTS cable to supress the fault current. By passing fault current through the former layer and supercon-ducting layer, an excessive heat load will be imposed on the cooling system. Extra heat load increases the temperature of the cable which should be compensated, otherwise, failure of cable or tapes is inevitable. As a result, reliability and avail-ability issues put the stability of the power grid in danger. Therefore, fault analysis of HTS cables plays a significant role in achieving a power grid with high safety, stability, and reliability [26]. ",
+      "source_id": "Source_cable1",
+      "source_chunk_index": 20,
+      "file_path": "kg_inspect/data/doc/source_cable/High_temperature_superconducting_cables_and_their_.pdf"
+    },
+    {
+      "content": "To make a complete wire and cable product, it takes a combination of many factors Common errors on bare wires - Cm bare copper wire: error on the product surface, red due to oxidation, scratches, ignition, failure to achieve the flexibility, resistivity is often high for wires with over 3.15 in diameter. - Ac bare aluminum wire: error on the product surface, scratched, not meeting the rate of resistivity. Common errors on electrical wires - Conductor: copper wire color is dark red or black, loosely twisted wire ",
+      "source_id": "Source_cable2",
+      "source_chunk_index": 0,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Bare copper cable: The surface of the cable is red due to oxidation and scratching. - Bare aluminum cables, steel core bare aluminum cables (with or without grease), steel cables (TK): The surface is scratched, loosely twisted wire, the amount of protective grease is not in accordance with the requirements which makes the resistance high and the total cable traction force unqualified. Common errors on twisted aluminum cable ABC 2, 3, 4-core The size of the ribs is unsatisfactory; XLPE sheath is often faulty, uncovered; the carbon content in the insulation is unqualified, the insulation is not adhering to the conductor (surface adhesion), the end-cable product is twisted, violating the hot set norm, etc. ",
+      "source_id": "Source_cable2",
+      "source_chunk_index": 1,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Common errors on types of sheathed cables: - Conductor: scratched surface, diameter after pressing, high rate of resistance, quickly faded copper - Insulation: the sheath is deviated or thicker than specified, lumpy, uncovered copper, broken colored tape. - Twisted core, wrapped bandage: Diameter is often larger than the regulation, the rate of the oval is huge which is approximately 10%, Wrapping tape is exposed or not tightly attached to the cable. - Lining (PVC): Thickness is often larger than being specified, lumpy plastic (if scrap PVC is used) ",
+      "source_id": "Source_cable2",
+      "source_chunk_index": 3,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable2",
+      "source_chunk_index": 4,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Communication Cables These cables support data and signal transmission in telecommunications and networking applications. Common types include twisted pair cables, coaxial cables, and fiber optic cables. Fiber optics, known for their high bandwidth and low signal loss, are increasingly used in high-speed internet, cloud computing, and long-distance communication networks. Classification by Construction Single-core vs. Multi-core Cables A single-core cable contains one conductor and is typically used in high-voltage applications where flexibility is less critical. Multi-core cables contain multiple conductors within a single sheath, making them ideal for complex wiring systems in buildings and control circuits. ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Modern Electrical Engineering BlogElectrical Engineering 80/20 News, reviews, and actionable advice to running an efficient and error-free electrical engineering design process Search Google How to Document Cables and Harnesses Posted by Arthur HoerlleJun 25, 2021 There are numerous challenges faced by harness design and manufacturing teams across all industries. In some, weight is the biggest challenge and in others, signal reliability is paramount. The discussion today is less about using a harness and more about essential information to ensure your design and manufacturing processes work efficiently. Best practices that help significantly reduce the cost and time associated with harness fabrication are applicable from the earliest design stages and continue to be profitable throughout the process. ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 1,
+      "file_path": "https://www.e3seriescenters.com/en-us/modern-electrical-engineering-blog/how-to-document-cables-and-wire-harnesses"
+    },
+    {
+      "content": "Disconnected engineering and manufacturing processes Try NOW the industry-leading E-CAE E3.series tool in the world with technical training courses! Click on the banner below: Thus, the creation and documentation has some tips and good practices such as: Complete and Correct BOM List 1 Include all necessary parts for the connector and harness, such as seals, plugs. 2 Tools to handle the connection and wires, seals, plugs, etc. Wire and Connectivity Details 1 Wire ID, Wire Color, Size and Type, Wire Length 2 Connection information from / to 3 Wire protection and end treatments: loom, tube, ring terminals, etc. ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 2,
+      "file_path": "https://www.e3seriescenters.com/en-us/modern-electrical-engineering-blog/how-to-document-cables-and-wire-harnesses"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 3,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Common errors on types of sheathed cables: - Conductor: scratched surface, diameter after pressing, high rate of resistance, quickly faded copper - Insulation: the sheath is deviated or thicker than specified, lumpy, uncovered copper, broken colored tape. - Twisted core, wrapped bandage: Diameter is often larger than the regulation, the rate of the oval is huge which is approximately 10%, Wrapping tape is exposed or not tightly attached to the cable. - Lining (PVC): Thickness is often larger than being specified, lumpy plastic (if scrap PVC is used) ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 4,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Bare copper cable: The surface of the cable is red due to oxidation and scratching. - Bare aluminum cables, steel core bare aluminum cables (with or without grease), steel cables (TK): The surface is scratched, loosely twisted wire, the amount of protective grease is not in accordance with the requirements which makes the resistance high and the total cable traction force unqualified. Common errors on twisted aluminum cable ABC 2, 3, 4-core The size of the ribs is unsatisfactory; XLPE sheath is often faulty, uncovered; the carbon content in the insulation is unqualified, the insulation is not adhering to the conductor (surface adhesion), the end-cable product is twisted, violating the hot set norm, etc. ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 5,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Sheathing, printing: The thickness is often larger than regulated, the diameter of the sheath is larger than regulated, the oval is large which is approximately 10% for multi-core cables, the letters are irregularly smudged, removed, uneven distance. Tran Phu Electric Engineering has extensive experience in the field of manufacturing electric wires and cables With 36 years of experience in manufacturing electric cables, thanks to continuous improvement in technology and engineering, Tran Phu Electric Engineering has minimized most common errors, meeting the requirements of the most difficult customers in both domestic and foreign markets. This is not something that any brand or unit can achieve. In the present and in the future, the whole Tran Phu officials and employees will try and make more efforts to offer more qualified products to deserve the trust of customers. ",
+      "source_id": "Source_cable3",
+      "source_chunk_index": 6,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables 04/08/2020 To make a complete wire or cable product, it is necessary to have a combination of various factors from input materials, production equipment, processing methods, skilled workers, etc. Failures in any process stage will affect product quality. In this article, Tran Phu will point out the common faults of electric wire and cable products ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Mechanical Damage Physical damage during installation, operation, or maintenance is a major cause of cable failure. This includes: Excessive bending beyond the minimum bend radius Crushed or cut cables during excavation or construction Improper handling leading to conductor breakage or insulation cracks Such mechanical stress can compromise both the structural integrity and electrical performance of the cable. Manufacturing Defects Poor quality materials or substandard manufacturing processes may result in weak spots within the cable. These defects may not be immediately apparent but can lead to premature failure under normal operating conditions. Common issues include uneven insulation thickness, impurities in conductor material, and improper shielding. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 1,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "2. Insulation FailuresCracks/Perforations - Types of insulation failure can include cracks or perforations of the insulation material. Cracks in insulation material may be caused by continued constant bending over a tight radius. The insulation material becomes fatigued and eventually fails. Perforation of insulation material can occur if conductor strands begin to break or sever and perforate the insulation wall. 3. Shield FailuresFoil Shields - Foil shields tend to break down over time when put through repeated bending/flexing motions. The foil shields start to crack, eliminating their purpose within the cable. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 2,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Short Circuit Fault A short circuit happens when two or more conductors come into unintended contact, allowing current to bypass the intended load. This results in excessive current flow that can trigger protective devices (e.g., circuit breakers) and potentially damage equipment. Common causes include insulation breakdown and physical damage. Ground Fault A ground fault occurs when current unintentionally flows from a live conductor to the ground or grounded surface. This is typically due to damaged insulation or moisture ingress. Ground faults pose serious safety risks and may cause electric shocks or fire hazards. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 3,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Insulation Failure Insulation failure refers to the deterioration or breakdown of the insulating material surrounding the conductor. It can lead to leakage currents, partial discharges, or full insulation collapse. Aging, overheating, and environmental exposure are the primary contributors to this type of fault. Termination and Connector Faults Faults at cable terminations or connectors are common in both power and data cables. Poor crimping, corrosion, or misalignment can increase contact resistance, causing overheating and intermittent connectivity. These faults are particularly prevalent in frequently plugged/unplugged systems. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 4,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Six Types of Cable Failure Modes 1. Conductor FailuresOpen Conductor - Conductors can sever or break, leading to a loss of continuity. Causes might include repeated flexing over a tight bend radius or tick-tock type motion, incorrect or too tight of a bend radius, or extreme tension on the cable. High Resistance of Conductor - Prior to a conductor severing, a stranded conductor will most likely initially see individual strands break. As individual strands break, the resistance of the conductor will increase. This can lead to two possible failure modes: 1) The conductor strands will continue to break until a complete break occurs, or 2) The higher resistance will begin to create heat and will eventually overheat causing a localized burn point leading to a break in the conductor. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 5,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "Short - A short circuit can occur should conductor strands break and perforate the insulation wall and come into contact with a shield or strands from other broken conductors. Shorts can occur from conductor-to-conductor or conductor-to-shield. Depending on the location of the short and the application, this can lead to loss of signal or data, or a brief moment of excessive current leading to conductor or cable damage. Shielding Losses/EMI-RFI issues - Should the foil and/or braid shield sustain damage, the cable may become more susceptible to EMI/RFI noise issues. This can result in lost or corrupt data. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 6,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "Current Overload - If ampacity is not properly addressed, the cable may overheat at the conductor. This can lead to extreme heat build-up, compromising the integrity of the insulation material and jacketing material. In extreme cases, the cable may burn and become flammable. Let our team of experts lead you through choosing the right cable for your application. ATPC works closely with our customers to provide specific wire and cable solutions, including custom-designed wire and cable products and in-house engineering expertise. We can tackle your toughest application challenges to create a customized solution that is perfect for your application. Contact an ATPC representative today to help select the right cable and wire for the job. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 7,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "Core rupture is usually caused by incorrect stranded wires and/or incorrect pitch directions and lengths. Although the use of stranded wires that are too thin offers more flexibility, it can lead to breakage in the long term. igus® relies on an optimised combination of individual wire diameter and pitch direction or pitch length, which has resulted from endurance tests in the igus® test laboratory. Corkscrew A corkscrew is the term used for an externally recognisable screw-like deformation of the entire cable caused by mechanical overload/tensile strain during the bending process. A corkscrew is usually caused by a faulty cable structure. Cores wound in layers, an outer jacket extruded onto a hose or a missing core can lead to problems here. In addition, an application outside the specified parameters (bend radius too small, travel too long) can lead to corkscrews. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 8,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "5. Corkscrewing Failures Excessive Tension - Excessive tension on the cable can cause the conductors to be pulled out of their “lay.” Once conductors are pulled out of their lay, they are no longer properly configured within the cable build, and the cable will begin to corkscrew. This may lead to the cable core puncturing through the jacket.Bend Radius - Too tight of a bend radius will lead to cable corkscrewing. It is important to follow the cable manufacturers' recommended minimum bend radius. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 9,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "Copper Braid Shields - Copper braid shields may become mechanically fatigued especially when placed under torsional or twisting type motion. 4. Jacket FailuresJacketing protects the inner conductors and cable components from the external environment. It receives the most abuse from mechanical, chemical, and effects of weather. Cracking/Swelling - Exposure to certain oils, chemicals, or fluids may result in the jacket material having a negative reaction. Depending on the chemical, this can lead to the jacketing either swelling up and becoming soft and easily torn or becoming hard and brittle leading to cracking. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 10
+    },
+    {
+      "content": "To prevent insulation damage to the core insulation, materials such as TPE or PVC are used that do not stick together. The insulation materials are also tested in millions of test strokes in the igus® test laboratory. Jacket damage Jacket swelling or jacket damage refers to damage to the outer jacket of a cable. The jacket becomes soft and misshapen or breaks until the stranding or the shield can be seen. This can be caused by the wrong choice of material in terms of the oils or other chemical materials used. An ambient temperature that is too low can also lead to jacket damage if the temperature is too far below the minimum temperature specified in the data sheet. As soon as jacket swelling or jacket damage occurs, the cable must be replaced immediately. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 11,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "However, due to environmental stress, mechanical damage, aging, or improper installation, cable faults are common occurrences. These faults can lead to system downtime, equipment failure, and even safety hazards. Understanding the types of cable faults, their causes, and effective detection and repair methods is essential for maintaining system integrity and operational efficiency. This article provides a comprehensive overview of common cable faults, including their identification, analysis, troubleshooting techniques, and preventive strategies. It aims to serve as a practical reference for engineers, technicians, and maintenance personnel involved in electrical and communication infrastructure. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 12,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Faults can arise from various causes such as environmental exposure, mechanical damage, manufacturing defects, and long-term aging. Identifying these causes allows for more accurate diagnosis and targeted corrective action. Several detection methods, including visual inspection, insulation resistance testing, TDR, and infrared thermography, provide reliable tools for locating and diagnosing faults. Once identified, appropriate solutions such as cable replacement, splicing, connector repair, or EMI mitigation can be applied to restore system integrity. ",
+      "source_id": "Source_cable4",
+      "source_chunk_index": 13,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Insulation Failure Insulation failure refers to the deterioration or breakdown of the insulating material surrounding the conductor. It can lead to leakage currents, partial discharges, or full insulation collapse. Aging, overheating, and environmental exposure are the primary contributors to this type of fault. Termination and Connector Faults Faults at cable terminations or connectors are common in both power and data cables. Poor crimping, corrosion, or misalignment can increase contact resistance, causing overheating and intermittent connectivity. These faults are particularly prevalent in frequently plugged/unplugged systems. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Mechanical Damage Physical damage during installation, operation, or maintenance is a major cause of cable failure. This includes: Excessive bending beyond the minimum bend radius Crushed or cut cables during excavation or construction Improper handling leading to conductor breakage or insulation cracks Such mechanical stress can compromise both the structural integrity and electrical performance of the cable. Manufacturing Defects Poor quality materials or substandard manufacturing processes may result in weak spots within the cable. These defects may not be immediately apparent but can lead to premature failure under normal operating conditions. Common issues include uneven insulation thickness, impurities in conductor material, and improper shielding. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 1,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "5. Cable Fault Detection Methods Detecting cable faults accurately and efficiently is crucial for minimizing system downtime and ensuring safe operation. Various testing and diagnostic techniques are used depending on the type and location of the fault. Visual Inspection A basic but essential step in fault detection, visual inspection involves examining the cable’s outer sheath and termination points for signs of physical damage, wear, or corrosion. Although it cannot identify internal issues, it helps detect obvious causes such as cuts or abrasions. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 2,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "To avoid corkscrews, igus® relies on cores wound in bundles for cables with more than 12 cores. The cores are stranded several times and therefore change the inner and outer radius of the bent cable several times at the same distance. This ensures that the tensile and compression forces are compensated and significantly extends the service life of a cable. Insulation damage Insulation damage can cause short circuits in electrical cables due to damage to the insulation around the conductor. This can be caused by material fatigue under continuous bending stress or material abrasion within the stranded structure. Single wire breaks in the conductor or the braided shielding lead to puncturing of the insulation. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 3,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "Shield wire breakage Shield wire breakage is the term used to describe overloading of the shield wires that protect a cable from the effects of electromagnetic compatibility. The consequences of a break range from reduced shield effectiveness to short circuits when sharp wire ends pierce through the non-woven fabric or foils into the core. The cause is often an unfavourable braid angle. If the shield can be easily pushed over the jacket after the stripping process, this is a sign that the cable is not suitable for use in energy supply systems. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 4,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "To prevent insulation damage to the core insulation, materials such as TPE or PVC are used that do not stick together. The insulation materials are also tested in millions of test strokes in the igus® test laboratory. Jacket damage Jacket swelling or jacket damage refers to damage to the outer jacket of a cable. The jacket becomes soft and misshapen or breaks until the stranding or the shield can be seen. This can be caused by the wrong choice of material in terms of the oils or other chemical materials used. An ambient temperature that is too low can also lead to jacket damage if the temperature is too far below the minimum temperature specified in the data sheet. As soon as jacket swelling or jacket damage occurs, the cable must be replaced immediately. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 5,
+      "file_path": "https://www.igus.eu/flexible-cable/wiki/error-dictionary-cables"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 6,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Common errors on types of sheathed cables: - Conductor: scratched surface, diameter after pressing, high rate of resistance, quickly faded copper - Insulation: the sheath is deviated or thicker than specified, lumpy, uncovered copper, broken colored tape. - Twisted core, wrapped bandage: Diameter is often larger than the regulation, the rate of the oval is huge which is approximately 10%, Wrapping tape is exposed or not tightly attached to the cable. - Lining (PVC): Thickness is often larger than being specified, lumpy plastic (if scrap PVC is used) ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 7,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Common errors on electrical cables 04/08/2020 To make a complete wire or cable product, it is necessary to have a combination of various factors from input materials, production equipment, processing methods, skilled workers, etc. Failures in any process stage will affect product quality. In this article, Tran Phu will point out the common faults of electric wire and cable products",
+      "source_id": "Source_cable5 ",
+      "source_chunk_index": 8,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Ground Faults: Locate and repair any insulation breaches or moisture entry points. Apply waterproof tape or heat-shrink tubing to seal the damaged area. In severe cases, replace the affected section with a more durable cable. Insulation Failure: Depending on the severity, either repair the damaged insulation or replace the entire cable. Improve protection against environmental stress by installing protective conduits or using cables with better thermal and chemical resistance. Termination and Connector Faults: Re-crimp or resolder faulty connections. Replace corroded or worn-out connectors. Apply anti-oxidation paste to improve conductivity and prevent future degradation. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 9,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "6. Solutions for Common Cable Faults Once a cable fault has been detected and analyzed, appropriate corrective actions must be taken to restore system functionality and prevent recurrence. Open Circuit Faults: Replace the damaged section of the cable or re-terminate the affected end. If caused by mechanical stress, ensure proper routing and support during reinstallation. Short Circuit Faults:Cut out the damaged portion and install a new splice or joint. If insulation failure is widespread, consider replacing the entire cable segment. Use higher-grade insulation materials if environmental factors contributed to the fault. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 10,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "2. Insulation FailuresCracks/Perforations - Types of insulation failure can include cracks or perforations of the insulation material. Cracks in insulation material may be caused by continued constant bending over a tight radius. The insulation material becomes fatigued and eventually fails. Perforation of insulation material can occur if conductor strands begin to break or sever and perforate the insulation wall. 3. Shield FailuresFoil Shields - Foil shields tend to break down over time when put through repeated bending/flexing motions. The foil shields start to crack, eliminating their purpose within the cable. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 11,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Abrasion - Failure of the outer jacket due to abrasion occurs when the outer jacket wears through exposing the cable core. Failures of this type occur when the cable is applied in applications that will abrade the cable. This can occur if the cable is dragged across the ground, applied in an application with constant rubbing motion against the cable, or improper installation onto equipment. Cuts/Cut-through - Impact or contact with sharp objects can lead to cuts in the jacket. Minor cuts that are only superficially on the jacket typically do not impact cable performance. Cuts that impair jacket performance or penetrate down to the shield or cable core are a reason for either repair or replacement of the cable. ",
+      "source_id": "Source_cable5",
+      "source_chunk_index": 12,
+      "file_path": "https://www.tpcwire.com/blog/understanding-why-cable-fails"
+    },
+    {
+      "content": "4. Common Types of Cable Faults Cable faults can manifest in various forms, each with distinct characteristics and implications. Recognizing the type of fault is crucial for accurate diagnosis and appropriate corrective action. Open Circuit Fault An open circuit fault occurs when the continuity of the conductor is interrupted, preventing current flow. This is often caused by broken conductors, loose connections, or failed terminations. Symptoms include complete loss of power or signal transmission in the affected line. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 0,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "A short circuit can cause the cable to heat, damage equipment, or even start a fire. Wire Breaks A wire break is an interruption in the conductors of a cable that prevents current from traveling properly. Wire breaks can be caused by aging, abrasion, and excessive force on the cable. Insulation Aging Insulation aging refers to the deterioration of cable insulation materials over a long period of time due to heat, oxidation, arcing, and other factors. Insulation aging may lead to reduced voltage resistance, short circuits, leakage, and other problems with the cable. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 1,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    },
+    {
+      "content": "Mechanical Damage Physical damage during installation, operation, or maintenance is a major cause of cable failure. This includes: Excessive bending beyond the minimum bend radius Crushed or cut cables during excavation or construction Improper handling leading to conductor breakage or insulation cracks Such mechanical stress can compromise both the structural integrity and electrical performance of the cable. Manufacturing Defects Poor quality materials or substandard manufacturing processes may result in weak spots within the cable. These defects may not be immediately apparent but can lead to premature failure under normal operating conditions. Common issues include uneven insulation thickness, impurities in conductor material, and improper shielding. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 2,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "To make a complete wire and cable product, it takes a combination of many factors Common errors on bare wires - Cm bare copper wire: error on the product surface, red due to oxidation, scratches, ignition, failure to achieve the flexibility, resistivity is often high for wires with over 3.15 in diameter. - Ac bare aluminum wire: error on the product surface, scratched, not meeting the rate of resistivity. Common errors on electrical wires - Conductor: copper wire color is dark red or black, loosely twisted wire ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 3,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Common errors on types of sheathed cables: - Conductor: scratched surface, diameter after pressing, high rate of resistance, quickly faded copper - Insulation: the sheath is deviated or thicker than specified, lumpy, uncovered copper, broken colored tape. - Twisted core, wrapped bandage: Diameter is often larger than the regulation, the rate of the oval is huge which is approximately 10%, Wrapping tape is exposed or not tightly attached to the cable. - Lining (PVC): Thickness is often larger than being specified, lumpy plastic (if scrap PVC is used) ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 4,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "- Insulation cover: unstable welds, eccentric wrap, unsatisfactory insulation thickness, uneven colored plastic (the colored coating), lumpy or uncovered plastic sheath exposing the copper core - Sheath: eccentric sheath, unsatisfactory thickness, lumpy or exposed insulation, without non-stick powders (stone powders), smeared or lacking strokes printing of the product detail. - Packed rolls, labels, packages: The cord is not in shape, soft, untidy packaging as prescribed. Common errors on bare wires for overhead power transmission lines: ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 5,
+      "file_path": "https://www.tranphucable.com.vn/market/common-errors-on-electrical-cables"
+    },
+    {
+      "content": "Short Circuit Fault A short circuit happens when two or more conductors come into unintended contact, allowing current to bypass the intended load. This results in excessive current flow that can trigger protective devices (e.g., circuit breakers) and potentially damage equipment. Common causes include insulation breakdown and physical damage. Ground Fault A ground fault occurs when current unintentionally flows from a live conductor to the ground or grounded surface. This is typically due to damaged insulation or moisture ingress. Ground faults pose serious safety risks and may cause electric shocks or fire hazards. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 6,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "Insulation Failure Insulation failure refers to the deterioration or breakdown of the insulating material surrounding the conductor. It can lead to leakage currents, partial discharges, or full insulation collapse. Aging, overheating, and environmental exposure are the primary contributors to this type of fault. Termination and Connector Faults Faults at cable terminations or connectors are common in both power and data cables. Poor crimping, corrosion, or misalignment can increase contact resistance, causing overheating and intermittent connectivity. These faults are particularly prevalent in frequently plugged/unplugged systems. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 7,
+      "file_path": "https://www.amissiontech.com/news/common-cable-faults-and-their-solutions.html"
+    },
+    {
+      "content": "logo logo sales@zmscable.comCopper core cable common failure types and prevention recommendations Copper core cable common failure types and preventive measures 25/10/2023 14:23 2377 0 News Copper core cables play an important role in fields such as power transmission and communication. However, in actual use, the cables may have faults that affect their normal operation. Common Failure Types of Copper Cables Copper Cable Short Circuit A short circuit is a low-impedance connection that occurs between two or more conductors of a cable, resulting in an unrestricted flow of current. ",
+      "source_id": "Source_cable6",
+      "source_chunk_index": 8,
+      "file_path": "https://m.zmscable.com/new/Copper-core-cable-common-failure-types-and-prevention-recommendations"
+    }
+  ]
+}

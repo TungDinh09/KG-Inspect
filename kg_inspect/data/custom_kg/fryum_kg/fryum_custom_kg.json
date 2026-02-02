@@ -1,0 +1,358 @@
+{
+  "entities": [
+    {
+      "entity_name": "fryum",
+      "entity_type": "food",
+      "description": "Fryum (also known as 3D snack pellet or papadum-type wafer) is a semi-processed, ready-to-fry snack product made primarily from starches such as potato, sago, and tapioca, sometimes blended with cereal flours. It is shaped and dried to a low moisture content and later expanded by frying to achieve a crisp, brittle texture.",
+      "source_id": "Source_fryum1"
+    },
+    {
+      "entity_name": "good fryum",
+      "entity_type": "quality status",
+      "description": " <Normal Characteristics>\n Description: \nThe objects in the images appear to be circular items with symmetrical designs resembling wheels, featuring six evenly spaced spokes connecting to a central hub. They exhibit a consistent coloration, primarily in light peach or pale orange shades, and are set against a textured green background. Upon inspection, none of the objects displayed any visible defects or anomalies. The shapes are uniform and intact, with no signs of cracks, chips, or deformations. \n\nNoise features such as slight variations in shading or texture are evident, attributed to normal variations in light conditions or inherent material characteristics. These variations do not detract from the overall appearance of the objects, which maintain a normal pattern. The spokes are evenly distributed, creating a symmetrical design that meets expected standards for such items. In summary, all inspected items reflect normal manufacturing standards and exhibit no significant defects or anomalies.",
+      "source_id": "Source_fryum2"
+    },
+    {
+      "entity_name": "burnt fryum",
+      "entity_type": "defect",
+      "description": "A fryum showing localized over-heating and darkened, charred areas. The surface exhibits brown to black burn marks, typically concentrated along the spokes where the product has been exposed to excessive heat during frying. The texture in these regions appears brittle and uneven, indicating thermal degradation.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "corner or edge breakage fryum",
+      "entity_type": "defect",
+      "description": "A fryum exhibiting broken or missing outer edges or corners. The circular ring structure shows partial cracking or chipping along the rim, often caused by mechanical stress during handling, drying, or packaging. The defect results in an incomplete wheel shape where one or more edge segments are fractured or absent.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "different colour spot fryum",
+      "entity_type": "defect",
+      "description": "A fryum displaying localized discoloration in the form of darker or differently tinted spots compared to the surrounding surface. These spots may appear due to uneven mixing, foreign particle presence, improper drying, or localized overheating, resulting in noticeable colour variation on the fryum.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "fryum stuck together",
+      "entity_type": "defect",
+      "description": "A defect where two or more fryums adhere to each other, forming a clustered or overlapped structure. This occurs when pieces come into contact while still wet, moist, or during initial drying, causing them to bond. The resulting unit shows merged edges or overlapping shapes that reduce the individual fryum’s structural integrity and appearance.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "middle breakage fryum",
+      "entity_type": "defect",
+      "description": "A fryum exhibiting breakage or cracking in the central region, typically affecting the spokes or the inner ring structure. The defect results in a visibly broken or missing portion around the center hole, often caused by mechanical stress during drying, handling, or transportation. This compromises the symmetry and structural integrity of the fryum.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "similar colour spot fryum",
+      "entity_type": "defect",
+      "description": "A fryum containing spots that are slightly darker or lighter than the surrounding surface but still within a similar colour range. These spots appear due to mild uneven frying, minor ingredient concentration, or subtle heat variations, resulting in localized patches that do not drastically contrast with the main fryum colour.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "small scratches fryum",
+      "entity_type": "defect",
+      "description": "A fryum showing thin, shallow scratch marks on its surface. These scratches appear as fine lines or abrasions caused by friction during handling, drying, or mechanical contact in processing equipment. The marks do not break the structure but affect the visual quality of the fryum.",
+      "source_id": "Source_fryum3"
+    },
+    {
+      "entity_name": "combined fryum",
+      "entity_type": "defect group",
+      "description": "A classification representing fryums that exhibit more than one defect simultaneously. Combined fryums may display overlapping issues such as burnt areas, structural breakages, colour variations, adhesion between pieces, or surface scratches, indicating multiple failure points in processing or handling.",
+      "source_id": "Source_fryum3"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "fryum",
+      "tgt_id": "good fryum",
+      "description": "Good quality fryums result from controlled extrusion, uniform drying, hygienic handling, and protective packaging. These maintain desired physical properties (shape, thickness, moisture) and yield crisp, appealing snacks after frying, ensuring consumer acceptance and compliance with food safety standards.",
+      "keywords": "fryum, good, uniform, crisp, food safety",
+      "weight": 0.85,
+      "source_id": "Source_fryum2"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "burnt fryum",
+      "description": "Indicates that the fryum has undergone excessive heat exposure during the frying process, resulting in burnt or charred sections on its surface.",
+      "keywords": "burnt, over-fried, defect, frying issue, thermal damage",
+      "weight": 0.85,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "corner or edge breakage fryum",
+      "description": "Indicates that the fryum has suffered physical damage resulting in broken or chipped edges, leading to loss of structural completeness.",
+      "keywords": "breakage, chipped edge, cracked rim, physical damage, structural defect",
+      "weight": 0.85,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "different colour spot fryum",
+      "description": "Represents instances where colour irregularities occur on the fryum surface, characterized by localized darker or unevenly pigmented spots.",
+      "keywords": "colour defect, discoloration, spotting, uneven colour, foreign particle, mixing issue",
+      "weight": 0.9,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "fryum stuck together",
+      "description": "Represents a condition where multiple fryums become attached to each other due to moisture, improper separation, or handling during processing or drying.",
+      "keywords": "stuck, overlapped, clustered, adhesion defect, moisture issue, processing defect",
+      "weight": 0.88,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "middle breakage fryum",
+      "description": "Indicates that the fryum has sustained structural damage in the central area, causing the inner spokes or center ring to break or deform.",
+      "keywords": "middle breakage, central crack, inner ring damage, structural defect, spoke breakage",
+      "weight": 0.89,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "similar colour spot fryum",
+      "description": "Represents the occurrence of lightly shaded spots that blend closely with the fryum’s natural colour but still indicate minor inconsistencies in processing or frying.",
+      "keywords": "similar colour spot, light discoloration, shade variation, minor spot defect, uneven frying",
+      "weight": 0.87,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "small scratches fryum",
+      "description": "Represents minor surface-level damage where the fryum develops thin scratch marks due to mechanical rubbing or equipment contact during processing.",
+      "keywords": "scratch, abrasion, surface defect, fine lines, mechanical rubbing",
+      "weight": 0.83,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "fryum",
+      "tgt_id": "combined fryum",
+      "description": "Indicates that the fryum contains multiple defects at the same time, making it part of the combined defect category.",
+      "keywords": "multiple defects, compound defects, mixed issues, fryum quality",
+      "weight": 0.9,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "burnt fryum",
+      "description": "Highlights that burnt markings can be one component of the combined defect classification.",
+      "keywords": "burnt, over-fried, thermal damage",
+      "weight": 0.88,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "corner or edge breakage fryum",
+      "description": "Shows that edge or corner breakages can occur as part of a multi-defect fryum.",
+      "keywords": "edge break, corner break, structural damage",
+      "weight": 0.87,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "different colour spot fryum",
+      "description": "Represents that noticeable contrasting colour spots can appear alongside other fryum defects.",
+      "keywords": "colour spot, dark spot, discoloration",
+      "weight": 0.86,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "fryum stuck together fryum",
+      "description": "Indicates that fryums stuck together can be part of a set of multiple coexisting defects.",
+      "keywords": "stuck fryum, adhesion, overlapping pieces",
+      "weight": 0.87,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "middle breakage fryum",
+      "description": "Shows that central or inner ring breakages may be combined with other defects.",
+      "keywords": "middle break, inner crack, spoke damage",
+      "weight": 0.88,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "similar colour spot fryum",
+      "description": "Captures lightly shaded colour variations that exist along with other defect types.",
+      "keywords": "light spot, shade variation, colour inconsistency",
+      "weight": 0.86,
+      "source_id": "Source_fryum3"
+    },
+    {
+      "src_id": "combined fryum",
+      "tgt_id": "small scratches fryum",
+      "description": "Represents minor surface scratches appearing together with one or more additional defects.",
+      "keywords": "scratch, abrasion, surface marking",
+      "weight": 0.84,
+      "source_id": "Source_fryum3"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Fryums are ready to fry snack food made from potato starch and sago. They may also contain tapioca and wheat flour. They are usually deep-fried and come in a variety of colours, shapes and sizes. Fryums are popular in India and other parts of South Asia, and are often served as a snack. They are also served as a papadum to accompany rich dishes. Fryums are also used as a topping for salads, soups, and other dishes.",
+      "source_id": "Source_fryum1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.healthifyme.com/recipes/fryums"
+    },
+    {
+      "content": "This Indian Standard was adopted by the Bureau of Indian Standards on 2S January ]989, after the draft finalized by the Nutrition Sectional Committee had been approved by the Agricultural and Food Products Division Council. 'Ready-to-eat' extruded snacks are made by a process known as 'extrusion cooking'. This is a process by which pre-conditioned raw food material is subjected to high-temperature short-time cooking which results in the material becoming of plastic consistency. This material is then extruded through specially tapered dies. As it emerges from the dies, it passes from a high pressure to a low pressure zone and this results in puffing of the product. The cooked dough is cut to the desired size, after which it is dried to the desired moisture. Finally, the product is coated with oil, flavours, salt, spices or sweetening agent, etc, and packed. These ingredients may also be added before extrusion.",
+      "source_id": "Source_fryum1",
+      "source_chunk_index": 1,
+      "file_path": "https://law.resource.org/pub/in/bis/S06/is.12566.1989.pdf"
+    },
+    {
+      "content": "PAPAD shall have a umforrn shape. size and thrckness The thickness may range between 0 1 10 I 2 mm, except In the case of PAPAD made trom sago The thickness 01 sago PAPAD shall he between  0 to  5 mm The mean vanatlOn m the \" of IJAPAD m any package shall be not more than 01 mm 3.3 The PAPAD shall be free from broken or frayed edge, excessive number of holes adhering dirt or foreign matter msect infestation or fungal growth and ,my other harmful Ingredll~nb 3.4 FAPAD shall be of pleasant taste and smell and ,hdll be tree from rancid. buter and alkaline or soapy t.ivte Spiced PAPAD In the raw form shall have an aroma and tavte charactensuc of the spices used 3.5 In the raw form. PAPAD shall be ph able and shall not crumble On frying, FAPAD shall be bnttle and cn~p to bite It shall not give leathery, gritty sticky or soggy mouth feel",
+      "source_id": "Source_fryum1",
+      "source_chunk_index": 2,
+      "file_path": "https://law.resource.org/pub/in/bis/S06/is.2639.1999.pdf"
+    },
+    {
+      "content": "4 REQUIREMENTS 4.1 Delcrlptlon The method of production shall be extrusion cooking. The cooker extruder configuration used for the purpose of extrusion cooking shall ensure adequate cooking of raw ingredients. The: shape and size of the extruded product shall be Z REFERENCES The standards listed in Annex A are necessary adjuncts to this standard. 3 RAW MATERIALS The following raw materials may be used for the production of ready-to-eat extruded snacks. They should be clean and of good quality and should conform to the relevant Indian Standards wherever available:",
+      "source_id": "Source_fryum2",
+      "source_chunk_index": 0,
+      "file_path": "https://law.resource.org/pub/in/bis/S06/is.12566.1989.pdf"
+    },
+    {
+      "content": "The 'ready-to-eat' extruded snacks shall be of pleasant taste and smell, and free from rancid, soap>, bitter or burnt taste and smell. They shall have an aroma and taste characteristic of the flavours and spices used. 4.3 Additives Preservatives, flavours and colours permitted under the Prevention of Food Adulteration Act, 1954 may be added.",
+      "source_id": "Source_fryum2",
+      "source_chunk_index": 1,
+      "file_path": "https://law.resource.org/pub/in/bis/S06/is.12566.1989.pdf"
+    },
+    {
+      "content": "Food Safety Regulations &Standards According to the FSSAI standards, Papad means the Pulses based Product made by grounded Pulses flour. 4.1. The FSSAI standards of Papad: (i) Moisture Not more than 14.0 per cent by weight (ii) Foreign matter -Extraneous Matter Not more than 1 per cent. by weight of which not more than 0.25 per cent. by weight shall be mineral matter and not more than 0.10 per cent by weight shall be impurities of animal origin (iii) Other edible grains Not more than 4 per cent by weight.",
+      "source_id": "Source_fryum2",
+      "source_chunk_index": 2,
+      "file_path": "https://niftem-t.ac.in/pmfme/papadcurmet.pdf"
+    },
+    {
+      "content": "MANUFACTURER/ PROCESSOR/HANDLER The place where food is manufactured, processed or handled shall comply with the following requirements: 1. The premises shall be located in a sanitary place and free from filthy surroundings and shall maintain overall hygienic environment. All new units shall set up away from environmentally polluted areas. 2. The premises to conduct food business for manufacturing should have adequate space for manufacturing and storage to maintain overall hygienic environment. 3. The premises shall be clean, adequately lighted and ventilated and sufficient free space for movement. 4. Floors, Ceilings and walls must be maintained in a sound condition. They should be smooth and easy to clean with no flaking paint or plaster. 5. The floor and skirted walls shall be washed as per requirement with an effective disinfectant the premises shall be kept free from all insects. No spraying shall be done during the conduct of business, but instead fly swats/ flaps should be used to kill spray flies getting into the premises. Windows, doors and other openings shall be fitted with net or screen, as appropriate to make the premise insect free The water used in the manufacturing shall be potable and if required chemical and bacteriological examination of the water shall be done at regular intervals at any recognized laboratory. 6. Continuous supply of potable water shall be ensured in the premises. In case of intermittent water supply, adequate storage arrangement for water used in food or washing shall be made. 7. Equipment and machinery when employed shall be of such design which will permit easy cleaning. Arrangements for cleaning of containers, tables, working parts of machinery, etc. shall be provided.",
+      "source_id": "Source_fryum2",
+      "source_chunk_index": 3,
+      "file_path": "https://niftem-t.ac.in/pmfme/papadcurmet.pdf"
+    },
+    {
+      "content": "8. No vessel, container or other equipment, the use of which is likely to cause metallic contamination injurious to health shall be employed in the preparation, packing or storage of food. (Copper or brass vessels shall have proper lining). 9. All Equipments shall be kept clean, washed, dried and stacked at the close of business to ensure freedom from growth of mould/ fungi and infestation. 10. All Equipments shall be placed well away from the walls to allow proper inspection. 11. There should be efficient drainage system and there shall be adequate provisions for disposal of refuse. 12. The workers working in processing and preparation shall use clean aprons, hand gloves, and head wears. 13. Persons suffering from infectious diseases shall not be permitted to work. Any cuts or wounds shall remain covered at all time and the person should not be allowed to come in direct contact with food. 14. All food handlers shall keep their finger nails trimmed, clean and wash their hands with soap, or detergent and water before commencing work and every time after using toilet. Scratching of body parts, hair shall be avoided during food handling processes. 15. All food handlers should avoid wearing, false nails or other items or loose jewellery that might fall into food and also avoid touching their face or hair. 16. Eating, chewing, smoking, spitting and nose blowing shall be prohibited within the premises especially while handling food. 17. All articles that are stored or are intended for sale shall be fit for consumption and have proper cover to avoid contamination. 18. The vehicles used to transport foods must be maintained in good repair and kept clean. 19. Foods while in transport in packaged form or in containers shall maintain the required temperature. 20. Insecticides / disinfectants shall be kept and stored separately and `away from food manufacturing / storing/ handling areas.",
+      "source_id": "Source_fryum2",
+      "source_chunk_index": 4,
+      "file_path": "https://niftem-t.ac.in/pmfme/papadcurmet.pdf"
+    },
+    {
+      "content": "3.1. Deteriorating factors In order to select a suitable packaging material/ type of package for Papad, it is essential to know the factors which affect the quality of Papad. 3.1.1. Moisture Content Papad is hygroscopic in nature and picks-up moisture from the atmosphere resulting in high moisture in the papad. Pick-up of moisture also results in loss of the shelf life of the papad. 3.1.2. Loss of Aroma / Flavour Papad contains some aroma, which imparts the characteristic aroma/flavor to the product. Oxidation of some aromatic compounds results in aroma and flavor loss. 3.1.3. Discolouration Light can affect the papad Quality resulting in loss or fading of colour and deterioration of Papad. 3.1.4. Insect Infestation Papad is prone to spoilage due to insect infestation, which can be further accelerated due to high humidity, heat, and oxygen. 3.1.5. Microbial Contamination In high humidity condition of 65% and above, moisture absorption occurs. Beyond a certain level of moisture content, spoilage due to microbial growth sets in.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 2,
+      "file_path": "https://niftem-t.ac.in/pmfme/papadcurmet.pdf"
+    },
+    {
+      "content": "Prohibited Synthetic Dyes in Indian Fryums Pose Health Risks to Children; Urgent Regulatory Action Needed by FSSAI. Multi-colored fryums in Indian markets contain prohibited synthetic dyes, posing significant health risks, especially to children. These dyes, such as Sudan I-IV, are banned in many countries due to their carcinogenic and toxic effects. Despite regulations by the Food Safety and Standards Authority of India (FSSAI), these harmful dyes persist due to inadequate enforcement and awareness. Suggested actions include FSSAI conducting surprise inspections, raising awareness, imposing stringent penalties, enhancing product testing, and encouraging consumer vigilance. Ensuring food safety and regulatory compliance is crucial to protect public health, particularly for vulnerable populations like children.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.taxtmi.com/article/detailed?id=13808#:~:text=Prohibited%20Synthetic%20Dyes%20in%20Indian,testing%2C%20and%20encouraging%20consumer%20vigilance."
+    },
+    {
+      "content": "Black gram dhal (urad dhal) is first cleaned by passing through the designer to remove stones. It is then ground fine in the hammer mill and then passed through a sieve to remove fiber and coarse material. The material passing through the sieve is collected, weighed and the desired quantities are taken to the kneading machine. Salt and spices and sodium-bicarbonate are added to the desired quantity and the ingredients mixed thoroughly. Water is added slowly and the dough formed. Vigorous kneading is necessary. The dough is rolled into lengths and cut into uniform pieces to be placed in the flattening machine. On pressing the foot operated pedal, the dough is flattened to the desired thickness, shape, and size. The excess dough is removed and recycled once again. The papad are dried in a current of cold air to a moisture content of 12%. Excessive drying is avoided to prevent brittleness and cracking. The papads are then packed by weight or numbers.",
+      "source_id": "",
+      "source_chunk_index": 1,
+      "file_path": "https://niftem-t.ac.in/pmfme/papadcurmet.pdf"
+    },
+    {
+      "content": "Overcome extrusion challenges with formulation expertise and texturising solutions Below we address some common extruded snack challenges that cause defects that detract from the consumers overall eating experience. Lack of crispiness can occur if the dough has a poor, weak expansion framework. To overcome this issue: Adjust the moisture levels of the product both before and after processing Increase amylose containing starch in high-shear, high-temperature processes Defects in shape and cutting ability can occur because of poor moisture management and process design. To address these challenges: Lower moisture content Add a lipid or modified starch to address stickiness Use or increase the amount of starch with higher process tolerance in high-shear, high-temperature processes Use or increase the amount of starch with lower process tolerance in low-shear, low-temperature processes Stickiness after extrusion can occur because of excessive moisture or starch degradation due to excessive shear temperatures. To resolve this issue: Lower moisture content Add a lipid or starch with a process tolerance better for your specific manufacturing parameters Excessive toothpacking, or the degree to which the product sticks to the teeth, can occur if there is a formation of dextrins and short-chain polymers during processing. To tackle this problem: Select a starch with a higher process tolerance Work with an expert to adjust amylopectin and amylose ratio in your formula Add a lipid or modified starch",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 2,
+      "file_path": "https://www.ingredion.com/emea/en-uk/solving-a-challenge/innovation-with-idea-labs/snacking/snacking-troubleshooting/troubleshooting-extruded-snacks-expert-article#:~:text=Overcome%20extrusion%20challenges%20with%20formulation,for%20your%20specific%20manufacturing%20parameters"
+    },
+    {
+      "content": "We have found also, that the gender of the people who eat fried products more than the other are equal with 46 % for males and 46 % for females .and the age of the customers who eat in fast food restaurants which answered to 45.7% were from 20 to 30 years and 30 to 40 and more with 37 % . Then we have to know if there is stability in the taste of fried product that the customers eat in the restaurant and the result was 42.4 % with yes and 26.1% with no and 31.5 % with sometimes. Finally , we have to know what are the flaws that the customers have seen before in fried food from their point of view and we have found the biggest flaw was changing the taste with 52.2 % then changing the color with 31.5 % then 16.3 % was for the changing of the smell.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 3,
+      "file_path": "https://jfds.journals.ekb.eg/article_48835_5837f6d1577d99ec985f0e6babd7afb2.pdf"
+    },
+    {
+      "content": "we have asked the customers too if they know that the oil is being reused many times ,would they have the meal . the said no with 82.6 % and 17.4 % with yes . Finally , we have to know what are the flaws that the customers have seen before in fried food from their point of view and we have found the biggest flaw was changing the taste with 52.2 % then changing the color with 31.5 % then 16.3 % was for the changing of the smell. REFERENCES A.O.A.C. (2000).\"Association of Official Analytical Chemists. OfficialMethods of Analysis.17th Ed.vol (11) Washington DC.USA.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 4,
+      "file_path": "https://jfds.journals.ekb.eg/article_48835_5837f6d1577d99ec985f0e6babd7afb2.pdf"
+    },
+    {
+      "content": "Then we have to know if there is stability in the taste of fried product that the customers eat in the restaurant and the result was 42.4 % with yes and 26.1% with no and 31.5 % with sometimes. On the other side we have to know if there is stability in the color of the fried products that he or she eats and we have found that 39.6 % said that yes but 34.1 % said no and on the other side 26.4 said sometimes there is stability in the color . Question number Selections Frequency Percent Q1 a b 46 46",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 5,
+      "file_path": "https://jfds.journals.ekb.eg/article_48835_5837f6d1577d99ec985f0e6babd7afb2.pdf"
+    },
+    {
+      "content": "Then we have to know if there is stability in the taste of fried product that the customers eat in the restaurant and the result was 42.4 % with yes and 26.1% with no and 31.5 % with sometimes. On the other side we have to know if there is stability in the color of the fried products that he or she eats and we have found that 39.6 % said that yes but 34.1 % said no and on the other side 26.4 said sometimes there is stability in the color . Question number Selections Frequency Percent Q1 a b 46 46",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 6,
+      "file_path": "https://jfds.journals.ekb.eg/article_48835_5837f6d1577d99ec985f0e6babd7afb2.pdf"
+    },
+    {
+      "content": "50% 50% Q2 a b c d 4 12 42 34 4.3% 13% 45.7% 37% Q3 a b c 38 22 32 41.3% 23.9% 34.8% Q4 a b c 39 24 29 42.4% 26.1% 31.5% Q5 a b c 36 31 24 39.6% 34.1% 26.4% Q6 a b c 28 18 46 30.4% 19.6% 50% Q7 a b 16 76 17.4% 82.6% Q8 a b c d 29 48 15 0 31.5% 52.2% 16.3% 0% J. Food and Dairy Sci., Mansoura Univ., Vol. 6 (5), May , 2015 333 We had to ask the customers if they think that the number of hours of frying affect on the quality of the fried product and it was 50 % of them don’t know if it affects or not and 30.4 % the said yes it affects.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 7,
+      "file_path": "https://jfds.journals.ekb.eg/article_48835_5837f6d1577d99ec985f0e6babd7afb2.pdf"
+    },
+    {
+      "content": "AGRICULTURE AND NATURAL RESOURCES Journal homepage: http://anres.kasetsart.org Article history: Received 26 July 2022 Revised 20 October 2022 Accepted 31 October 2022 Available online 19 December 2022 Keywords: After-cooking discoloration, Calcium chloride, Eggplant, Polyphenol oxidase, Response surface methodology AbstractArticle Info Importance of the work: Deep-fried eggplant often undergoes the negative impact of after-cooking discoloration (ACD). The pretreatment method and deep-frying parameters are critical factors that can minimize ACD in deep-fried eggplant. Objectives: To investigate the effects of different calcium chloride soaking and deep-frying conditions on the after-cooking discoloration of deep-fried eggplant. Materials & Methods: A series of preliminary experiments was conducted to investigate the effect of calcium chloride concentration, soaking time, frying temperature and frying time on the ACD of deep-fried eggplant and identify the important factors. Frying temperature and frying time were chosen for further optimization study using response surface method (RSM). Results: All the mentioned factors had positive effects on mitigating the ACD. Overall, the results demonstrated that pretreatment using calcium chloride helped to minimize the ACD of deep-fried eggplant, with the appropriate concentration and soaking time being 2% and 5 min, respectively. The results indicated that frying temperature and frying time were the most important parameters affecting the response. The RSM optimization results showed that the minimum color difference could be obtained at the optimum frying conditions of temperature = 161°C and time = 209 seconds and their factor contributions were 22 and 78%, respectively. The achieved color difference was about 3.48, which was close to 2.3, the “just noticeable color difference”. Main finding: The results provide a strategy for the development of industrial-scale production of deep-fried eggplant.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 8,
+      "file_path": "https://www.researchgate.net/publication/366839881_Solutions_for_effective_prevention_of_after-cooking_discoloration_in_deep-_fried_eggplant_Solanum_melongena_L"
+    },
+    {
+      "content": "1154 T.H. Nguyen, H.T. Phan / Agr. Nat. Resour. 56 (2022) 1153–1162 Introduction Solanum melongena L., commonly known as eggplant in the USA and Australia or aubergine in UK and France and brinjal in South Asia and South Africa, is one of the most commercially important vegetable crops and has been cultivated in various countries around the world since ancient time (Daunay and Janick, 2007). The production and gross value of eggplant reached 54 million t (2018) and USD 2.35 billion (2016) worldwide (Food and Agriculture Organization of the United Nations, 2020). There are various cultivars of eggplant, which are differentiated based on size, shape and weight (Sękara et al., 2007). Many of them contain large amounts of nutrients along with phytochemicals that are favorable to human health (Hanson et al., 2006). Eggplant needs to be cooked by heating before human consumption, with deep-frying being one of the most common processing methods that can be applied in both home preparation and industrial production. One major difficulty in the eggplant deep-frying process is controlling the after-cooking discoloration (ACD) or browning caused by the activity of polyphenol oxidase (PPO, EC 1.14.18.1) (Banjongsinsiri et al., 2004). This enzyme catalyzes the oxidation of eggplant’s phenolic compounds to 0-quinones, which then build up and develop dark pigments, such as melanin (Uscanga-Sosa et al., 2020). The impact of heat in the frying process has been shown to have an inhibitory effect on PPO (Ayustaningwarno et al., 2018). However, this method is often impractical due to the requirement of a costly vacuum frying system to reduce the frying temperature and minimize the contact between frying products and oxygen in the air. Various product pretreatments prior to processing to prevent ACD have been investigated, with a considerable amount of study on the usage of calcium chloride as a pretreatment solution. (Guzek et al., 2012) reported the combination of calcium chloride soaking (1% mass per volume, m/v concentration) and low temperature blanching helped to significantly reduce the browning of broccoli. Likewise, studies have been carried out on the application of calcium chloride to prevent browning of fresh-cut products, such as with peach (Techakanon and Barrett, 2017) and pineapple (Gu et al., 2020). Nuevo et al. (2020) reported the application of calcium chloride in combination with ascorbic acid to prevent browning in fresh-cut eggplant. However, it has not yet been established whether calcium chloride can minimize the ACD",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 9,
+      "file_path": "https://www.researchgate.net/publication/366839881_Solutions_for_effective_prevention_of_after-cooking_discoloration_in_deep-_fried_eggplant_Solanum_melongena_L"
+    },
+    {
+      "content": "∆E* = (L*2 – L*1)2 + (a*2 – a*1)2 + (b*2 – b*1)2√ (1) Preliminary experiments design A series of single-factor, completely randomized experiments was conducted prior to the optimization experiment with the aim of identifying important factors and narrowing the condition ranges. The independent variables studied were: calcium chloride concentration (0%, 1%, 2%, 3% or 4% m/v), soaking time (5 min, 10 min, 15 min or 20 min), frying temperature (140 °C, 160 °C, 180 °C, 200 °C) and frying time (30 s, 60 s, 120 s or 180 s). Color difference (∆E*) was the response variable. After each experiment, the condition level",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 10,
+      "file_path": "https://www.researchgate.net/publication/366839881_Solutions_for_effective_prevention_of_after-cooking_discoloration_in_deep-_fried_eggplant_Solanum_melongena_L"
+    },
+    {
+      "content": "Color characteristics of deep-fried eggplant The color change of the deep-fried eggplant pieces with different pretreatment and frying conditions before and after 48 h preservation was measured as described by Chitrakar et al. (2019). A handheld colorimeter (CR-400; Konica Minolta Sensing Americas Inc.; Ramsey, NJ, USA) was used to measure the CIE color values of L* (lightness), a*(redness) and b* (yellowness). The colorimeter was first calibrated using the standard plate. The measurements were made at three randomly selected spots and the average color value was presented (Su et al., 2016). The color difference (∆E*) was calculated from the differences in color values of sample before preservation (L*1, a*1,b*1) and after preservation (L*2, a*2,b*2) using Equation 1:",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 11,
+      "file_path": "https://www.researchgate.net/publication/366839881_Solutions_for_effective_prevention_of_after-cooking_discoloration_in_deep-_fried_eggplant_Solanum_melongena_L"
+    },
+    {
+      "content": "Effects of frying conditions First, the effect was investigated of frying temperature on color difference before and after preservation. The controlled variables (calcium chloride concentration, soaking time, frying time) were kept at 2%, 5 min and 60 s, respectively. Fig. 1C depicts the changes in color of deep-fried samples before and after preservation. There was a decline (Tukey’s test, p < 0.01) in the color difference value from 20.31 to 10.31 when the temperature increased from 140 °C to 160 °C. This was in good agreement with another study (Todaro et al., 2011) that reported that the eggplant PPO was rapidly inhibited with an increase in the temperature, which might explain the reduction in color difference after preservation. Nevertheless, further increment of the frying temperature to 180 °C and 200 °C resulted in slight intensification of the color difference (Tukey’s test, p < 0.01). This suggested that the ACD of the deep-fried eggplant might be related to non-enzymatic browning, which was confirmed to be strongly associated with L-ascorbic acid (vitamin C) loss during the thermal process (Yang et al., 2021). Eggplant contains a moderate amount of L-ascorbic acid, with an average quantity of 89 mg/100g (Hanson et al., 2006). Lima et al. 2010 identified a significant degradation of L-ascorbic acid for a heat treatment higher than 160 °C. This contrast was a possible tentative explanation for the increase in the color difference in the samples fried at 180 °C and 200 °C. Considering the lowest color difference result, the frying temperature of 160 °C was chosen for further study on the effect of frying time. Next, effect of frying time on color difference was examined, when the controlled variables (calcium chloride concentration, soaking time, frying temperature) were kept at 2%, 5 min and 160 °C, respectively. There was a significant decrease (Tukey’s test, p < 0.01) in the color difference value from 18.85 to 4.34 when the frying time was extended from 30 s to 180 s (Fig. 1D), suggesting the substantial",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 12,
+      "file_path": "https://www.researchgate.net/publication/366839881_Solutions_for_effective_prevention_of_after-cooking_discoloration_in_deep-_fried_eggplant_Solanum_melongena_L"
+    },
+    {
+      "content": "The measurement of texture in snack food products serves as a fundamental tool for systematically evaluating and optimising the quality, sensory attributes, and manufacturing processes of these ubiquitous treats. Texture analysis provides quantifiable data on attributes such as crunchiness, crispiness, chewiness, and mouthfeel, facilitating a rigorous examination of snack food textural properties. This analytical approach not only informs the refinement of product formulations and processing methodologies but also plays a pivotal role in ensuring uniformity and consumer satisfaction. Texture is a leading driver for taste perception and a marketable feature, particularly for snack products. Creating an amazing texture in your snack food will provide enormous interest to the consumer but one thing is for sure, if you’ve created a signature texture in your product you’ll want to make sure that it remains consistent.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 13,
+      "file_path": "https://www.stablemicrosystems.com/applications/snacks/"
+    },
+    {
+      "content": "How a Texture Analyser can be applied to snack product texture measurement? Texture is a defining factor in the consumer experience of snacks, influencing satisfaction and repeatability of purchase. Here's how a Texture Analyser can be applied: 1 Texture profiling: From crispy chips to chewy fruit bars, different snacks possess distinct textural characteristics. The Texture Analyser quantifies these properties, such as crispiness, hardness, or chewiness and creates a signature texture profile. New snack concepts or ingredients can be thoroughly tested for texture, ensuring they meet consumer expectations before market launch. 2 Formulation testing: When adding additives to enhance flavour, changing ingredients or their ratios or introducing new ones, it's essential to know how these changes affect the final product's texture. The Texture Analyser aids in perfecting the formulation to achieve the targeted textural profile without compromising the snack’s mouthfeel. 3 Effects of processing: Cooking methods, like frying or baking, impact a snack's texture. Texture analysis can optimise these methods for the best textural outcome. 4 Moisture retention: For moist snacks or those with fillings, understanding how they maintain moisture over time and its impact on texture. 5 Quality assurance and control: Texture consistency is paramount in snack production. Regular analysis ensures each batch aligns with the desired textural standards and is consistent across different production facilities. 6 Shelf life assessment: Over time, some snacks may lose their crispiness or become harder. Analysing these changes throughout storage provides insights into product shelf life and storage conditions. 7 Packaging interactions: Some packaging, like vacuum-sealing, might impact a snack's texture. Analysing these interactions informs packaging decisions. 8 Sensory feedback integration: Merging sensory panel feedback with objective texture data allows for a comprehensive understanding of the product, informing recipe or process tweaks. 9 Claims substantiation: If a product is marketed with textural claims, like \"extra crunchy\" or \"soft-baked,\" the Texture Analyser provides the empirical data to substantiate these assertions. 10 Comparative analysis: Manufacturers can objectively compare their snack's texture to competitors', revealing areas for potential differentiation or improvement.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 14,
+      "file_path": "https://www.stablemicrosystems.com/applications/snacks/"
+    },
+    {
+      "content": "Measures the force and sound produced when breaking the snack. It's a key attribute for chips, crackers, and many brittle baked snacks. Fracturability/brittleness Quantifies the force or energy needed to break or shatter the snack, significant for delicate products like thin chips or wafers or those with layered textures. Adhesiveness/stickiness Assessing the stickiness of snacks, especially relevant for gummy or chewy snacks. Can assess the propensity of to adhere to itself, relevant for certain clusters or bars, or to the teeth.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 15,
+      "file_path": "https://www.stablemicrosystems.com/applications/snacks/"
+    },
+    {
+      "content": "Spreadability Measures the energy or force to extrude the sample in a specific manner which indicates the ease of its spreading. Hinge strength Measuring the hinge strength of taco shells involves applying a controlled bending force to the taco shell and measuring the force required to cause a crack or break along the hinge. Toughness/tensile strength Measuring the toughness of pizza crust or tortillas involves evaluating the force to withstand deformation, tearing, or breaking when subjected to mechanical stress.",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 16,
+      "file_path": "https://www.stablemicrosystems.com/applications/snacks/"
+    },
+    {
+      "content": "Tortilla/Pastry Burst Rig Developed to perform extension and elasticity measurements on pastry, pancakes, tortillas or sheeted samples. Crisp Fracture Support Rig Used for fracturability of snack foods and potato crisps by means of penetration using a spherical probe. Spreadability Rig Used for the measurement of spreadability of fats, table spreads, peanut butter. Kramer Shear Cell – 5 Bladed Can be used to contain a non self-supporting bulk sample for testing or used with blades only where the sample is self-supporting. Miniature Kramer/Ottawa Cell",
+      "source_id": "Source_fryum3",
+      "source_chunk_index": 17,
+      "file_path": "https://www.stablemicrosystems.com/applications/snacks/"
+    }
+  ]
+}

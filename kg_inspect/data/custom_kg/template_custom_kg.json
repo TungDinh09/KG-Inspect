@@ -1,0 +1,52 @@
+{
+  "entities": [
+    {
+      "entity_name": "",
+      "entity_type": "",
+      "description": "",
+      "source_id": ""
+    },
+    {
+      "entity_name": "",
+      "entity_type": "",
+      "description": "",
+      "source_id": ""
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "",
+      "tgt_id": "",
+      "description": "",
+      "keywords": "....., ....",
+      "weight": 0.8,
+      "source_id": ""
+    },
+    {
+      "src_id": " ",
+      "tgt_id": " ",
+      "description": "  ",
+      "keywords": " ",
+      "weight": 0.8,
+      "source_id": "  "
+    }
+  ],
+  
+  "chunks": [
+    {
+      "content": "",
+      "source_id": "",
+      "source_chunk_index": 0
+    },
+    {
+      "content": "",
+      "source_id": "",
+      "source_chunk_index": 1
+    },
+    {
+      "content": "",
+      "source_id": "",
+      "source_chunk_index": 2
+    }
+  ]
+}

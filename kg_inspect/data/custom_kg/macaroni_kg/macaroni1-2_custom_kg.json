@@ -1,0 +1,524 @@
+{
+  "entities": [
+    {
+      "entity_name": "macaroni",
+      "entity_type": "food",
+      "description": "Macaroni is a tubular pasta—short, curved, or straight pieces that are typically cut from extruded dough. It is one of the most common pasta shapes and serves as the base for many popular dishes like macaroni and cheese, macaroni salad, and casseroles.",
+      "source_id": "Source_macaroni1"
+    },
+    {
+      "entity_name": "macaroni1",
+      "entity_type": "category",
+      "description": "macaroni1 is a type of macaroni",
+      "source_id": "Source_macaroni2"
+    },
+    {
+      "entity_name": "macaroni2",
+      "entity_type": "category",
+      "description": "macaroni2 is a type of macaroni",
+      "source_id": "Source_macaroni3"
+    },
+    {
+      "entity_name": "good macaroni1",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The images depict various sets of pasta pieces, specifically in shapes resembling half moons, macaroni, or shells. These pasta pieces are consistently arranged against a green textured background, exhibiting uniform coloration in shades of yellow to orange typical of uncooked pasta made from durum wheat semolina. The pieces share characteristics such as smooth inner surfaces, ridged outer edges, and semi-circular shapes, which are all consistent with expected pasta forms.\n \n Upon inspection, there are no visible defects or anomalies present in any of the pasta pieces. Each object maintains a regular pattern in terms of color, shape, and texture, reflecting a uniform production process. Any minor variations in color or texture can be attributed to normal manufacturing processes or lighting conditions and do not constitute defects. The arrangement of the objects is orderly, with consistent spacing and positioning across the images. \n \n Overall, the pasta pieces displayed in the images represent a standard, undamaged set, adhering to the expected characteristics of such food items, free of any anomalies.",
+      "source_id": "Source_macaroni4"
+    },
+    {
+      "entity_name": "good macaroni2",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The images depict various pieces of pasta, specifically pipe rigate and macaroni, arranged on a textured green background. Each pasta piece exhibits the expected characteristics of their types: a curved, hollow shape with ridged exteriors, and a consistent yellow color indicative of standard uncooked pasta made from semolina or durum wheat. Upon inspection, no visible defects or anomalies are present. All pieces are intact, maintaining uniformity in shape, size, and texture.\n \n Useful Visual Features: \n - Shape: Each pasta piece has a distinct curved, tubular design appropriate for its type (either pipe rigate or macaroni).\n - Color: The pasta displays a consistent yellow hue typical for uncooked pasta.\n - Texture: The ridges on the exterior are well-defined, helping to indicate that the pasta is of standard quality. \n - Arrangement: The pasta pieces are neatly arranged without overlap, maintaining an orderly presentation. \n - Background: The green backdrop has minor textural variations which may create noise but do not indicate any issue with the pasta itself.",
+      "source_id": "Source_macaroni4"
+    },
+    {
+      "entity_name": "bad macaroni1",
+      "entity_type": "quality status",
+      "description": "<Color Spot Defects and Physical Anomalies>\nDescription: The images show macaroni pieces exhibiting multiple defect types:\n\n- Color spot defects including different colour spots and similar colour spots.\n- Physical imperfections such as chips around edges and corners.\n- Structural anomalies including small cracks and small scratches.\n\nThese defects disrupt the uniformity, smoothness, and consistent appearance expected from standard macaroni pasta.",
+      "source_id": "Source_macaroni5"
+    },
+    {
+      "entity_name": "bad macaroni2",
+      "entity_type": "quality status",
+      "description": "<Macaroni Defects>\nDescription: The macaroni pieces display various defects including:\n\n- Chips around edges and corners, causing irregular shapes.\n- Surface damage such as small scratches and small cracks.\n- Color imperfections such as different colour spots and similar colour spots.\n\nThese flaws affect structural integrity and visual quality of the macaroni.",
+      "source_id": "Source_macaroni5"
+    },
+    {
+      "entity_name": "chip around edge and corner macaroni1",
+      "entity_type": "defect type",
+      "description": "Minor chipping along the macaroni1 edges or corners, where only small flakes of material are missing. The overall shape remains mostly intact, with slight irregularities visible upon close inspection.",
+      "source_id": "Source_macaroni6"
+    },
+    {
+      "entity_name": "different colour spot macaroni1",
+      "entity_type": "defect type",
+      "description": "Small and sparsely distributed colour spots that noticeably differ from the normal yellow tone but affect only limited surface areas of macaroni1. These spots suggest slight irregularities in drying or ingredient dispersion.",
+      "source_id": "Source_macaroni7"
+    },
+    {
+      "entity_name": "similar colour spot macaroni1",
+      "entity_type": "defect type",
+      "description": "Low-contrast colour spots that are only subtly different from the base macaroni1 colour. These faint variations are mild and typically require closer inspection to detect.",
+      "source_id": "Source_macaroni8"
+    },
+    {
+      "entity_name": "small cracks macaroni1",
+      "entity_type": "defect type",
+      "description": "Short, fine cracks appearing on the surface of macaroni1. They do not extend deeply and generally do not compromise structural stability, though they still disrupt surface smoothness.",
+      "source_id": "Source_macaroni9"
+    },
+    {
+      "entity_name": "small scratches macaroni1",
+      "entity_type": "defect type",
+      "description": "Light, shallow scratches present on the macaroni1 surface. These marks slightly disturb texture but remain superficial and localized.",
+      "source_id": "Source_macaroni10"
+    },
+    {
+      "entity_name": "combined defect macaroni1",
+      "entity_type": "defect pattern",
+      "description": "A mild combination of multiple defect types on macaroni1, such as small chips accompanied by faint colour spots or slight cracking. The defects occur together but remain limited in severity.",
+      "source_id": "Source_macaroni11"
+    },
+    {
+      "entity_name": "chip around edge and corner macaroni2",
+      "entity_type": "defect type",
+      "description": "More pronounced chipping around macaroni2 edges or corners, with larger missing portions that noticeably distort the original shape and create visibly rough or jagged outlines.",
+      "source_id": "Source_macaroni6"
+    },
+    {
+      "entity_name": "different colour spot macaroni2",
+      "entity_type": "defect type",
+      "description": "Clearly visible and more widely distributed colour spots that sharply contrast with the base macaroni2 colour. These defects typically indicate stronger processing inconsistencies or contamination.",
+      "source_id": "Source_macaroni7"
+    },
+    {
+      "entity_name": "similar colour spot macaroni2",
+      "entity_type": "defect type",
+      "description": "Moderately sized, low-contrast spots that blend somewhat with the pasta colour but remain noticeable even without close inspection. These colour variations are more extensive than in macaroni1.",
+      "source_id": "Source_macaroni8"
+    },
+    {
+      "entity_name": "small cracks macaroni2",
+      "entity_type": "defect type",
+      "description": "More visible or longer cracks on macaroni2 that may extend along the curvature. These cracks pose a greater risk of breakage during handling or cooking.",
+      "source_id": "Source_macaroni9"
+    },
+    {
+      "entity_name": "small scratches macaroni2",
+      "entity_type": "defect type",
+      "description": "Multiple or more pronounced scratches on the macaroni2 surface, clearly disrupting the expected smooth or ridged texture and covering larger areas.",
+      "source_id": "Source_macaroni10"
+    },
+    {
+      "entity_name": "combined defect macaroni2",
+      "entity_type": "defect pattern",
+      "description": "A stronger combination of defect types on macaroni2, such as deeper cracks, larger chips, and more noticeable colour spots occurring simultaneously. These combined defects significantly alter appearance and quality.",
+      "source_id": "Source_macaroni11"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "macaroni",
+      "tgt_id": "macaroni1",
+      "description": "macaroni1 is a subtype of macaroni.",
+      "keywords": "macaroni, subtype",
+      "weight": 1.0,
+      "source_id": "Source_macaroni2"
+    },
+    {
+      "src_id": "macaroni",
+      "tgt_id": "macaroni2",
+      "description": "macaroni2 is a subtype of macaroni.",
+      "keywords": "macaroni, subtype",
+      "weight": 1.0,
+      "source_id": "Source_macaroni3"
+    },
+    {
+      "src_id": "macaroni1",
+      "tgt_id": "good macaroni1",
+      "description": "macaroni has good quality",
+      "keywords": "macaroni, quality, good",
+      "weight": 0.9,
+      "source_id": "Source_macaroni4"
+    },
+    {
+      "src_id": "macaroni1",
+      "tgt_id": "bad macaroni1",
+      "description": "macaroni has bad quality",
+      "keywords": "macaroni, quality, bad",
+      "weight": 0.9,
+      "source_id": "Source_macaroni5"
+    },
+    {
+      "src_id": "macaroni2",
+      "tgt_id": "good macaroni2",
+      "description": "macaroni has good quality",
+      "keywords": "macaroni, quality, good",
+      "weight": 0.9,
+      "source_id": "Source_macaroni4"
+    },
+    {
+      "src_id": "macaroni2",
+      "tgt_id": "bad macaroni2",
+      "description": "macaroni has bad quality",
+      "keywords": "macaroni, quality, bad",
+      "weight": 0.9,
+      "source_id": "Source_macaroni5"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "chip around edge and corner",
+      "description": "bad macaroni1 shows chips around edges and corners.",
+      "keywords": "macaroni, defect, chip, edge, corner",
+      "weight": 0.9,
+      "source_id": "Source_macaroni6"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "different colour spot macaroni1",
+      "description": "bad macaroni1 exhibits different colour spots on the surface.",
+      "keywords": "macaroni, defect, colour, spot, different",
+      "weight": 0.9,
+      "source_id": "Source_macaroni7"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "similar colour spot macaroni1",
+      "description": "bad macaroni1 exhibits similar colour spots that are subtly different from the base colour.",
+      "keywords": "macaroni, defect, colour, spot, similar",
+      "weight": 0.8,
+      "source_id": "Source_macaroni8"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "small cracks macaroni1",
+      "description": "bad macaroni1 has small cracks on its surface or along its curvature.",
+      "keywords": "macaroni, defect, crack, small",
+      "weight": 0.9,
+      "source_id": "Source_macaroni9"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "small scratches macaroni1",
+      "description": "bad macaroni1 has small scratches that disrupt the expected texture.",
+      "keywords": "macaroni, defect, scratch, small",
+      "weight": 0.8,
+      "source_id": "Source_macaroni10"
+    },
+    {
+      "src_id": "bad macaroni1",
+      "tgt_id": "combined defect macaroni1",
+      "description": "bad macaroni1 pieces often present combined defects (colour spots plus chips/cracks/scratches).",
+      "keywords": "macaroni, defect, combined",
+      "weight": 0.9,
+      "source_id": "Source_macaroni11"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "chip around edge and corner macaroni2",
+      "description": "bad macaroni2 shows chips around edges and corners.",
+      "keywords": "macaroni, defect, chip, edge, corner",
+      "weight": 0.9,
+      "source_id": "Source_macaroni6"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "different colour spot macaroni2",
+      "description": "bad macaroni2 exhibits spots with clearly different colour from the normal pasta tone.",
+      "keywords": "macaroni, defect, colour, spot, different",
+      "weight": 0.9,
+      "source_id": "Source_macaroni7"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "similar colour spot macaroni2",
+      "description": "bad macaroni2 also exhibits more subtle similar colour spots.",
+      "keywords": "macaroni, defect, colour, spot, similar",
+      "weight": 0.8,
+      "source_id": "Source_macaroni8"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "small cracks macaroni2",
+      "description": "bad macaroni2 has small cracks along the pasta body.",
+      "keywords": "macaroni, defect, crack, small",
+      "weight": 0.9,
+      "source_id": "Source_macaroni9"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "small scratches macaroni2",
+      "description": "bad macaroni2 shows small surface scratches.",
+      "keywords": "macaroni, defect, scratch, small",
+      "weight": 0.8,
+      "source_id": "Source_macaroni10"
+    },
+    {
+      "src_id": "bad macaroni2",
+      "tgt_id": "combined defect macaroni2",
+      "description": "bad macaroni2 pieces may present combined defects including both colour and physical anomalies.",
+      "keywords": "macaroni, defect, combined",
+      "weight": 0.9,
+      "source_id": "Source_macaroni11"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Macaroni (/ ˌ m æ k ə ˈ r oʊ n i /), known in Italian as maccheroni, is a pasta shaped like narrow tubes.[ 2 ] Made with durum wheat, macaroni is commonly cut in short lengths; curved macaroni may be referred to as 'elbow macaroni''. Some home machines can make macaroni shapes but, like most pasta, macaroni is usually made commercially by large-scale extrusion. The common curved shape is created by different speeds of extrusion on opposite sides of the pasta tube as it comes out of the machine.",
+      "source_id": "Source_macaroni1",
+      "source_chunk_index": 0,
+      "file_path": "https://en.wikipedia.org/wiki/Macaroni#:~:text=Macaroni%20(/%CB%8Cm%C3%A6k,comes%20out%20of%20the%20machine."
+    },
+    {
+      "content": "The word macaroni is often used synonymously with elbow-shaped macaroni, as it is the variety most often used in macaroni and cheese recipes.[ 3 ] In Italy and other countries, the noun maccheroni can refer to straight, tubular, square-ended pasta corta ( lit.   ' short pasta ' ) or to long pasta dishes, as in maccheroni alla chitarra, which is prepared with long pasta such as spaghetti. In the United States, federal regulations define three shapes of dried pasta (macaroni, spaghetti, and vermicelli) as falling under the label of 'macaroni product'.[ 4 ].",
+      "source_id": "Source_macaroni1",
+      "source_chunk_index": 1,
+      "file_path": "https://en.wikipedia.org/wiki/Macaroni#:~:text=Macaroni%20(/%CB%8Cm%C3%A6k,comes%20out%20of%20the%20machine."
+    },
+    {
+      "content": "PASTA – Made from durum wheat mixed with water only; Moisture: max 12.5%; Protein: min 12% by weight; Ash: max 0.9% (dry matter); Broken pieces: max 3% of total weight; Cellulose content: max 0.4% (dry matter); specifications may vary by country and must be approved by HQ if different.",
+      "source_id": "Source_macaroni2",
+      "source_chunk_index": 0,
+      "file_path": "https://itemscatalogue.redcross.int/relief--4/food--5/cereals--18/pasta--FCERPAST.aspx"
+    },
+    {
+      "content": "The product holds its shape and texture after boiling for 10 minutes.",
+      "source_id": "Source_macaroni3",
+      "source_chunk_index": 0,
+      "file_path": "https://itemscatalogue.redcross.int/relief--4/food--5/cereals--18/pasta--FCERPAST.aspx"
+    },
+    {
+      "content": "The gentle shaping stage results in pasta with brighter colours. The complete vacuum blocks the enzyme Poliphenol Oxidase, responsible for the oxidisation of the semolina pigments, thus preserving the amber yellow colours given by the carotenoids and flavonoids. The vacuum also deactivates the enzyme Lipoxygenase, responsible for turning colours grey and the development of unpleasant odours caused by the oxidation of the lipids. The partial deactivation of alpha and beta amylase leads to a reduced occurrence of the Maillard reaction, i.e. the pasta turning brown during drying.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 0,
+      "file_path": "https://d3fm6mi9os3i9d.cloudfront.net/products/brochure/Pavan_dry_pasta_ENG.pdf"
+    },
+    {
+      "content": "The influence of air evacuation on the quality of the end product is mainly of a visual nature. Due to the extraction of the small air bubbles from the dough, the end product obtains a certain transparency which gives 108 PASTA AND SEMOLINA TECHNOLOGY Fig. 4.21 The main components of a single-screw pasta press the pasta a natural yellow colour. The vacuum commonly used in today’s pasta presses lies in the range of 0.8-0.9 bar. Figure 4.23 shows dough development and protein framework creation in the individual process zones of the extrusion press with the co-rotating screw principle. As soon as the first mixing phase starts, the biochemical processes are activated, resulting in a stretching of the thread-like protein molecules as the temperature steadily increases. At the same time new interlinked protein frameworks are established via the disulphide (SS) and sulphydril (SH) groups. The kneading intensity is determined by the speed of the mixerlkneader shafts and by their configuration, with the loading degree of the mixer being monitored and controlled by sensors.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "PASTA – Made from durum wheat mixed with water only; Moisture: max 12.5%; Protein: min 12% by weight; Ash: max 0.9% (dry matter); Broken pieces: max 3% of total weight; Cellulose content: max 0.4% (dry matter); specifications may vary by country and must be approved by HQ if different.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 2,
+      "file_path": "https://itemscatalogue.redcross.int/relief--4/food--5/cereals--18/pasta--FCERPAST.aspx"
+    },
+    {
+      "content": "Irrespective of which material of construction is used, it is normal prac- tice for die manufacturers to buy this themselves in the form of ingots. The die block is cast as a blank (Fig. 5.1) at a foundry. The block is then machined, by the die manufacturer, to hold the detailed insert and to provide the correct line, volume and rate of flow of dough to the die face. The materials for insert construction (both metal and Teflon) are purchased as cylindrical rods; some 3.5 m long (Figs 5.2 and 5.3), the first machining stage being to automatically cut to the desired length.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 3,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "With modern computer-controlled high-temperature dryers the risk of cracking in pasta is much reduced. However, it still does occur and quality assurance needs to be constantly vigilant to prevent cracked product reaching the customer. The reasons for cracking are numerous and can as easily be due to excessive die wear or a change in raw material quality as a failure of the process. In some cases it can take up to 3 days to develop, so random samples of pasta from the warehouse or from retained samples should be examined routinely to spot any problems developing. There are now humidity-controlled cabinets available that can accelerate the occurrence of cracking in faulty product and can be used if a problem is suspected.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 4,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "8.5.2.5 Breakage Breakage, as opposed to cracking, is generally caused by poor mechanical handling, either in the line or more normally during storage and packing. Some delicate shapes are obviously more prone to breakage than others, and the handling systems may need to be adapted to prevent a problem of this nature occurring. Some breakage is inevitable, and even if kept to a low level in the factory, further breakage will occur as pasta is moved through its distribution chain. Its measurement is relatively simple and is normally expressed as a percentage. The normal level allowed in most specifications is below 2% but this may be increased for delicate products. 8.5.2.6 Other visual defects These generally occur at the point of extrusion but their exact level may not be fully recognised until the finished product is examined in detail. They include: wedging (where a piece of pasta is extruded unevenly) poor cut-off (where the cut end of a piece is uneven or closed) damaged insert (where the plastic liner or pin in a die insert produces a malformed piece). These are all preventable with care and can be easily measured if required.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 5,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The product holds its shape and texture after boiling for 10 minutes.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 6,
+      "file_path": "https://itemscatalogue.redcross.int/relief--4/food--5/cereals--18/pasta--FCERPAST.aspx"
+    },
+    {
+      "content": "usually double in size as it re-absorbs the water that was origi-nally removed in the production process. Good quality dried pasta is identified by its slight rough surface and compact body that helps main-tain its firmness in cooking. The great advantage of dry pasta In normal ambient conditions, dried pasta can be stored a long time without the need for preserva-tives or particular storage environ-mental requirements. Moisture and insects are the main concerns dur-ing storage time. Good packaging and suitable storage conditions are sufficient to ward of these dangers. The essential prerequisite is for the pasta not only to be dry, but also to have been dried properly!.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 7,
+      "file_path": "https://www.rotronic.com/media/news/files/1466671919_FF_-_Pasta_Drying.pdf"
+    },
+    {
+      "content": "A significant percentage of pasta products manufactured and sold within the European Community (EC) are made from pure durum wheat (T. durum Desf) semolina. The pastas that are made from pure durum wheat are considered to be better products than those manufactured from hex- aploid wheat, or mixtures of the two species. The manufacture of pastas from common wheat or admixtures of the wheat types, without adequate labelling, is usually considered as adulteration. Italian law (Gazzetta Uffi- ciale, 1967) currently prohibits the manufacture of pasta containing T.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 8,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The most important grain characteristics have been thoroughly con- sidered (Hervey-Murray, 1980), and Fig. 2.3 demonstrates the main wheat grain characteristics. There are often marked differences in the colour of the grains, and T. aestivum in particular can exhibit varying degrees of redness. The three genomes (AABBDD) of T. aestivum carry three genes for redness and are located on the long arms of chromosomes 3A, 3B and 3D (Flintham & Gale, 1995). Hence T. aestivum can express up to three levels of redness whereas the tetraploid T. durum can express only two. However in commercial cultivars of T. durum these genes are not expres- sed, resulting in the amber colour that is desirable and indicative of high quality. This amber grain colour is equivalent to the white grain phenotype in T. aestivum and is associated with poor pre-harvest sprouting resistance in both cases.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 9,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "Unless it is to be sold with a short shelf life as a fresh product, pasta has to be further processed to ensure microbiological and biochemical stability. The usual way of achieving this is to dry the pasta to a moisture content (or water activity) at which microbiological growth is impossible. The dehy- dration process has to be carefully controlled to prevent cracking of the pasta, a fault that is caused by an excessive moisture content gradient between the core and the surface of the product. Cracking is normally evident one or two days after drying as the moisture distribution in the product becomes uniform.",
+      "source_id": "Source_macaroni4",
+      "source_chunk_index": 10,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "2.3.1.6 Contamination with other wheats Contamination of T. durum with bread or common wheat T. aestivum reduces the semolina quality essentially by introducing finer particles (flour) to the semolina. The proteins encoded by the D genome present in T. aestivum include a number of albumins and globulins, which due to their solubility in water decrease the semolina’s cooking quality by making the resulting pasta more sticky. 2.3.1.7 Protein quality and quantity The quality and content of the endogenous protein in a sample of T. durum are probably the most important characteristic as far as pasta-making quality is concerned, hence it often forms a part of the wheat specification. While the absolute protein content is important, the functionality of the gluten proteins present is also of prime consideration, the gluten strength being a major factor in the quality of the cooked pasta.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 0,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "Several European countries including Italy, France and Spain take the view that the incorporation of any common wheat in such pasta is effec- tively adulteration. Such products have been made for many years in a number of countries including Hungary and Russia where the manufacture of pasta from common wheat (T. aestivum) and eggs represented a means of preserving valuable ingredients that were plentiful in the summer months. The pasta produced in this way becomes very sticky once it is cooked.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The level of ash is determined by weighing what remains after the full combustion of a sample of semolina at a given temperature. Results are normally expressed on a dry weight basis. Rapid techniques do exist with the latest near infra-red (NIR) systems giving accurate results within seconds (Fig. 8.1). Typically, good quality pasta will be made from durum semolina with an ash level of less than 0.9 dwb. Pasta made from semolina with an ash content between 0.9% and 1.1% dwb will be darker in colour and taste more ‘wheaty’. Product manufactured above 1.1 % will be very dark with a very strong flavour and, due to the high level of durum flour incorporated into such products, will have a poorer texture. Table 8.3 illustrates the effects of ash content on semolina colour.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 2,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "2.3.1.3 Blackpoint Visual examination will also determine if the sample contains grains with blackpoint, a condition caused by a number of fungi including Alternaria altenata. This common disease turns the kernel dark brown to black and results in dark specks appearing in the semolina. 2.3.1.4 Vitreousness The vitreousness of the T. dururn grain is also an important quality characteristic. The best grades of T. dururn have grains that exhibit high levels of vitreousness and are very hard from the point of view of milling. Grains that are fully non-vitreous (also called starchy, floury or mealy) are significantly softer to mill and contain an endosperm that is starchy, producing white spots in the semolina and pasta. However grains with areas of mealiness within them appear to be little different in terms of milling hardness from.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 3,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "3.2.3 Speck count The types of specks found in semolina can be divided into two types. Black and dominant specks are the result of inadequate wheat cleaning. They tend to be few in number and stand out clearly in the semolina and resultant pasta. Brown specks are smaller and less visible. Their effect, if numerous, is an overall dulling of the colour of pasta both in the dry and cooked form. They are predominantly the result of poor mill performance and flow design (see Chapter 8, section 8.3.1.6).",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 4,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "2.3.1.6 Speck count Specks in semolina are a frequently debated point between miller and pasta maker. Once again their occurrence is a function of a number of different parameters, including; 0 wheat quality 0 wheat cleaning efficiency 0 milling efficiency 0 extraction taken by the miller. The measurement of specks in semolina has always been difficult to Black and dominant specks are the result of poor wheat quality and inadequate screening. These specks are generally small in number, black in colour and stand out clearly in any sample. They also stand out clearly in the finished pasta product. Brown points are the result of poor milling and high extraction. These specks are more numerous but harder to see. Their effect in pasta is to dull down the overall appearance giving a grey effect to a normally bright product.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 5,
+      "file_path": ""
+    },
+    {
+      "content": "Pasta quality is essentially determined by the three influencing factors: raw materials, product formula and production process (Fig. 4.4) The main raw materials, semolina and middlings made from durum wheat or soft wheat respectively, should have a consistent particle size distribution with a high protein quantity andlor quality. The pigment must be stable with little tendency to yellow-brownish discoloration. Coarse semolinas are difficult to process into homogeneous doughs, mainly because of the longer time it takes for the water to penetrate into individual grains of semolina (see section 4.1). Fine semolinas and flours absorb water quickly and are easy to process into a homogeneous dough (see Fig. 4.2). As a consequence, whatever the particular particle size of the material, the particle size distribution should be as narrow as possible. In other words, coarse and fine semolinas and flours should not be processed together, otherwise the smaller particles will absorb the available feedwater more quickly than coarser particles. This would either considerably increase the mixing time, or make it impossible to obtain a homogeneous mix. The result would be ‘white specks’ in the end product. In order to eliminate them, the kneading action would have to be more intense during extrusion, generating more heat and thereby affecting the cooking quality of the end product.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 6,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "Whatever particle size is appropriate for your equipment, the ideal semolina particle size will lie in a very narrow range. Semolina that contains a large amount of flour or, in the other extreme, large particles will not hydrate evenly, and the resulting pasta may show white specks and exhibit excessive starch release on cooking. The measurement of particle size range of a semolina is generally carried out on a motorised nest of sieves of different sizes for a defined period of time. Once again there is no standard technique employed across the industry and this can lead to disagreements between miller and pasta maker. Ideally the mill will have exactly the same type of sieving machine as the factory and the sieves will be calibrated and certified on an annual basis. The sieves should also be checked regularly for damage, which can dramatically change the result. [sourrce:https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf]",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 7,
+      "file_path": ""
+    },
+    {
+      "content": "The design and production of the dies responsible for all these shapes requires a blend of art and craft, and in a very enlightening and entertaining piece Chapter 5 takes us into the world of pasta die design.Perhaps the most important advances in the past decade have been in the next critical point in modern pasta making: drying. Ten years ago it was normal for spaghetti drying to take 20 hours or more. At the time the technology was not available to speed this process up and to understand why one must appreciate the difficulties involved in drying this product without drying faults such as internal cracking (still often referred to as ‘checking’). Chapter 6 presents the background and theories of drying pasta and brings us up to date with the current technology.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 8,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "Unless it is to be sold with a short shelf life as a fresh product, pasta has to be further processed to ensure microbiological and biochemical stability. The usual way of achieving this is to dry the pasta to a moisture content (or water activity) at which microbiological growth is impossible. The dehy- dration process has to be carefully controlled to prevent cracking of the pasta, a fault that is caused by an excessive moisture content gradient between the core and the surface of the product. Cracking is normally evident one or two days after drying as the moisture distribution in the product becomes uniform. [spurce: https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf]",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 9,
+      "file_path": ""
+    },
+    {
+      "content": "The moisture difference remaining after drying and cooling is unsustainable and will even out over the first few days of storage as the core loses moisture to the outside regions. As a consequence, the core will try to shrink while the outside is trying to expand. As the product is now too cold and dry to accommodate these dimensional changes, the final product ends up with stresses locked inside it. If they exceed the strength of the pasta at any point then cracking will occur.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 10,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The strength of the pasta will depend on the quantity and quality of the protein and the state of the starch (gelatinisedhngelatinised, glassyhb- bery, etc.). The time before cracking appears will depend on the equili- bration time at the storage temperature being used and the relative humidity (which will control the extent of any further moisture losses). Product geometry can affect cracking in two ways. First, when dealing with products of different thicknesses, the timescale of drying needs to be adjusted to attain the same degree of moisture equilibration, i.e. in pro- portion to the thickness squared. Second, product shapes need to avoid regions which can concentrate stresses locally so the product cracks, even though the average stress level is acceptable. Tight radii and re-entrant corners can easily give local five- to ten-fold increases in stresses. Products with widely differing wall thicknesses are particularly prone to cracking as such walls will shrink at different rates.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 11,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "With modern computer-controlled high-temperature dryers the risk of cracking in pasta is much reduced. However, it still does occur and quality assurance needs to be constantly vigilant to prevent cracked product reaching the customer. The reasons for cracking are numerous and can as easily be due to excessive die wear or a change in raw material quality as a failure of the process. In some cases it can take up to 3 days to develop, so random samples of pasta from the warehouse or from retained samples should be examined routinely to spot any problems developing. There are now humidity-controlled cabinets available that can accelerate the occurrence of cracking in faulty product and can be used if a problem is suspected.",
+      "source_id": "Source_macaroni5",
+      "source_chunk_index": 12,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The key safety control point is the product moisture content after drying and cooling. The target level is based on the water activity of the product. This should be below the point that will support any microbiological growth. Published literature demonstrates that some hydrophytic moulds can survive down to a water activity (a,) of 0.65. In pasta this equates to a moisture content of about 12.6 % , hence the generally accepted maximum moisture content for dry pasta is set at 12.5% or below. At this moisture content pasta will not be affected by microbiological attack provided it is stored under conditions which will prevent it from picking up moisture. For pasta destined for incorporation into dry sachet meals or dehydrated soups the moisture content of the pasta may often need to be much lower to match the water activity requirements of the other ingredients.",
+      "source_id": "Source_macaroni6",
+      "source_chunk_index": 0,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "PASTA – Made from durum wheat mixed with water only; Moisture: max 12.5%; Protein: min 12% by weight; Ash: max 0.9% (dry matter); Broken pieces: max 3% of total weight; Cellulose content: max 0.4% (dry matter); specifications may vary by country and must be approved by HQ if different.",
+      "source_id": "Source_macaroni6",
+      "source_chunk_index": 1,
+      "file_path": "https://itemscatalogue.redcross.int/relief--4/food--5/cereals--18/pasta--FCERPAST.aspx"
+    },
+    {
+      "content": "1 Modern pasta production utilizes automated systems achieving outputs of 3,500 kg/h for spaghetti and 8,000 kg/h for macaroni. 2 High temperature drying (60-80°C) reduces drying times to 10 hours, while ultrahigh temperature (80-100°C) reduces it to 6 hours. 3 Semolina granulation affects hydration rates; ideal particle size ranges from 450 to 150 µm for pasta quality. 4 Pasta must be dried to 12% moisture for optimal shelf life, preventing degradation of nutrients and preventing checking. 5 Quality control in semolina includes monitoring speck count, ash content, and gluten index to ensure product integrity.",
+      "source_id": "Source_macaroni6",
+      "source_chunk_index": 2,
+      "file_path": "https://www.academia.edu/32989147/Extruding_and_Drying_of_Pasta"
+    },
+    {
+      "content": "Why the need to measure humidity? After processing the dough, pasta normally has a moisture content of approximately 30% (depending on the type of dough and the shape). It is considered dry when its internal moisture content is equal to or less than 12.5%. In addition to being dry, the pasta must be 'stable'. In other words, within certain environmental limits (air temperature and humidity) the remaining moisture content must remain uniform. Pasta dough starts with a moisture content of approximately 30% where it is in a 'plastic state'. A material in a plastic state can deform under the action of external forces without any particular tension forming inside it and it can permanently keep the shape acquired as a result of these forces.",
+      "source_id": "Source_macaroni7",
+      "source_chunk_index": 0,
+      "file_path": "https://www.rotronic.com/media/news/files/1466671919_FF_-_Pasta_Drying.pdf"
+    },
+    {
+      "content": "3.2.5 Moisture The final moisture content of semolina results from three different influ- ences. First is the need to maximise mill gain by incorporating as much water as possible. Second is the ideal moisture content for optimal milling performance and product handling. Third is the overriding safety require- ment not to exceed a moisture level where mould growth or other micro- biological problems could occur. Meeting a customer specification is therefore a combination of the correct selection and gristing of durum wheat and the correct cleaning and milling of that wheat.",
+      "source_id": "Source_macaroni7",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The key safety criterion in dried pasta is moisture content. Failure to achieve a reduction to 12.5% will leave the product open to microbial attack. A regime to check the finished product off all lines on a very regular basis is essential to ensure the production of safe product. The methods used for checking the moisture content of product are detailed in section 8.4.7. Once again the calibration of whichever rapid technique is employed to a recognised standard is essential to demonstrate overall control.",
+      "source_id": "Source_macaroni8",
+      "source_chunk_index": 0,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "The influence of the dough moisture is widely known. The pressure drops as the dough moisture rises, and vice versa. There are certain upper and lower limits to the moisture range. Dough with an excessive moisture content results in a sticky product, in particular in the first drying phase. If the dough is too dry, a temperature rise is created by the increased extrusion pressure, normally resulting in a degradation of quality and colour (white specks). Figure 4.18 shows the relationship between extrusion pressure and the firmness of the resultant spaghetti.",
+      "source_id": "Source_macaroni8",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "4.2.4.6 Vacuum defects Negative pressures of less than 0.7bar are sufficient to produce lower transparency and therefore colour degradation. The very numerous small air bubbles trapped in the dough already become visible after predrying. Unlike burns, vacuum defects are visible all over the pasta shape. The question of how vacuum defects influence the cooking quality has, to our knowledge, not been examined in depth, since such products are in any case impossible to sell in today’s markets.",
+      "source_id": "Source_macaroni8",
+      "source_chunk_index": 2,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "8.4.5 Transfer to the extrusion barrel and application of vacuum The distance between the mixer and the extruder varies with the type of equipment used and the number of barrels installed. The movement of the fully hydrated crumb from the main mixer to the rear of the barrel can be either by gravity or by transverse screw. Typically, vacuum is applied at this point so the crumb generally passes through an airtight seal, such as a rotary air lock or mushroom-ended worm. Failure to apply a vacuum, or to achieve an adequate vacuum at this point, will quickly lead to a deterioration in product quality as air pockets remain entrapped in the product matrix during drying, leading to white flecking and lack of strength in the finished product. Once again the run- ning of the vacuum system is the responsibility of the press operator. However, the quality assurance inspector should be able to spot the early signs of ‘low-vacuum’ product (ideally after the predrier) and alert the press operator accordingly. Most modern machinery is fitted with alarms, should the vacuum drop or fail, but sometimes these systems can be misled, e.g. by a blocked filter recording a full vacuum when the product is seeing none.",
+      "source_id": "Source_macaroni9",
+      "source_chunk_index": 0,
+      "file_path": ""
+    },
+    {
+      "content": "On a molecular scale, wheat protein is affected by heat. Unlike many manmade materials, it becomes stiffer if heated above certain system-specific temperatures. The classic example of the effect of heat on protein is boiling an egg. After the egg has been cooked, the white forms a gel and there is no way of returning it to the viscous, stringy state it was in prior to cooking. Proteins in durum semolina behave in a similar way to an egg white. At room temperature, wet gluten is an extremely elastic material, rather like chewing gum. As the temperature rises above about 55°C, the gluten becomes increasingly tough and stiff as it irreversibly forms a gel. This transformation is extremely undesirable in the extruder. Any protein gel formed in the barrel will be broken by passage through the die and will appear in the finished product as fragments of broken gel (very much as chopping an egg gives you fragments of gelled egg white). These fragments disrupt the longer distance network which is necessary for strong pasta and for entrapment of the starch granules. If close to the surface, they are particularly noticeable because they prevent a smooth surface from being formed.",
+      "source_id": "Source_macaroni9",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "In the case of short goods lines, large differences in product length occur when the material is cut at the die. The cooking quality is degraded by the increased dough slippage between the pressure side of the screw and the cylinder wall and the resultant heating of the dough. In addition, in the case of heavy screw and cylinder wear, crooked paste may be produced. This is a consequence of the partial destruction of the protein framework. We know from experience that a clearance of about 0.059-0.078 inches (1.5-2 mm) between the screw and the cylinder will produce a perceptible capacity decrease and cause product degradation.",
+      "source_id": "Source_macaroni10",
+      "source_chunk_index": 0,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "During the extrusion process, heat is generated in the dough by pressure and friction. To a certain extent this heat is welcome and also necessary for extrusion. However, attention must be paid to the surplus heat generated during dough preparation. Excessive dough heating during the extrusion phase will, as mentioned, have a negative effect on the gluten framework and on the cooking quality of the finished product. Basically it can be said that a dough temperature (measured after the die) of more than 50-52°C will cause the cooking quality to deteriorate.",
+      "source_id": "Source_macaroni10",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "8.5.2.3 Die wear All retail pasta and most ingredient pasta is sold with a guide to cooking time. The biggest single element in determining how long a pasta product takes to cook is the thickness of the die. When purchasing a die this parameter is often specified to the die maker, who gauges the size of the extrusion orifice accordingly. With time this orifice wears and the resulting pasta wall thickness increases (see Chapter 5). An increase in wall thickness of 0.1mm could result in an increase in 1 min on the cooking time. Die wear occurs fastest on complicated shapes with a high degree of curvature, such as shells. It is therefore a quality assurance requirement to monitor wall thickness on a regular basis, e.g. every run, and report when a measurement approaches the specified limit. By recording the tonnage produced through each die at the same time, it becomes easy to predict when new inserts are required and, therefore, allows better planning.",
+      "source_id": "Source_macaroni11",
+      "source_chunk_index": 0,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "‘Nesting’ is a phenomenon particularly associated with shells, where there is a tendency for one shell to enter another (in part or totally), resulting in the final dried product containing poorly cooking product. In the main this is determined by the geometry of the shape and can be minimised in the original shape design. In the worst case, such product will become inextricably but loosely linked or even firmly adhered together during drying; such product can be expected to give hard and undercooked pasta for serving. We have considered earlier the issue of wear and insert tolerance. Different shapes will exhibit very different wear rates, as will the different constructional materials. Just as shells can be susceptible to nesting, so they are also prone to higher wear rates than many other shapes. If we take, for example, a Teflon quick-cooking (say 5 min), medium, corrugated shell, then the much higher flow rate of dough, through the insert’s central plane, will lead to rapid wear at this point, with loss of the corrugations (ridges), thickening of the shape (perhaps leading to post-drier cracking) and a cooking performance exceeding that required. To the layman, the shell is a simple shape; in reality this is not the case and it is prone to many problems in design and functionality.",
+      "source_id": "Source_macaroni11",
+      "source_chunk_index": 1,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    },
+    {
+      "content": "8.5.2.5 Breakage Breakage, as opposed to cracking, is generally caused by poor mechanical handling, either in the line or more normally during storage and packing. Some delicate shapes are obviously more prone to breakage than others, and the handling systems may need to be adapted to prevent a problem of this nature occurring. Some breakage is inevitable, and even if kept to a low level in the factory, further breakage will occur as pasta is moved through its distribution chain. Its measurement is relatively simple and is normally expressed as a percentage. The normal level allowed in most specifications is below 2% but this may be increased for delicate products. 8.5.2.6 Other visual defects These generally occur at the point of extrusion but their exact level may not be fully recognised until the finished product is examined in detail. They include: wedging (where a piece of pasta is extruded unevenly) poor cut-off (where the cut end of a piece is uneven or closed) damaged insert (where the plastic liner or pin in a die insert produces a malformed piece). These are all preventable with care and can be easily measured if required.",
+      "source_id": "Source_macaroni11",
+      "source_chunk_index": 2,
+      "file_path": "https://dl1.fanofood.ir/books/PASTA%20AND%20SEMOLINA%20TECHNOLOGY.pdf"
+    }
+  ]
+}

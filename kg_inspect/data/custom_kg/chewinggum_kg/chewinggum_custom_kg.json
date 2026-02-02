@@ -1,0 +1,218 @@
+{
+  "entities": [
+    {
+      "entity_name": "chewinggum",
+      "entity_type": "food",
+      "description": "Chewing gum is defined as a sweetened, flavoured confection composed primarily of latex (natural or artificial). It is an elastic and extendable mass.",
+      "source_id": "Source_chewinggum1"
+    },
+    {
+      "entity_name": "good chewinggum",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The object is a bar of soap, typically rectangular with rounded edges. It exhibits a uniform color, generally in shades of white or off-white, with a smooth and slightly glossy surface. The soap bar maintains consistent shape and texture throughout, aligned with expected norms for an unused product. There are no visible defects or anomalies such as cracks, chips, or significant irregularities. Any minor surface imperfections or slight variations in texture can be attributed to the manufacturing process or typical handling and are considered normal characteristics rather than defects. The background, often textured and dark, provides a contrasting backdrop that does not affect the soap itself, and variations in lighting or shadowing are typical and do not indicate defects. The overall presentation of the soap bar is clean and undamaged, fulfilling the standard appearance criteria for such an item.",
+      "source_id": "Source_chewinggum1"
+    },
+    {
+      "entity_name": "chunk of gum missing chewinggum",
+      "entity_type": "defect type",
+      "description": "A defect where a noticeable portion of the chewing gum piece is absent, resulting in an irregular shape or missing segment.",
+      "source_id": "Source_chewinggum2"
+    },
+    {
+      "entity_name": "combined defect chewinggum",
+      "entity_type": "defect type",
+      "description": "A defect consisting of multiple anomaly types occurring simultaneously on the chewing gum piece, such as missing parts combined with scratches or discoloration.",
+      "source_id": "Source_chewinggum3"
+    },
+    {
+      "entity_name": "corner missing chewinggum",
+      "entity_type": "defect type",
+      "description": "A defect where a corner of the chewing gum is broken or missing, leading to asymmetry compared to a normal piece.",
+      "source_id": "Source_chewinggum4"
+    },
+    {
+      "entity_name": "scratches chewinggum",
+      "entity_type": "defect type",
+      "description": "Surface-level linear marks or abrasions on the chewing gum, causing texture irregularities visible on the top or sides.",
+      "source_id": "Source_chewinggum5"
+    },
+    {
+      "entity_name": "similar colour spot chewinggum",
+      "entity_type": "defect type",
+      "description": "A spot that closely matches the gum’s overall color but is still visibly distinct, indicating subtle discoloration or surface contamination.",
+      "source_id": "Source_chewinggum6"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "good chewinggum",
+      "description": "Good-quality chewing gum results from meticulous manufacturing, high-purity ingredients, and optimal textural and sensory attributes. It features ideal hardness, softness, low adhesiveness, and long-lasting flavor, produced under strict, hygienic, and precisely controlled conditions.",
+      "keywords": "good, chewinggum",
+      "weight": 0.8,
+      "source_id": "Source_chewinggum1"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "chunk of gum missing chewinggum",
+      "description": "Chunk of gum missing is a structural defect where a significant portion of the chewing gum is absent.",
+      "keywords": "defect, chunk missing, chewinggum",
+      "weight": 0.9,
+      "source_id": "Source_chewinggum2"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "combined defect chewinggum",
+      "description": "Combined defect occurs when multiple types of anomalies appear simultaneously on a chewing gum piece.",
+      "keywords": "defect, combined, chewinggum",
+      "weight": 0.9,
+      "source_id": "Source_chewinggum3"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "corner missing chewinggum",
+      "description": "Corner missing is a geometric defect where a corner portion of the gum is broken or absent.",
+      "keywords": "defect, corner missing, chewinggum",
+      "weight": 0.9,
+      "source_id": "Source_chewinggum4"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "scratches chewinggum",
+      "description": "Scratches represent surface abrasions on the chewing gum.",
+      "keywords": "defect, scratches, chewinggum",
+      "weight": 0.9,
+      "source_id": "Source_chewinggum5"
+    },
+    {
+      "src_id": "chewinggum",
+      "tgt_id": "similar colour spot chewinggum",
+      "description": "Similar colour spot is a subtle discoloration that appears close to the gum color but is still visible.",
+      "keywords": "defect, spot, similar colour, chewinggum",
+      "weight": 0.9,
+      "source_id": "Source_chewinggum6"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "Chewing gum is a sweetened, flavored confection composed primarily of latex, both natural and artificial. Organic latex, a milky white fluid produced by a variety of seed plants, is best known as the principle component of rubber. Used as a snack, gum has no nutritive value, and, when people have finished chewing, they generally throw it away rather than swallow it.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Chewing gum is defined as an elastic and extendable mass, which has two-phases, containing sugar, polyols, gum base, aroma, acidulants, colors, and other additives, according to product type (Potineni & Peterson, 2008; Valduga, Lazzari, Vardanega, & Di Luccio, 2012). These phases are known water-insoluble base and water-soluble base. Gum base is the insoluble part of gum and left in the mouth after chewing and it generally comprises less than 50 % of the final chewing gum. It con-tains elastomers, resins, plasticizers, fillers, emulsifiers and antioxidants (Estruch, 2008; Farber et al., 2010). The ingredients of the gum base composition show significant compatibility among themselves. These substances do not enter into any chemical reaction with each other (Estruch, 2008). The other phase is the water-soluble base and for sug-ared chewing gums, it includes sugar whose amount and grain size determine the brittleness of the resulting gum, and glucose syrup and/or glucose that act as humectants and coat the sugar particles to stabilize their suspension and keep the gum flexible (Wong, Yu, Curran, & Zhou, 2009).",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S2213329120300204"
+    },
+    {
+      "content": "Chewing gums have a rubber-like structure and, depending on the type of final product, they are composed of various ingredients such as sugar, polyols, gum base, aroma, acidulants, colors, sweeteners, and different additives (Valduga, Lazzari, Xardanega, & Luccio, 2012). It is a two-phase product consisting of a water-soluble continuous phase and a discontinuous phase, which is the gum base. These phases are generally mixed in a proportion of 1:3, respectively. The concentration of flavoring ingredients in chewing gum is approximately 1% (Potineni & Peterson, 2008a). Chewing gum is generally produced from chicle, a natural latex raw material, or polyisobutylene (Baysal, Ozbek, & Akman, 2010).",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443?via%3Dihub"
+    },
+    {
+      "content": "Ingredients of chewing gum have an important role in textural properties of the end product as well as machinability of intermediate products. Resins are used in chewing gum bases in order to provide a cohesive body and strength, and most often include glycerol esters of gum rosin, terpene resins and polyvinyl acetate (Tisdale & Wilkins, 2014). McGowan et al. (2005) noted that addition of waxes to formulation results in improvement of sensory properties in terms of flavor release, shelf life, and texture. Crystallization of sugar or polyols result in deterioration in texture of the products. Therefore, amounts of sugars or polyols used in the formulation could be considered regarding textural characteristics. Otherwise, consumer acceptability of the products could be adversely influenced by crystallization.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 3,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443?via%3Dihub"
+    },
+    {
+      "content": "Texturizers or fillers are the low-cost ingredients that modify the texture of the gum base as well as help in processing. Some examples of texturizers are calcium carbonate, magnesium and aluminum silicate, and magnesium. Use of certain texturizers such as calcium carbonate poses a problem in formulations that require addition of acidic flavors since acid readily reacts with calcium carbonate. This not only results in loss of acids but also can damage chewing gum packages and candy-coated gums due to the production of carbon dioxide gas. In such cases, talc is commonly used since it does not react when in contact with acids; however, the cost is high (Raithore, 2012).",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 4,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443?via%3Dihub"
+    },
+    {
+      "content": "Standards for raw materials are equally high. If natural rubber such as chicle is used, it must pass several tests for cleanliness and texture. Before shipment, chicle is inspected for rocks, dirt, and other obvious impurities. If it is too milky, dry, or dirty, it is rejected. Chewing gum is manufactured completely untouched by human hands, its entire production process taking place in clean, airconditioned facilities. Each ingredient is tested for purity before being used, and only the highest quality ingredients are accepted. Every large company has a research laboratory on its premises, thereby simplifying the standard procedure of inspecting and testing ingredients at every stage of the manufacturing process. The research and development department is also responsible for investigating new ways to produce and package gum, and for developing new products.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 5,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Perhaps because chewing gum has always had a bad reputation as an unsanitary and crass junk food, but more likely because it is intended for human consumption, chewing gum factories have for decades been known for immaculate conditions.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 6,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "A successful piece of gum must be chewy and fresh, and bubble gum in particular must be both resilient and soft. With all types of gum, freshness and texture depend upon moistness. Gum must also contain the right amount of flavor oil. While too much solvent will make a gum sticky and hard to cut, it must contain enough flavor to mask the taste of the gum base and to last for a reasonably long time. For these reasons, the flavor oils used in gum are highly concentrated. A long shelf-life is also desirable, and every pack of gum is dated. After that date, the manufacturer asks that the gum be disposed of. To ensure that merchants do this, one manufacturer will replace unsold, out-of-date gum for free.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 7,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Low adhesiveness values for chewing gum are consid-ered as a positive evaluation (McGowan et al., 2005). According to the obtained results in the present study, it can be stated that it is possible to modify this parameter by increasing the powdered sugar amount since the most significant term in the adhesiveness model was found as powdered sugar*sorbitol interaction and its coefficient had a negative sign, which can be seen in ANOVA tables in S.F. (Table 11, Table 4). Therefore, increase in the sugar*sorbitol concentration caused decrease in adhesiveness of chewing gum.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 8,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S2213329120300204"
+    },
+    {
+      "content": "Cohesiveness is the extent to which a material can be deformed before breaking (Szczesniak, 2002). According to the ANOVA table (S.F. Table 12), there were no significant terms although the linear model was found significant. It can be stated according to the contour plots in Fig. 3d, there is compatibility between the results obtained for this parameter. Because, it was determined that the value of cohesiveness showed a decrease with the increase of powdered sugar amount. It was also found that the addition of glucose syrup increased the integrity of the chewing gum and the increase in the concentration increased the cohesiveness.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 9,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S2213329120300204"
+    },
+    {
+      "content": "Standards for raw materials are equally high. If natural rubber such as chicle is used, it must pass several tests for cleanliness and texture. Before shipment, chicle is inspected for rocks, dirt, and other obvious impurities. If it is too milky, dry, or dirty, it is rejected. Chewing gum is manufactured completely untouched by human hands, its entire production process taking place in clean, airconditioned facilities. Each ingredient is tested for purity before being used, and only the highest quality ingredients are accepted. Every large company has a research laboratory on its premises, thereby simplifying the standard procedure of inspecting and testing ingredients at every stage of the manufacturing process. The research and development department is also responsible for investigating new ways to produce and package gum, and for developing new products.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 10,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "it was determined that samples with low hardness were more favourable (Krause, Henson, & Reineccius, 2011; McGowan, Padua, & Lee, 2005; Potineni & Peterson, 2008). However, production of softer chewing gum or a product contains the risk of exposure to structural deformations during transportation, storage, and sales. For this reason, it is very important to produce chewing gum with optimum hardness value for the consumer appeal and sales strategy. In addition, it has an effect on aroma release, which is a very important parameter for the quality of chewing gum. For instance, De Roos (2003) stated that release rates of volatile flavor compounds were higher in soft stick gum than hard stick gum. In another similar study, Aslani and Jalilian (2013) found that the release of caffeine from softer chewing gums was more than the ones produced with harder gum bases. However, this is not always straight-forward as in another study, Palabiyik, Toker, Konar, Gunes et al. (2018) investigated microencapsulated pomegranate peel extract usage in chewing gums and found that release rates of punicalagin and ellagic acid were higher in chewing gum with 1903 g hardness value than chewing gum with 1276 g hardness value. This might be caused by the difference between hardness values of un-chewed gum and chewed chewing gum in which water-soluble components interact with the saliva. Therefore, it was also crucial to analyze the textural properties of chewed and un-chewed chewing gums.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 11,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S2213329120300204"
+    },
+    {
+      "content": "A successful piece of gum must be chewy and fresh, and bubble gum in particular must be both resilient and soft. With all types of gum, freshness and texture depend upon moistness. Gum must also contain the right amount of flavor oil. While too much solvent will make a gum sticky and hard to cut, it must contain enough flavor to mask the taste of the gum base and to last for a reasonably long time. For these reasons, the flavor oils used in gum are highly concentrated. A long shelf-life is also desirable, and every pack of gum is dated. After that date, the manufacturer asks that the gum be disposed of. To ensure that merchants do this, one manufacturer will replace unsold, out-of-date gum for free.",
+      "source_id": "Source_chewinggum1",
+      "source_chunk_index": 12,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Standards for raw materials are equally high. If natural rubber such as chicle is used, it must pass several tests for cleanliness and texture. Before shipment, chicle is inspected for rocks, dirt, and other obvious impurities. If it is too milky, dry, or dirty, it is rejected. Chewing gum is manufactured completely untouched by human hands, its entire production process taking place in clean, airconditioned facilities. Each ingredient is tested for purity before being used, and only the highest quality ingredients are accepted. Every large company has a research laboratory on its premises, thereby simplifying the standard procedure of inspecting and testing ingredients at every stage of the manufacturing process. The research and development department is also responsible for investigating new ways to produce and package gum, and for developing new products.",
+      "source_id": "Source_chewinggum2",
+      "source_chunk_index": 0,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Ingredients of chewing gum have an important role in textural properties of the end product as well as machinability of intermediate products. Resins are used in chewing gum bases in order to provide a cohesive body and strength, and most often include glycerol esters of gum rosin, terpene resins and polyvinyl acetate (Tisdale & Wilkins, 2014). McGowan et al. (2005) noted that addition of waxes to formulation results in improvement of sensory properties in terms of flavor release, shelf life, and texture. Crystallization of sugar or polyols result in deterioration in texture of the products. Therefore, amounts of sugars or polyols used in the formulation could be considered regarding textural characteristics. Otherwise, consumer acceptability of the products could be adversely influenced by crystallization.",
+      "source_id": "Source_chewinggum3",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443?via%3Dihub"
+    },
+    {
+      "content": "it was determined that samples with low hardness were more favourable (Krause, Henson, & Reineccius, 2011; McGowan, Padua, & Lee, 2005; Potineni & Peterson, 2008). However, production of softer chewing gum or a product contains the risk of exposure to structural deformations during transportation, storage, and sales. For this reason, it is very important to produce chewing gum with optimum hardness value for the consumer appeal and sales strategy. In addition, it has an effect on aroma release, which is a very important parameter for the quality of chewing gum. For instance, De Roos (2003) stated that release rates of volatile flavor compounds were higher in soft stick gum than hard stick gum. In another similar study, Aslani and Jalilian (2013) found that the release of caffeine from softer chewing gums was more than the ones produced with harder gum bases. However, this is not always straight-forward as in another study, Palabiyik, Toker, Konar, Gunes et al. (2018) investigated microencapsulated pomegranate peel extract usage in chewing gums and found that release rates of punicalagin and ellagic acid were higher in chewing gum with 1903 g hardness value than chewing gum with 1276 g hardness value. This might be caused by the difference between hardness values of un-chewed gum and chewed chewing gum in which water-soluble components interact with the saliva. Therefore, it was also crucial to analyze the textural properties of chewed and un-chewed chewing gums.",
+      "source_id": "Source_chewinggum4",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S2213329120300204"
+    },
+    {
+      "content": "A successful piece of gum must be chewy and fresh, and bubble gum in particular must be both resilient and soft. With all types of gum, freshness and texture depend upon moistness. Gum must also contain the right amount of flavor oil. While too much solvent will make a gum sticky and hard to cut, it must contain enough flavor to mask the taste of the gum base and to last for a reasonably long time. For these reasons, the flavor oils used in gum are highly concentrated. A long shelf-life is also desirable, and every pack of gum is dated. After that date, the manufacturer asks that the gum be disposed of. To ensure that merchants do this, one manufacturer will replace unsold, out-of-date gum for free.",
+      "source_id": "Source_chewinggum5",
+      "source_chunk_index": 0,
+      "file_path": "https://www.madehow.com/Volume-1/Chewing-Gum.html"
+    },
+    {
+      "content": "Ingredients of chewing gum have an important role in textural properties of the end product as well as machinability of intermediate products. Resins are used in chewing gum bases in order to provide a cohesive body and strength, and most often include glycerol esters of gum rosin, terpene resins and polyvinyl acetate (Tisdale & Wilkins, 2014). McGowan et al. (2005) noted that addition of waxes to formulation results in improvement of sensory properties in terms of flavor release, shelf life, and texture. Crystallization of sugar or polyols results in deterioration in texture of the products. Therefore, amounts of sugars or polyols used in the formulation should be considered regarding textural characteristics; otherwise, consumer acceptability of the products could be adversely influenced by crystallization. Sugar-free products are very popular and sugar is replaced by polyols and high-intensity sweeteners during their production. This replacement influences both the release of flavor compounds and the product texture (Siefarth et al., 2011).",
+      "source_id": "Source_chewinggum6",
+      "source_chunk_index": 0,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443"
+    },
+    {
+      "content": "Elastomers play an important hydrophilic detackifier role by absorbing saliva and becoming slippery when the gum is chewed (Tisdale & Wilkins, 2014). Besides, emulsifier choice in chewing gum production should also be taken into consideration, and emulsifiers with hydrophilic-lipophilic balance (HLB) values between 1.6 and 7.0 should be preferred, because in some cases emulsifiers also undertake plasticizer functions. Emulsifiers provide a smooth surface for gum and reduce its adhesive nature as well as aid in mixing. They bring the normally incompatible constituents of the gum base together so that a single continuous and finely dispersed stable system can be formed. They may also help incorporate flavors into the gum base to provide uniform flavor distribution and reduce the stickiness of gum to teeth and lips (Raithore, 2012). Other ingredients such as waxes and plasticizers are used to improve the texture of gum bases so as to give a better chewing quality to gum. By softening the gum base, they also help in the blending procedure. The physical properties of ingredients present in chewing gum formulations also have an impact on textural properties. In this respect, sugar can be accepted as the most important ingredient. Despite a lack of systematic study, manufacturers of chewing gum have found that the particle size of sucrose does have an impact not only on the manufacturing process but also on the final texture of the gum. Sizes below 40 µm are found to make the product firmer, whereas those over 150 µm give a sandy texture (Raithore, 2012). The interaction between texture and flavor, and the influence of chewing gum texture on the release behavior of volatile compounds in terms of direction and level, have been investigated in different studies. The texture and moisture content of the food material can influence the intensity of forces applied during oral processing, such as chewing and swallowing; therefore, they influence the flavor release characteristics in both temporal and intensity dimensions (Blee, Linforth, Yang, Brown, & Taylor, 2011). Partitioning of flavor compounds is affected by the texture and composition of the food (Ovejero-Lopez, Haahr, Van den Berg, & Bredie, 2004). Texture and flavor interaction is complicated and affected by many factors simultaneously. By changing the proportion of flavors, the texture of the resulting gum product can vary (Raithore, 2012). Correlations between texture and flavor release in chewing gum models have been investigated in several studies (De Ross, 2003; Potineni & Peterson, 2008).",
+      "source_id": "Source_chewinggum2",
+      "source_chunk_index": 1,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443"
+    },
+    {
+      "content": "Texturizers or fillers are the low-cost ingredients that modify the texture of the gum base as well as help in processing. Some examples of texturizers are calcium carbonate, magnesium and aluminum silicate, and magnesium. Use of certain texturizers such as calcium carbonate poses a problem in formulations that require addition of acidic flavors since acid readily reacts with calcium carbonate. This not only results in loss of acids but also can damage chewing gum packages and candy-coated gums due to the production of carbon dioxide gas. In such cases, talc is commonly used since it does not react when in contact with acids; however, the cost is high (Raithore, 2012).",
+      "source_id": "Source_chewinggum3",
+      "source_chunk_index": 1,
+      "file_path": "https://www.sciencedirect.com/science/article/abs/pii/S0924224416301443?via%3Dihub"
+    }
+  ]
+}

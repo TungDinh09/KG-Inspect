@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "entity_name": "pipe_fryum",
+      "entity_type": "food",
+      "description": "A pipe fryum is a low-moisture, starchy food pellet, typically cylindrical in shape, produced via a high-temperature extrusion process. When subjected to rapid heat, such as deep frying, the moisture within the pellet rapidly vaporizes, causing the starch matrix to gelatinize and expand, forming a light, hollow, and porous snack",
+      "source_id": "Source_pipe_fryum1"
+    },
+    {
+      "entity_name": "good pipe_fryum",
+      "entity_type": "quality status",
+      "description": "<Normal Characteristics>\n Description: The objects in the images are all consistent with standard characteristics for items made from soft, solid materials such as wax, soap, or similar substances. They exhibit a slightly textured surface with a uniform beige or light brown color, often seen in such materials. Each object has a rectangular or cylindrical shape, and they are typically set against a solid black background, which accentuates their color and texture features.\n Shape and Structure: The edges and corners of the objects are generally clean and well-defined, without any visible tears, chips, or deformations. The surfaces may show slight irregularities and variations in texture or color, which are considered inherent 'noise features' typical of the material rather than defects.\n Color and Design: The colors across the objects are consistent, embodying natural variations that do not indicate damage or irregular patterns. The textures appear granular or rough, contributing to their expected appearance without suggesting flaws.\n Noise Features: Minor surface variations, speckles, and subtle color differences are common and are part of the inherent characteristics of these materials due to their natural properties or the manufacturing process. These features are not regarded as defects but rather as normal aspects of their appearance. Overall, the objects can be classified as normal specimens with no discernible defects or anomalies.",
+      "source_id": "Source_pipe_fryum2"
+    },
+    {
+      "entity_name": "burnt pipe_fryum",
+      "entity_type": "defect",
+      "description": "A pipe-shaped fryum showing localized dark brown spots caused by overheating during the drying or frying process. The surface displays small burnt patches where excess heat has led to charring, resulting in discoloration and potential texture degradation.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "corner or edge breakage pipe_fryum",
+      "entity_type": "defect",
+      "description": "A pipe-shaped fryum exhibiting broken or chipped corners and edges. Portions of the outer rim are missing due to mechanical stress, handling damage, or fragile structure during drying or frying. The defect results in irregular edges instead of the expected smooth cylindrical form.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "different colour spot pipe_fryum",
+      "entity_type": "defect",
+      "description": "A pipe-shaped fryum displaying a small, dark-colored spot that contrasts with the uniform beige surface. This discoloration typically arises from localized contamination, uneven ingredient mixing, or minor burnt particles adhering during processing. The spot appears distinctly darker than the surrounding material.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "similar colour spot pipe_fryum",
+      "entity_type": "defect",
+      "description": "A pipe-shaped fryum exhibiting a small spot that is slightly lighter or similar in color compared to the surrounding surface. This defect is typically caused by unmixed raw material particles, trapped air bubbles, or localized variations in dough hydration, resulting in a pale or off-tone patch that contrasts subtly with the fryum body.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "small scratches pipe_fryum",
+      "entity_type": "defect",
+      "description": "A pipe-shaped fryum showing thin, shallow linear marks on its surface. These scratches occur due to friction against equipment surfaces, trays, or other fryums during processing or handling. The marks appear as fine, light-colored streaks that disrupt the otherwise smooth texture of the fryum.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "stuck together pipe_fryum",
+      "entity_type": "defect",
+      "description": "A defect where two or more pipe-shaped fryums adhere to each other, forming a clumped or overlapping structure. This occurs due to insufficient separation during drying or processing, excess moisture, or contact while still soft, causing the pieces to fuse together instead of remaining as individual units.",
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "entity_name": "combined pipe_fryum",
+      "entity_type": "defect_group",
+      "description": "A collective category representing pipe-shaped fryums that exhibit more than one defect simultaneously. This includes combinations of burnt spots, corner or edge breakage, colour spot defects (different or similar colour), surface scratches, and stuck-together pieces. The combined defect group is used to identify fryums with multiple quality deviations occurring together.",
+      "source_id": "Source_pipe_fryum3"
+    }
+  ],
+  "relationships": [
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "good pipe_fryum",
+      "description": "High-quality pipe fryum results from optimized extrusion parameters (temperature, screw speed, moisture 10–14%) and appropriate puffing methods (deep-fat or microwave). Such control ensures uniform porosity and crisp texture, as supported by recent extruded snack studies (2021–2024).",
+      "keywords": "pipe fryum, extrusion, expansion, uniform, crispness, quality",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum2"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "burnt pipe_fryum",
+      "description": "Indicates that the pipe fryum has developed burnt spots due to exposure to excessive heat during processing.",
+      "keywords": "burnt, overheating, brown spots, charring, heat defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "corner and edge breakage pipe_fryum",
+      "description": "Represents breakage where the edges or corners of the pipe fryum are chipped, cracked, or partially missing due to handling or processing stress.",
+      "keywords": "edge breakage, corner breakage, chipped, cracked, mechanical damage",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "different colour spot pipe_fryum",
+      "description": "Indicates the presence of a darker, visually distinct spot on the pipe fryum, caused by contamination, ingredient inconsistency, or heat-related speck formation.",
+      "keywords": "colour spot, discoloration, dark spot, contamination, speck defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "similar colour spot pipe_fryum",
+      "description": "Represents the occurrence of a faint or light-colored spot on the pipe fryum due to uneven mixing, air entrapment, or ingredient clumping during processing.",
+      "keywords": "similar colour spot, pale spot, light patch, air bubble, dough inconsistency",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "small scratches pipe_fryum",
+      "description": "Represents the presence of surface-level linear abrasions on the pipe fryum caused by rubbing, scraping, or contact with machinery or other fryums.",
+      "keywords": "scratches, surface marks, abrasion, linear defect, friction marks",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "stuck together pipe_fryum",
+      "description": "Shows that multiple pipe fryums have fused or adhered due to improper drying, moisture retention, or close contact during handling.",
+      "keywords": "stuck, fused, clumped, adhered fryums, moisture issue",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "pipe_fryum",
+      "tgt_id": "combined pipe_fryum",
+      "description": "Indicates that a pipe fryum sample contains multiple defect types grouped under the combined defect category.",
+      "keywords": "multiple defects, combined defects, mixed issues, compound defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "burnt pipe_fryum",
+      "description": "Shows that burnt spots or charring can be part of the combined defect set present in the fryum.",
+      "keywords": "burnt, charred, heat defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "corner and edge breakage pipe_fryum",
+      "description": "Represents that corner or edge chipping is among the defects included within this combined category.",
+      "keywords": "breakage, chipping, damaged edges, mechanical defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "different colour spot pipe_fryum",
+      "description": "Indicates that darker or differently coloured spotting is one of the defects contributing to the combined defect grouping.",
+      "keywords": "dark spot, contamination, colour variation",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "similar colour spot pipe_fryum",
+      "description": "Shows that faint or pale spots similar to the base colour are included as part of the combined defect set.",
+      "keywords": "light spot, pale spot, mixing defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "small scratches pipe_fryum",
+      "description": "Indicates that surface scratch marks are one of the multiple defects grouped under this category.",
+      "keywords": "scratches, abrasion marks, surface defects",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    },
+    {
+      "src_id": "combined pipe_fryum",
+      "tgt_id": "stuck together pipe_fryum",
+      "description": "Shows that fryums fused or adhered together can also be part of the combined defect grouping.",
+      "keywords": "stuck, fused, clumped, adhesion defect",
+      "weight": 0.85,
+      "source_id": "Source_pipe_fryum3"
+    }
+  ],
+  "chunks": [
+    {
+      "content": "At their core, puffed and extruded snacks are food products created through a process called extrusion. This involves forcing ingredients—usually grains, legumes, or starches—through a heated, high-pressure chamber. As the mixture exits the die, it expands rapidly, forming a light, airy texture. The resulting snack can be shaped into various forms, such as rings, sticks, or irregular pieces, depending on the die design and processing parameters. These snacks are often made from corn, rice, wheat, or other cereals, sometimes combined with flavorings, seasonings, or nutritional additives. The process not only creates appealing textures but also enhances shelf life and allows for customization in flavor and shape. Puffed and extruded snacks are popular worldwide, especially in regions where convenience and taste are prioritized.",
+      "source_id": "Source_pipe_fryum1",
+      "source_chunk_index": 0,
+      "file_path": "https://www.linkedin.com/pulse/what-puffed-extruded-snack-uses-how-works-top-companies-7pjlf/"
+    },
+    {
+      "content": "Abstract Rice based fryums available in market used for studying puffing performance of continuous hot air puffing system (CHAPS). CHAPS was designed in order to overcome the drawbacks of previous liquid petroleum gas (LPG) operated batch type hot air puffing system, the continuous hot air puffing system operated using electrical heaters was fabricated. Maintaining continuous flow of hot air and simultaneously puffing the fryums were achieved in this study. CHAPS offers advantage of continuous feeding of the raw material and final product output without disturbing ongoing process, and found safe and easy to operate. Frequent resetting of temperatures and air velocities as was in previous batch type system, henceforth no more required. The capacity increase obs rved is five to six folds over existing batch type system. Besides, reduc requirement of energy due to recirculation of used hot air has increased its thermal efficiency. Temperature setting of CHAPS in the range of 175 to 300ºC and air velocity of 2.5 to 6 m/s could become possible. 250ºC puffing temperature, 100 g/min feed rate at air velocity of 3.4 m/s were found optimum conditions for the best results of puffing i CHAPS. At set of conditions system gives capacity of 6 kg/h which can be noted as optimum. The protein content of fryums were observed to be depleted due to high temperature puffing as compared to raw material but oil/fat content found compatible to say to be oil free. Keywords: Hot air puffing, Oil free snacks, Low fat snacks, Fryums.",
+      "source_id": "Source_pipe_fryum1",
+      "source_chunk_index": 1,
+      "file_path": "https://www.researchgate.net/profile/Onkar-Babar/publication/322554116_Study_of_Puffing_Characteristics_of_Rice_Based_Fryums_Puffed_with_Whirling_Bed_Continuous_Hot_Air_Puffing_System/links/5a5f8925458515b4377972e1/Study-of-Puffing-Characteristics-of-Rice-Based-Fryums-Puffed-with-Whirling-Bed-Continuous-Hot-Air-Puffing-System.pdf"
+    },
+    {
+      "content": "Introduction Puffing in whirling hot air is an alternative option for preparation of ready to eat (RTE) foods as it overcomes many of disadvantages occur in sand puffing, salt puffing, high pressure puffing or oil fry etc. In the phenomenon of whirling, asymmetric distribution of air forces the product upward by pneumatic transport and downward by gravity, after certain height due to irregular air velocity, resulting in whirling motion. Whirling motion of product increase residence time keeping it within the hot air zone; which therefore leads to proper heat and mass transfer between hot air and layer of particle, by appropriate gas-solid contact. Thus hot air whirling bed mechanism works better for puffing with its optimized parameters for particular products (Mukherjee, 1997).",
+      "source_id": "Source_pipe_fryum1",
+      "source_chunk_index": 2,
+      "file_path": "https://www.researchgate.net/profile/Onkar-Babar/publication/322554116_Study_of_Puffing_Characteristics_of_Rice_Based_Fryums_Puffed_with_Whirling_Bed_Continuous_Hot_Air_Puffing_System/links/5a5f8925458515b4377972e1/Study-of-Puffing-Characteristics-of-Rice-Based-Fryums-Puffed-with-Whirling-Bed-Continuous-Hot-Air-Puffing-System.pdf"
+    },
+    {
+      "content": "This work aimed to investigate the effects of extrusion temperature (100 105 and 110 C) and puffing technique (microwaving (210, 420 and 560 W.) and deep frying (170 and 190 C)) on physical and functional properties of third-generation snack containing purple sweet potato and butterfly pea flower. Snack qualities in terms of physical properties (expansion ratio, bulk density, color and texture) and functional properties (total antho- cyanin content, total phenolic content and antioxidant capacity) were subsequently determined. The results showed that extrusion temperature did not significantly affect the color of snack pellets. However, it significantly affected the functional properties of the snack pellets.",
+      "source_id": "Source_pipe_fryum2",
+      "source_chunk_index": 0,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "Snack pellet produced from extruder at 110 C contained significantly higher functional properties when compared to those extruded at 100 and 105 C (p 0.05). In addi- tion, the study of the puffing method indicated that an increase of microwave power level and frying temperature resulted in a decrease of hardness. On the other hand, the increase of microwave power level and frying temperature caused an increase of antioxidant capacity in the puffed snacks. Moreover, microwave puffing could help preserve the color and antioxidant capacity better than deep frying. Especially, microwaved snack had total anthocyanin con- tent twice more than that puffed by frying.",
+      "source_id": "Source_pipe_fryum2",
+      "source_chunk_index": 1,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "From ANOVA given in Table 3, it can be inferred that the puffing temperature had significant effects on all responses except crispness, while feed rate affected puffing percentage, expansion ratio and sensory color scores of puffed product significantly. Further, it could be observed that though the puffing percentage and expansion ratio were maximum and final moisture content of puffed product was minimu at puffing temperature of 275ºC, the minimum hardness and maximum sensory color scores were observed at 250ºC puffing temperature. Therefore, th puffing temperature of 250ºC could be treated as appropriate for maximum expansion ratio, minimum hardness and higher sensory color score. It was also observed that though the puffing percentage was maximum at lowest feed rate of 50 g/min, and the minimum final moisture content and maximum color sensory scores of puffed product were observed at feed rate of 100 g/min. Therefore, the feed rate of 100 g/min could be treated as appropriate for product selected for puffing temperature of 250ºC. Therefore, the rated capacity of puffing of fryums may be accounted to be 6 kg/h.",
+      "source_id": "Source_pipe_fryum2",
+      "source_chunk_index": 2,
+      "file_path": "https://www.researchgate.net/profile/Onkar-Babar/publication/322554116_Study_of_Puffing_Characteristics_of_Rice_Based_Fryums_Puffed_with_Whirling_Bed_Continuous_Hot_Air_Puffing_System/links/5a5f8925458515b4377972e1/Study-of-Puffing-Characteristics-of-Rice-Based-Fryums-Puffed-with-Whirling-Bed-Continuous-Hot-Air-Puffing-System.pdf"
+    },
+    {
+      "content": "Color The results in Fig. 3 and statistical analysis showed that extrusion temperature did not significantly affect the lightness of the puffed snack. However, puffing technique significantly modified the color. When consid- ering on the lightness (L*), the results showed that L* of snack puffed by microwave was not significantly different among the microwave power, while the L* value of fried snack tended to be decreased when the higher temperature was applied as shown in Fig. 3. It is possible that higher Table 2 Some physical and functional properties of snack pellets",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 0,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "Hardness of puffed snack tended to decrease when extrusion temperature, microwave power and frying temperature were increased as shown in Fig. 3. This could be because puffing at high temperature causes an increased vapor pressure in the material which resulted in more creation of air cells in the snack structure",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 1,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "Statistical analysis revealed that extrusion temperature at 100 C resulted in higher bulk density of puffed snacks than those extruded at 105 and 110 C significantly. This might be because of a lower degree of gelatinization of the pellet extruded at 100 C when compared to those pro- cessed at 105 and 110 C. Therefore, it might be difficult to create the air cells inside the puffed product which perhaps led to the low expansion and thus, high bulk density were obtained. Figure 3 clearly showed that puffing the pellets extruded at 100 C by both microwaving and frying at low level (microwave power of 210 W and frying temperature at 170 C) caused higher bulk density of puffed snack than other puffing conditions. Notably, higher bulk density generally results in higher hardness of the snack products. Textural properties Textural properties in terms of hardness and crispness were presented in Fig. 3 and Table 3, respectively.",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 2,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "Moreover, microwave puffing could help preserve the color and antioxidant capacity better than deep frying. Especially, microwaved snack had total anthocyanin con- tent twice more than that puffed by frying.",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 3,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "Total anthocyanin content Statistical analysis showed that the extrusion temperature did not significantly affect total anthocyanin content of the puffed products, while the puffing technique affected total anthocyanin content sig- nificantly. Puffing by frying might destroy the anthocyanin content more than by microwaving. The higher frying temperature tended to reduce total anthocyanin content as well. Microwave power did not significantly affect total anthocyanin content as clearly shown in Fig. 3. It is pos- sible that microwave puffing is a short time heating process which may not affect total anthocyanin content obviously as frying method, thereby preserving the anthocyanin content.",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 4,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    },
+    {
+      "content": "clearly showed that fried snack had total anthocyanin content one fold lower than that puffed by microwaving. This suggested that the anthocyanins are very sensitive to high temperature and it tended to obviously decrease when the higher frying temperature was utilized. Sensory evaluation of puffed snacks In this part, the snack pellets extruded at 105 C were selected to puff by microwave puffing at 560 W and frying at 170 C for the sensory evaluation. Figure 4 showed a radar chart of sensory evaluation test of puffed snack.",
+      "source_id": "Source_pipe_fryum3",
+      "source_chunk_index": 5,
+      "file_path": "https://link.springer.com/article/10.1007/s13197-021-05234-x"
+    }
+  ]
+}
